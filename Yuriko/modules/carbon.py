@@ -22,32 +22,3 @@ async def carbon_func(_, message):
     await pbot.send_photo(message.chat.id, carbon)
     await m.delete()
     carbon.close()
-
-
-MEMEK = "https://telegra.ph/file/7e82b584cfe447ee154d7.jpg"
-
-@pbot.on_message(filters.command("alive"))
-async def alive(_, message):
-    await message.reply_photo(
-        photo=MEMEK,
-        caption=f"""✨ **Hᴇʏ I Aᴍ Yᴜʀɪᴋᴏ Rᴏʙᴏᴛ** 
-
-**🧑‍💻 Powered By : [TeamDeeCode](https://t.me/TeamDeeCode)**
-**🐍 Python Version :** `{y()}`
-**📃 Library Version :** `{o}`
-**♻️ Telethon Version :** `{s}`
-**💥 Pyrogram Version :** `{z}`
-
-**Create your own with click button bellow.**
-""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Repo", url="https://GitHub.com/TeamDeeCode/Yuriko"), 
-                    InlineKeyboardButton(
-                        "Support", url="https://t.me/DeCodeSupport")
-                ]
-            ]
-        )
-    )
