@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-yurikorobot_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
+YURIKO_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
 *👋 Hello {} !*
@@ -231,24 +231,35 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats()),                        
+                    sql.num_chats(),
+                ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=False,
             )
     else:
         update.effective_message.reply_photo(
-            yurikorobot_IMG, caption= "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            YURIKO_IMG,
+            caption="<b>Yes, Darling I'm alive!\nHaven't sleep since</b>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Decodesupport")]]
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="🚑 Support",
+                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                        ),
+                        InlineKeyboardButton(
+                            text="📢 Updates",
+                            url="https://t.me/DeeCodeBots",
+                        ),
+                    ]
+                ]
             ),
         )
         
