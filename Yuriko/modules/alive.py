@@ -59,32 +59,32 @@ async def hmm(yes):
     pm_caption += f"**♡ Telethon Version :** `{version.__version__}`\n\n"
     pm_caption += "**♡ My Team :** [TeamDeeCode](https://t.me/TeamDeeCode)\n"
     BUTTON = [[Button.url("Support", "https://t.me/DeCodeSupport"), Button.url("Updates", "https://t.me/DeeCodeBots")]]
-    on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption, buttons=BUTTON)
+    on = await aasf.send_file(yes.chat_id, file=file1,caption=pm_caption, buttons=BUTTON)
     
 
     await asyncio.sleep(edit_time)
-    ok = await borg.edit_message(yes.chat_id, on, file=file2, buttons=BUTTON) 
+    ok = await aasf.edit_message(yes.chat_id, on, file=file2, buttons=BUTTON) 
 
     await asyncio.sleep(edit_time)
-    ok2 = await borg.edit_message(yes.chat_id, ok, file=file3, buttons=BUTTON)
+    ok2 = await aasf.edit_message(yes.chat_id, ok, file=file3, buttons=BUTTON)
 
     await asyncio.sleep(edit_time)
-    ok3 = await borg.edit_message(yes.chat_id, ok2, file=file4, buttons=BUTTON)
+    ok3 = await aasf.edit_message(yes.chat_id, ok2, file=file4, buttons=BUTTON)
     
     await asyncio.sleep(edit_time)
-    ok4 = await borg.edit_message(yes.chat_id, ok3, file=file5, buttons=BUTTON)
+    ok4 = await aasf.edit_message(yes.chat_id, ok3, file=file5, buttons=BUTTON)
 
     await asyncio.sleep(edit_time)
-    ok5 = await borg.edit_message(yes.chat_id, ok4, file=file1, buttons=BUTTON)
+    ok5 = await aasf.edit_message(yes.chat_id, ok4, file=file1, buttons=BUTTON)
     
     await asyncio.sleep(edit_time)
-    ok6 = await borg.edit_message(yes.chat_id, ok5, file=file2, buttons=BUTTON)
+    ok6 = await aasf.edit_message(yes.chat_id, ok5, file=file2, buttons=BUTTON)
     
     await asyncio.sleep(edit_time)
-    ok7 = await borg.edit_message(yes.chat_id, ok6, file=file3, buttons=BUTTON)
+    ok7 = await aasf.edit_message(yes.chat_id, ok6, file=file3, buttons=BUTTON)
     
     await asyncio.sleep(edit_time)
-    ok8 = await borg.edit_message(yes.chat_id, ok7, file=file4, buttons=BUTTON)
+    ok8 = await aasf.edit_message(yes.chat_id, ok7, file=file4, buttons=BUTTON)
     
     await asyncio.sleep(edit_time)
-    ok9 = await borg.edit_message(yes.chat_id, ok8, file=file5, buttons=BUTTON)
+    ok9 = await aasf.edit_message(yes.chat_id, ok8, file=file5, buttons=BUTTON)
