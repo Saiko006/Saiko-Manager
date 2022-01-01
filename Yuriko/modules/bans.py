@@ -548,33 +548,33 @@ def snipe(update: Update, context: CallbackContext):
 __help__ = """
 *User Commands:*
 
-✗ /kickme - `kicks the user who issued the command`
+✪ /kickme - `kicks the user who issued the command`
 
 *Admins Commands Only:*
 
-✗ /ban - `bans a user. (via handle, or reply)`
+✪ /ban - `bans a user. (via handle, or reply)`
 
-✗ /sban - `Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)`
+✪ /sban - `Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)`
 
-✗ /tban - `bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
+✪ /tban - `bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
 
-✗ /unban - `unbans a user. (via handle, or reply)`
+✪ /unban - `unbans a user. (via handle, or reply)`
 
-✗ /kick - `kicks a user out of the group, (via handle, or reply)`
+✪ /kick - `kicks a user out of the group, (via handle, or reply)`
 
-✗ /mute - `silences a user. Can also be used as a reply, muting the replied to user.`
+✪ /mute - `silences a user. Can also be used as a reply, muting the replied to user.`
 
-✗ /tmute - `mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
+✪ /tmute - `mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
 
-✗ /unmute - `unmutes a user. Can also be used as a reply, muting the replied to user.`
+✪ /unmute - `unmutes a user. Can also be used as a reply, muting the replied to user.`
 
-✗ /zombies - `searches deleted accounts`
+✪ /zombies - `searches deleted accounts`
 
-✗ /zombies - `removes deleted accounts from the group.`
+✪ /zombies - `removes deleted accounts from the group.`
 
-✗ /snipe - `Make me send a message to a specific chat.`
+✪ /snipe - `Make me send a message to a specific chat.`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*
+*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 """
 
 
