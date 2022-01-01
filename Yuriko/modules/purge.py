@@ -25,12 +25,12 @@ async def purge_messages(event):
         return
 
     if not await can_delete_messages(message=event):
-        await event.reply("Ma na dekha dekh skata 😴")
+        await event.reply("Can't seem to purge the message")
         return
 
     reply_msg = await event.get_reply_message()
     if not reply_msg:
-        await event.reply("Reply do vro jaha se purge karna ha ase nahi hota ye😏.")
+        await event.reply("Reply to a message to select where to start purging from.")
         return
     messages = []
     message_id = reply_msg.id
