@@ -295,9 +295,9 @@ __help__ = """
 
 ✗ /imdb - `<Movie name> Get full info about a movie with imdb.com`
 
-✗ Yuriko - `<query> Yuriko answers the query`
+✗ Yuriko - `<query> Kekinian answers the query`
 
-💡 Ex: `Yuriko where is Japan?`
+📚 Ex: `Kekinian where is Japan?`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 """
