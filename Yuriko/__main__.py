@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-yurikorobot_IMG = "https://telegra.ph/file/13db3811fc54bb840caee.mp4"
+yurikorobot_IMG = "https://telegra.ph/file/02b4b2f13c24d0ca64663.jpg"
 
 PM_START_TEXT = """
 *👋 Hello {} !*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 ✪ `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ================================ 
 ✪ Hit the /help to see available command.
-✪ *Pᴏᴡᴇʀᴇᴅ🔰 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*
+✪ *Pᴏᴡᴇʀᴇᴅ 🔰 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*
 """
 
 buttons = [
@@ -485,7 +485,7 @@ def yurikorobot_about_callback(update, context):
             f"\n\n📚 `3.) add` @asistancekekinian `to your group:`"
             f"\n\n📚 `4.) turn on the video chat first before start to play music.`"
             f"\n\n📚 *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*"
-            f"\n\n*📚 Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*",
+            f"\n\n*📚 Pᴏᴡᴇʀᴇᴅ 🔰 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
