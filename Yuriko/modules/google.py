@@ -61,7 +61,7 @@ async def _(event):
     )
 
 
-@register(pattern="^/image (.*)")
+@register(pattern="^/img (.*)")
 async def img_sampler(event):
     if event.fwd_from:
         return
@@ -281,7 +281,7 @@ __mod_name__ = "Sᴇᴀʀᴄʜ"
 __help__ = """
 ✪ /google - `<query> Perform a google search`
 
-✪ /image - `<query> Search Google for images and returns them\nFor greater no. of results specify lim, For eg:` `/img hello lim=10`
+✪ /img - `<query> Search Google for images and returns them\nFor greater no. of results specify lim, For eg:` `/img hello lim=10`
 
 ✪ /app - `<appname> Searches for an app in Play Store and returns its details.`
 
@@ -295,7 +295,6 @@ __help__ = """
 
 ✪ /imdb - `<Movie name> Get full info about a movie with imdb.com`
 
-✪ Yuriko - `<query> Kekinian answers the query`
 
 📚 Ex: `Kekinian where is Japan?`
 
