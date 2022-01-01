@@ -38,7 +38,7 @@ def set_sticker(update: Update, context: CallbackContext):
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
             return msg.reply_text(
-                ""Anda harus membalas sebuah sticker untuk mengatur set stiker obrolan!😏"
+                "Anda harus membalas sebuah sticker untuk mengatur set stiker obrolan!😏"
             )
         stkr = msg.reply_to_message.sticker.set_name
         try:
@@ -47,7 +47,7 @@ def set_sticker(update: Update, context: CallbackContext):
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(
-                    ""Maaf, karena pembatasan telegram, obrolan harus memiliki minimal 100 anggota sebelum mereka dapat memiliki stiker grup!!"!💫"
+                    "Maaf, karena pembatasan telegram, obrolan harus memiliki minimal 100 anggota sebelum mereka dapat memiliki stiker grup!💫"
                 )
             msg.reply_text(f"Error! {excp.message}.")
     else:
