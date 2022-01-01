@@ -6,9 +6,9 @@
   <a href="https://github.com/TeamDeeCode/Yuriko/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
 </p>
 
-<p align="center"><a href="https://t.me/YurikoRobot"><img src="(https://telegra.ph/file/e641d3dd2ccdce6a3d934.jpg)" width="400"></a></p>
+<p align="center"><a href="https://t.me/KekiniBot"><img src="(https://telegra.ph/file/e641d3dd2ccdce6a3d934.jpg)" width="400"></a></p>
 
-## Available on Telegram as [@Yuriko](https://t.me/YurikoRobot)
+## Available on Telegram as [@Kekinian](https://t.me/KekiniBot)
 
 # ❤️ Support
 <a href="https://t.me/Kekiniangroup"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
