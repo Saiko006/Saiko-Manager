@@ -383,7 +383,7 @@ def yurikorobot_about_callback(update, context):
     if query.data == "yurikorobot_":
         query.message.edit_text(
             text=""" *KEKINIAN* - `A bot to manage your groups with additional features!`
-            \n`Here the basic help regarding use of yurikorobot.`
+            \n`Here the basic help regarding use of Kekinian Robot.`
             
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
             \n`Report error/bugs click the Button`""",
@@ -484,7 +484,7 @@ def yurikorobot_about_callback(update, context):
             f"\n\n📚 `2.) then promote me as admin and give all permissions except anonymous admin.`"
             f"\n\n📚 `3.) add` @asistancekekinian `to your group:`"
             f"\n\n📚 `4.) turn on the video chat first before start to play music.`"
-            f"\n\n📚 *Lets Enjoy The Yuriko Music And Join Support Group @Kekiniangroup*"
+            f"\n\n📚 *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*"
             f"\n\n*📚 Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
