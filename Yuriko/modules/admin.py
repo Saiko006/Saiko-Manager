@@ -33,8 +33,8 @@ def set_sticker(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text(""Anda tidak memiliki hak untuk mengubah  chat info!"")
-
+        return msg.reply_text("Anda tidak memiliki hak untuk mengubah  chat info!")
+        
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
             return msg.reply_text(
