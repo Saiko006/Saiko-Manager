@@ -227,11 +227,11 @@ __help__ = """
 
  *Following are Disasters only commands, admins cannot use these:*
 
-✗ /gignoreblue - `<word> globally ignorea bluetext cleaning of saved word across DᴇCᴏᴅᴇ.`
+✗ /gignoreblue - `<word> globally ignorea bluetext cleaning of saved word across KEKINIAN.`
 
 ✗ /ungignoreblue - `<word> remove said command from global cleaning list`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler(
