@@ -279,25 +279,25 @@ async def apk(e):
 __mod_name__ = "Sᴇᴀʀᴄʜ"
 
 __help__ = """
-✗ /google - `<query> Perform a google search`
+✪ /google - `<query> Perform a google search`
 
-✗ /image - `<query> Search Google for images and returns them\nFor greater no. of results specify lim, For eg:` `/img hello lim=10`
+✪ /image - `<query> Search Google for images and returns them\nFor greater no. of results specify lim, For eg:` `/img hello lim=10`
 
-✗ /app - `<appname> Searches for an app in Play Store and returns its details.`
+✪ /app - `<appname> Searches for an app in Play Store and returns its details.`
 
-✗ /reverse - `Does a reverse image search of the media which it was replied to.`
+✪ /reverse - `Does a reverse image search of the media which it was replied to.`
 
-✗ /gps `<location> Get gps location.`
+✪ /gps `<location> Get gps location.`
 
-✗ /github - `<username> Get information about a GitHub user.`
+✪ /github - `<username> Get information about a GitHub user.`
 
-✗ /country - `<country name> Gathering info about given country`
+✪ /country - `<country name> Gathering info about given country`
 
-✗ /imdb - `<Movie name> Get full info about a movie with imdb.com`
+✪ /imdb - `<Movie name> Get full info about a movie with imdb.com`
 
-✗ Yuriko - `<query> Kekinian answers the query`
+✪ Yuriko - `<query> Kekinian answers the query`
 
 📚 Ex: `Kekinian where is Japan?`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 """
