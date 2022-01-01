@@ -1,4 +1,4 @@
-<h1 align="center"><b> ⚡ Yuriko Robot ⚡ </b></h1>
+<h1 align="center"><b> ⚡ ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖 ⚡ </b></h1>
 
 <h4 align="center">A Powerful, Smart And Simple Group Manager <br> ... Written with AioGram , Pyrogram and Telethon...</h4>
 <p align='center'>
@@ -11,8 +11,8 @@
 ## Available on Telegram as [@Yuriko](https://t.me/YurikoRobot)
 
 # ❤️ Support
-<a href="https://t.me/DeeCodeBots"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="t.me/DeCodeSupport"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/Kekiniangroup"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="t.me/Kekiniangroup"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 
 ## ✨ Heroku Deploy ✨
@@ -27,5 +27,6 @@ The easiest way to deploy this Bot is via Heroku.
 BrayDen
 Blaze
 Shubhanshu
+Zal
 ```
 
