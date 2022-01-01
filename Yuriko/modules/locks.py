@@ -593,7 +593,7 @@ eg:
 
 ✗  `Unlocking - `permission` *pin* `will allow members (non-admins) to pinned a message in a group`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*
 """
 
 __mod_name__ = "Lᴏᴄᴋꜱ"
