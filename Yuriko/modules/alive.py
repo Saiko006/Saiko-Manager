@@ -15,15 +15,15 @@ from Yuriko import StartTime, dispatcher
 from telethon.tl.types import ChannelParticipantsAdmins
 
 edit_time = 5
-""" =======================YURIKO====================== """
+""" =======================ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ====================== """
 file1 = "https://telegra.ph/file/1ad7188c8390b5c36b9a8.jpg"
 file2 = "https://telegra.ph/file/73fc670e1dc78d1857b67.jpg"
 file3 = "https://telegra.ph/file/4b29739e7fd46b2111e55.jpg"
 file4 = "https://telegra.ph/file/956b7a50ec1f0a9802b8b.jpg"
 file5 = "https://telegra.ph/file/2fdff4fc6f3e015eb9a51.jpg"
-""" =======================YURIKO====================== """
+""" =======================ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ====================== """
 
-BUTTON = [[Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DeCodeSupport"), Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/DeeCodeBots")]]
+BUTTON = [[Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Kekiniangroup"), Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/musickekiniaan")]]
 
 
 START_TIME = datetime.utcnow()
@@ -54,11 +54,10 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    pm_caption = "** ♡ I,m Yuriko **\n\n"
+    pm_caption = "** ♡ I,m Kekinian **\n\n"
     pm_caption += f"**♡ My Uptime :** `{uptime}`\n\n"
     pm_caption += f"**♡ Telethon Version :** `{version.__version__}`\n\n"
-    pm_caption += "**♡ My Team :** [TeamDeeCode](https://t.me/TeamDeeCode)\n"
-    BUTTON = [[Button.url("Support", "https://t.me/DeCodeSupport"), Button.url("Updates", "https://t.me/DeeCodeBots")]]
+    BUTTON = [[Button.url("Support", "https://t.me/Kekiniangroup"), Button.url("Updates", "https://t.me/musickekiniaan")]]
     on = await aasf.send_file(yes.chat_id, file=file1,caption=pm_caption, buttons=BUTTON)
     
 
