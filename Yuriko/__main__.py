@@ -531,7 +531,7 @@ def yurikorobot_about_callback(update, context):
         query.message.edit_text(
             text=f"<b> CREDIT FOR KEKINIAN DEV'S</b>\n"
             
-            f"\n`✪ Here Some Developers Helping in Making The Yuriko Bot`",
+            f"\n`✪ Here Some Developers Helping in Making The Kekinian Robot`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
