@@ -22,6 +22,10 @@ from Yuriko.modules.helper_funcs.filters import CustomFilters
 from Yuriko.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply 
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
+url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
+
+translator = google_translator()
+
  
 @user_admin_no_reply
 @gloggable
