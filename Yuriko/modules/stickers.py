@@ -579,23 +579,23 @@ __mod_name__ = "Sᴛɪᴄᴋᴇʀꜱ"
 __help__ = """
 *Help Menu For Stickers Tools*
 
-✗ /stickerid - `reply to a sticker to me to tell you its file ID.`
+✪ /stickerid - `reply to a sticker to me to tell you its file ID.`
 
-✗ /getsticker - `reply to a sticker to me to upload its raw PNG file.`
+✪ /getsticker - `reply to a sticker to me to upload its raw PNG file.`
 
-✗ /kang - `reply to a sticker to add it to your pack.`
+✪ /kang - `reply to a sticker to add it to your pack.`
 
-✗ /delsticker - `Reply to your anime exist sticker to your pack to delete it.`
+✪ /delsticker - `Reply to your anime exist sticker to your pack to delete it.`
 
-✗ /stickers - `Find stickers for given term on combot sticker catalogue`
+✪ /stickers - `Find stickers for given term on combot sticker catalogue`
 
-✗ /tiny - ` To make small sticker`
+✪ /tiny - ` To make small sticker`
 
-✗ /kamuii - `To deepefying stiker`
+✪ /kamuii - `To deepefying stiker`
 
-✗ /mmf - `To draw a text for sticker or pohots`
+✪ /mmf - `To draw a text for sticker or pohots`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 """
 
 
