@@ -112,7 +112,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="➕ Add To Your group ➕", url="http://t.me/KekiniBot?startgroup=true"),
+        InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="http://t.me/KekiniBot?startgroup=true"),
     ],
 ]
 
