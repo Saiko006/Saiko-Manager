@@ -100,7 +100,7 @@ buttons = [
             text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Aꜱꜱɪꜱᴛᴀɴᴛ", callback_data="yurikorobot_asst"),
+        InlineKeyboardButton(text="𝐌ᴜsɪᴄ", callback_data="yurikorobot_asst"),
         InlineKeyboardButton(
             text="Iɴʟɪɴᴇ", switch_inline_query_current_chat=""
         ),
@@ -476,14 +476,14 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_asst":
         query.message.edit_text(
-            text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
+            text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「𝐌ᴜsɪᴄ」 Mᴏᴅᴜʟᴇ:*"
             
             f"\n*SETUP ASSISTANT*"
             f"\n\n✪ ` first, add me to your group.`"
             f"\n\n✪ ` then promote me as admin and give all permissions except anonymous admin.`"
-            f"\n\n✪ ` add` @YurikoPlugin `to your group:`"
+            f"\n\n✪ ` add` @asistancekekinian `to your group:`"
             f"\n\n✪ ` turn on the video chat first before start to play music.`"
-            f"\n\n✪ *Lets Enjoy The Yuriko Music And Join Support Group @DeCodeSupport*"
+            f"\n\n✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*"
             f"\n\n*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
