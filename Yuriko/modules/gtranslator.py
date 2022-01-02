@@ -18,23 +18,23 @@ __help__ = """
 Use this module to translate stuff!
 *Commands:*
 
-✗ /tl - `(or /tr) as a reply to a message, translates it to English.`
+✪ /tl - `(or /tr) as a reply to a message, translates it to English.`
 
-✗ /tl - `<lang>: translates to <lang>`
+✪ /tl - `<lang>: translates to <lang>`
 
-✗ /tl ja - `translates to Japanese.`
+✪ /tl ja - `translates to Japanese.`
 
-✗ /tl - `<source>//<dest> translates from <source> to <lang>.`
+✪ /tl - `<source>//<dest> translates from <source> to <lang>.`
 
-✗ /tl - `ja//en translates from Japanese to English.`
+✪ /tl - `ja//en translates from Japanese to English.`
 
-✗ /langs - `get a list of supported languages for translation.`
+✪ /langs - `get a list of supported languages for translation.`
 
 `I can convert text to voice and voice to text..`
 
-✗ /tts - `<lang code> Reply to any message to get text to speech output`
+✪ /tts - `<lang code> Reply to any message to get text to speech output`
 
-✗ /stt - `Type in reply to a voice message(support english only) to extract text from it.`
+✪ /stt - `Type in reply to a voice message(support english only) to extract text from it.`
 
 *Language Codes*
 
@@ -45,7 +45,7 @@ ml,mn,mr,ms,mt,my,ne,nl,no,ny,pa,pl,ps,pt,ro,ru,sd,si,sk,sl,
 sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 """
 
 __mod_name__ = "Tʀᴀɴꜱʟᴀᴛᴏʀ"
