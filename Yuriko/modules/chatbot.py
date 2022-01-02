@@ -138,7 +138,7 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 __help__ = """
-✪ `Chatbot utilizes the` *ᴋᴇᴋɪɴɪᴀɴ* `api which allows Yuriko to talk and provide a more interactive group chat experience.`
+✪ `Chatbot utilizes the` *ᴋᴇᴋɪɴɪᴀɴ* `api which allows Kekinian to talk and provide a more interactive group chat experience.`
 
 *Admins only Commands*:
  
