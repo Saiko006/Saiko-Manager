@@ -324,7 +324,7 @@ async def inuka(client, message):
 
 __help__ = """
 *──「 Help for the Chatbot module 」──*
-• NaoRobot AI is the only ai system which can detect & reply upto 200 language's
+• Kekinian Robot AI is the only ai system which can detect & reply upto 200 language's
 ✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 ✪ /chatbot EN : Enables English only chatbot.
 """
