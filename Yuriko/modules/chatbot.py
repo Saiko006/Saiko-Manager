@@ -3,7 +3,7 @@
 import emoji
 import re
 import aiohttp
-from googletrans import Translator
+from googletrans import Translator as google_translator
 from pyrogram import filters
 from aiohttp import ClientSession
 from Yuriko import BOT_USERNAME as bu
