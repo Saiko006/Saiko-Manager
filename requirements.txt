@@ -6,8 +6,8 @@ gtts
 beautifulsoup4
 requests==2.20.0
 telegram==0.0.1
-python-telegram-bot==13.7
-sqlalchemy==1.3.20
+python-telegram-bot==13.9.0
+sqlalchemy==1.4.28
 psycopg2-binary
 feedparser
 faker
@@ -21,9 +21,11 @@ zalgo-text
 geopy
 nltk
 psutil
-aiohttp>=2.2.5
+aiohttp
 Pillow
 CurrencyConverter
+google_images_download
+google-api-python-client
 googletrans==4.0.0-rc1
 google-trans-new==1.1.9
 jikanpy
