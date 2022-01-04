@@ -98,7 +98,7 @@ def _check_member(client, message):
                                 ],
                                 [
                                     InlineKeyboardButton(
-                                        "Unmute Me", callback_data="onUnMuteRequest"
+                                        "Unmute Me", callback_data="_onUnMuteRequest"
                                     )
                                 ],
                             ]
