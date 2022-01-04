@@ -802,10 +802,10 @@ def adminlist(update, context):
         #    name = escape_markdown("@" + user.username)
         if status == "creator":
             text += "\n 👑 Owner:"
-            text += "\n<code> └ <»code>{}\n".format(name)
+            text += "\n<code> └ </code>{}\n".format(name)
 
             if custom_title:
-                text += f"<code> {html.escape(custom_title)}<»code>\n"
+                text += f"<code> {html.escape(custom_title)}</code>\n"
 
     text += "\n👮🏼 Admins:"
 
@@ -838,11 +838,11 @@ def adminlist(update, context):
                 normal_admin_list.append(name)
 
     for admin in normal_admin_list:
-        text += "\n<code> ├ <»code>{}".format(admin)
+        text += "\n<code> ├ </code>{}".format(admin)
 
     for admin_group in custom_admin_list.copy():
         if len(custom_admin_list[admin_group]) == 1:
-            text += "\n<code> ├ <»code>{} | <code>{}<»code>".format(
+            text += "\n<code> ├ </code>{} | <code>{}</code>".format(
                 custom_admin_list[admin_group][0],
                 html.escape(admin_group),
             )
@@ -850,9 +850,9 @@ def adminlist(update, context):
 
     text += "\n"
     for admin_group, value in custom_admin_list.items():
-        text += "\n🚨 <code>{}<»code>".format(admin_group)
+        text += "\n🚨 <code>{}</code>".format(admin_group)
         for admin in value:
-            text += "\n<code> ├ <»code>{}".format(admin)
+            text += "\n<code> ├ </code>{}".format(admin)
         text += "\n"
 
     try:
