@@ -17,7 +17,7 @@ translator = google_translator()
 
 
 async def YurikoQuery(query: str, user_id: int):
-    Yuriko = await arq.Yuriko(query, user_id)
+    Yuriko = await Arq.Yuriko(query, user_id)
     return Yuriko.result
 
 
