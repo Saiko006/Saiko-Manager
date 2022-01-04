@@ -848,12 +848,12 @@ def adminlist(update, context):
             )
             custom_admin_list.pop(admin_group)
 
-    text += "\n"
+    text += "»n"
     for admin_group, value in custom_admin_list.items():
         text += "\n🚨 <code>{}</code>".format(admin_group)
         for admin in value:
             text += "\n<code> ├ </code>{}".format(admin)
-        text += "\n"
+        text += "»n"
 
     try:
         msg.edit_text(text, parse_mode=ParseMode.HTML)
