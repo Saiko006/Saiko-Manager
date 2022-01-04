@@ -17,7 +17,7 @@ translator = google_translator()
 
 
 async def lunaQuery(query: str, user_id: int):
-    Luna = await arq.luna(query, user_id)
+    luna = await arq.luna(query, user_id)
     return luna.result
 
 
