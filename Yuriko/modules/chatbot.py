@@ -16,9 +16,9 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 translator = google_translator()
 
 
-async def YurikoQuery(query: str, user_id: int):
-    Yuriko = await Arq.Yuriko(query, user_id)
-    return Yuriko.result
+async def LunaQuery(query: str, user_id: int):
+    Luna = await arq.Luna(query, user_id)
+    return Luna.result
 
 
 def extract_emojis(s):
