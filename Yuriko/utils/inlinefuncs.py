@@ -34,8 +34,7 @@ from Yuriko.services.keyboard import Ikb
 from Yuriko.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
 from Yuriko.services.tasks import _get_tasks_text, all_tasks, rm_task
 from Yuriko.services.types import InlineQueryResultCachedDocument
-from Yuriko.modules.info import get_chat_info, get_user_info
-from Yuriko.modules.music import download_youtube_audio
+from Yuriko.modules.info import get_chat_info, get_user_info 
 from Yuriko.utils.functions import test_speedtest
 from Yuriko.utils.pastebin import paste
 
@@ -65,7 +64,6 @@ keywords_list = [
     "pokedex",
     "saavn",
     "wiki",
-    "music",
     "ytmusic",
 ]
 
