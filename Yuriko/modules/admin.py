@@ -838,22 +838,22 @@ def adminlist(update, context):
                 normal_admin_list.append(name)
 
     for admin in normal_admin_list:
-        text += "\n<code> ├ </code>{}".format(admin)
+        text += "\n<code> ├ <»code>{}".format(admin)
 
     for admin_group in custom_admin_list.copy():
         if len(custom_admin_list[admin_group]) == 1:
-            text += "\n<code> ├ </code>{} | <code>{}</code>".format(
+            text += "\n<code> ├ <»code>{} | <code>{}<»code>".format(
                 custom_admin_list[admin_group][0],
                 html.escape(admin_group),
             )
             custom_admin_list.pop(admin_group)
 
-    text += "»n"
+    text += "\n"
     for admin_group, value in custom_admin_list.items():
-        text += "\n🚨 <code>{}</code>".format(admin_group)
+        text += "\n🚨 <code>{}<»code>".format(admin_group)
         for admin in value:
-            text += "\n<code> ├ </code>{}".format(admin)
-        text += "»n"
+            text += "\n<code> ├ <»code>{}".format(admin)
+        text += "\n"
 
     try:
         msg.edit_text(text, parse_mode=ParseMode.HTML)
