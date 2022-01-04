@@ -10,9 +10,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from EmikoRobot import DRAGONS as SUDO_USERS
-from EmikoRobot import pbot
-from EmikoRobot.modules.sql import forceSubscribe_sql as sql
+from Yuriko import DRAGONS as SUDO_USERS
+from Yuriko import pbot
+from Yuriko.modules.sql import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -109,7 +109,7 @@ def _check_member(client, message):
                     )
                 except ChatAdminRequired:
                     sent_message.edit(
-                        "😕 **Emikoo is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
+                        "😕 **Kekinian is not admin here..**\n__Give me ban permissions and retry.. \n#Ending FSub...__"
                     )
 
             except ChatAdminRequired:
@@ -190,12 +190,12 @@ __help__ = """
 *Commmands*
 ❂ /fsub {channel username} - To turn on and setup the channel.
 
-  💡Do this first...
+  📚Do this first...
 
 ❂ /fsub - To get the current settings.
 ❂ /fsub disable - To turn of ForceSubscribe..
 
-  💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
+  📚If you disable fsub, you need to set again for working.. /fsub {channel username} 
 
 ❂ /fsub clear - To unmute all members who muted by me.
 
