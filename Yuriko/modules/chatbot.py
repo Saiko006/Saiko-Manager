@@ -165,7 +165,7 @@ async def hmm(client, message):
 
         test = test.replace("Kekinian", "Aco")
         test = test.replace("Kekinian", "Aco")
-        response = await LunaQuery(
+        response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
         response = response.replace("Aco", "Kekinian")
