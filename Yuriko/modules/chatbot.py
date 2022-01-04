@@ -16,9 +16,9 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 translator = google_translator()
 
 
-async def LunaQuery(query: str, user_id: int):
-    Luna = await Arq.Luna(query, user_id)
-    return Luna.result
+async def lunaQuery(query: str, user_id: int):
+    Luna = await arq.luna(query, user_id)
+    return luna.result
 
 
 def extract_emojis(s):
@@ -304,7 +304,7 @@ async def inuka(client, message):
 
     test = test.replace("Kekinian", "Aco")
     test = test.replace("Kekinian", "Aco")
-    response = await LunaQuery(test, message.from_user.id if message.from_user else 0)
+    response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
     response = response.replace("Aco", "Kekinian")
     response = response.replace("aco", "kekinian")
 
