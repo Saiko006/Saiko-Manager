@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-yurikorobot_IMG = "https://telegra.ph/file/02b4b2f13c24d0ca64663.jpg"
+yurikorobot_IMG = "https://telegra.ph/file/6604ab9775908c3dfa379.jpg"
 
 PM_START_TEXT = """
 ✪ *👋 Hello {} !*
@@ -141,7 +141,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Yuriko.modules." + module_name)
+    imported_module = importlib.import_module("Kekinian.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
