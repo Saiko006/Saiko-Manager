@@ -29,7 +29,7 @@ async def hmm(event):
     chat = await event.get_chat()
     await event.delete()
     pm_caption = f"**Happy New Year 2022 From {(event.sender.first_name)} **\n\n"
-    pm_caption += "**By @TeamDeeCoDe X Team**\n\n"
+    pm_caption += "**By @Kekiniangroup**\n\n"
     on = await aasf.send_file(event.chat_id, file=newyear1,caption=pm_caption)
 
     await asyncio.sleep(edit_time)
