@@ -123,7 +123,7 @@ HELP_STRINGS = """
 1. /start = `Starts me! Your probably already used this.`
 2. /help = `Click this I ll let you know about myself!`
 3. /settings = `in PM: will send you your settings for all supported modules.`
-4. /setting = `in your group to set auth and volume 
+4. /setting = `in your group to set auth and volume.'
   *In A Group: Will Redirect You To Pm With All That Chats Settings.*)"""
 
 
