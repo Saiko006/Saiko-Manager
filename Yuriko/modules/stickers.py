@@ -76,7 +76,7 @@ def kang(update, context):
                 is_animated = True
             file_id = msg.reply_to_message.sticker.file_id
 
-        elif msg.reply_to_message.photo:
+    elif msg.reply_to_message.photo:
             file_id = msg.reply_to_message.photo[-1].file_id
         elif msg.reply_to_message.document:
             file_id = msg.reply_to_message.document.file_id
@@ -88,7 +88,7 @@ def kang(update, context):
             kang_file.download("kangsticker.png")
         else:
             kang_file.download("kangsticker.tgs")
-
+     
         if args:
             sticker_emoji = str(args[0])
         elif msg.reply_to_message.sticker and msg.reply_to_message.sticker.emoji:
@@ -203,8 +203,8 @@ def kang(update, context):
                         parse_mode=ParseMode.HTML,
                     )
                 print(e)
-
-        else:
+                
+         else:
             packname = "animated" + str(user.id) + "_by_" + context.bot.username
             packname_found = 0
             max_stickers = 50
@@ -299,7 +299,7 @@ def kang(update, context):
                     scale = 512 / size1
                     size1new = 512
                     size2new = size2 * scale
-                else:
+                else
                     scale = 512 / size2
                     size1new = size1 * scale
                     size2new = 512
@@ -406,7 +406,7 @@ def kang(update, context):
     elif os.path.isfile("kangsticker.tgs"):
         os.remove("kangsticker.tgs")
 
-
+        
 def makepack_internal(
     update,
     context,
@@ -492,7 +492,7 @@ def makepack_internal(
             parse_mode=ParseMode.HTML,
         )
     else:
-        msg.reply_text("Failed to create sticker pack. Possibly due to blek mejik.")
+        msg.reply_text("Failed to create sticker pack.")
 
 
 def getsticker(update, context):
