@@ -57,7 +57,7 @@ def staff(client: Client, message: Message):
             f"Admins on <b>{chat_title}</b>\n\n👑 <b>OWNER</b>\n"
             + "\n".join(creator)
             + "\n\n"
-            "👮🏼‚ <b>Admin</b>\n" + "\n".join(admin)
+            "👮🏼 <b>Admin</b>\n" + "\n".join(admin)
         )
 
     elif len(co_founder) > 0 and len(admin) == 0:
@@ -65,7 +65,7 @@ def staff(client: Client, message: Message):
         co_founder.pop(-1)
         co_founder.append(resco_founder)
         result = (
-            f"Admins on <b>{chat_title}</b>\n\n 👑 <b>OWNER</b>\n"
+            f"Admins on <b>{chat_title}</b>\n\n👑 <b>OWNER</b>\n"
             + "\n".join(creator)
             + "\n\n"
             "⚜️ <b>Co-Founder</b>\n" + "\n".join(co_founder)
@@ -83,6 +83,6 @@ def staff(client: Client, message: Message):
             + "\n".join(creator)
             + "\n\n"
             "⚜️ <b>Co-Founder</b>\n" + "\n".join(co_founder) + "\n\n"
-            "👮🏼‚ <b>Admin</b>\n" + "\n".join(admin)
+            "👮🏼 <b>Admin</b>\n" + "\n".join(admin)
         )
     client.send_message(chat_id, result)
