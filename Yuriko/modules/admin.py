@@ -1016,8 +1016,7 @@ __command_list__ = [
     "setgpic"
     "delgpic"
     "setgtitle"
-    "adminlist",
-    "admins", 
+    "adminlist", 
     "invitelink", 
     "promote", 
     "fullpromote",
@@ -1031,7 +1030,6 @@ __handlers__ = [
     SETCHATPIC_HANDLER,
     RMCHATPIC_HANDLER,
     SETCHAT_TITLE_HANDLER,
-    ADMINLIST_HANDLER,
     PIN_HANDLER,
     UNPIN_HANDLER,
     PINNED_HANDLER,
