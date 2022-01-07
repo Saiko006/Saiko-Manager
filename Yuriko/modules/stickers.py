@@ -76,7 +76,7 @@ def kang(update, context):
                 is_animated = True
             file_id = msg.reply_to_message.sticker.file_id
 
-    elif msg.reply_to_message.photo:
+        elif msg.reply_to_message.photo:
             file_id = msg.reply_to_message.photo[-1].file_id
         elif msg.reply_to_message.document:
             file_id = msg.reply_to_message.document.file_id
