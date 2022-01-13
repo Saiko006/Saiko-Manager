@@ -538,11 +538,11 @@ def yurikorobot_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="ᴢᴀʟ", url="t.me/rumahakhirat"),
-                    InlineKeyboardButton(text="BʀᴀʏDᴇɴ", url="t.me/BrayDenXD"),
+                    InlineKeyboardButton(text="⁣Lil Kennedy 炎", url="t.me/excrybaby"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sʜᴜʙʜᴀɴꜱʜᴜ", url="t.me/Shubhanshutya"),
-                    InlineKeyboardButton(text="Dᴇ Cᴏᴅᴇ", url="https://t.me/TeamDeeCode"),
+                    InlineKeyboardButton(text="Tomi", url="t.me/Tomi_sn"),
+                    InlineKeyboardButton(text="SUPPORT", url="https://t.me/Kekiniangroup"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
