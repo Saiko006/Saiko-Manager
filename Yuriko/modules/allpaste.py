@@ -11,7 +11,7 @@ from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMark
 from telegram.ext import CallbackContext
 
 from Yuriko import eor
-from Yuriko import pgram as app
+from Yuriko import kp as app
 from Yuriko.modules.helper_funcs.alternate import typing_action
 from Yuriko.modules.helper_funcs.decorators import emikocmd
 from Yuriko.modules.helper_funcs.misc import upload_text
