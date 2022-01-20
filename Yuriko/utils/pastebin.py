@@ -41,3 +41,11 @@ async def paste(content):
         None, partial(_netcat, "ezup.dev", 9999, content)
     )
     return link
+
+
+async def hpaste(content: str):
+    resp = await post(f"{BASE}api/v2/paste", data=content)
+    if not resp["success"]:
+        return
+    return BASE + resp["message"]
+
