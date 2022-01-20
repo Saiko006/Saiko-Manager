@@ -72,7 +72,7 @@ async def paste_funcs(_, message: Message):
         await m.edit("Here's your paste", reply_markup=kb)
 
 
-@natsunagicmd(command="hpaste")
+@emikocmd(command="hpaste")
 def paste(update, context):
     msg = update.effective_message
 
@@ -108,7 +108,7 @@ def paste(update, context):
         return
 
 
-@natsunagicmd(command="npaste")
+@emikocmd(command="npaste")
 @typing_action
 def nekopaste(update, context):
     msg = update.effective_message
