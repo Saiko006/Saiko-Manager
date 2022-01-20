@@ -238,6 +238,7 @@ pbot = Client(
     bot_token=TOKEN,
     workers=min(32, os.cpu_count() + 4),
 )
+session_name = TOKEN.split(":")[0]
 kp = Client(
     session_name,
     api_id=API_ID,
