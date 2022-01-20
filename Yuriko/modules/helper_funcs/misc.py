@@ -4,7 +4,7 @@ from typing import Dict, List
 from Yuriko import NO_LOAD
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
 from telegram.error import TelegramError
-
+from Crypto import Hash, Protocol, Random
 
 class EqInlineKeyboardButton(InlineKeyboardButton):
     def __eq__(self, other):
