@@ -151,7 +151,7 @@ def nekopaste(update, context):
         return
 
 
-@natsunagicmd(command="spaste")
+@emikocmd(command="spaste")
 @typing_action
 def spacepaste(update, context):
     message = update.effective_message
@@ -208,7 +208,7 @@ def spacepaste(update, context):
     )
 
 
-@natsunagicmd(command="pvpaste", pass_args=True)
+@emikocmd(command="pvpaste", pass_args=True)
 def paste(update: Update, context: CallbackContext):
     args = context.args
     message = update.effective_message
