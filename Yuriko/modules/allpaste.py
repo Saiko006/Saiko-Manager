@@ -16,7 +16,7 @@ from Yuriko.modules.helper_funcs.alternate import typing_action
 from Yuriko.modules.helper_funcs.decorators import emikocmd
 from Yuriko.modules.helper_funcs.misc import upload_text
 from Yuriko.utils.errors import capture_err
-from Yuriko.utils.services.keyboard import ikb
+from Yuriko.services.keyboard import ikb
 from Yuriko.utils.pastebin import hpaste
 
 __mod_name__ = "Paste"
