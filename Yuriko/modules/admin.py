@@ -255,7 +255,7 @@ def promote(update: Update, context: CallbackContext) -> str:
                 mention_html(user_member.user.id, user_member.user.first_name),
             )
         )
-    return
+        return
 
     
 @connection_status
