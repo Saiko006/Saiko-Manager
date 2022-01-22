@@ -229,11 +229,11 @@ def promote(update: Update, context: CallbackContext) -> str:
             try:
                 bot.setChatAdministratorCustomTitle(chat.id, user_id, title)
             except BadRequest as err:
-            if err.message == "User_not_mutual_contact":
-                message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada dalam grup.🙂")
-            else:
-                message.reply_text("Terjadi kesalahan saat mempromosikan.")
-            return
+                if err.message == "User_not_mutual_contact":
+                    message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada dalam grup.🙂")
+                else:
+                    message.reply_text("Terjadi kesalahan saat mempromosikan.")
+                return
 
         bot.sendMessage(
             chat.id,
