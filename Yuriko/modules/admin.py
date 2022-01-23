@@ -236,6 +236,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
     
+        
     return log_message
 
     
