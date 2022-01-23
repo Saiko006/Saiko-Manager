@@ -162,71 +162,65 @@ def setchat_title(update: Update, context: CallbackContext):
 @can_promote
 @user_admin
 @loggable
-def promote(update: Update, context: CallbackContext) -> str:
-    bot = context.bot
-    args = context.args
-
+def promote(update: Update, context: CallbackContext):
+    bot, args = context.bot, context.args
+    chat_id = update.effective_chat.id
     message = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
 
-    promoter = chat.get_member(user.id)
-
-    if (
-        not (promoter.can_promote_members or promoter.status == "creator")
-        and user.id not in DRAGONS
-    ):
-        message.reply_text("Anda tidak memiliki hak yang diperlukan untuk melakukan itu")
-        return
+    if user_can_promote(chat, user, bot.id) is False:
+        message.reply_text("You don't have enough rights to promote someone!")
+        return ""
 
     user_id = extract_user(message, args)
-
     if not user_id:
-        message.reply_text(
-            "Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan..",
-        )
-        return
+        message.reply_text("mention one.... 🤷🏻‍♂.")
+        return ""
 
-    try:
-        user_member = chat.get_member(user_id)
-    except:
-        return
-
-    if user_member.status in ('administrator', 'creator'):
-        message.reply_text("Bagaimana saya mempromosikan seseorang yang sudah menjadi admin")
-        return
+    user_member = chat.get_member(user_id)
+    if user_member.status in ["administrator", "creator"]:
+        message.reply_text("This person is already an admin...!")
+        return ""
 
     if user_id == bot.id:
-        message.reply_text("Saya tidak bisa mempromosikan diriku sendiri! Panggil admin untuk melakukannya")
-        return
+        message.reply_text("I hope, if i could promote myself!")
+        return ""
 
     # set same perms as bot - bot can't assign higher perms than itself!
     bot_member = chat.get_member(bot.id)
 
-    try:
-        bot.promoteChatMember(
-            chat.id,
-            user_id,
-            can_change_info=bot_member.can_change_info,
-            can_post_messages=bot_member.can_post_messages,
-            can_edit_messages=bot_member.can_edit_messages,
-            can_delete_messages=bot_member.can_delete_messages,
-            can_invite_users=bot_member.can_invite_users,
-            can_manage_voice_chats=bot_member.can_manage_voice_chats,
-            # can_promote_members=bot_member.can_promote_members,
-            can_restrict_members=bot_member.can_restrict_members,
-            can_pin_messages=bot_member.can_pin_messages,          
-        )
-    except BadRequest as err:
-        if err.message == "User_not_mutual_contact":
-           message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada dalam grup.🙂")
-        else:
-            message.reply_text("Terjadi kesalahan saat mempromosikan.")
-        return
+    bot.promoteChatMember(
+        chat_id,
+        user_id,
+        can_change_info=bot_member.can_change_info,
+        can_post_messages=bot_member.can_post_messages,
+        can_edit_messages=bot_member.can_edit_messages,
+        can_delete_messages=bot_member.can_delete_messages,
+        can_invite_users=bot_member.can_invite_users,
+        can_restrict_members=bot_member.can_restrict_members,
+        can_pin_messages=bot_member.can_pin_messages,
+    )
 
-    bot.sendMessage(
-        chat.id,
-        f"Promoting a user in <b>{chat.title}</b>\n\nUser: {mention_html(user_member.user.id, user_member.user.first_name)}\nAdmin: {mention_html(user.id, user.first_name)}",
+    title = "admin"
+    if " " in message.text:
+        title = message.text.split(" ", 1)[1]
+        if len(title) > 16:
+            message.reply_text(
+                "The title length is longer than 16 characters.\nTruncating it to 16 characters."
+            )
+
+        try:
+            bot.setChatAdministratorCustomTitle(chat.id, user_id, title)
+
+        except BadRequest:
+            message.reply_text(
+                "I can't set custom title for admins that I didn't promote!"
+            )
+
+    message.reply_text(
+        f"Promoted <b>{user_member.user.first_name or user_id}</b>"
+        + f" with title <code>{title[:16]}</code>!",
         parse_mode=ParseMode.HTML,
     )
     # refresh admin cache
@@ -1001,7 +995,7 @@ SETCHATPIC_HANDLER = CommandHandler("setgpic", setchatpic, filters=Filters.chat_
 RMCHATPIC_HANDLER = CommandHandler("delgpic", rmchatpic, filters=Filters.chat_type.groups, run_async=True)
 SETCHAT_TITLE_HANDLER = CommandHandler("setgtitle", setchat_title, filters=Filters.chat_type.groups, run_async=True)
 
-ADMINLIST_HANDLER = DisableAbleCommandHandler("staff", adminlist, run_async=True)
+ADMINLIST_HANDLER = DisableAbleCommandHandler("akabxnxkaowjdos", adminlist, run_async=True)
 
 PIN_HANDLER = CommandHandler("pin", pin, filters=Filters.chat_type.groups, run_async=True)
 UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.chat_type.groups, run_async=True)
