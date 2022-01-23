@@ -481,20 +481,20 @@ def demote(update: Update, context: CallbackContext) -> str:
             parse_mode=ParseMode.HTML,
         )
         # refresh admin cache
-    try:
-        ADMIN_CACHE.pop(update.effective_chat.id)
-    except KeyError:
-        pass
-    return (
-        "<b>{}:</b>"
-        "\n#PROMOTED"
-        "\n<b>Admin:</b> {}"
-        "\n<b>User:</b> {}".format(
-            html.escape(chat.title),
-            mention_html(user.id, user.first_name),
-            mention_html(user_member.user.id, user_member.user.first_name),
+        try:
+            ADMIN_CACHE.pop(update.effective_chat.id)
+        except KeyError:
+            pass
+        return (
+            "<b>{}:</b>"
+            "\n#PROMOTED"
+            "\n<b>Admin:</b> {}"
+            "\n<b>User:</b> {}".format(
+                html.escape(chat.title),
+                mention_html(user.id, user.first_name),
+                mention_html(user_member.user.id, user_member.user.first_name),
+            )
         )
-    )
 
     except BadRequest:
         message.reply_text(
