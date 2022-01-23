@@ -1001,7 +1001,7 @@ SETCHATPIC_HANDLER = CommandHandler("setgpic", setchatpic, filters=Filters.chat_
 RMCHATPIC_HANDLER = CommandHandler("delgpic", rmchatpic, filters=Filters.chat_type.groups, run_async=True)
 SETCHAT_TITLE_HANDLER = CommandHandler("setgtitle", setchat_title, filters=Filters.chat_type.groups, run_async=True)
 
-ADMINLIST_HANDLER = DisableAbleCommandHandle(["admins", "staff"]), adminlist, run_async=True)
+ADMINLIST_HANDLER = DisableAbleCommandHandle("staff", adminlist, run_async=True)
 
 PIN_HANDLER = CommandHandler("pin", pin, filters=Filters.chat_type.groups, run_async=True)
 UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.chat_type.groups, run_async=True)
@@ -1009,7 +1009,7 @@ PINNED_HANDLER = CommandHandler("pinned", pinned, filters=Filters.chat_type.grou
 
 INVITE_HANDLER = DisableAbleCommandHandler("invitelink", invite, run_async=True)
 
-PROMOTE_HANDLER = DisableAbleCommandHandler("promote", promote, run_async=True)
+PROMOTE_HANDLER = DisableAbleCommandHandler("admin", promote, run_async=True)
 FULLPROMOTE_HANDLER = DisableAbleCommandHandler("fullpromote", fullpromote, run_async=True)
 LOW_PROMOTE_HANDLER = DisableAbleCommandHandler("lowpromote", lowpromote, run_async=True)
 DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote, run_async=True)
