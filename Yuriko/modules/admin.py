@@ -235,7 +235,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         f"#PROMOTED\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
-    
+    )
         
     return log_message
 
@@ -311,6 +311,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         f"#PROMOTED\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
+    )
     
     return log_message
     
@@ -397,6 +398,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         f"#PROMOTED\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
+    )
     
     return log_message
 
@@ -458,12 +460,14 @@ def demote(update: Update, context: CallbackContext) -> str:
             f"Sucessfully demoted a admins in <b>{chat.title}</b>\n\nAdmin: <b>{mention_html(user_member.user.id, user_member.user.first_name)}</b>\nDemoter: {mention_html(user.id, user.first_name)}",
             parse_mode=ParseMode.HTML,
         )
+        
         log_message = (
-        f"<b>{html.escape(chat.title)}:</b>\n"
-        f"#PROMOTED\n"
-        f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
-    
+            f"<b>{html.escape(chat.title)}:</b>\n"
+            f"#PROMOTED\n"
+            f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
+            f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
+        )
+        
         return log_message
 
     except BadRequest:
