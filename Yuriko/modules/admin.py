@@ -217,46 +217,34 @@ def promote(update: Update, context: CallbackContext) -> str:
             can_restrict_members=bot_member.can_restrict_members,
             can_pin_messages=bot_member.can_pin_messages,          
         )
-        
-        title = "admin"
-        if " " in message.text:
-            title = message.text.split(" ", 1)[1]
-            if len(title) > 16:
-                message.reply_text(
-                    "The title length is longer than 16 characters.\nTruncating it to 16 characters."
-                )
+    except BadRequest as err:
+        if err.message == "User_not_mutual_contact":
+           message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada dalam grup.🙂")
+        else:
+            message.reply_text("Terjadi kesalahan saat mempromosikan.")
+        return
 
-            try:
-                bot.setChatAdministratorCustomTitle(chat.id, user_id, title)
-            except BadRequest as err:
-                if err.message == "User_not_mutual_contact":
-                    message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada dalam grup.🙂")
-                else:
-                    message.reply_text("Terjadi kesalahan saat mempromosikan.")
-                return
-
-        bot.sendMessage(
-            chat.id,
-            f"Promoting a user in <b>{chat.title}</b>\n\nUser: {mention_html(user_member.user.id, user_member.user.first_name)}\nAdmin: {mention_html(user.id, user.first_name)}",
-            parse_mode=ParseMode.HTML,
+    bot.sendMessage(
+        chat.id,
+        f"Promoting a user in <b>{chat.title}</b>\n\nUser: {mention_html(user_member.user.id, user_member.user.first_name)}\nAdmin: {mention_html(user.id, user.first_name)}",
+        parse_mode=ParseMode.HTML,
+    )
+    # refresh admin cache
+    try:
+        ADMIN_CACHE.pop(update.effective_chat.id)
+    except KeyError:
+        pass
+    return (
+        "<b>{}:</b>"
+        "\n#PROMOTED"
+        "\n<b>Admin:</b> {}"
+        "\n<b>User:</b> {}".format(
+            html.escape(chat.title),
+            mention_html(user.id, user.first_name),
+            mention_html(user_member.user.id, user_member.user.first_name),
         )
-        # refresh admin cache
-        try:
-            ADMIN_CACHE.pop(update.effective_chat.id)
-        except KeyError:
-            pass
-        return (
-            "<b>{}:</b>"
-            "\n#PROMOTED"
-            "\n<b>Admin:</b> {}"
-            "\n<b>User:</b> {}".format(
-                html.escape(chat.title),
-                mention_html(user.id, user.first_name),
-                mention_html(user_member.user.id, user_member.user.first_name),
-            )
-        )
+    )
         
-
     
 @connection_status
 @bot_admin
