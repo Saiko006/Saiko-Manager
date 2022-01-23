@@ -170,21 +170,21 @@ def promote(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_promote(chat, user, bot.id) is False:
-        message.reply_text("You don't have enough rights to promote someone!")
+        message.reply_text("Anda tidak memiliki hak yang diperlukan untuk melakukan itu!")
         return ""
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("mention one.... 🤷🏻‍♂.")
+        message.reply_text("Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan.... 🤷🏻‍♂.")
         return ""
 
     user_member = chat.get_member(user_id)
     if user_member.status in ["administrator", "creator"]:
-        message.reply_text("This person is already an admin...!")
+        message.reply_text("Bagaimana saya mempromosikan seseorang yang sudah menjadi admin...!")
         return ""
 
     if user_id == bot.id:
-        message.reply_text("I hope, if i could promote myself!")
+        message.reply_text("Saya tidak bisa mempromosikan diriku sendiri! Panggil admin untuk melakukannya!")
         return ""
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -200,6 +200,7 @@ def promote(update: Update, context: CallbackContext):
         can_invite_users=bot_member.can_invite_users,
         can_restrict_members=bot_member.can_restrict_members,
         can_pin_messages=bot_member.can_pin_messages,
+        can_manage_voice_chats=bot_member.can_manage_voice_chats,
     )
 
     title = "admin"
