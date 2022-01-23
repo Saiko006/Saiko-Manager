@@ -934,11 +934,11 @@ __help__ = """
 
 ✪ /invitelink - `gets invitelink`
 
-✪ /admin - `promotes the user replied to`
+✪ /promote - `promotes the user replied to`
 
 ✪ /fullpromote - `promotes the user replied to with full rights`
 
-✪ /unadmin - `demotes the user replied to`
+✪ /demote - `demotes the user replied to`
 
 ✪ /title - `<title here> sets a custom title for an admin that the bot promoted`
 
@@ -983,10 +983,10 @@ PINNED_HANDLER = CommandHandler("pinned", pinned, filters=Filters.chat_type.grou
 
 INVITE_HANDLER = DisableAbleCommandHandler("invitelink", invite, run_async=True)
 
-PROMOTE_HANDLER = DisableAbleCommandHandler("admin", promote, run_async=True)
+PROMOTE_HANDLER = DisableAbleCommandHandler("promote", promote, run_async=True)
 FULLPROMOTE_HANDLER = DisableAbleCommandHandler("fullpromote", fullpromote, run_async=True)
 LOW_PROMOTE_HANDLER = DisableAbleCommandHandler("lowpromote", lowpromote, run_async=True)
-DEMOTE_HANDLER = DisableAbleCommandHandler("unadmin", demote, run_async=True)
+DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote, run_async=True)
 
 SET_TITLE_HANDLER = CommandHandler("title", set_title, run_async=True)
 ADMIN_REFRESH_HANDLER = CommandHandler("admincache", refresh_admin, filters=Filters.chat_type.groups, run_async=True)
