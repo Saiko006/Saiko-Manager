@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from Yuriko import pbot
 
 
-@pbot.on_message(filters.command("staff"))
+@pbot.on_message(filters.command("staff", ".staff"))
 def staff(client: Client, message: Message):
     chat_id = message.chat.id
     chat_title = message.chat.title
