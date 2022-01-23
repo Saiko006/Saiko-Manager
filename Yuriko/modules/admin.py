@@ -162,30 +162,42 @@ def setchat_title(update: Update, context: CallbackContext):
 @can_promote
 @user_admin
 @loggable
-def promote(update: Update, context: CallbackContext):
-    bot, args = context.bot, context.args
-    chat_id = update.effective_chat.id
+def promote(update: Update, context: CallbackContext) -> str:
+    bot = context.bot
+    args = context.args
+    
     message = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
+    
+    promoter = chat.get_member(user.id)
 
-    if user_can_promote(chat, user, bot.id) is False:
-        message.reply_text("Anda tidak memiliki hak yang diperlukan untuk melakukan itu!")
-        return ""
+    if (
+        not (promoter.can_promote_members or promoter.status == "creator")
+        and user.id not in DRAGONS
+    ):
+        message.reply_text("Anda tidak memiliki hak yang diperlukan untuk melakukan itu")
+        return
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan.... 🤷🏻‍♂.")
-        return ""
+        message.reply_text(
+            "Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan..",
+        )
+        return
 
-    user_member = chat.get_member(user_id)
-    if user_member.status in ["administrator", "creator"]:
-        message.reply_text("Bagaimana saya mempromosikan seseorang yang sudah menjadi admin...!")
-        return ""
+    try:
+        user_member = chat.get_member(user_id)
+    except:
+        return
+
+    if user_member.status in ('administrator', 'creator'):
+        message.reply_text("Bagaimana saya mempromosikan seseorang yang sudah menjadi admin")
+        return
 
     if user_id == bot.id:
-        message.reply_text("Saya tidak bisa mempromosikan diriku sendiri! Panggil admin untuk melakukannya!")
-        return ""
+        message.reply_text("Saya tidak bisa mempromosikan diriku sendiri! Panggil admin untuk melakukannya")
+        return
 
     # set same perms as bot - bot can't assign higher perms than itself!
     bot_member = chat.get_member(bot.id)
@@ -202,7 +214,17 @@ def promote(update: Update, context: CallbackContext):
         can_pin_messages=bot_member.can_pin_messages,
         can_manage_voice_chats=bot_member.can_manage_voice_chats,
     )
-
+except BadRequest as err:
+        if err.message == "User_not_mutual_contact":
+           message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada dalam grup.🙂")
+        else:
+            message.reply_text("Terjadi kesalahan saat mempromosikan.")
+        return
+    
+    bot.sendMessage(
+        chat.id,
+        f"Promoting a user in <b>{chat.title}</b>\n\nUser: {mention_html(user_member.user.id, user_member.user.first_name)}\nAdmin: {mention_html(user.id, user.first_name)}",
+  
     title = "admin"
     if " " in message.text:
         title = message.text.split(" ", 1)[1]
