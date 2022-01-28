@@ -1,13 +1,15 @@
+import html
+
 from telegram.ext.filters import Filters
-from tg_bot.modules.helper_funcs.decorators import kigcmd, kigmsg
 from telegram import Update, message
 from telegram.ext import CallbackContext
-from ..modules.helper_funcs.anonymous import user_admin, AdminPerms
-import html
-from ..modules.sql.antichannel_sql import antichannel_status, disable_antichannel, enable_antichannel
+
+from Yuriko.modules.helper_funcs.decorators import emikocmd, emikomsg
+from Yuriko.modules.sql.antichanel_sql import antichannel_status, disable_antichannel, enable_antichannel
+from Yuriko.modules.helper_funcs.chanel_mode import user_admin, AdminPerms
 
 
-@kigcmd(command="antich", group=100)
+@emikocmd(command="antich", group=100)
 @user_admin(AdminPerms.CAN_RESTRICT_MEMBERS)
 def set_antichannel(update: Update, context: CallbackContext):
     message = update.effective_message
@@ -28,7 +30,7 @@ def set_antichannel(update: Update, context: CallbackContext):
         "Antichannel setting is currently {} in {}".format(antichannel_status(chat.id), html.escape(chat.title)))
 
 
-@kigmsg(Filters.chat_type.groups, group=110)
+@emikomsg(Filters.chat_type.groups, group=110)
 def eliminate_channel(update: Update, context: CallbackContext):
     message = update.effective_message
     chat = update.effective_chat
@@ -39,3 +41,15 @@ def eliminate_channel(update: Update, context: CallbackContext):
         message.delete()
         sender_chat = message.sender_chat
         bot.ban_chat_sender_chat(sender_chat_id=sender_chat.id, chat_id=chat.id)
+        
+__help__ = """
+──「 Anti-Channels 」──
+    ⚠️ WARNING ⚠️
+*IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
+Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
+This command can only be used by *Admins*.
+❂ /antich <'on'/'yes'> *:* enables anti-channel-mode
+❂ /antich <'off'/'no'> *:* disabled anti-channel-mode
+"""
+
+__mod_name__ = "Anti-Channel"
