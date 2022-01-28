@@ -550,7 +550,7 @@ __help__ = f"""
 *What is SpamWatch?*
 `SpamWatch maintains a large constantly updated ban-list of spambots trolls bitcoin spammers and unsavoury characters`
 `Constantly help banning spammers off from your group automatically So you wont have to worry about spammers storming your group.`
-*Note:* `Users can appeal spamwatch bans at` @musickekiniaan
+*Note:* `Users can appeal spamwatch bans at` @Spamwatch
 
 *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 """
