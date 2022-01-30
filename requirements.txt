@@ -89,6 +89,7 @@ multicolorcaptcha
 pybase64
 base58
 pycryptodome
+git+https://github.com/Sorrybabe/downloader
 
 
 
