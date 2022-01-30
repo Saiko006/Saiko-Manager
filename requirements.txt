@@ -48,6 +48,7 @@ pygithub
 TgCrypto
 Pyrogram
 PyDictionary
+yt-dlp
 youtube_search_python==1.4.9
 youtube_search
 lyrics_extractor
@@ -89,7 +90,6 @@ multicolorcaptcha
 pybase64
 base58
 pycryptodome
-git+https://github.com/Sorrybabe/downloader
 
 
 
