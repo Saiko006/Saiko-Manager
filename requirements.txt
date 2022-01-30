@@ -48,7 +48,7 @@ pygithub
 TgCrypto
 Pyrogram
 PyDictionary
-youtube_search_python==1.4.9
+youtube_search_python==1.6.2
 youtube_search
 lyrics_extractor
 asyncio
