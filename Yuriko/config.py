@@ -67,7 +67,9 @@ class Config(object):
     AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-
+    REM_BG_API_KEY = "xYCR1ZyK3ZsofjH7Y6hPcyzC"
+    OPENWEATHERMAP_ID = "887da2c60d9f13fe78b0f9d0c5cbaade"
+    
 
 class Production(Config):
     LOGGER = True
