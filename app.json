@@ -42,7 +42,12 @@
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
-      },    
+      },
+      "ARQ_API_URL": {
+         "description": "For Music Downloading And Many More Things... Don't change this value",
+         "value": "https://thearq.tech",
+         "required": true
+      },            
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Put Your elephant postgres sql db.",
          "required": false,
@@ -52,8 +57,7 @@
          "description": "Your user ID as an integer.",
          "required": true,
          "value": "2075788563"
-     },
-
+      },
       "STRING_SESSION": {
          "description": "Fill with telethon string session.",
          "required": true,
@@ -76,7 +80,6 @@
          "description": "to get your bot_id using other bot or userbot",
          "value": ""
       },
-
       "OWNER_USERNAME": {
          "description": "Your username without the @",
          "value": "rumahakhirat"
@@ -94,12 +97,12 @@
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
          "required": false
-     },
-     "IBM_WATSON_CRED_PASSWORD": {
-        "description": "This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-        "required": false
-     },
-     "EVENT_LOGS": {
+      },
+      "IBM_WATSON_CRED_PASSWORD": {
+         "description": "This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
+         "required": false
+      },
+      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
          "value": "-1001706523025"
@@ -118,24 +121,21 @@
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
          "value": "-xyz"
-     }, 
-
+      }, 
       "API_OPENWEATHER": {
-        "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
-        "value": "",
-        "required": false
+         "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
+         "value": "",
+         "required": false
       },
-
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
          "value": ""
-     },
-        "ARQ_API": {
-            "description": "Get this from @ARQRobot.",
-            "required": true
-        },
-
+      },
+      "ARQ_API": {
+         "description": "Get this from @ARQRobot.",
+         "required": true
+      },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
@@ -207,10 +207,10 @@
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
          "value": "True"
       },
-        "ARQ_API": {
-            "description": "Get this from @ARQRobot.",
-            "required": true
-        },
+      "ARQ_API": {
+         "description": "Get this from @ARQRobot.",
+         "required": true
+      },
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
