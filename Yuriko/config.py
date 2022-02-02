@@ -17,7 +17,6 @@ class Config(object):
     API_ID = 123456  # integer value, dont use ""
     API_HASH = "awoo"
     ARQ_API_URL = "https://thearq.tech"
-    ARQ_API = WOBAJD-PIWJYU-SSHBQS-GJWIAN-ARQ #This var used API_ARQ
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 2075788563  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "rumahakhirat"
