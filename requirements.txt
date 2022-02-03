@@ -5,7 +5,7 @@ wget
 gtts
 beautifulsoup4
 requests
-python-telegram-bot==13.10.0
+python-telegram-bot==13.11.0
 sqlalchemy==1.4.31
 psycopg2-binary
 feedparser
@@ -29,12 +29,12 @@ googletrans==4.0.0-rc1
 google-trans-new==1.1.9
 jikanpy
 speedtest-cli
-coffeehouse==2.2.6
+coffeehouse
 regex
 bleach
 wikipedia
-markdown2>=2.4.0
-telethon==1.24.0
+markdown2
+telethon
 telegraph
 heroku3
 spamwatch
@@ -45,14 +45,14 @@ ujson
 pretty_errors
 pygithub
 TgCrypto
-Pyrogram==1.3.6
+pyrogram
 PyDictionary
 youtube_search_python==1.4.9
 youtube_search
 lyrics_extractor
 asyncio
 cloudscraper
-dateparser==1.1.0
+dateparser
 pymongo
 dnspython
 secureme
@@ -80,7 +80,7 @@ gpytranslate
 fontTools
 opencv-python-headless
 odmantic
-tzlocal==4.1
+tzlocal
 pendulum
 fuzzysearch
 img2pdf
@@ -90,6 +90,3 @@ base58
 pycryptodome
 git+https://github.com/python-telegram-bot/ptbcontrib.git
 git+https://github.com/Sorrybabe/downloader
-
-
-
