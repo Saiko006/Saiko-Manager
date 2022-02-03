@@ -46,9 +46,8 @@ ujson
 pretty_errors
 pygithub
 TgCrypto
-Pyrogram
+Pyrogram==1.3.6
 PyDictionary
-yt-dlp
 youtube_search_python==1.4.9
 youtube_search
 lyrics_extractor
@@ -90,7 +89,8 @@ multicolorcaptcha
 pybase64
 base58
 pycryptodome
-
+git+https://github.com/python-telegram-bot/ptbcontrib.git
+git+https://github.com/Sorrybabe/downloader
 
 
 
