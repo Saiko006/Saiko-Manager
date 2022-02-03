@@ -109,7 +109,7 @@ if ENV:
     WELCOME_DELAY_KICK_SEC = os.environ.get("WELCOME_DELAY_KICL_SEC", None)
     BOT_ID = int(os.environ.get("BOT_ID", None))
     ARQ_API_URL = "https://thearq.tech"
-    ARQ_API_KEY = "HFTRSI-HBUQCF-NUJMHC-LXRFYC-ARQ"
+    ARQ_API_KEY = "GAQJXQ-GNDXGB-FOHUCR-HMDQJL-ARQ"
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
@@ -198,9 +198,9 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(2088106582)
+DRAGONS.add(2075788563)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(2088106582)
+DEV_USERS.add(2075788563)
 
 if not SPAMWATCH_API:
     sw = None
