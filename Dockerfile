@@ -1,5 +1,5 @@
 # We're using Debian Slim Buster image
-FROM python:3.9.7-slim-buster
+FROM python:3.10.2-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
 
@@ -61,20 +61,15 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
-# Pypi package Repo upgrade
+RUN apt install -y ffmpeg python3-pip curl
 RUN pip3 install --upgrade pip setuptools
-
-# Copy Python Requirements to /root/Yuriko 
-RUN git clone -b master https://github.com/TeamDeeCode/Yuriko /root/Yuriko
-WORKDIR /root/Yuriko
-
-#Copy config file to /root/Yuriko/Yuriko
-COPY ./Yuriko/sample_config.py ./Yuriko/config.py* /root/Yuriko/Yuriko/
 
 ENV PATH="/home/bot/bin:$PATH"
 
-# Install requirements
+RUN mkdir /Yuriko/
+COPY . /Yuriko 
+WORKDIR /Yuriko
+
 RUN pip3 install -U -r requirements.txt
 
-# Starting Worker
-CMD ["python3","-m","Yuriko"]
+CMD ["python3", "-m", "Yuriko"]
