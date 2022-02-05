@@ -34,7 +34,7 @@ async def sarch(_, message):
     else:
         chatusername = message.chat.title
     if not echi:
-        await message.edit("error search or link detected.")
+        await m.edit("error search or link detected.")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
