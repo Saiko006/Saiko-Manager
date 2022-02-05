@@ -4,8 +4,8 @@ from aiohttp import ClientSession
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 
-from aries import arq
-from aries import pbot as bot1
+from Yuriko import arq
+from Yuriko import pbot as bot1
 
 session = ClientSession()
 
