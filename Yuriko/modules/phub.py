@@ -7,7 +7,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 
 from Yuriko import arq
 from Yuriko import pbot as bot1
-from Yuriko.modules.disable import DisableAbleCommandHandler
 
 session = ClientSession()
 
