@@ -27,7 +27,7 @@ def get_text(message) -> [None, str]:
 
 # Let's Go----------------------------------------------------------------------
 @pbot.on_message(
-    filters.command(["phub", f"phub@{BOT_USERNAME}"])
+    filters.command("phub")
     & ~filters.edited
     & ~filters.bot
     & ~filters.private
