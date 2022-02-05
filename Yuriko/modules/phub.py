@@ -28,15 +28,17 @@ def get_text(message) -> [None, str]:
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(filters.command(["phub"]) & ~filters.edited & filters.private)
 async def sarch(_, message):
-    echi = get_text(message)
+    search = get_text(message)
     if message.chat.username:
         chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
     else:
         chatusername = message.chat.title
-    if not echi:
+    if not search:
         await message.reply(
             f"""
-😏 {message.from_user.mention} di PM/PC bot anj
+😏 Woi panteq {message.from_user.mention} kasih judul
+
+» Contoh : /phub mom and soon
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
