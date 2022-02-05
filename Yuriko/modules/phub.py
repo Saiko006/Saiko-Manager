@@ -51,7 +51,8 @@ async def sarch(_, message):
         resp = await pornhub(search, thumbsize="large_hd")
         res = resp.result
     except:
-        await bot1.send_message(
+        await message.delete()
+        return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
 **⏰ DURATION:** {res[0].duration}
