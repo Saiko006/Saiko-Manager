@@ -32,7 +32,7 @@ async def sarch(_, message):
 **👁‍🗨 VIEWERS:** {res[0].views}
 **🌟 RATING:** {res[0].rating}
 
-**Powered By:** Idzeroid Network⚡️
+**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
 """
     await m.delete()
     m = await message.reply_photo(
@@ -107,7 +107,7 @@ async def callback_query_next(_, query):
 **👁‍🗨 VIEWERS:** {res[cur_page].views}
 **🌟 RATING:** {res[cur_page].rating}
 
-**Powered By:** Idzeroid Network⚡️
+**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
 """
 
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
@@ -166,7 +166,7 @@ async def callback_query_next(_, query):
 **👁‍🗨 VIEWERS:** {res[cur_page].views}
 **🌟 RATING:** {res[cur_page].rating}
 
-**Powered By:** Idzeroid Network⚡️
+**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
 """
     await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
     await m.edit(
