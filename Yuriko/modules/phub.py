@@ -52,7 +52,6 @@ async def sarch(_, message):
         res = resp.result
     except:
         await bot1.send_message(
-        return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
 **⏰ DURATION:** {res[0].duration}
