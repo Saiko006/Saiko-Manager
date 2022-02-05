@@ -14,18 +14,27 @@ pornhub = arq.pornhub
 
 db = {}
 
+def get_text(message) -> [None, str]:
+    text_to_return = message.text
+    if message.text is None:
+        return None
+    if " " not in text_to_return:
+        return None
+    try:
+        return message.text.split(None, 1)[1]
+    except IndexError:
+        return None
+
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(filters.command(["phub"]) & ~filters.edited & filters.private)
 async def sarch(_, message):
-    m = await message.reply_text("finding your desirable video...")
-    search = message.text.split(None, 1)[1]
-    try:
-        resp = await pornhub(search, thumbsize="large_hd")
-        res = resp.result
-    except:
-        await m.delete()
-    if resp is None:
-        await m.edit("error search or link detected.")
+    echi = get_text(message)
+    if message.chat.username:
+        chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
+    else:
+        chatusername = message.chat.title
+    if not echi:
+        await message.edit("error search or link detected.")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
