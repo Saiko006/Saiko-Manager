@@ -299,4 +299,3 @@ def webpage(c, m):  # c Mean Client | m Mean Message
         )
         upmsg.delete()
 
-PHUB_HANDLER = DisableAbleCommandHandler("phub", sarch, run_async=True)
