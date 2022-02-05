@@ -34,7 +34,24 @@ async def sarch(_, message):
     else:
         chatusername = message.chat.title
     if not echi:
-        await m.edit("error search or link detected.")
+        await message.reply(
+            f"""
+😏 {message.from_user.mention} di PM/PC bot anj
+""",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(f"• ᴛᴜᴛᴜᴘ •", callback_data="no_cb"),
+                    ],
+                ]
+            ),
+        )
+     try:
+        resp = await pornhub(search, thumbsize="large_hd")
+        res = resp.result
+    except:
+        await m.delete()
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
@@ -308,3 +325,14 @@ def webpage(c, m):  # c Mean Client | m Mean Message
         )
         upmsg.delete()
 
+
+#no cb
+@app.on_callback_query(filters.regex("no_cb"))
+async def cb_cls(client, query):
+    await query.message.delete()
+    tm = await client.send_message(
+        query.message.chat.id,
+        "**Baikla {} Selamat Sange**".format(query.from_user.mention),
+    )
+    await asyncio.sleep(5)
+    await tm.delete()
