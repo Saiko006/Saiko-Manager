@@ -81,10 +81,9 @@ async def sarch(_, message):
             ]
         ),
         parse_mode="markdown",
-    ),
-)   
-new_db = {"result": res, "curr_page": 0}
-db[message.chat.id] = new_db
+    )   
+    new_db = {"result": res, "curr_page": 0}
+    db[message.chat.id] = new_db
 
 
 # Next Button--------------------------------------------------------------------------
