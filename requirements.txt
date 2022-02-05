@@ -91,3 +91,4 @@ pycryptodome
 git+https://github.com/python-telegram-bot/ptbcontrib.git
 git+https://github.com/Sorrybabe/downloader
 validators
+youtube_dl
