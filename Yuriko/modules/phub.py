@@ -327,7 +327,7 @@ def webpage(c, m):  # c Mean Client | m Mean Message
 
 
 #no cb
-@app.on_callback_query(filters.regex("no_cb"))
+@bot1.on_callback_query(filters.regex("no_cb"))
 async def cb_cls(client, query):
     await query.message.delete()
     tm = await client.send_message(
