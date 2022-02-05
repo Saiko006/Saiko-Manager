@@ -51,7 +51,7 @@ async def sarch(_, message):
         resp = await pornhub(search, thumbsize="large_hd")
         res = resp.result
     except:
-        await message.delete()
+        await bot1.send_message(
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
@@ -60,7 +60,7 @@ async def sarch(_, message):
 **🌟 RATING:** {res[0].rating}
 
 **Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
-"""
+""",
     await message.delete()
     m = await message.reply_photo(
         photo=res[0].thumbnails[0].src,
@@ -81,9 +81,10 @@ async def sarch(_, message):
             ]
         ),
         parse_mode="markdown",
-    )
-    new_db = {"result": res, "curr_page": 0}
-    db[message.chat.id] = new_db
+    ),
+)   
+new_db = {"result": res, "curr_page": 0}
+db[message.chat.id] = new_db
 
 
 # Next Button--------------------------------------------------------------------------
