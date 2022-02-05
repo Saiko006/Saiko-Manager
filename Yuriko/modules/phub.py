@@ -6,6 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 
 from Yuriko import arq
 from Yuriko import pbot as bot1
+from Yuriko.modules.disable import DisableAbleCommandHandler
 
 session = ClientSession()
 
@@ -14,7 +15,7 @@ pornhub = arq.pornhub
 db = {}
 
 # Let's Go----------------------------------------------------------------------
-@bot1.on_message(filters.command(["phub"]) & ~filters.edited)
+@bot1.on_message(filters.command(["phub"]) & ~filters.edited & filters.private)
 async def sarch(_, message):
     m = await message.reply_text("finding your desirable video...")
     search = message.text.split(None, 1)[1]
@@ -297,3 +298,5 @@ def webpage(c, m):  # c Mean Client | m Mean Message
             progress=progress,
         )
         upmsg.delete()
+
+PHUB_HANDLER = DisableAbleCommandHandler("phub", sarch, run_async=True)
