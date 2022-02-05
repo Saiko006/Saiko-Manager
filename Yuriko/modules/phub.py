@@ -59,7 +59,7 @@ async def sarch(_, message):
 **🌟 RATING:** {res[0].rating}
 
 **Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
-""",
+"""
     await message.delete()
     m = await message.reply_photo(
         photo=res[0].thumbnails[0].src,
