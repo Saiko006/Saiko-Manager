@@ -53,7 +53,7 @@ async def sarch(_, message):
     try:
         resp = await pornhub(puki, thumbsize="large_hd")
         res = resp.result
-    except IndexError:
+    except:
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
