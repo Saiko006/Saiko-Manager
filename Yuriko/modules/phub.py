@@ -29,6 +29,9 @@ def get_text(message) -> [None, str]:
 @bot1.on_message(filters.command("phub"))
 async def sarch(_, message):
     puki = get_text(message)
+    try:
+        resp = await pornhub(puki, thumbsize="large_hd")
+        res = resp.result
     if message.chat.username:
         chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
     else:
@@ -49,15 +52,6 @@ async def sarch(_, message):
                 ]
             ),
         )
-           
-    try:
-        resp = await pornhub(puki, thumbsize="large_hd")
-        res = resp.result
-    except:
-        await message.reply_text("Found Nothing... Try again")
-        return
-    if not resp.ok:
-        await message.reply_text("Found Nothing... Try again")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
