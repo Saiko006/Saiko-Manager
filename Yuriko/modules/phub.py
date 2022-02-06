@@ -14,18 +14,28 @@ pornhub = arq.pornhub
 
 db = {}
 
-
+def get_text(message) -> [None, str]:
+    text_to_return = message.text
+    if message.text is None:
+        return None
+    if " " not in text_to_return:
+        return None
+    try:
+        return message.text.split(None, 1)[1]
+    except IndexError:
+        return None
+    
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(filters.private & filters.incoming & filters.command("phub"))
 async def sarch(_, message):
-    search = message.text
+    search = get_text(message)
     try:
         resp = await pornhub(search,thumbsize="large")
         res = resp.result
     except:
         await message.edit("Found Nothing... Try again")
         return
-    if not resp.ok:
+    if not resp:
         await message.edit("Found Nothing... Try again")
         return
     resolt = f"""
