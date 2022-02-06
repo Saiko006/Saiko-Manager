@@ -13,7 +13,6 @@ session = ClientSession()
 
 pornhub = arq.pornhub
 
-
 db = {}
 
 async def download_url(url: str):
