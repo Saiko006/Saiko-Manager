@@ -26,7 +26,7 @@ def get_text(message) -> [None, str]:
         return None
 
 # Let's Go----------------------------------------------------------------------
-@bot1.on_message(filters.command("phub") & ~filters.private)
+@bot1.on_message(filters.private & filters.incoming & filters.command("phub"))
 async def sarch(_, message):
     puki = get_text(message)
     if message.chat.username:
