@@ -27,16 +27,8 @@ async def time_to_seconds(time):
     )   
 
 # Let's Go----------------------------------------------------------------------
-@bot1.on_message(filters.private & ~filters.edited & ~filters.command("phub"))
+@bot1.on_message(filters.command("phub"))
 async def sarch(_,message):
-    try:
-        if "/" in message.text.split(None,1)[0]:
-            await message.reply_text(
-                "**Usage:**\nJust type Something to search in PHub Directly"
-            )
-            return
-    except:
-        pass
     m = await message.reply_text("Getting Results.....")
     search = message.text
     try:
