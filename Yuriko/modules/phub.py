@@ -26,16 +26,16 @@ def get_text(message) -> [None, str]:
         return None
 
 # Let's Go----------------------------------------------------------------------
-@bot1.on_message(
-    filters.command(["phub"]) & ~filters.private)
+@bot1.on_message(filters.command(["phub"]) & ~filters.edited)
 async def sarch(_, message):
+    m = await message.reply_text("finding your desirable video...")
     search = get_text(message)
     if message.chat.username:
         chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
     else:
         chatusername = message.chat.title
     if search is None:
-        await message.reply(
+        await m.reply(
             f"""
 😏 Woi panteq {message.from_user.mention} kasih judul
 
@@ -54,7 +54,7 @@ async def sarch(_, message):
         resp = await pornhub(search, thumbsize="large_hd")
         res = resp.result
     except:
-        await message.delete()
+        await m.delete()
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
@@ -64,7 +64,7 @@ async def sarch(_, message):
 
 **Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
 """
-    await message.delete()
+    await m.delete()
     m = await message.reply_photo(
         photo=res[0].thumbnails[0].src,
         caption=resolt,
