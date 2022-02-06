@@ -5,7 +5,7 @@ from aiohttp import ClientSession
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 
-from Yuriko import arq, ubot2
+from Yuriko import arq, pbot
 
 session = ClientSession()
 
@@ -25,7 +25,7 @@ def get_text(message) -> [None, str]:
         return None
     
 # Let's Go----------------------------------------------------------------------
-@ubot2.on_message(filters.private & filters.incoming & filters.command("phub"))
+@pbot.on_message(filters.private & filters.incoming & filters.command("phub"))
 async def sarch(_, message):
     puki = get_text(message)
     if message.chat.username:
@@ -86,7 +86,7 @@ async def sarch(_, message):
 
 
 # Next Button--------------------------------------------------------------------------
-@ubot2.on_callback_query(filters.regex("next"))
+@pbot.on_callback_query(filters.regex("next"))
 async def callback_query_next(_, query):
     m = query.message
     try:
@@ -145,7 +145,7 @@ async def callback_query_next(_, query):
 
 
 # Previous Button--------------------------------------------------------------------------
-@ubot2.on_callback_query(filters.regex("previous"))
+@pbot.on_callback_query(filters.regex("previous"))
 async def callback_query_next(_, query):
     m = query.message
     try:
@@ -203,8 +203,8 @@ async def callback_query_next(_, query):
 
 
 # Delete Button--------------------------------------------------------------------------
-# @ubot2.on_callback_query(filters.regex("delete"))
-@ubot2.on_callback_query(filters.regex("delete"))
+# @pbot.on_callback_query(filters.regex("delete"))
+@pbot.on_callback_query(filters.regex("delete"))
 def callback_query_delete(bot, query):
     # await query.message.delete()
     data = db[query.message.chat.id]
@@ -221,7 +221,7 @@ def callback_query_delete(bot, query):
 # SCREENSHOT BUTTON ---------------------------------------
 
 
-@ubot2.on_callback_query(filters.regex("ss"))
+@pbot.on_callback_query(filters.regex("ss"))
 async def callback_query_delete(bot, query):
     data = query.message.chat.id
     res = data["result"]
@@ -262,7 +262,7 @@ def downloada(url, quality):
         return f"{title}"
 
 
-@ubot2.on_callback_query(filters.regex("downbad"))
+@pbot.on_callback_query(filters.regex("downbad"))
 def webpage(c, m):  # c Mean Client | m Mean Message
     print(m.message.chat.id)
     data = db[m.message.chat.id]
@@ -326,7 +326,7 @@ def webpage(c, m):  # c Mean Client | m Mean Message
 
 
 #no cb
-@ubot2.on_callback_query(filters.regex("no_cb"))
+@pbot.on_callback_query(filters.regex("no_cb"))
 async def cb_cls(client, query):
     await query.message.delete()
     tm = await client.send_message(
@@ -336,4 +336,4 @@ async def cb_cls(client, query):
     await asyncio.sleep(5)
     await tm.delete()
 
-ubot2.run()
+pbot.run()
