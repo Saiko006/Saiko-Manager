@@ -14,21 +14,11 @@ pornhub = arq.pornhub
 
 db = {}
 
-def get_text(message) -> [None, str]:
-    text_to_return = message.text
-    if message.text is None:
-        return None
-    if " " not in text_to_return:
-        return None
-    try:
-        return message.text.split(None, 1)[1]
-    except IndexError:
-        return None
 
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(filters.private & filters.incoming & filters.command("phub"))
 async def sarch(_, message):
-    puki = get_text(message)
+    puki = message.text
     if message.chat.username:
         chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
     else:
