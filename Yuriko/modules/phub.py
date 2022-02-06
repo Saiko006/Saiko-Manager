@@ -27,7 +27,7 @@ def get_text(message) -> [None, str]:
 
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(
-    filters.command("phub")
+    filters.command(["phub"])
     & ~filters.edited
     & ~filters.bot
     & ~filters.private
@@ -38,7 +38,7 @@ async def sarch(_, message):
         chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
     else:
         chatusername = message.chat.title
-    if not search:
+    if search is None:
         await message.reply(
             f"""
 😏 Woi panteq {message.from_user.mention} kasih judul
