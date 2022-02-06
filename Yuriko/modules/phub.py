@@ -7,10 +7,11 @@ from asyncio import get_running_loop
 from wget import download
 from Yuriko import pbot as bot1
 
-# ARQ API and Bot Initialize---------------------------------------------------
+
 session = ClientSession()
-arq = ARQ("https://thearq.tech", session)
+
 pornhub = arq.pornhub
+
 phdl = arq.phdl
 
 db = {}
