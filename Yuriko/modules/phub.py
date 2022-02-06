@@ -1,11 +1,12 @@
 import os
 from aiohttp import ClientSession
 from pyrogram import filters, Client
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto, InputMediaVideo
-from Python_ARQ import ARQ 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto, InputMediaVideo 
 from asyncio import get_running_loop
 from wget import download
+
 from Yuriko import pbot as bot1
+from Yuriko import arq
 
 
 session = ClientSession()
