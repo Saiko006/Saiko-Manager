@@ -34,7 +34,7 @@ async def sarch(_, message):
         chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
     else:
         chatusername = message.chat.title
-    if search is None:
+    if not search:
         await m.reply(
             f"""
 😏 Woi panteq {message.from_user.mention} kasih judul
@@ -52,7 +52,7 @@ async def sarch(_, message):
         )
     try:
         resp = await pornhub(search, thumbsize="large_hd")
-        res = resp.result
+        res = (resp.result()).get("result")[0]
     except:
         await m.delete()
         return
