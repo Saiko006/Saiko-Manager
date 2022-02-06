@@ -30,7 +30,6 @@ def get_text(message) -> [None, str]:
 @bot1.on_message(
     filters.command(["phub", f"phub@{BOT_USERNAME}"])
     & ~filters.edited
-    & ~filters.bot
     & ~filters.private
 )
 async def sarch(_, message):
