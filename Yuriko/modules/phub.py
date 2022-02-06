@@ -29,7 +29,6 @@ def get_text(message) -> [None, str]:
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(
     filters.command(["phub", f"phub@{BOT_USERNAME}"])
-    & ~filters.edited
     & ~filters.private
 )
 async def sarch(_, message):
