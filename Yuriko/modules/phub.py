@@ -243,4 +243,4 @@ async def callback_query_dl(_, query):
 async def callback_query_delete(_, query):
     await query.message.delete()
     
-app.run()
+bot1.run()
