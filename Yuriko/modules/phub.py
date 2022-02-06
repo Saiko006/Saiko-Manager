@@ -231,7 +231,7 @@ def callback_query_delete(bot, query):
 
 @bot1.on_callback_query(filters.regex("ss"))
 async def callback_query_delete(bot, query):
-    data = db[query.message.chat.id]
+    data = query.message.chat.id
     res = data["result"]
     curr_page = int(data["curr_page"])
     ss = res[curr_page].thumbnails
