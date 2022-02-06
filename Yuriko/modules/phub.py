@@ -53,8 +53,6 @@ async def sarch(_, message):
     try:
         resp = await pornhub(puki, thumbsize="large_hd")
         res = resp.result
-    except:
-        await message.reply_text("Found Nothing... Try again")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
