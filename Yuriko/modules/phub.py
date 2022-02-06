@@ -13,7 +13,6 @@ session = ClientSession()
 
 pornhub = arq.pornhub
 
-phdl = arq.phdl
 
 db = {}
 
@@ -190,7 +189,7 @@ async def callback_query_next(_, query):
     data = db[m.chat.id]
     res = data['result']
     curr_page = int(data['curr_page'])
-    dl_links = await phdl(res[curr_page].url)
+    dl_links = data["result"][curr_page].url
     db[m.chat.id]['result'] = dl_links.result.video
     db[m.chat.id]['thumb'] = res[curr_page].thumbnails[0].src
     db[m.chat.id]['dur'] = res[curr_page].duration
