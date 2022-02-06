@@ -26,15 +26,14 @@ def get_text(message) -> [None, str]:
         return None
 
 # Let's Go----------------------------------------------------------------------
-@bot1.on_message(filters.command(["phub"]) & ~filters.edited)
+@bot1.on_message(filters.command("phub"))
 async def sarch(_, message):
-    m = await message.reply_text("finding your desirable video...")
-    search = get_text(message)
+    puki = get_text(message)
     if message.chat.username:
         chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
     else:
         chatusername = message.chat.title
-    if not search:
+    if not puki:
         await m.reply(
             f"""
 😏 Woi panteq {message.from_user.mention} kasih judul
@@ -50,11 +49,17 @@ async def sarch(_, message):
                 ]
             ),
         )
+        
+    m = await message.reply_text("Getting Results.....")
+    search = message.text
     try:
         resp = await pornhub(search, thumbsize="large_hd")
-        res = (resp.result()).get("result")[0]
+        res = resp.result
     except:
-        await m.delete()
+        await m.edit("Found Nothing... Try again")
+        return
+    if not resp.ok:
+        await m.edit("Found Nothing... Try again")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
@@ -335,7 +340,9 @@ async def cb_cls(client, query):
     await query.message.delete()
     tm = await client.send_message(
         query.message.chat.id,
-        "**Baikla {} Selamat Sange**".format(query.from_user.mention),
+        "**Selamat Sange {}**".format(query.from_user.mention),
     )
     await asyncio.sleep(5)
     await tm.delete()
+
+bot1.run()
