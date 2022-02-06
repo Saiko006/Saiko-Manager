@@ -53,7 +53,6 @@ async def sarch(_, message):
         res = resp.result
     except:
         return
-        return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
 **⏰ DURATION:** {res[0].duration}
