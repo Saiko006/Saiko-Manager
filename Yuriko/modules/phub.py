@@ -7,6 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 
 from Yuriko import arq
 from Yuriko import pbot as bot1
+from Yuriko import BOT_USERNAME
 
 session = ClientSession()
 
@@ -26,7 +27,12 @@ def get_text(message) -> [None, str]:
         return None
 
 # Let's Go----------------------------------------------------------------------
-@bot1.on_message(filters.command(["phub"]) & ~filters.edited & ~filters.private)
+@bot1.on_message(
+    filters.command(["phub", f"phub@{BOT_USERNAME}"])
+    & ~filters.edited
+    & ~filters.bot
+    & ~filters.private
+)
 async def sarch(_, message):
     puki = get_text(message)
     if message.chat.username:
