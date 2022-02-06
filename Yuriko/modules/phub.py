@@ -18,32 +18,16 @@ db = {}
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(filters.private & filters.incoming & filters.command("phub"))
 async def sarch(_, message):
-    puki = message.text
-    if message.chat.username:
-        chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
-    else:
-        chatusername = message.chat.title
-    if not puki:
-        await message.reply(
-            f"""
-😏 Woi panteq {message.from_user.mention} kasih judul
-
-» Contoh : /phub mom and son
-""",
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(f"• ᴛᴜᴛᴜᴘ •", callback_data="no_cb"),
-                    ],
-                ]
-            ),
-        )
-        
+    m = await message.reply_text("Getting Results.....")
+    search = message.text
     try:
-        resp = await pornhub(puki, thumbsize="large_hd")
+        resp = await pornhub(search,thumbsize="large")
         res = resp.result
     except:
+        await m.edit("Found Nothing... Try again")
+        return
+    if not resp.ok:
+        await m.edit("Found Nothing... Try again")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
