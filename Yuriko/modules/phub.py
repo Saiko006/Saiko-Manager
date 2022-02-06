@@ -34,7 +34,7 @@ async def sarch(_, message):
     else:
         chatusername = message.chat.title
     if not puki:
-        await m.reply(
+        await message.reply(
             f"""
 😏 Woi panteq {message.from_user.mention} kasih judul
 
