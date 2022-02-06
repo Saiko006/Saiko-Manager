@@ -50,6 +50,7 @@ async def sarch(_, message):
             ),
         )
         
+    m = message.reply_to_message 
     search = message.text   
     try:
         resp = await pornhub(search, thumbsize="large_hd")
