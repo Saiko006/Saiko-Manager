@@ -38,7 +38,7 @@ async def sarch(_, message):
             f"""
 😏 Woi panteq {message.from_user.mention} kasih judul
 
-» Contoh : /phub mom and soon
+» Contoh : /phub mom and son
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
