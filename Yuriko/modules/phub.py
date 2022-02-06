@@ -7,14 +7,6 @@ from asyncio import get_running_loop
 from wget import download
 from Yuriko import pbot as bot1
 
-# Config Check-----------------------------------------------------------------
-if os.path.exists("config.py"):
-    from config import *
-elif os.path.exists("sample_config.py"):
-    from sample_config import *
-else:
-    raise Exception("Your Config File Is Invalid or Maybe Doesn't Exist! Please Check Your Config File or Try Again.")
-
 # ARQ API and Bot Initialize---------------------------------------------------
 session = ClientSession()
 arq = ARQ("https://thearq.tech", ARQ_API_KEY, session)
@@ -35,7 +27,7 @@ async def time_to_seconds(time):
     )   
 
 # Let's Go----------------------------------------------------------------------
-@bot1.on_message(filters.private & ~filters.edited & ~filters.command("phub")
+@bot1.on_message(filters.private & ~filters.edited & ~filters.command("phub"))
 async def sarch(_,message):
     try:
         if "/" in message.text.split(None,1)[0]:
