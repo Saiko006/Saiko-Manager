@@ -18,16 +18,15 @@ db = {}
 # Let's Go----------------------------------------------------------------------
 @bot1.on_message(filters.private & filters.incoming & filters.command("phub"))
 async def sarch(_, message):
-    m = await message.reply_text("Getting Results.....")
     search = message.text
     try:
         resp = await pornhub(search,thumbsize="large")
         res = resp.result
     except:
-        await m.edit("Found Nothing... Try again")
+        await message.edit("Found Nothing... Try again")
         return
     if not resp.ok:
-        await m.edit("Found Nothing... Try again")
+        await message.edit("Found Nothing... Try again")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
