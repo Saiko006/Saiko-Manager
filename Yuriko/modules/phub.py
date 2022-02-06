@@ -9,7 +9,7 @@ from Yuriko import pbot as bot1
 
 # ARQ API and Bot Initialize---------------------------------------------------
 session = ClientSession()
-arq = ARQ("https://thearq.tech", ARQ_API_KEY, session)
+arq = ARQ("https://thearq.tech", session)
 pornhub = arq.pornhub
 phdl = arq.phdl
 
