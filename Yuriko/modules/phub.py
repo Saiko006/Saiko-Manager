@@ -24,7 +24,7 @@ async def sarch(_, message):
     except:
         await m.delete()
     if resp is None:
-        await m.edit("error search or link detected.")
+        await m.reply("error search or link detected.")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
