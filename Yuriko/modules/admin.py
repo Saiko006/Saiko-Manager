@@ -989,7 +989,7 @@ LOW_PROMOTE_HANDLER = DisableAbleCommandHandler("lowpromote", lowpromote, run_as
 DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote, run_async=True)
 
 SET_TITLE_HANDLER = CommandHandler("title", set_title, run_async=True)
-ADMIN_REFRESH_HANDLER = CommandHandler("admincache", refresh_admin, filters=Filters.chat_type.groups, run_async=True)
+ADMIN_REFRESH_HANDLER = CommandHandler("reload", refresh_admin, filters=Filters.chat_type.groups, run_async=True)
 
 dispatcher.add_handler(SET_DESC_HANDLER)
 dispatcher.add_handler(SET_STICKER_HANDLER)
