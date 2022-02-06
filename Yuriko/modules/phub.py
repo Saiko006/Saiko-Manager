@@ -49,17 +49,15 @@ async def sarch(_, message):
                 ]
             ),
         )
-        
-    m = await message.reply_text
-    search = message.text   
+           
     try:
-        resp = await pornhub(search, thumbsize="large_hd")
+        resp = await pornhub(puki, thumbsize="large_hd")
         res = resp.result
     except:
-        await m.edit("Found Nothing... Try again")
+        await message.reply_text("Found Nothing... Try again")
         return
     if not resp.ok:
-        await m.edit("Found Nothing... Try again")
+        await message.reply_text("Found Nothing... Try again")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
@@ -69,7 +67,7 @@ async def sarch(_, message):
 
 **Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
 """
-    await m.delete()
+    await message.delete()
     m = await message.reply_photo(
         photo=res[0].thumbnails[0].src,
         caption=resolt,
