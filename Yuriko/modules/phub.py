@@ -4,8 +4,8 @@ from aiohttp import ClientSession
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 
-from aries import arq
-from aries import pbot as bot1
+from Yuriko import arq
+from Yuriko import pbot as bot1
 
 session = ClientSession()
 
@@ -17,7 +17,7 @@ db = {}
 @bot1.on_message(filters.command(["phub"]) & ~filters.edited)
 async def sarch(_, message):
     m = await message.reply_text("finding your desirable video...")
-    search = message.text.split(" ", 1)[1]
+    search = message.text.split(None, 1)[1]
     try:
         resp = await pornhub(search, thumbsize="large_hd")
         res = resp.result
