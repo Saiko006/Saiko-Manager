@@ -1,13 +1,10 @@
 import os
 import asyncio
 
-from aiohttp import ClientSession
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 
 from Yuriko import arq, pbot
-
-session = ClientSession()
 
 pornhub = arq.pornhub
 
