@@ -4,10 +4,10 @@ import sys
 
 from contextlib import suppress
 from time import sleep
+from threading import Thread
 
 import Yuriko
-
-from Yuriko import dispatcher
+from Yuriko import dispatcher, updater
 from Yuriko.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
@@ -18,13 +18,13 @@ from telegram.ext import CallbackContext, CommandHandler
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        state = "Lockdown is " + "on" if not EmikooRobot.ALLOW_CHATS else "off"
+        state = "Lockdown is " + "on" if not Yuriko.ALLOW_CHATS else "off"
         update.effective_message.reply_text(f"Current state: {state}")
         return
     if args[0].lower() in ["off", "no"]:
-        EmikooRobot.ALLOW_CHATS = True
+        Yuriko.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        EmikooRobot.ALLOW_CHATS = False
+        Yuriko.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
@@ -69,14 +69,16 @@ def gitpull(update: Update, context: CallbackContext):
     os.execv("start.bat", sys.argv)
 
 
-@dev_plus
-def restart(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(
-        "Starting a new instance and shutting down this one",
-    )
+def stop_and_restart():
+    """Kill old instance, replace the new one"""
+    updater.stop()
+    os.execl(sys.executable, sys.executable, *sys.argv)
 
-    os.system("restart.bat")
-    os.execv("start.bat", sys.argv)
+
+@dev_plus
+def restart(update, context):
+    update.message.reply_text("Exiting all Processes and starting a new Instance!")
+    Thread(target=stop_and_restart).start()
 
 
 LEAVE_HANDLER = CommandHandler("leave", leave, run_async=True)
