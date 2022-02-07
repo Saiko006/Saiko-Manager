@@ -24,30 +24,18 @@ def get_text(message) -> [None, str]:
 # Let's Go----------------------------------------------------------------------
 @pbot.on_message(filters.private & filters.incoming & filters.command("phub"))
 async def sarch(_, message):
-    puki = get_text(message)
-    if message.chat.username:
-        chatusername = f"[{message.chat.title}](t.me/{message.chat.username})"
-    else:
-        chatusername = message.chat.title
-    if not puki:
-        await message.reply(
-            f"""
-😏 Woi panteq {message.from_user.mention} kasih judul
-» Contoh : /phub mom and son
-""",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(f"• ᴛᴜᴛᴜᴘ •", callback_data="no_cb"),
-                    ],
-                ]
-            ),
+    if len(message.command) < 2:
+        await message.reply_text(
+            "**😏 Woi panteq kasih judul**\n\n» Contoh : /phub mom and son"
         )
-        
+        return
+    m = await message.reply_text("Getting Results.....")
+    search = message.text.split(None, 1)[1]
     try:
-        resp = await pornhub(puki, thumbsize="large_hd")
+        resp = await pornhub(search)
         res = resp.result
     except:
+        await m.edit("Found Nothing")
         return
     resolt = f"""
 **➡️ TITLE:** {res[0].title}
