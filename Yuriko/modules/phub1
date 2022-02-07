@@ -9,8 +9,6 @@ from Yuriko import pbot as bot1
 from Yuriko import arq
 
 
-session = ClientSession()
-
 pornhub = arq.pornhub
 
 db = {}
