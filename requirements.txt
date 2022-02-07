@@ -89,6 +89,5 @@ pybase64
 base58
 pycryptodome
 git+https://github.com/python-telegram-bot/ptbcontrib.git
-yt-dlp==2021.11.10.1
 validators
 youtube_dl
