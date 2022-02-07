@@ -1,8 +1,8 @@
 import os
+import asyncio
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto, InputMediaVideo 
-from asyncio import get_running_loop
 from wget import download
 
 from Yuriko import pbot as bot1
@@ -12,11 +12,6 @@ from Yuriko import arq
 pornhub = arq.pornhub
 
 db = {}
-
-async def download_url(url: str):
-    loop = get_running_loop()
-    file = await loop.run_in_executor(None, download, url)
-    return file
 
 async def time_to_seconds(time):
     stringt = str(time)
