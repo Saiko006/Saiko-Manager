@@ -13,7 +13,7 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from Yuriko import OWNER_ID, SUPPORT_CHAT
+from Yuriko import OWNER_ID, SUPPORT_CHAT, DEV_USERS
 from Yuriko import pbot
 
 
