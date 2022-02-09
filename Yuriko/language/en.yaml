@@ -9,15 +9,15 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-  *👋 Hello {} !*
+  *👋 Hello* `{}` !
   ✪ *My name is Kekinian Robot* [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
   ✪ *I'm a Kekinian theme bot for management your group easily!*
-  Maintained by [ᴢᴀʟ](https://t.me/rumahakhirat)
+  *Maintained by:* [ᴢᴀʟ](https://t.me/rumahakhirat)
   ────────────────────────
-  ✪ *Uptime:* {}
-  ✪ {} *User, Across* {} *Chats.*
+  ✪ *Uptime:* `{}`
+  ✪ `{}` *User, Across* `{}` *Chats.*
   ────────────────────────
-  ✪ *Powered by: [Kekinian Robot](https://t.me/KekiniBot)!*
+  ✪ *Powered by:* [Kekinian Robot](https://t.me/KekiniBot)!
     
 group_start: |
   "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
