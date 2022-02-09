@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
             yurikorobot_IMG, caption=gs(chat.id, "group_start").format(
                 escape_markdown(uptime),
                 ),
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text=gs(chat.id, "support_button"), url="t.me/Kekiniangroup")]]
             ),
