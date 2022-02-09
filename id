@@ -12,15 +12,15 @@ donate: "HEYA, Senang mendengar Anda ingin menyumbang! @rumahakhirat 💎"
 
 # PM Text
 pm_start_text: |
-    ✪ *👋 Hello {} !*
-    ✪ ᴍʏ ɴᴀᴍᴇ ɪs ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
-    ✪ ɪ'ᴍ ᴀ ᴋᴇᴋɪɴɪᴀɴ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
-    ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ᴢᴀʟ](https://t.me/rumahakhirat)
+    ✪ *👋 ʜᴀʟᴏ {} !*
+    ✪ ɴᴀᴍᴀᴋᴜ ᴀᴅᴀʟᴀʜ ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
+    ✪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ʙᴇʀᴛᴇᴍᴀ ᴋᴇᴋɪɴɪᴀɴ ᴜɴᴛᴜᴋ ᴍᴀɴᴀᴊᴇᴍᴇɴ ɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ᴍᴜᴅᴀʜ!
+    ᴅɪ ᴋᴇʟᴏʟᴀ ᴏʟᴇʜ [ᴢᴀʟ](https://t.me/rumahakhirat)
     ────────────────────────
     ✪ *Uᴘᴛɪᴍᴇ:* `{}`
-    ✪ `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
+    ✪ `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴍᴇʟɪɴᴛᴀsɪ* `{}` *ᴏʙʀᴏʟᴀɴ.*
     ────────────────────────
-    ✪ *Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    ✪ *ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
     
 group_start: |
     "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
@@ -88,7 +88,7 @@ pm_music_text: |
             
     ✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*
             
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
+    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
             
 pm_help_text: |
     *📚 MAIN COMMANDS 📚*
@@ -140,14 +140,14 @@ back_button: "Back"
 antich_help: |
     ──「 Anti-Channels 」──
    
-   ⚠️ WARNING ⚠️
+    ⚠️ WARNING ⚠️
     *IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
     Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
     This command can only be used by *Admins*.
     ❂ /antich <'on'/'yes'> *:* enables anti-channel-mode
     ❂ /antich <'off'/'no'> *:* disabled anti-channel-mode
 
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 anime_help: |
     ──「 Anime search 」──  
@@ -167,7 +167,7 @@ anime_help: |
     ✪ /animequotes - `for anime quotes randomly as photos.`
     ✪ /quote - `send quotes randomly as text`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 antispam_help: |
     ──「 Anti-Spam 」──
@@ -186,7 +186,7 @@ antispam_help: |
 
     *Note:* `Users can appeal spamwatch bans at` @Spamwatch
 
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 admin_help: |
     ──「 Admins 」──
@@ -217,7 +217,7 @@ admin_help: |
     ✪ /setrules - `<your rules here>  set the rules for this chat.`
     ✪ /clearrules - `clear the rules for this chat.`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 blacklist_help: |
     ──「 Blacklist 」──
@@ -243,7 +243,7 @@ blacklist_help: |
     Note:
     ✪ *<sticker link> can be* `https://t.me/addstickers/<sticker>` *or just* `<sticker>` *or reply to the sticker message*
 
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 approval_help: |
     ──「 Approval 」──
@@ -259,7 +259,7 @@ approval_help: |
     ✪ /approved - `List all approved users.`
     ✪ /unapproveall - `Unapprove `*ALL* `users in a chat. This cannot be undone.`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 bansmutes_help: |
     ──「 Ban/Mute 」──
