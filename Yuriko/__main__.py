@@ -807,10 +807,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎**
-                
-**Python:** `{memek()}`
-**Telegram Library:** `v{peler}`""",
+                gs("group_start_text),
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
