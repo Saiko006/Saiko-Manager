@@ -439,7 +439,7 @@ def yurikorobot_about_callback(update, context):
 
     elif query.data == "yurikorobot_notes":
         query.message.edit_text(
-            text=gs(chat.id, "pm_basic_note_text),
+            text=gs(chat.id, "pm_basic_note_text"),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="yurikorobot_basichelp")]]
