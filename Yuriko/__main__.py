@@ -105,8 +105,7 @@ buttons = [
 
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- @rumahakhirat 💎"""
+DONATE_STRING =gs("donate")
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -742,7 +741,7 @@ def get_settings(update: Update, context: CallbackContext):
                 ),
             )
         else:
-            text = "Click here to check your settings."
+            text = gs("group_settings_text")
 
     else:
         send_settings(chat.id, user.id, True)
