@@ -532,8 +532,13 @@ def Source_about_callback(update, context):
             ),
         )
     elif query.data == "source_back":
+        first_name = update.effective_user.first_name
         query.message.edit_text(
-                gs(chat.id, "pm_start_text"),
+                text=gs(chat.id, "pm_start_text").format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
