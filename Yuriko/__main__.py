@@ -579,7 +579,7 @@ def get_help(update: Update, context: CallbackContext):
         text =gs(chat.id, "pm_help_module_text").format(
                 HELPABLE[module].__mod_name__
             )
-            + HELPABLE[module].__help__
+            + HELPABLE[module].helps
         )
         send_help(
             chat.id,
