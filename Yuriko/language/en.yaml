@@ -9,97 +9,97 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-    ✪ *👋 Hello {} !*
-    ✪ *My name is Kekinian Robot* [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
-    ✪ *I'm a Kekinian theme bot for management your group easily!*
-    Maintained by [ᴢᴀʟ](https://t.me/rumahakhirat)
-    ────────────────────────
-    ✪ *Uptime:* {}
-    ✪ {} *User, Across* {} *Chats.*
-    ────────────────────────
-    ✪ *Powered by: [Kekinian Robot](https://t.me/KekiniBot)!*
+  *👋 Hello {} !*
+  ✪ *My name is Kekinian Robot* [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
+  ✪ *I'm a Kekinian theme bot for management your group easily!*
+  Maintained by [ᴢᴀʟ](https://t.me/rumahakhirat)
+  ────────────────────────
+  ✪ *Uptime:* {}
+  ✪ {} *User, Across* {} *Chats.*
+  ────────────────────────
+  ✪ *Powered by: [Kekinian Robot](https://t.me/KekiniBot)!*
     
 group_start: |
-    "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+  "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
 pm_about_text: |
-    *KEKINIAN* - A bot to manage your groups with additional features!.
-    ✪ Here the basic help regarding use of Kekinian Robot.
+  *KEKINIAN* - A bot to manage your groups with additional features!.
+  ✪ Here the basic help regarding use of Kekinian Robot.
             
-    ✪ Almost all modules usage defined in the help menu, checkout by sending /help.
-    ✪ Report error/bugs click the Button.
+  ✪ Almost all modules usage defined in the help menu, checkout by sending /help.
+  ✪ Report error/bugs click the Button.
             
 pm_basic_help: |
-    *Here's basic Help regarding* *How to use Me?*
+  *Here's basic Help regarding* *How to use Me?*
             
-    ✪ Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)
-    ✪ After adding promote me manually with full rights for faster experience.
-    ✪ Than send /reload@KekiniBot in that chat to refresh admin list in My database.
+  ✪ Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)
+  ✪ After adding promote me manually with full rights for faster experience.
+  ✪ Than send /reload@KekiniBot in that chat to refresh admin list in My database.
             
-    *All done now use below given button's to know about use!*
+  *All done now use below given button's to know about use!*
             
 pm_basic_admin_text: |
-    *Let's Make Your Group Bit Effective Now*
+  *Let's Make Your Group Bit Effective Now*
             
-    Congragulations, Kekinian Robot now ready to manage your group.
+  Congragulations, Kekinian Robot now ready to manage your group.
             
-    *Admin Tools*
-    ✪ Basic Admin tools help you to protect and powerup your group.
-    ✪ You can ban members, Kick members, Promote someone as admin through commands of bot.
+  *Admin Tools*
+  ✪ Basic Admin tools help you to protect and powerup your group.
+  ✪ You can ban members, Kick members, Promote someone as admin through commands of bot.
             
-    *Welcome*
-    ✪ Lets set a welcome message to welcome new users coming to your group.
-    ✪ send /setwelcome [message] to set a welcome message!
+  *Welcome*
+  ✪ Lets set a welcome message to welcome new users coming to your group.
+  ✪ send /setwelcome [message] to set a welcome message!
             
 pm_basic_notes_text: |
-    *Setting Up Notes*
+  *Setting Up Notes*
             
-    ✪ You can save message/media/audio or anything as notes"
-    ✪ to get a note simply use # at the beginning of a word"
-    ✪ You can also set buttons for notes and filters (refer help menu)
+  ✪ You can save message/media/audio or anything as notes"
+  ✪ to get a note simply use # at the beginning of a word"
+  ✪ You can also set buttons for notes and filters (refer help menu)
             
 pm_basic_support_text: |
-    *KEKINIAN Support Chats*
+  *KEKINIAN Support Chats*
             
-    ✪ Join Support Group/Channel
+  ✪ Join Support Group/Channel
             
 pm_basic_credit_text: |
-    *CREDIT FOR KEKINIAN DEV'S*
+  *CREDIT FOR KEKINIAN DEV'S*
             
-    ✪ Here Some Developers Helping in Making The Kekinian Robot.
+  ✪ Here Some Developers Helping in Making The Kekinian Robot.
             
 pm_music_text: |
-    *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「𝐌ᴜsɪᴄ」 Mᴏᴅᴜʟᴇ:*
+  *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「𝐌ᴜsɪᴄ」 Mᴏᴅᴜʟᴇ:*
             
-        *SETUP ASSISTANT*
-    ✪ ` first, add me to your group.`"
-    ✪ ` then promote me as admin and give all permissions except anonymous admin.`
-    ✪ ` add` @asistancekekinian `to your group:`
-    ✪ ` turn on the video chat first before start to play music.`
+  *SETUP ASSISTANT*
+  ✪ ` first, add me to your group.`"
+  ✪ ` then promote me as admin and give all permissions except anonymous admin.`
+  ✪ ` add` @asistancekekinian `to your group:`
+  ✪ ` turn on the video chat first before start to play music.`
     
-    *Command Basic*
-    ✪ /play (query) - `play song from youtube`
-    ✪ /vplay (query) - `play video from youtube`
-    ✪ /setting - `settings volume dan authorized`
-    ✪ /playlist - `Check playlist`
-    ✪ /video or /vsong (query) - `download video from youtube`
-    ✪ /music or /song (query)- `download song from yt servers. (API BASED)`
-    ✪ /lyrics (song name) - `This plugin searches for song lyrics with song name.`
-    ✪ /bug (query) - `Report on boat problems`
+  *Command Basic*
+  ✪ /play (query) - `play song from youtube`
+  ✪ /vplay (query) - `play video from youtube`
+  ✪ /setting - `settings volume dan authorized`
+  ✪ /playlist - `Check playlist`
+  ✪ /video or /vsong (query) - `download video from youtube`
+  ✪ /music or /song (query)- `download song from yt servers. (API BASED)`
+  ✪ /lyrics (song name) - `This plugin searches for song lyrics with song name.`
+  ✪ /bug (query) - `Report on boat problems`
             
-    ✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*
+  ✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*
             
-    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
+  *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
             
 pm_help_text: |
-    *📚 MAIN COMMANDS 📚*
+  *📚 MAIN COMMANDS 📚*
   
-    ✪ /start = `Starts me! Your probably already used this.`
-    ✪ /help = `Click this I ll let you know about myself!.`
-    ✪ /settings = `in PM: will send you your settings for all supported modules.`
-    ✪ /setting = `in your group to set auth and volume.`
+  ✪ /start = `Starts me! Your probably already used this.`
+  ✪ /help = `Click this I ll let you know about myself!.`
+  ✪ /settings = `in PM: will send you your settings for all supported modules.`
+  ✪ /setting = `in your group to set auth and volume.`
 
-    *In A Group: Will Redirect You To Pm With All That Chats Settings.*
+  *In A Group: Will Redirect You To Pm With All That Chats Settings.*
   
 pm_help_module_text: "Here is the help for the *{}* module :\n"
 
