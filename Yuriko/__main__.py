@@ -433,7 +433,7 @@ def yurikorobot_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text=gs(chat.id, "back_button", callback_data="yurikorobot_basichelp")]]
+                [[InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="yurikorobot_basichelp")]]
             ),
         )
 
@@ -514,7 +514,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text=gs(chat.id, "back_button", callback_data="source_back")
+                    InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="source_back")
                  ]
                 ]
             ),
