@@ -839,8 +839,8 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 f"""*ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎*
                 
-    *Python:* {}
-    *Telegram Library:* {}""",
+    *Python:* {memek()}
+    *Telegram Library:* v{peler}""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
