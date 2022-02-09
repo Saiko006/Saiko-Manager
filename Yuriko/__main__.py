@@ -7,6 +7,7 @@ import re
 import sys
 import traceback
 import Yuriko.modules.sql.users_sql as sql
+from sqlalchemy.sql.expression import text, update
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
@@ -33,6 +34,7 @@ from Yuriko import (
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from Yuriko.modules import ALL_MODULES
+from Yuriko.modules.language import gs
 from Yuriko.modules.helper_funcs.chat_status import is_user_admin
 from Yuriko.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
