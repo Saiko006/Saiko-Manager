@@ -837,10 +837,10 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎**
+                f"""*ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎*
                 
-    **Python:** `{memek()}`
-    **Telegram Library:** `v{peler}""",
+    *Python:* `{}`
+    *Telegram Library:* `{}`""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
