@@ -10,14 +10,14 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 # PM Text
 pm_start_text: |
     ✪ *👋 Hello {} !*
-    ✪ ᴍʏ ɴᴀᴍᴇ ɪs ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
-    ✪ ɪ'ᴍ ᴀ ᴋᴇᴋɪɴɪᴀɴ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
-    ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ᴢᴀʟ](https://t.me/rumahakhirat)
+    ✪ *My name is Kekinian Robot* [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
+    ✪ *I'm a Kekinian theme bot for management your group easily!*
+    Maintained by [ᴢᴀʟ](https://t.me/rumahakhirat)
     ────────────────────────
-    ✪ *Uᴘᴛɪᴍᴇ:* {}
-    ✪ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*
+    ✪ *Uptime:* {}
+    ✪ {} *User, Across* {} *Chats.*
     ────────────────────────
-    ✪ *Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    ✪ *Powered by: [Kekinian Robot](https://t.me/KekiniBot)!*
     
 group_start: |
     "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
