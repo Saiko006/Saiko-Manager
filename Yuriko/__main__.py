@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 yurikorobot_IMG = "https://telegra.ph/file/6604ab9775908c3dfa379.jpg"
 
-DONATE_STRING = gs("donate")
+DONATE_STRING = """Heya, glad to hear you want to donate! @rumahakhirat 💎"""
 
 IMPORTED = {}
 MIGRATEABLE = []
