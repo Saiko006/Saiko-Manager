@@ -99,6 +99,8 @@ pm_help_text: |
   
 pm_help_module_text: "Here is the help for the *{}* module :\n"
 
+source_text: "Hi.. I'm *Kekinian Robot*"
+
 # Group Help Text
 group_help_text: "Contact me in PM to get the list of possible commands."
 group_help_modules_text: "Contact me in PM to get help of *{}*"
