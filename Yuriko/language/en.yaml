@@ -23,10 +23,10 @@ group_start: |
     "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
    
 group_start_text: |
-    **ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎**
+    *ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎*
                 
-    **Python:** `{memek()}`
-    **Telegram Library:** `v{peler}`
+    *Python:* `{}`
+    *Telegram Library:* `{}`
 
 pm_about_text: |
     *KEKINIAN* - `A bot to manage your groups with additional features!`
