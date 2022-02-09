@@ -227,7 +227,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            yurikorobot_IMG, caption=gs(chat.id "group_start").format(
+            yurikorobot_IMG, caption=gs(chat.id, "group_start").format(
                 escape_markdown(uptime),
                 ),
             parse_mode=ParseMode.MARKDOWN,
