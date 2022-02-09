@@ -24,10 +24,10 @@ group_start: |
 
 pm_about_text: |
     *KEKINIAN* - A bot to manage your groups with additional features!.
-    ✪Here the basic help regarding use of Kekinian Robot.
+    ✪ Here the basic help regarding use of Kekinian Robot.
             
-    ✪Almost all modules usage defined in the help menu, checkout by sending /help.
-    ✪Report error/bugs click the Button.
+    ✪ Almost all modules usage defined in the help menu, checkout by sending /help.
+    ✪ Report error/bugs click the Button.
             
 pm_basic_help: |
     *Here's basic Help regarding* *How to use Me?*
