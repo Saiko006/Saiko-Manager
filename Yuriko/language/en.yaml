@@ -20,7 +20,8 @@ pm_start_text: |
   ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [Kekinian Robot](https://t.me/KekiniBot)!
     
 group_start: |
-  "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+  I'm awake already!
+  <b>Haven't slept since:</b> <code>{}</code>
 
 pm_about_text: |
   *KEKINIAN* - A bot to manage your groups with additional features!.
