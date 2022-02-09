@@ -155,6 +155,7 @@ def test(update: Update, context: CallbackContext):
 
 def start(update: Update, context: CallbackContext):
     args = context.args
+    chat = update.effective_chat
     uptime = get_readable_time((time.time() - StartTime))
     if update.effective_chat.type == "private":
         if len(args) >= 1:
@@ -172,7 +173,7 @@ def start(update: Update, context: CallbackContext):
                     return
                 send_help(
                     update.effective_chat.id,
-                    HELPABLE[mod].__help__,
+                    HELPABLE[mod].__mod_name__ + help_text,
                     InlineKeyboardMarkup(
                         [[InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="help_back")]]
                     ),
@@ -292,6 +293,7 @@ def error_callback(update: Update, context: CallbackContext):
 
 def help_button(update, context):
     query = update.callback_query
+    chat = update.effective_chat
     mod_match = re.match(r"help_module\((.+?)\)", query.data)
     prev_match = re.match(r"help_prev\((.+?)\)", query.data)
     next_match = re.match(r"help_next\((.+?)\)", query.data)
@@ -366,6 +368,7 @@ def help_button(update, context):
 
 
 def yurikorobot_about_callback(update, context):
+    chat = update.effective_chat
     query = update.callback_query
     if query.data == "yurikorobot_":
         query.message.edit_text(
@@ -517,6 +520,7 @@ def yurikorobot_about_callback(update, context):
         
 
 def Source_about_callback(update, context):
+    chat = update.effective_chat
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
@@ -673,6 +677,7 @@ def send_settings(chat_id, user_id, user=False):
 def settings_button(update: Update, context: CallbackContext):
     query = update.callback_query
     user = update.effective_user
+    chat = update.effective_chat
     bot = context.bot
     mod_match = re.match(r"stngs_module\((.+?),(.+?)\)", query.data)
     prev_match = re.match(r"stngs_prev\((.+?),(.+?)\)", query.data)
@@ -776,7 +781,7 @@ def get_settings(update: Update, context: CallbackContext):
                 ),
             )
         else:
-            text = gs("group_settings_text")
+            text = gs(chat.id, "group_settings_text")
 
     else:
         send_settings(chat.id, user.id, True)
