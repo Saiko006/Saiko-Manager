@@ -85,6 +85,16 @@ pm_music_text: |
     ✪ ` then promote me as admin and give all permissions except anonymous admin.`
     ✪ ` add` @asistancekekinian `to your group:`
     ✪ ` turn on the video chat first before start to play music.`
+    
+    *Command Basic*
+    ✪ /play (query) - `play song from youtube`
+    ✪ /vplay (query) - `play video from youtube`
+    ✪ /setting - `settings volume dan authorized`
+    ✪ /playlist - `Check playlist`
+    ✪ /video or /vsong (query) - `download video from youtube`
+    ✪ /music or /song (query)- `download song from yt servers. (API BASED)`
+    ✪ /lyrics (song name) - `This plugin searches for song lyrics with song name.`
+    ✪ /bug (query) - `Report on boat problems`
             
     ✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*
             
