@@ -4,11 +4,11 @@ language: "English 🇬🇧"
 authors: "@rumahakhirat"
 
 # languages
-curr_chat_lang: "Hey. Your current language is {}, select the one you want from the buttons below :)"
-set_chat_lang: "Great, using {} Language it is from now on!"
+curr_chat_lang: "Hai. Bahasa Anda saat ini adalah {}, pilih yang Anda inginkan dari tombol di bawah :)"
+set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!!"
 
 # Donate
-donate: "Halo, jika kamu ingin berdonasi, silahkan hubungi! @rumahakhirat 💎"
+donate: "HEYA, Senang mendengar Anda ingin menyumbang! @rumahakhirat 💎"
 
 # PM Text
 pm_start_text: |
