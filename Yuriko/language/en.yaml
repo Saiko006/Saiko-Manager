@@ -9,21 +9,21 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-✪ *👋 Hello {} !*
-✪ ᴍʏ ɴᴀᴍᴇ ɪs ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
-✪ ɪ'ᴍ ᴀ ᴋᴇᴋɪɴɪᴀɴ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ᴢᴀʟ](https://t.me/rumahakhirat)
-────────────────────────
-✪ *Uᴘᴛɪᴍᴇ:* `{}`
-✪ `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-────────────────────────
-✪ *Pᴏᴡᴇʀᴇᴅ 🔰 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    ✪ *👋 Hello {} !*
+    ✪ ᴍʏ ɴᴀᴍᴇ ɪs ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/4a63f62130c72a28e92f1.jpg)
+    ✪ ɪ'ᴍ ᴀ ᴋᴇᴋɪɴɪᴀɴ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
+    ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ᴢᴀʟ](https://t.me/rumahakhirat)
+    ────────────────────────
+    ✪ *Uᴘᴛɪᴍᴇ:* `{}`
+    ✪ `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
+    ────────────────────────
+    ✪ *Pᴏᴡᴇʀᴇᴅ 🔰 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
    
 group_start_text: |
     **ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎**
                 
-**Python:** `{memek()}`
-**Telegram Library:** `v{peler}`
+    **Python:** `{memek()}`
+    **Telegram Library:** `v{peler}`
 
 pm_about_text: |
     *KEKINIAN* - `A bot to manage your groups with additional features!`
@@ -133,281 +133,346 @@ antich_help: |
     ──「 Anti-Channels 」──
    
    ⚠️ WARNING ⚠️
-*IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
-Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
-This command can only be used by *Admins*.
-❂ /antich <'on'/'yes'> *:* enables anti-channel-mode
-❂ /antich <'off'/'no'> *:* disabled anti-channel-mode
+    *IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
+    Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
+    This command can only be used by *Admins*.
+    ❂ /antich <'on'/'yes'> *:* enables anti-channel-mode
+    ❂ /antich <'off'/'no'> *:* disabled anti-channel-mode
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 anime_help: |
     ──「 Anime search 」──  
                          
-✪ /anime - `<anime> returns information about the anime.`
-✪ /whatanime - `returns source of anime when replied to photo or gif.`
-                                                          
-✪ /character - `<character> returns information about the character.`
-✪ /manga - `<manga> returns information about the manga.`
-✪ /user - `<user> returns information about a MyAnimeList user.`
-✪ /upcoming - `returns a list of new anime in the upcoming seasons.`
-✪ /airing - `<anime> returns anime airing info.`
-✪ /whatanime - `<anime> reply to gif or photo.`
-✪ /kaizoku - `<anime> search an anime on animekaizoku.com`
-✪ /kayo - `<anime> search an anime on animekayo.com`
+    ✪ /anime - `<anime> returns information about the anime.`
+    ✪ /whatanime - `returns source of anime when replied to photo or gif.`                                                        
+    ✪ /character - `<character> returns information about the character.`
+    ✪ /manga - `<manga> returns information about the manga.`
+    ✪ /user - `<user> returns information about a MyAnimeList user.`
+    ✪ /upcoming - `returns a list of new anime in the upcoming seasons.`
+    ✪ /airing - `<anime> returns anime airing info.`
+    ✪ /whatanime - `<anime> reply to gif or photo.`
+    ✪ /kaizoku - `<anime> search an anime on animekaizoku.com`
+    ✪ /kayo - `<anime> search an anime on animekayo.com`
 
     「 Anime Quotes 」
-✪ /animequotes - `for anime quotes randomly as photos.`
-✪ /quote - `send quotes randomly as text`
+    ✪ /animequotes - `for anime quotes randomly as photos.`
+    ✪ /quote - `send quotes randomly as text`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 antispam_help: |
     ──「 Anti-Spam 」──
     
     *Admins only:*
-✪ /antispam - `<on/off/yes/no> Will toggle our antispam tech or return your current settings.`
-`Anti-Spam used by bot devs to ban spammers across all groups. This helps protect`
-`you and your groups by removing spam flooders as quickly as possible.`
+    ✪ /antispam - `<on/off/yes/no> Will toggle our antispam tech or return your current settings.`
+    `Anti-Spam used by bot devs to ban spammers across all groups. This helps protect`
+    `you and your groups by removing spam flooders as quickly as possible.`
 
-*Note:* `Users can appeal gbans or report spammers at` @{SUPPORT_CHAT}
-`This also integrates` @Spamwatch `API to remove Spammers as much as possible from your chatroom!`
+    *Note:* `Users can appeal gbans or report spammers at` @{SUPPORT_CHAT}
+    `This also integrates` @Spamwatch `API to remove Spammers as much as possible from your chatroom!`
 
-*What is SpamWatch?*
-`SpamWatch maintains a large constantly updated ban-list of spambots trolls bitcoin spammers and unsavoury characters`
-`Constantly help banning spammers off from your group automatically So you wont have to worry about spammers storming your group.`
+    *What is SpamWatch?*
+    `SpamWatch maintains a large constantly updated ban-list of spambots trolls bitcoin spammers and unsavoury characters`
+    `Constantly help banning spammers off from your group automatically So you wont have to worry about spammers storming your group.`
 
-*Note:* `Users can appeal spamwatch bans at` @Spamwatch
+    *Note:* `Users can appeal spamwatch bans at` @Spamwatch
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 admin_help: |
     ──「 Admins 」──
 
     *User Commands:*
-✪ /staff - `list of admins in the chat`
-✪ /pinned - `to get the current pinned message.`
+    ✪ /staff - `list of admins in the chat`
+    ✪ /pinned - `to get the current pinned message.`
 
     *Admins Commands:* 
-✪ /pin - `silently pins the message replied to - add 'loud' or 'notify' to give notifs to users`
-✪ /unpin - `unpins the currently pinned message`
-✪ /invitelink - `gets invitelink`
-✪ /promote - `promotes the user replied to`
-✪ /fullpromote - `promotes the user replied to with full rights`
-✪ /demote - `demotes the user replied to`
-✪ /title - `<title here> sets a custom title for an admin that the bot promoted`
-✪ /admincache - `force refresh the admins list`
-✪ /del - `deletes the message you replied to`
-✪ /purge - `deletes all messages between this and the replied to message.`
-✪ /purge - `<integer X> deletes the replied message, and X messages following it if replied to a message.`
-✪ /setgtitle - `<text> set group title`
-✪ /setgpic - `reply to an image to set as group photo`
-✪ /setdesc - `Set group description`
-✪ /setsticker - `Set group sticker`
+    ✪ /pin - `silently pins the message replied to - add 'loud' or 'notify' to give notifs to users`
+    ✪ /unpin - `unpins the currently pinned message`
+    ✪ /invitelink - `gets invitelink`
+    ✪ /promote - `promotes the user replied to`
+    ✪ /fullpromote - `promotes the user replied to with full rights`
+    ✪ /demote - `demotes the user replied to`
+    ✪ /title - `<title here> sets a custom title for an admin that the bot promoted`
+    ✪ /admincache - `force refresh the admins list`
+    ✪ /del - `deletes the message you replied to`
+    ✪ /purge - `deletes all messages between this and the replied to message.`
+    ✪ /purge - `<integer X> deletes the replied message, and X messages following it if replied to a message.`
+    ✪ /setgtitle - `<text> set group title`
+    ✪ /setgpic - `reply to an image to set as group photo`
+    ✪ /setdesc - `Set group description`
+    ✪ /setsticker - `Set group sticker`
 
     *Rules:*
-✪ /rules - `get the rules for this chat.`
-✪ /setrules - `<your rules here>  set the rules for this chat.`
-✪ /clearrules - `clear the rules for this chat.`
+    ✪ /rules - `get the rules for this chat.`
+    ✪ /setrules - `<your rules here>  set the rules for this chat.`
+    ✪ /clearrules - `clear the rules for this chat.`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 blacklist_help: |
     ──「 Blacklist 」──
     
     `Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!`
-*NOTE*: `Blacklists do not affect group admins.`
-✪ /blacklist - `View the current blacklisted words.`
+    *NOTE*: `Blacklists do not affect group admins.`
+    ✪ /blacklist - `View the current blacklisted words.`
 
     *Admin only:*
-✪ /addblacklist - `<triggers> Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.`
-✪ /unblacklist - `<triggers> Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.`
-✪ /blacklistmode - `<off/del/warn/ban/kick/mute/tban/tmute> Action to perform when someone sends blacklisted words.`
-*Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.*
-*NOTE:* `Blacklist stickers do not affect the group admin`
-✪ /blsticker - `See current blacklisted sticker`
+    ✪ /addblacklist - `<triggers> Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.`
+    ✪ /unblacklist - `<triggers> Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.`
+    ✪ /blacklistmode - `<off/del/warn/ban/kick/mute/tban/tmute> Action to perform when someone sends blacklisted words.`
+    *Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.*
+    *NOTE:* `Blacklist stickers do not affect the group admin`
+    ✪ /blsticker - `See current blacklisted sticker`
 
     *Only admin:*
-✪ /addblsticker - `<sticker link> Add the sticker trigger to the black list. Can be added via reply sticker`
-✪ /unblsticker - `<sticker link> Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once`
-✪ /rmblsticker - `<sticker link> Same as above`
-✪ /blstickermode - `<delete/ban/tban/mute/tmute> sets up a default action on what to do if users use blacklisted stickers`
+    ✪ /addblsticker - `<sticker link> Add the sticker trigger to the black list. Can be added via reply sticker`
+    ✪ /unblsticker - `<sticker link> Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once`
+    ✪ /rmblsticker - `<sticker link> Same as above`
+    ✪ /blstickermode - `<delete/ban/tban/mute/tmute> sets up a default action on what to do if users use blacklisted stickers`
 
-Note:
-✪ *<sticker link> can be* `https://t.me/addstickers/<sticker>` *or just* `<sticker>` *or reply to the sticker message*
+    Note:
+    ✪ *<sticker link> can be* `https://t.me/addstickers/<sticker>` *or just* `<sticker>` *or reply to the sticker message*
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 approval_help: |
     ──「 Approval 」──
     
     *Sometimes, you might trust a user not to send unwanted content.*
-*Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.*
-*That's what approvals are for - approve of trustworthy users to allow them to send*
+    *Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.*
+    *That's what approvals are for - approve of trustworthy users to allow them to send*
 
     *Admin commands:*
-✪ /approval - `Check a user's approval status in this chat.`
-✪ /approve - `Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.`
-✪ /unapprove - `Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.`
-✪ /approved - `List all approved users.`
-✪ /unapproveall - `Unapprove `*ALL* `users in a chat. This cannot be undone.`
+    ✪ /approval - `Check a user's approval status in this chat.`
+    ✪ /approve - `Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.`
+    ✪ /unapprove - `Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.`
+    ✪ /approved - `List all approved users.`
+    ✪ /unapproveall - `Unapprove `*ALL* `users in a chat. This cannot be undone.`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 ban/mute_help: |
     ──「 Ban/Mute 」──
     
     *User Commands:*
-✪ /kickme - `kicks the user who issued the command`
+    ✪ /kickme - `kicks the user who issued the command`
 
     *Admins Commands Only:*
-✪ /ban - `bans a user. (via handle, or reply)`
-✪ /sban - `Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)`
-✪ /tban - `bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
-✪ /unban - `unbans a user. (via handle, or reply)`
-✪ /kick - `kicks a user out of the group, (via handle, or reply)`
-✪ /mute - `silences a user. Can also be used as a reply, muting the replied to user.`
-✪ /tmute - `mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
-✪ /unmute - `unmutes a user. Can also be used as a reply, muting the replied to user.`
-✪ /zombies - `searches deleted accounts`
-✪ /zombies - `removes deleted accounts from the group.`
-✪ /snipe - `Make me send a message to a specific chat.`
+    ✪ /ban - `bans a user. (via handle, or reply)`
+    ✪ /sban - `Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)`
+    ✪ /tban - `bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
+    ✪ /unban - `unbans a user. (via handle, or reply)`
+    ✪ /kick - `kicks a user out of the group, (via handle, or reply)`
+    ✪ /mute - `silences a user. Can also be used as a reply, muting the replied to user.`
+    ✪ /tmute - `mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
+    ✪ /unmute - `unmutes a user. Can also be used as a reply, muting the replied to user.`
+    ✪ /zombies - `searches deleted accounts`
+    ✪ /zombies - `removes deleted accounts from the group.`
+    ✪ /snipe - `Make me send a message to a specific chat.`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 chatbot_help: |
     ──「 Chatbot 」──
     
-*──「 Help for the Chatbot module 」──*
-• Kekinian Robot AI is the only ai system which can detect & reply upto 200 language's
-✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
-✪ /chatbot EN : Enables English only chatbot.
+    *──「 Help for the Chatbot module 」──*
+    • Kekinian Robot AI is the only ai system which can detect & reply upto 200 language's
+    ✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
+    ✪ /chatbot EN : Enables English only chatbot.
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 cleaner_help: |
     ──「 Cleaner 」──
     
     *Blue text cleaner removed any made up commands that people send in your chat.*
-✪ /cleanblue - `<on/off/yes/no> clean commands after sending`
-✪ /ignoreblue - `<word> prevent auto cleaning of the command`
-✪ /unignoreblue - `<word> remove prevent auto cleaning of the command`
-✪ /listblue - `list currently whitelisted commands`
- *Following are Disasters only commands, admins cannot use these:*
-✪ /gignoreblue - `<word> globally ignorea bluetext cleaning of saved word across KEKINIAN.`
-✪ /ungignoreblue - `<word> remove said command from global cleaning list`
+    ✪ /cleanblue - `<on/off/yes/no> clean commands after sending`
+    ✪ /ignoreblue - `<word> prevent auto cleaning of the command`
+    ✪ /unignoreblue - `<word> remove prevent auto cleaning of the command`
+    ✪ /listblue - `list currently whitelisted commands`
+    *Following are Disasters only commands, admins cannot use these:*
+    ✪ /gignoreblue - `<word> globally ignorea bluetext cleaning of saved word across KEKINIAN.`
+    ✪ /ungignoreblue - `<word> remove said command from global cleaning list`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 connection_help: |
     ──「 Connection 」──
     
     *Sometimes, you just want to add some notes and filters to a group chat, but you don't want everyone to see; This is where connections come in...*
-*This allows you to connect to a chat's database, and add things to it without the commands appearing in chat! For obvious reasons, you need to be an admin to add things; but any member in the group can view your data.*
-✪ /connect - `Connects to chat (Can be done in a group by /connect or /connect <chat id> in PM)`
-✪ /connection - `List connected chats`
-✪ /disconnect - `Disconnect from a chat`
-✪ /helpconnect - `List available commands that can be used remotely`
+    *This allows you to connect to a chat's database, and add things to it without the commands appearing in chat! For obvious reasons, you need to be an admin to add things; but any member in the group can view your data.*
+    ✪ /connect - `Connects to chat (Can be done in a group by /connect or /connect <chat id> in PM)`
+    ✪ /connection - `List connected chats`
+    ✪ /disconnect - `Disconnect from a chat`
+    ✪ /helpconnect - `List available commands that can be used remotely`
 
     *Admins only:*
-✪ /allowconnect - `<yes/no> allow a user to connect to a chat`
+    ✪ /allowconnect - `<yes/no> allow a user to connect to a chat`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 extras_help: |
     ──「 Extras 」──
     
     *Available commands:*
-❂ /markdownhelp - `quick summary of how markdown works in telegram - can only be called in private chats`
-❂ /paste - `Saves replied content to `nekobin.com` and replies with a url`
-❂ /react - `Reacts with a random reaction` 
-❂ /ud <word> - `Type the word or expression you want to search use`
-❂ /reverse - `Does a reverse image search of the media which it was replied to.`
-❂ /wiki <query> - `wikipedia your query`
-❂ /wall <query> - `get a wallpaper from wall.alphacoders.com`
-❂ /cash - `currency converter`
- Example:
- `/cash 1 USD INR`  
-      _OR_
- `/cash 1 usd inr`
- Output: `1.0 USD = 75.505 INR`
+    ❂ /markdownhelp - `quick summary of how markdown works in telegram - can only be called in private chats`
+    ❂ /paste - `Saves replied content to `nekobin.com` and replies with a url`
+    ❂ /react - `Reacts with a random reaction` 
+    ❂ /ud <word> - `Type the word or expression you want to search use`
+    ❂ /reverse - `Does a reverse image search of the media which it was replied to.`
+    ❂ /wiki <query> - `wikipedia your query`
+    ❂ /wall <query> - `get a wallpaper from wall.alphacoders.com`
+    ❂ /cash - `currency converter`
+         Example:
+     `/cash 1 USD INR`  
+          _OR_
+     `/cash 1 usd inr`
+     Output: `1.0 USD = 75.505 INR`
  
     *Music Modules:*
-✪ /play (query) - `play song from youtube`
-✪ /vplay (query) - `play video from youtube`
-✪ /setting - `settings volume dan authorized`
-✪ /playlist - `Check playlist`
-✪ /video or /vsong (query) - `download video from youtube`
-✪ /music or /song (query)- `download song from yt servers. (API BASED)`
-✪ /lyrics (song name) - `This plugin searches for song lyrics with song name.`
-✪ /bug (query) - `Report on boat problems`
+    ✪ /play (query) - `play song from youtube`
+    ✪ /vplay (query) - `play video from youtube`
+    ✪ /setting - `settings volume dan authorized`
+    ✪ /playlist - `Check playlist`
+    ✪ /video or /vsong (query) - `download video from youtube`
+    ✪ /music or /song (query)- `download song from yt servers. (API BASED)`
+    ✪ /lyrics (song name) - `This plugin searches for song lyrics with song name.`
+    ✪ /bug (query) - `Report on boat problems`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 fsubs/feds_help: |
     ──「 Fsub/feds 」──
     
     *Force Subscribe:*
-❂ Kekinian can mute members who are not subscribed your channel until they subscribe
-❂ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
-❂*Setup*
-*Only creator*
-❂ Add me in your group as admin
-❂ Add me in your channel as admin 
+    ❂ Kekinian can mute members who are not subscribed your channel until they subscribe
+    ❂ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
+    ❂*Setup*
+    
+    *Only creator*
+    ❂ Add me in your group as admin
+    ❂ Add me in your channel as admin 
  
     *Commmands*
-❂ /fsub {channel username} - To turn on and setup the channel.
-  📚Do this first...
-❂ /fsub - To get the current settings.
-❂ /fsub disable - To turn of ForceSubscribe..
-  📚If you disable fsub, you need to set again for working.. /fsub {channel username} 
-❂ /fsub clear - To unmute all members who muted by me.
+    ❂ /fsub {channel username} - To turn on and setup the channel.
+      📚Do this first...
+    ❂ /fsub - To get the current settings.
+    ❂ /fsub disable - To turn of ForceSubscribe..
+      📚If you disable fsub, you need to set again for working.. /fsub {channel username} 
+    ❂ /fsub clear - To unmute all members who muted by me.
 
     *Federation*
-Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
-But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?\n
-*No longer!* With Federation, you can make a ban in one chat overlap with all other chats.\n
-You can even designate federation admins, so your trusted admin can ban all the spammers from chats you want to protect.\n
+    Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
+    But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?\n
+    *No longer!* With Federation, you can make a ban in one chat overlap with all other chats.\n
+    You can even designate federation admins, so your trusted admin can ban all the spammers from chats you want to protect.\n
 
-*Commands:*\n
-Feds are now divided into 3 sections for your ease.
-❂ `/fedownerhelp`*:* Provides help for fed creation and owner only commands
-❂ `/fedadminhelp`*:* Provides help for fed administration commands
-❂ `/feduserhelp`*:* Provides help for commands anyone can use
+    *Commands:*\n
+    Feds are now divided into 3 sections for your ease.
+    ❂ `/fedownerhelp`*:* Provides help for fed creation and owner only commands
+    ❂ `/fedadminhelp`*:* Provides help for fed administration commands
+    ❂ `/feduserhelp`*:* Provides help for commands anyone can use
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 filters_help: |
     ──「 Filters 」──
     
-❂ /filters - `List all active filters saved in the chat.`
+    ❂ /filters - `List all active filters saved in the chat.`
 
     *Admin Commands Only:*
-❂ /filter - `Add a filter to this chat. The bot will now reply that message whenever 'keyword'\`
-`is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.`
+    ❂ /filter - `Add a filter to this chat. The bot will now reply that message whenever 'keyword'\`
+    `is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.`
 
     *NOTE:* `all filter`
-`keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg:` /filter *hey there* `How you`
-`doin? Separate diff replies by `%%%` to get random replies`
+    `keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg:` /filter *hey there* `How you`
+    `doin? Separate diff replies by `%%%` to get random replies`
  
     *Example:* 
- `/filter "filtername"
- Reply 1
- %%%
- Reply 2
- %%%
- Reply 3`
-❂ /stop - `Stop that filter.`
+     `/filter "filtername"
+     Reply 1
+     %%%
+     Reply 2
+     %%%
+     Reply 3`
+    ❂ /stop - `Stop that filter.`
 
     *Chat Creator Only:*
-❂ /removeallfilters - `Remove all chat filters at once.`
-*NOTE*: `Filters also support markdown formatters like: {first}, {last} etc.. and buttons.`
-`Check /markdownhelp to know more!`
+    ❂ /removeallfilters - `Remove all chat filters at once.`
+    *NOTE*: `Filters also support markdown formatters like: {first}, {last} etc.. and buttons.`
+    `Check /markdownhelp to know more!`
 
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 fun_help: |
     ──「 Fun 」──
+    
+    ✪ /runs - `reply a random string from an array of replies`
+    ✪ /slap - `slap a user, or get slapped if not a reply`
+    ✪ /shrug - `get shrug XD`
+    ✪ /table - `get flip/unflip :v`
+    ✪ /decide - `Randomly answers yes/no/maybe`
+    ✪ /toss - `Tosses A coin`
+    ✪ /bluetext - `check urself :V`
+    ✪ /roll - `Roll a dice`
+    ✪ /rlg - `Join ears,nose,mouth and create an emo ;-;`
+    ✪ /shout - `<keyword> write anything you want to give loud shout`
+    ✪ /weebify - `<text> returns a weebified text`
+    ✪ /sanitize - `always use this before /pat or any contact`
+    ✪ /pat - `pats a user, or get patted`
+    ✪ /8ball - `predicts using 8ball method`
+    
+    *Animation*
+    ✪ /love 
+    ✪ /hack 
+    ✪ /bombs 
+    
+    *Shippering*
+    ✪ /couples - `get couples of today`
+    *Here Is The Help For The Styletext Module:*
+    ✪ /weebify - `<text>: weebify your text!`
+    ✪ /bubble - `<text>: bubble your text!`
+    ✪ /fbubble - `<text>: bubble-filled your text!`
+    ✪ /square - `<text>: square your text!`
+    ✪ /fsquare - `<text>: square-filled your text!`
+    ✪ /blue - `<text>: bluify your text!`
+    ✪ /latin - `<text>: latinify your text!`
+    ✪ /lined - `<text>: lined your text!`
+    
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    
+welcome_help: |
+    ──「 Welcome 」──
+    
+    *Admins Command Only:*
+    ✪ /welcome <on/off> - `enable/disable welcome messages.`
+    ✪ /welcome - `shows current welcome settings.`
+    ✪ /welcome - `noformat shows current welcome settings, without the formatting - useful to recycle your welcome messages!`
+    ✪ /goodbye - `same usage and args as `/welcome`.`
+    ✪ /setwelcome - `<sometext> set a custom welcome message. If used replying to media, uses that media.`
+    ✪ /setgoodbye - `<sometext> set a custom goodbye message. If used replying to media, uses that media.`
+    ✪ /resetwelcome - `reset to the default welcome message.`
+    ✪ /resetgoodbye - `reset to the default goodbye message.`
+    ✪ /cleanwelcome - `<on/off> On new member, try to delete the previous welcome message to avoid spamming the chat.`
+    ✪ /welcomemutehelp - `gives information about welcome mutes.`
+    ✪ /cleanservice - `<on/off deletes telegrams welcome/left service messages.`
+    
+    *Example:*
+    `user joined chat, user left chat.`
+    
+    *Welcome markdown:*
+    ✪ /welcomehelp - `view more formatting information for custom welcome/goodbye messages.`
+    
+    *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
+    
+infoafk_help: |
+    ──「 Info & Afk 」──
+    
+    
+    
+
     
     
      
