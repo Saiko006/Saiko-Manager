@@ -86,8 +86,10 @@ fuzzysearch
 img2pdf
 multicolorcaptcha
 pybase64
+pyYAML>=5.1.2
 base58
 pycryptodome
 git+https://github.com/python-telegram-bot/ptbcontrib.git
 validators
 youtube_dl
+
