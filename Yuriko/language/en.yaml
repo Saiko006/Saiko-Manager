@@ -7,9 +7,6 @@ authors: "@rumahakhirat"
 curr_chat_lang: "Hey. Your current language is {}, select the one you want from the buttons below :)"
 set_chat_lang: "Great, using {} Language it is from now on!"
 
-# Donate
-donate: "Heya, glad to hear you want to donate! @rumahakhirat 💎"
-
 # PM Text
 pm_start_text: |
     ✪ *👋 Hello {} !*
