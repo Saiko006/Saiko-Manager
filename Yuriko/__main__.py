@@ -83,30 +83,6 @@ def get_readable_time(seconds: int) -> str:
 
 yurikorobot_IMG = "https://telegra.ph/file/6604ab9775908c3dfa379.jpg"
 
-buttons = [
-    [
-        InlineKeyboardButton(
-            text=gs(chat.id, "help_command_button"), callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text=gs(chat.id, "music_button"), callback_data="yurikorobot_asst"),
-        InlineKeyboardButton(
-            text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""
-        ),
-    ],
-    [
-        InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="yurikorobot_"),
-        InlineKeyboardButton(
-            text=gs(chat.id, "basichelp_button"), callback_data="yurikorobot_basichelp"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="http://t.me/KekiniBot?startgroup=true"),
-    ],
-]
-
-
-
 DONATE_STRING =gs("donate")
 
 IMPORTED = {}
@@ -222,7 +198,24 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),                        
-                reply_markup=InlineKeyboardMarkup(buttons),
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "help_command_button"), callback_data="help_back"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "music_button"), callback_data="yurikorobot_asst"),
+                            InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="yurikorobot_"),
+                            InlineKeyboardButton(text=gs(chat.id, "basichelp_button"), callback_data="yurikorobot_basichelp"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="http://t.me/KekiniBot?startgroup=true"),
+                        ],
+                    ]
+                ),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
@@ -402,7 +395,24 @@ def yurikorobot_about_callback(update, context):
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
-                reply_markup=InlineKeyboardMarkup(buttons),
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "help_command_button"), callback_data="help_back"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "music_button"), callback_data="yurikorobot_asst"),
+                            InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="yurikorobot_"),
+                            InlineKeyboardButton(text=gs(chat.id, "basichelp_button"), callback_data="yurikorobot_basichelp"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="http://t.me/KekiniBot?startgroup=true"),
+                        ],
+                    ]
+                ),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
@@ -524,7 +534,24 @@ def Source_about_callback(update, context):
     elif query.data == "source_back":
         query.message.edit_text(
                 gs(chat.id, "pm_start_text"),
-                reply_markup=InlineKeyboardMarkup(buttons),
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "help_command_button"), callback_data="help_back"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "music_button"), callback_data="yurikorobot_asst"),
+                            InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="yurikorobot_"),
+                            InlineKeyboardButton(text=gs(chat.id, "basichelp_button"), callback_data="yurikorobot_basichelp"),
+                        ],
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="http://t.me/KekiniBot?startgroup=true"),
+                        ],
+                    ]
+                ),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
