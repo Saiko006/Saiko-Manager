@@ -50,9 +50,9 @@ pm_basic_admin_text: |
             
   *Welcome*
   ✪ `Lets set a welcome message to welcome new users coming to your group`
-  ✪ `send` /setwelcome [message] to set a welcome message!`
+  ✪ `send` /setwelcome [message] `to set a welcome message!`
             
-pm_basic_notes_text: |
+pm_basic_note_text: |
   *Setting Up Notes*
             
   ✪ `You can save message/media/audio or anything as notes`
