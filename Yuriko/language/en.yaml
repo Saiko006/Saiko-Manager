@@ -178,10 +178,8 @@ p: "You don't have the necessary rights to do that!"
 q: "You don't seem to be referring to a user or the ID specified is incorrect"
 r: "How am I meant to promote someone that's already an admin?"
 s: "I can't promote myself! Get an admin to do it for me."
-t: "Successfully set `{}` as new chat title!"
 u: "I can't promote someone who isn't in the group."
-v: "An error occured while promoting."
-w: 
+v: "An error occured while promoting." 
 
 
 #Bans button
