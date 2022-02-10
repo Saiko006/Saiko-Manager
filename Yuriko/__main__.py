@@ -173,7 +173,7 @@ def start(update: Update, context: CallbackContext):
                     return
                 send_help(
                     update.effective_chat.id,
-                    HELPABLE[mod].__mod_name__ + help_text,
+                    HELPABLE[mod].helps,
                     InlineKeyboardMarkup(
                         [[InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="help_back")]]
                     ),
