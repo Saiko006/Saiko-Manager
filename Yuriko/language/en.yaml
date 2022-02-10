@@ -163,6 +163,10 @@ a: "Yeahhh I'm not gonna do that"
 b: "I really wish I could kick this user...."
 c: "⚠️ Well damn, I can't kick that user"
 
+#admin
+d: "You're missing rights to change chat info!"
+e: "You need to reply to some sticker to set chat sticker set"
+f: "Successfully set new group stickers in {chat.title}!"
 #Bans button
 unban_button: "Uɴʙᴀɴ"
 delunban_button: "Dᴇʟᴇᴛᴇ"
