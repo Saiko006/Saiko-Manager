@@ -46,7 +46,7 @@ def set_sticker(update: Update, context: CallbackContext):
         try:
             context.bot.set_chat_sticker_set(chat.id, stkr)
             msg.reply_text(
-                text=gs(chat.id, "f"))
+                text=gs(chat.id, "f").format(chat.title))
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(
@@ -163,7 +163,7 @@ def setchat_title(update: Update, context: CallbackContext):
     try:
         context.bot.set_chat_title(int(chat.id), str(title))
         msg.reply_text(
-            f"Successfully set <b>{title}</b> as new chat title!",
+            text=gs(chat.id, "t").format(title)),
             parse_mode=ParseMode.HTML,
         )
     except BadRequest as excp:
@@ -236,9 +236,11 @@ def promote(update: Update, context: CallbackContext) -> str:
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada dalam grup 🙂")
+            message.reply_text(
+                text=gs(chat.id, "u"))
         else:
-            message.reply_text("Terjadi kesalahan saat mempromosikan")
+            message.reply_text(
+                text=gs(chat.id, "v"))
         return
 
     bot.sendMessage(
