@@ -355,7 +355,8 @@ def punch(update: Update, context: CallbackContext) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("⚠️ User not found")
+        message.reply_text(
+            text=gs(chat.id, "not_user"))
         return log_message
 
     try:
@@ -364,14 +365,17 @@ def punch(update: Update, context: CallbackContext) -> str:
         if excp.message != "User not found":
             raise
 
-        message.reply_text("⚠️ I can't seem to find this user.")
+        message.reply_text(
+            text=gs(chat.id, "not_userr"))
         return log_message
     if user_id == bot.id:
-        message.reply_text("Yeahhh I'm not gonna do that.")
+        message.reply_text(
+            text=gs(chat.id, "a"))
         return log_message
 
     if is_user_ban_protected(chat, user_id):
-        message.reply_text("I really wish I could kick this user....")
+        message.reply_text(
+            text=gs(chat.id, "b"))
         return log_message
 
     res = chat.unban_member(user_id)  # unban on current user = kick
@@ -394,7 +398,8 @@ def punch(update: Update, context: CallbackContext) -> str:
         return log
 
     else:
-        message.reply_text("⚠️ Well damn, I can't kick that user.")
+        message.reply_text(
+            text=gs(chat.id, "c"))
 
     return log_message
 
@@ -432,7 +437,8 @@ def unban(update: Update, context: CallbackContext) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("⚠️ User not found.")
+        message.reply_text(
+            text=gs(chatid, "not_user"))
         return log_message
 
     try:
@@ -440,14 +446,16 @@ def unban(update: Update, context: CallbackContext) -> str:
     except BadRequest as excp:
         if excp.message != "User not found":
             raise
-        message.reply_text("I can't seem to find this user.")
+        message.reply_text(
+            text=gs(chat.id, "not_userr"))
         return log_message
     if user_id == bot.id:
         message.reply_text("How would I unban myself if I wasn't here...?")
         return log_message
 
     if is_user_in_chat(chat, user_id):
-        message.reply_text(f"⚠️ User not found.")
+        message.reply_text(
+            text=gs(chat.id, "not_user"))
         return log_message
 
     chat.unban_member(user_id)
@@ -519,12 +527,14 @@ def banme(update: Update, context: CallbackContext):
     chat = update.effective_chat
     user = update.effective_user
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("⚠️ I cannot banned admin.")
+        update.effective_message.reply_text(
+            text=gs(chat.id, "user_wolvess"))
         return
 
     res = update.effective_chat.ban_member(user_id)
     if res:
-        update.effective_message.reply_text("Yes, you're right! GTFO..")
+        update.effective_message.reply_text(
+            text=gs(chat.id, "banmee"))
         return (
             "<b>{}:</b>"
             "\n#BANME"
@@ -537,7 +547,8 @@ def banme(update: Update, context: CallbackContext):
         )
 
     else:
-        update.effective_message.reply_text("Huh? I can't :/")
+        update.effective_message.reply_text(
+            text=gs(chat.id, "banmeee"))
 
 
 @dev_plus
@@ -560,37 +571,8 @@ def snipe(update: Update, context: CallbackContext):
             )
 
 
-__help__ = """
-*User Commands:*
-
-✪ /kickme - `kicks the user who issued the command`
-
-*Admins Commands Only:*
-
-✪ /ban - `bans a user. (via handle, or reply)`
-
-✪ /sban - `Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)`
-
-✪ /tban - `bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
-
-✪ /unban - `unbans a user. (via handle, or reply)`
-
-✪ /kick - `kicks a user out of the group, (via handle, or reply)`
-
-✪ /mute - `silences a user. Can also be used as a reply, muting the replied to user.`
-
-✪ /tmute - `mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
-
-✪ /unmute - `unmutes a user. Can also be used as a reply, muting the replied to user.`
-
-✪ /zombies - `searches deleted accounts`
-
-✪ /zombies - `removes deleted accounts from the group.`
-
-✪ /snipe - `Make me send a message to a specific chat.`
-
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
-"""
+def helps(chat):
+    return gs(chat, "bansmutes_help")
 
 
 __mod_name__ = "Bᴀɴ/Mᴜᴛᴇ"
