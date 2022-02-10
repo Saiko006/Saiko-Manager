@@ -1,5 +1,5 @@
 # Language name in their native
-language: "English 🇬🇧"
+language: "Indonesia 🇮🇩"
 # name of people(s) who worked on this translation
 authors: "@rumahakhirat"
 
@@ -29,14 +29,14 @@ group_start_text: |
     **ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ aktif 💎**
                 
     **Python:** `{memek()}`
-    **Telegram Library:** `v{peler}`
+    **Telegram Library:** `{peler}`
 
 pm_about_text: |
-    *KEKINIAN* - `A bot to manage your groups with additional features!`
-    `Here the basic help regarding use of Kekinian Robot.`
+    *KEKINIAN* - `BOT untuk mengelola grup Anda dengan fitur tambahan!`
+    `Di sini bantuan dasar mengenai penggunaan Kekinian Robot.`
             
-    `Almost all modules usage defined in the help menu, checkout by sending` `/help`
-    `Report error/bugs click the Button`
+    `Hampir semua modul penggunaan didefinisikan dalam menu Bantuan, checkout dengan mengirim` `/help`
+    `Laporkan kesalahan, klik tombol bug`
             
 pm_basic_help: |
     *Here's basic Help regarding* *How to use Me?*"
@@ -91,50 +91,48 @@ pm_music_text: |
     *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
             
 pm_help_text: |
-    *📚 MAIN COMMANDS 📚*
+    *PERINTAH UTAMA*
   
-    ✪ /start = `Starts me! Your probably already used this.`
-    ✪ /help = `Click this I ll let you know about myself!.`
-    ✪ /settings = `in PM: will send you your settings for all supported modules.`
-    ✪ /setting = `in your group to set auth and volume.`
-
-    *In A Group: Will Redirect You To Pm With All That Chats Settings.*
+    ✪ /start = `Mulai aku! Anda mungkin sudah menggunakan ini.`
+    ✪ /help = `Klik ini saya akan memberi tahu Anda tentang diri saya sendiri!.`
+    ✪ /settings = `in PM: Akan mengirimkan pengaturan Anda untuk semua modul yang didukung.`
+    *Dalam Grup: Akan mengarahkan Anda ke PM dengan semua pengaturan obrolan.*
   
-pm_help_module_text: "Here is the help for the *{}* module :\n"
+pm_help_module_text: "Ini bantuan untuk *{}* modul :\n"
 
-source_text: "Hi.. I'm *Kekinian Robot*"
+source_text: "Hi.. Aku *Kekinian Robot*"
 
 # Group Help Text
-group_help_text: "Contact me in PM to get the list of possible commands."
+group_help_text: "Hubungi saya di PM untuk mendapatkan daftar perintah yang mungkin."
 group_help_modules_text: "Contact me in PM to get help of *{}*"
 # Group Help Button
-group_help_button: "Help"
+group_help_button: "Bantuan"
 # PM Settings
 pm_settings_personal_text: "These are your current settings:"
-pm_settings_group_text: "Which module would you like to check {}'s settings for?"
-pm_settings_groups_text: "*{}* has the following settings for the *{}* module:\n\n"
+pm_settings_group_text: "Modul mana yang ingin Anda periksa {}'s Pengaturan untuk?"
+pm_settings_groups_text: "*{}* memiliki pengaturan berikut untuk *{}* modul:\n\n"
 pm_settings_groupss_text: |
-    Hi there! There are quite a few settings for {} - go ahead and pick what you're interested in.
+    "Hai, yang di sana! Ada beberapa pengaturan untuk {} - Silakan dan pilih apa yang Anda minati."
 # Group Settings Text
-group_settings_text: "Click here to get this chat's settings, as well as yours."
+group_settings_text: "Klik di sini untuk mendapatkan pengaturan obrolan ini, serta milik Anda."
 # Group Settings Button
-group_settings_button: "Settings"
+group_settings_button: "Pengaturan"
 
 # PM Button
-help_command_button: "Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ"
-music_button: "𝐌ᴜsɪᴄ"
-inline_button: "Iɴʟɪɴᴇ"
-about_button: "Aʙᴏᴜᴛ"
-basichelp_button: "Bᴀꜱɪᴄ Hᴇʟᴘ"
-add_bot_to_group_button: "➕ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕"
-bugs_button: "Bᴜɢ'ꜱ"
-botlist_button: "Bᴏᴛ Lɪꜱᴛ"
+help_command_button: "ʙᴀɴᴛᴜᴀɴ & ᴘᴇʀɪɴᴛᴀʜ"
+music_button: "ᴍᴜsɪᴋ"
+inline_button: "ᴅɪ ʙᴀʀɪsᴀɴ"
+about_button: "ᴛᴇɴᴛᴀɴɢ"
+basichelp_button: "ʙᴀɴᴛᴜᴀɴ ᴅᴀsᴀʀ"
+add_bot_to_group_button: "➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴜᴘ ᴀɴᴅᴀ ➕"
+bugs_button: "Bᴜɢ"
+botlist_button: "ᴅᴀꜰᴛᴀʀ ʙᴏᴛ"
 admin_button: "Aᴅᴍɪɴ"
 notes_button: "Nᴏᴛᴇꜱ"
-support_button: "Sᴜᴘᴘᴏʀᴛ"
-channel_button: "Uᴘᴅᴀᴛᴇꜱ"
-credit_button: "Cʀᴇᴅɪᴛ"
-back_button: "Back"
+support_button: "ᴅᴜᴋᴜɴɢᴀɴ"
+channel_button: "ᴘᴇᴍʙᴀʀᴜᴀɴ"
+credit_button: "ᴋʀᴇᴅɪᴛ"
+back_button: "ᴋᴇᴍʙᴀʟɪ"
 
 # MODULES
 antich_help: |
