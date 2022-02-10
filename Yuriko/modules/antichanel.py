@@ -7,7 +7,7 @@ from telegram.ext import CallbackContext
 from Yuriko.modules.helper_funcs.decorators import emikocmd, emikomsg
 from Yuriko.modules.sql.antichanel_sql import antichannel_status, disable_antichannel, enable_antichannel
 from Yuriko.modules.helper_funcs.chanel_mode import user_admin, AdminPerms
-
+from Yuriko.modules.language import gs
 
 @emikocmd(command="antich", group=100)
 @user_admin(AdminPerms.CAN_RESTRICT_MEMBERS)
@@ -42,14 +42,7 @@ def eliminate_channel(update: Update, context: CallbackContext):
         sender_chat = message.sender_chat
         bot.ban_chat_sender_chat(sender_chat_id=sender_chat.id, chat_id=chat.id)
         
-__help__ = """
-──「 Anti-Channels 」──
-    ⚠️ WARNING ⚠️
-*IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
-Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
-This command can only be used by *Admins*.
-❂ /antich <'on'/'yes'> *:* enables anti-channel-mode
-❂ /antich <'off'/'no'> *:* disabled anti-channel-mode
-"""
+def helps(chat):
+    return gs(chat, "antich_help")
 
 __mod_name__ = "Anti-Channel"
