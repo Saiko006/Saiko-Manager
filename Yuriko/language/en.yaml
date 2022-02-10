@@ -138,6 +138,35 @@ channel_button: "Uᴘᴅᴀᴛᴇꜱ"
 credit_button: "Cʀᴇᴅɪᴛ"
 back_button: "Back"
 
+#bans
+not_user: "⚠️ User not found"
+not_userr: "Can't seem to find this person"
+if_user: "Oh yeah, ban myself, noob!"
+if_userr: "I'm not gonna BAN myself, are you crazy?"
+if_user_ban: "I don't feel like it"
+not_reason: "You haven't specified a time to ban this user for!"
+user_owner: "Trying to put me against a King huh?"
+user_dev: "I can't act against our Prince"
+user_demons: "Bring an order from Captain to fight a Assasin servant"
+user_tigers: "Bring an order from Soldier to fight a Lancer servant"
+user_wolves: "Trader access make them ban immune!"
+user_wolvess: "⚠️ Cannot banned admin!"
+error_unban: "Uhm...that didn't work..."
+error_temp_ban: "Well damn, I can't ban that user"
+unbanbb: "⚠️ You don't have enough rights to unmute people"
+unbanbbb: "⚠️ You don't have enough rights to delete this message"
+banmee: "Yes, you're right! GTFO.."
+banmeee: "Huh? I can't :/"
+
+#kick
+a: "Yeahhh I'm not gonna do that"
+b: "I really wish I could kick this user...."
+c: "⚠️ Well damn, I can't kick that user"
+
+#Bans button
+unban_button: "Uɴʙᴀɴ"
+delunban_button: "Dᴇʟᴇᴛᴇ"
+
 # MODULES
 antich_help: |
     ──「 Anti-Channels 」──
