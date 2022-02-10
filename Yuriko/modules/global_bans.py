@@ -80,6 +80,12 @@ def gban(update: Update, context: CallbackContext):
     log_message = ""
 
     user_id, reason = extract_user_and_text(message, args)
+    
+    if not reason
+        message.reply_text(
+                "Give me a reason why i should to do this, i can't do this without reason because it is danger command."
+        )
+        return
 
     if not user_id:
         message.reply_text(
