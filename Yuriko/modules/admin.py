@@ -163,8 +163,8 @@ def setchat_title(update: Update, context: CallbackContext):
     try:
         context.bot.set_chat_title(int(chat.id), str(title))
         msg.reply_text(
-            text=gs(chat.id, "t").format(title)),
-            parse_mode=ParseMode.MARKDOWN,
+            f"Successfully set <b>{title}</b> as new chat title!",
+            parse_mode=ParseMode.HTML,
         )
     except BadRequest as excp:
         msg.reply_text(f"Error! {excp.message}.")
