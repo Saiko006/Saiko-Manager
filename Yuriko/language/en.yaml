@@ -166,6 +166,11 @@ d: "You're missing rights to change chat info!"
 e: "You need to reply to some sticker to set chat sticker set"
 f: "Successfully set new group stickers!"
 g: "Sorry, due to telegram restrictions chat needs to have minimum 100 members before they can have group stickers!"
+h: "You can only set some photo as chat pic!"
+i: "Successfully set new chatpic"
+j: "Reply to some photo or file to set new chat pic"
+k: "You don't have enough rights to delete group photo"
+l: "Successfully deleted chat's profile photo!"
 
 #Bans button
 unban_button: "Uɴʙᴀɴ"
