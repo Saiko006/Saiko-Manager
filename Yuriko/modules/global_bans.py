@@ -39,6 +39,7 @@ from Yuriko.modules.helper_funcs.extraction import (
     extract_user_and_text,
 )
 from Yuriko.modules.helper_funcs.misc import send_to_list
+from Yuriko.modules.language import gs
 
 GBAN_ENFORCE_GROUP = 6
 
