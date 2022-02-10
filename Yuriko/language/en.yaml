@@ -33,7 +33,7 @@ pm_about_text: |
 pm_basic_help: |
   *Here's basic Help regarding, How to use Me?*
             
-  ✪ `Firstly Add` `[ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)` `to your group by pressing` [here](http://t.me/KekiniBot}?startgroup=true)
+  ✪ `Firstly Add` [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot) `to your group by pressing` [here](http://t.me/KekiniBot}?startgroup=true)
   ✪ `After adding promote me manually with full rights for faster experience`
   ✪ `Than send` /reload@KekiniBot `in that chat to refresh admin list in My database`
             
@@ -90,7 +90,7 @@ pm_music_text: |
             
   ✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*
             
-  *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*    
+  ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!    
             
 pm_help_text: |
   *MAIN COMMANDS*
@@ -183,7 +183,7 @@ antich_help: |
     ❂ /antich <'on'/'yes'> *:* enables anti-channel-mode
     ❂ /antich <'off'/'no'> *:* disabled anti-channel-mode
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 anime_help: |
     ──「 Anime search 」──  
@@ -203,7 +203,7 @@ anime_help: |
     ✪ /animequotes - `for anime quotes randomly as photos.`
     ✪ /quote - `send quotes randomly as text`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 antispam_help: |
     ──「 Anti-Spam 」──
@@ -222,7 +222,7 @@ antispam_help: |
 
     *Note:* `Users can appeal spamwatch bans at` @Spamwatch
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 admin_help: |
     ──「 Admins 」──
@@ -253,7 +253,7 @@ admin_help: |
     ✪ /setrules - `<your rules here>  set the rules for this chat.`
     ✪ /clearrules - `clear the rules for this chat.`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 blacklist_help: |
     ──「 Blacklist 」──
@@ -279,7 +279,7 @@ blacklist_help: |
     Note:
     ✪ *<sticker link> can be* `https://t.me/addstickers/<sticker>` *or just* `<sticker>` *or reply to the sticker message*
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 approval_help: |
     ──「 Approval 」──
@@ -295,7 +295,7 @@ approval_help: |
     ✪ /approved - `List all approved users.`
     ✪ /unapproveall - `Unapprove `*ALL* `users in a chat. This cannot be undone.`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 bansmutes_help: |
     ──「 Ban/Mute 」──
@@ -316,7 +316,7 @@ bansmutes_help: |
     ✪ /zombies - `removes deleted accounts from the group.`
     ✪ /snipe - `Make me send a message to a specific chat.`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 chatbot_help: |
     ──「 Chatbot 」──
@@ -326,7 +326,7 @@ chatbot_help: |
     ✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
     ✪ /chatbot EN : Enables English only chatbot.
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 cleaner_help: |
     ──「 Cleaner 」──
@@ -340,7 +340,7 @@ cleaner_help: |
     ✪ /gignoreblue - `<word> globally ignorea bluetext cleaning of saved word across KEKINIAN.`
     ✪ /ungignoreblue - `<word> remove said command from global cleaning list`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 connection_help: |
     ──「 Connection 」──
@@ -355,7 +355,7 @@ connection_help: |
     *Admins only:*
     ✪ /allowconnect - `<yes/no> allow a user to connect to a chat`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 extras_help: |
     ──「 Extras 」──
@@ -385,7 +385,7 @@ extras_help: |
     ✪ /lyrics (song name) - `This plugin searches for song lyrics with song name.`
     ✪ /bug (query) - `Report on boat problems`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 fsub_feds_help: |
     ──「 Fsub/feds 」──
@@ -393,7 +393,7 @@ fsub_feds_help: |
     *Force Subscribe:*
     ❂ Kekinian can mute members who are not subscribed your channel until they subscribe
     ❂ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
-    ❂*Setup*
+    ❂ Setup
     
     *Only creator*
     ❂ Add me in your group as admin
@@ -419,7 +419,7 @@ fsub_feds_help: |
     ❂ `/fedadminhelp`*:* Provides help for fed administration commands
     ❂ `/feduserhelp`*:* Provides help for commands anyone can use
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_OWNER_HELP: | 
     ──「 Feds 」──
@@ -437,7 +437,7 @@ FED_OWNER_HELP: |
     ❂ `/fbroadcast <message>`*:* Broadcasts a messages to all groups that have joined your fed
     ❂ `/fedsubs`*:* Shows the feds your group is subscribed to `(broken rn)`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_ADMIN_HELP: |
     ──「 Feds 」──
@@ -454,7 +454,7 @@ FED_ADMIN_HELP: |
     ❂ `/fedchats`*:* Get all the chats that are connected in the Federation
     ❂ `/chatfed `*:* See the Federation in the current chat\n
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_USER_HELP: | 
     ──「 Feds 」──
@@ -464,7 +464,7 @@ FED_USER_HELP: |
     ❂ /fednotif <on/off>*:* Federation settings not in PM when there are users who are fbaned/unfbanned
     ❂ /frules*:* See Federation regulations\n
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 filters_help: |
     ──「 Filters 」──
@@ -493,7 +493,7 @@ filters_help: |
     *NOTE*: `Filters also support markdown formatters like: {first}, {last} etc.. and buttons.`
     `Check /markdownhelp to know more!`
 
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 fun_help: |
     ──「 Fun 」──
@@ -530,7 +530,7 @@ fun_help: |
     ✪ /latin - `<text>: latinify your text!`
     ✪ /lined - `<text>: lined your text!`
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 greetings_help: |
     ──「 Greetings 」──
@@ -554,7 +554,7 @@ greetings_help: |
     *Welcome markdown:*
     ✪ /welcomehelp - `view more formatting information for custom welcome/goodbye messages.`
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 WELCOME_HELP_TEXT: |
     ──「 Greetings Format Help 」──
@@ -582,7 +582,7 @@ WELCOME_HELP_TEXT: |
     "You can even set images/gifs/videos/voice messages as the welcome message by "
     "replying to the desired media, and calling `/setwelcome`."
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 WELCOME_MUTE_HELP_TEXT: |
     ──「 Greetings Mute Format Help 」──
@@ -594,7 +594,7 @@ WELCOME_MUTE_HELP_TEXT: |
     "  ❂ `/welcomemute off`*:* turns off welcomemute.\n"
     "*Note:* Strong mode kicks a user from the chat if they dont verify in 120seconds. They can always rejoin though"
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 info_dan_afk_help: |
     ──「 Info & Afk 」──
@@ -632,7 +632,7 @@ info_dan_afk_help: |
       *What is that health thingy?*
      `Come and see` [HP System explained](https://t.me/KekinianOfficial/4) 
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 logchannel_help: |
     ──「 Log Channel 」──
@@ -645,7 +645,7 @@ logchannel_help: |
     ➩ sending /setlog in the channel
     ➩ forwarding the /setlog to the group
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 logomarker_help: |
     ──「 Logo Marker 」──
@@ -656,7 +656,7 @@ logomarker_help: |
     *Image Editor : *
     ❂  /edit <reply photo> - to edit image.
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 MARKDOWN_HELP: |
     ──「 Markdown Help 」──
@@ -680,7 +680,7 @@ MARKDOWN_HELP: |
     `This will create two buttons on a single line, instead of one button per line.`
     `Keep in mind that your message <b>MUST</b> contain some text other than just a button!`
         
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 MARKDOWN_HELP_TEXT_1: "Try forwarding the following message to me, and you'll see, and Use #test!"
 MARKDOWN_HELP_TEXT_2: |
@@ -712,14 +712,14 @@ locks_help: |
     ❂ Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
     ❂ Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group.
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 myinfo_help: |
     ──「 Myinfo 」──
     
     ~ /myinfo *:* Get Your Details On Inline.
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 notes_help: |
     ──「 Notes 」──
@@ -749,7 +749,7 @@ notes_help: |
     ❂ /removeallnotes*:* removes all notes from the group
     *Note:* Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 paste_help: |
     ──「 Anti-Flood 」──
@@ -764,7 +764,7 @@ paste_help: |
     ❂ `/dpaste` *:* Paste to dogbin
     ❂ `/pvpaste` *:* Paste to privatebin
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 report_help: |
     ──「 Report 」──
@@ -778,7 +778,7 @@ report_help: |
     ❂ If done in pm, toggles your status.
     ❂ If in group, toggles that groups's status.
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 search_help: |
     ──「 Search 」──
@@ -794,7 +794,7 @@ search_help: |
     ❂ Kekinian <query>*:* Kekinian answers the query
     💡 Ex : `Kekinian where is Japan?`
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 stickers_help: |
     ──「 Stickers 」──
@@ -810,7 +810,7 @@ stickers_help: |
     ❂ /kamuii <1-8> *:* To deepefying stiker.
     ❂ /mmf <reply with text>*:* To draw a text for sticker or pohots.
     
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 translator_help: |
     ──「 Translator 」──
@@ -836,7 +836,7 @@ translator_help: |
       sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
       vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
       
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 tools_help: |
     ──「 Tools 」──
@@ -878,7 +878,7 @@ tools_help: |
     Tagger
     ❂ /tagall : for tag everyone at least 100 member first.
       
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 warning_help: |
     ──「 Warning 」──
@@ -893,7 +893,7 @@ warning_help: |
     ❂ /warnlimit <num>: set the warning limit
     ❂ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
         
-    *✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!*
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 # Admin.py Variabel Text
 user_change_info: "You're missing rights to change chat info!"
