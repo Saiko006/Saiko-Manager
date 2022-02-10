@@ -66,7 +66,8 @@ def setchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("Anda tidak memiliki hak untuk mengubah chat info!!")
+        msg.reply_text(
+            text=gs(chat.id, "d"))
         return
 
     if msg.reply_to_message:
@@ -75,7 +76,8 @@ def setchatpic(update: Update, context: CallbackContext):
         elif msg.reply_to_message.document:
             pic_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("Anda hanya dapat mengatur foto sebagai foto obrolan!")
+            msg.reply_text(
+                text=gs(chat.id, "h"))
             return
         dlmsg = msg.reply_text("Just a sec...")
         tpic = context.bot.get_file(pic_id)
@@ -83,7 +85,8 @@ def setchatpic(update: Update, context: CallbackContext):
         try:
             with open("gpic.png", "rb") as chatp:
                 context.bot.set_chat_photo(int(chat.id), photo=chatp)
-                msg.reply_text("Successfully set new chatpic!")
+                msg.reply_text(
+                    text=gs(chat.id, "i"))
         except BadRequest as excp:
             msg.reply_text(f"Error! {excp.message}")
         finally:
@@ -91,7 +94,8 @@ def setchatpic(update: Update, context: CallbackContext):
             if os.path.isfile("gpic.png"):
                 os.remove("gpic.png")
     else:
-        msg.reply_text("Reply to some photo or file to set new chat pic!")
+        msg.reply_text(
+            text=gs(chat.id, "j"))
         
 @bot_admin
 @user_admin
@@ -101,11 +105,13 @@ def rmchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("Anda tidak memiliki cukup hak untuk menghapus foto grup")
+        msg.reply_text(
+            text=gs(chat.id, "k"))
         return
     try:
         context.bot.delete_chat_photo(int(chat.id))
-        msg.reply_text("Successfully deleted chat's profile photo!")
+        msg.reply_text(
+            text=gs(chat.id, "l"))
     except BadRequest as excp:
         msg.reply_text(f"Error! {excp.message}.")
         return
