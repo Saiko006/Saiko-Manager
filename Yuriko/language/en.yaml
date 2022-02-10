@@ -20,7 +20,7 @@ pm_start_text: |
   ✪ ᴘᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 group_start: |
-  "I'm awake already!<b>Haven't slept since:</b> <code>{}</code>"
+  I'm awake already!<b>Haven't slept since:</b> <code>{}</code>
 
 pm_about_text: |
   *KEKINIAN* - A bot to manage your groups with additional features!.
@@ -164,13 +164,25 @@ c: "⚠️ Well damn, I can't kick that user"
 #admin
 d: "You're missing rights to change chat info!"
 e: "You need to reply to some sticker to set chat sticker set"
-f: "Successfully set new group stickers!"
+f: "Successfully set new group stickers in {}!"
 g: "Sorry, due to telegram restrictions chat needs to have minimum 100 members before they can have group stickers!"
 h: "You can only set some photo as chat pic!"
 i: "Successfully set new chatpic"
 j: "Reply to some photo or file to set new chat pic"
 k: "You don't have enough rights to delete group photo"
 l: "Successfully deleted chat's profile photo!"
+m: "Setting empty description won't do anything!"
+n: "You don't have enough rights to change chat info!"
+o: "Enter some text to set new title in your chat!"
+p: "You don't have the necessary rights to do that!"
+q: "You don't seem to be referring to a user or the ID specified is incorrect"
+r: "How am I meant to promote someone that's already an admin?"
+s: "I can't promote myself! Get an admin to do it for me."
+t: "Successfully set <b>{}</b> as new chat title!"
+u: "I can't promote someone who isn't in the group."
+v: "An error occured while promoting."
+w: 
+
 
 #Bans button
 unban_button: "Uɴʙᴀɴ"
@@ -216,10 +228,10 @@ antispam_help: |
     ❂ `/antispam <on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
     Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect \
     you and your groups by removing spam flooders as quickly as possible.
-    *Note:* Users can appeal gbans or report spammers at @{SUPPORT_CHAT}
+    *Note:* Users can appeal gbans or report spammers at @Kekiniangroup
     This also integrates @Spamwatch API to remove Spammers as much as possible from your chatroom!
     *What is SpamWatch?*
-    SpamWatch maintains a large constantly updated ban-list of spambots, trolls, bitcoin spammers and unsavoury characters[.](https://telegra.ph/file/f584b643c6f4be0b1de53.jpg)
+    SpamWatch maintains a large constantly updated ban-list of spambots, trolls, bitcoin spammers and unsavoury characters
     Constantly help banning spammers off from your group automatically So, you wont have to worry about spammers storming your group.
     *Note:* Users can appeal spamwatch bans at @SpamwatchSupport
     
