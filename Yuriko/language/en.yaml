@@ -93,12 +93,11 @@ pm_music_text: |
   *✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
             
 pm_help_text: |
-  *📚 MAIN COMMANDS 📚*
+  *MAIN COMMANDS*
   
   ✪ /start = `Starts me! Your probably already used this.`
   ✪ /help = `Click this I ll let you know about myself!.`
   ✪ /settings = `in PM: will send you your settings for all supported modules.`
-  ✪ /setting = `in your group to set auth and volume.`
 
   *In A Group: Will Redirect You To Pm With All That Chats Settings.*
   
@@ -136,7 +135,7 @@ notes_button: "Nᴏᴛᴇꜱ"
 support_button: "Sᴜᴘᴘᴏʀᴛ"
 channel_button: "Uᴘᴅᴀᴛᴇꜱ"
 credit_button: "Cʀᴇᴅɪᴛ"
-back_button: "Back"
+back_button: "ʙᴀᴄᴋ"
 
 #bans
 not_user: "⚠️ User not found"
