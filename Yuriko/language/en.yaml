@@ -20,8 +20,7 @@ pm_start_text: |
   ✪ ᴘᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 group_start: |
-  I'm awake already!
-  <b>Haven't slept since:</b> <code>{}</code>
+  "I'm awake already!<b>Haven't slept since:</b> <code>{}</code>"
 
 pm_about_text: |
   *KEKINIAN* - A bot to manage your groups with additional features!.
@@ -165,7 +164,7 @@ c: "⚠️ Well damn, I can't kick that user"
 #admin
 d: "You're missing rights to change chat info!"
 e: "You need to reply to some sticker to set chat sticker set"
-f: "Successfully set new group stickers in {chat.title}!"
+f: "Successfully set new group stickers in {}!"
 g: "Sorry, due to telegram restrictions chat needs to have minimum 100 members before they can have group stickers!"
 
 #Bans button
