@@ -124,13 +124,15 @@ def set_desc(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text("Anda kehilangan hak untuk mengubah info obrolan!✋")
+        return msg.reply_text(
+            text=gs(chat.id, "d"))
 
     tesc = msg.text.split(None, 1)
     if len(tesc) >= 2:
         desc = tesc[1]
     else:
-        return msg.reply_text("Menyetel deskripsi kosong tidak akan menghasilkan apa-apa!🤔")
+        return msg.reply_text(
+            text=gs(chat.id, "m"))
     try:
         if len(desc) > 255:
             return msg.reply_text("Description must needs to be under 255 characters!🙂")
@@ -148,12 +150,14 @@ def setchat_title(update: Update, context: CallbackContext):
     args = context.args
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("Anda tidak memiliki cukup hak untuk mengubah info obrolan!😏")
+        msg.reply_text(
+            text=gs(chat.id, "n"))
         return
 
     title = " ".join(args)
     if not title:
-        msg.reply_text("Masukkan beberapa teks untuk menetapkan title baru di grup Anda!😴")
+        msg.reply_text(
+            text=gs(chat.id, "o"))
         return
 
     try:
@@ -186,14 +190,15 @@ def promote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("Anda tidak memiliki hak yang diperlukan untuk melakukan itu!")
+        message.reply_text(
+            text=gs(chat.id, "p"))
         return
 
     user_id = extract_user(message, args)
 
     if not user_id:
         message.reply_text(
-            "Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan 🤷🏻‍♂",
+            text=gs(chat.id, "q"),
         )
         return
 
@@ -203,11 +208,13 @@ def promote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("😏 Bagaimana saya mempromosikan seseorang yang sudah menjadi admin!")
+        message.reply_text(
+            text=gs(chat.id, "r"))
         return
 
     if user_id == bot.id:
-        message.reply_text("Saya tidak bisa mempromosikan diriku sendiri! Panggil admin untuk melakukannya.")
+        message.reply_text(
+            text=gs(chat.id, "s"))
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
