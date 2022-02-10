@@ -257,9 +257,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
                         InlineKeyboardButton(
                             text=gs(chat.id, "unban_button"), callback_data=f"unbanb_unban={user_id}"
                         ),
-                    ]
-                    [
-                        InlineKeyboardButton(text=gs(chat.id, "delunban_button", callback_data="unbanb_del"),
+                        InlineKeyboardButton(text=gs(chat.id, "delunban_button"), callback_data="unbanb_del"),
                     ]
                 ]
             ),
