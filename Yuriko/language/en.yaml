@@ -33,7 +33,7 @@ pm_about_text: |
 pm_basic_help: |
   *Here's basic Help regarding, How to use Me?*
             
-  ✪ `Firstly Add {dispatcher.bot.first_name} to your group by pressing` [here](http://t.me/{dispatcher.bot.username}?startgroup=true)
+  ✪ `Firstly Add` `{dispatcher.bot.first_name}` `to your group by pressing` [here](http://t.me/{dispatcher.bot.username}?startgroup=true)
   ✪ `After adding promote me manually with full rights for faster experience`
   ✪ `Than send` /reload@KekiniBot `in that chat to refresh admin list in My database`
             
