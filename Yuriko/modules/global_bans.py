@@ -84,7 +84,7 @@ def gban(update: Update, context: CallbackContext):
     
     if not reason:
         message.reply_text(
-                "Give me a reason why i should to do this, i can't do this without reason because it is danger command."
+            "Give me a reason why i should to do this, i can't do this without reason because it is danger command."
         )
         return
 
