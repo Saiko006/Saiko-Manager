@@ -43,6 +43,7 @@ from Yuriko.modules.helper_funcs.chat_status import (
 from Yuriko.modules.helper_funcs.extraction import extract_user_and_text
 from Yuriko.modules.helper_funcs.string_handling import extract_time
 from Yuriko.modules.log_channel import gloggable, loggable
+from Yuriko.modules.language import gs
 
 
 
@@ -62,40 +63,47 @@ def ban(update: Update, context: CallbackContext) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("⚠️ User not found.")
+        message.reply_text(
+            text=gs(chat.id, "not_user"))
         return log_message
     try:
         member = chat.get_member(user_id)
     except BadRequest as excp:
         if excp.message != "User not found":
             raise
-        message.reply_text("Can't seem to find this person.")
+        message.reply_text(
+            text=gs(chat.id, "not_userr"))
         return log_message
     if user_id == bot.id:
-        message.reply_text("Oh yeah, ban myself, noob!")
+        message.reply_text(
+            text=gs(chat.id, "if_user"))
         return log_message
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Trying to put me against a King huh?")
+            message.reply_text(
+                text=gs(chat.id, "user_owner"))
         elif user_id in DEV_USERS:
-            message.reply_text("I can't act against our Prince.")
+            message.reply_text(
+                text=gs(chat.id, "user_dev"))
         elif user_id in DRAGONS:
             message.reply_text(
-                "Fighting this Emperor here will put user lives at risk."
+                text=gs(chat.id, "user_dragons")
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Captain to fight a Assasin servant."
+                text=gs(chat.id, "user_demons")
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Soldier to fight a Lancer servant."
+                text=gs(chat.id, "user_tigers")
             )
         elif user_id in WOLVES:
-            message.reply_text("Trader access make them ban immune!")
+            message.reply_text(
+                text=gs(chat.id, "user_wolves"))
         else:
-            message.reply_text("⚠️ Cannot banned admin.")
+            message.reply_text(
+                text=gs(chat.id, "user_wolvess"))
         return log_message
     if message.text.startswith("/s"):
         silent = True
@@ -135,9 +143,9 @@ def ban(update: Update, context: CallbackContext) -> str:
                 [
                     [
                         InlineKeyboardButton(
-                            text="🕳️ Uɴʙᴀɴ", callback_data=f"unbanb_unban={user_id}"
+                            text=gs(chat.id, "unban_button"), callback_data=f"unbanb_unban={user_id}"
                         ),
-                        InlineKeyboardButton(text="🗑️ Dᴇʟᴇᴛᴇ", callback_data="unbanb_del"),
+                        InlineKeyboardButton(text=gs(chat.id, "delunban_button"), callback_data="unbanb_del"),
                     ]
                 ]
             ),
@@ -161,7 +169,8 @@ def ban(update: Update, context: CallbackContext) -> str:
                 chat.id,
                 excp.message,
             )
-            message.reply_text("Uhm...that didn't work...")
+            message.reply_text(
+                text=gs(chat.id, "error_unban"))
 
     return log_message
 
@@ -181,7 +190,8 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("⚠️ User not found.")
+        message.reply_text(
+            text=gs(chat.id, "not_user"))
         return log_message
 
     try:
@@ -189,18 +199,22 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
     except BadRequest as excp:
         if excp.message != "User not found":
             raise
-        message.reply_text("I can't seem to find this user.")
+        message.reply_text(
+            text=gs(chat.id, "not_userr"))
         return log_message
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text(
+            text=gs(chat.id, "if_userr"))
         return log_message
 
     if is_user_ban_protected(chat, user_id, member):
-        message.reply_text("I don't feel like it.")
+        message.reply_text(
+            text=gs(chat.id, "is_user_ban"))
         return log_message
 
     if not reason:
-        message.reply_text("You haven't specified a time to ban this user for!")
+        message.reply_text(
+            text=gs(chat.id, "not_reason"))
         return log_message
 
     split_reason = reason.split(None, 1)
@@ -241,9 +255,9 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
                 [
                     [
                         InlineKeyboardButton(
-                            text="🕳️ Uɴʙᴀɴ", callback_data=f"unbanb_unban={user_id}"
+                            text=gs(chat.id, "unban_button"), callback_data=f"unbanb_unban={user_id}"
                         ),
-                        InlineKeyboardButton(text="🗑️ Dᴇʟᴇᴛᴇ", callback_data="unbanb_del"),
+                        InlineKeyboardButton(text=gs(chat.id, "delunban_button", callback_data="unbanb_del"),
                     ]
                 ]
             ),
@@ -267,7 +281,8 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
                 chat.id,
                 excp.message,
             )
-            message.reply_text("Well damn, I can't ban that user.")
+            message.reply_text(
+                text=gs(chat.id, "error_temp_ban"))
 
     return log_message
 
@@ -291,7 +306,7 @@ def unbanb_btn(update: Update, context: CallbackContext) -> str:
             if not is_user_admin(chat, int(user.id)):
                 bot.answer_callback_query(
                     query.id,
-                    text="⚠️ You don't have enough rights to unmute people",
+                    text=gs(chat.id, "unbanbb"),
                     show_alert=True,
                 )
                 return ""
@@ -316,7 +331,7 @@ def unbanb_btn(update: Update, context: CallbackContext) -> str:
         if not is_user_admin(chat, int(user.id)):
             bot.answer_callback_query(
                 query.id,
-                text="⚠️ You don't have enough rights to delete this message.",
+                text=gs(chat.id, "unbanbbb"),
                 show_alert=True,
             )
             return ""
