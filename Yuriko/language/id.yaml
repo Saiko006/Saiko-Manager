@@ -35,11 +35,11 @@ pm_about_text: |
 pm_basic_help: |
     *Here's basic Help regarding* *How to use Me?*"
             
-    ✪ `Firstly Add` {dispatcher.bot.first_name} `to your group by pressing` [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
-    ✪ `After adding promote me manually with full rights for faster experience.`\n"
-    ✪ `Than send` `/reload@KekiniBot` `in that chat to refresh admin list in My database.`\n"
+    ✪ `Pertama tambahkan` `{dispatcher.bot.first_name}` `ke grup Anda dengan menekan` [disini](http://t.me/{dispatcher.bot.username}?startgroup=true)
+    ✪ `Setelah menambahkan promosikan saya secara manual dengan hak penuh untuk pengalaman yang lebih cepat.`
+    ✪ `Ketik` /reload@KekiniBot `di obrolan itu untuk menyegarkan daftar admin di database saya.`
             
-    *All done now use below given button's to know about use!*
+    *Semua dilakukan sekarang gunakan tombol yang diberikan di bawah ini untuk mengetahui tentang penggunaan!*
             
 pm_basic_admin_text: |
     *Let's Make Your Group Bit Effective Now*
