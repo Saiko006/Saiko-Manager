@@ -24,6 +24,7 @@ from Yuriko.modules.helper_funcs.extraction import (
 from Yuriko.modules.log_channel import loggable
 from Yuriko.modules.helper_funcs.alternate import send_message
 from Yuriko.modules.language import gs
+from ..modules.helper_funcs.anonymous import user_admin, AdminPerms
 
 
 @bot_admin
@@ -174,7 +175,7 @@ def setchat_title(update: Update, context: CallbackContext):
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @loggable
 def promote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -262,7 +263,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @loggable
 def lowpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -343,7 +344,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @loggable
 def fullpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -435,7 +436,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @loggable
 def demote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -460,11 +461,6 @@ def demote(update: Update, context: CallbackContext) -> str:
     if user_member.status == "creator":
         message.reply_text(
             text=gs(chat.id, "t"))
-        return
-    
-    if user_member.status == "administrator":
-        message.reply_text(
-            text=gs(chat.id, "z"))
         return
             
     if not user_member.status == "administrator":
@@ -516,18 +512,14 @@ def demote(update: Update, context: CallbackContext) -> str:
 
 @user_admin
 def refresh_admin(update,_):
-    try:
-        ADMIN_CACHE.pop(update.effective_chat.id)
-    except KeyError:
-        pass
-
+    ADMIN_CACHE.pop(update.effective_chat.id)
     update.effective_message.reply_text("✅ Admins refreshed!")
 
 
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 def set_title(update: Update, context: CallbackContext):
     bot = context.bot
     args = context.args
@@ -592,7 +584,7 @@ def set_title(update: Update, context: CallbackContext):
 
 @bot_admin
 @can_pin
-@user_admin
+@user_admin(AdminPerms.CAN_PIN_MESSAGES)
 @loggable
 def pin(update: Update, context: CallbackContext) -> str:
     bot, args = context.bot, context.args
@@ -658,7 +650,7 @@ def pin(update: Update, context: CallbackContext) -> str:
 
 @bot_admin
 @can_pin
-@user_admin
+@user_admin(AdminPerms.CAN_PIN_MESSAGES)
 @loggable
 def unpin(update: Update, context: CallbackContext):
     chat = update.effective_chat
@@ -761,7 +753,7 @@ def pinned(update: Update, context: CallbackContext) -> str:
 
 
 @bot_admin
-@user_admin
+@user_admin(AdminPerms.CAN_INVITE_USERS)
 @connection_status
 def invite(update: Update, context: CallbackContext):
     bot = context.bot
