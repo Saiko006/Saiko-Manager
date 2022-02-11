@@ -463,7 +463,8 @@ def demote(update: Update, context: CallbackContext) -> str:
         return
     
     if user_member.status == "administrator":
-        message.reply_text("cannot demote admin")
+        message.reply_text(
+            text=gs(chat.id, "z")
         return
             
     if not user_member.status == "administrator":
