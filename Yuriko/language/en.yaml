@@ -179,7 +179,17 @@ q: "You don't seem to be referring to a user or the ID specified is incorrect"
 r: "How am I meant to promote someone that's already an admin?"
 s: "I can't promote myself! Get an admin to do it for me."
 u: "I can't promote someone who isn't in the group."
-v: "An error occured while promoting." 
+v: "An error occured while promoting."
+demote_button: "Demote"
+t: "This person CREATED the chat, how would I demote them?"
+w: "Can't demote what wasn't promoted"
+x: "I can't demote myself! Get an admin to do it for me."
+y: "Could not demote. I might not be admin, or the admin status was appointed by another"
+   " user, so I can't act upon them!"
+z: "*✅ Bot Restart*"
+   "*✅ Admin List Updated*"
+   
+    
 
 
 #Bans button
