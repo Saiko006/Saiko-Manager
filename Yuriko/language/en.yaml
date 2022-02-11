@@ -185,7 +185,6 @@ t: "This person CREATED the chat, how would I demote them?"
 w: "Can't demote what wasn't promoted"
 x: "I can't demote myself! Get an admin to do it for me."
 y: "Could not demote. I might not be admin, or the admin status was appointed by another\nuser, so I can't act upon them!"
-z: "✅ Admins refreshed"
 
 #Bans button
 unban_button: "Uɴʙᴀɴ"
