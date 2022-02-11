@@ -24,7 +24,7 @@ from Yuriko.modules.helper_funcs.extraction import (
 from Yuriko.modules.log_channel import loggable
 from Yuriko.modules.helper_funcs.alternate import send_message
 from Yuriko.modules.language import gs
-from ..modules.helper_funcs.anonymous import user_admin, AdminPerms
+from ..modules.helper_funcs.chanel_mode import user_admin, AdminPerms
 
 
 @bot_admin
