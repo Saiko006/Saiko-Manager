@@ -6,7 +6,7 @@ from telegram.ext import CallbackContext
 from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
-from Yuriko import DEV_USERS, SUDO_USERS, dispatcher
+from Yuriko import DEV_USERS, DRAGONS, dispatcher
 from .decorators import emikocallback
 
 class AdminPerms(Enum):
@@ -44,7 +44,7 @@ def user_admin(permission: AdminPerms):
                 user_id = message.from_user.id 
                 chat_id = message.chat.id
                 mem = context.bot.get_chat_member(chat_id=chat_id, user_id=user_id)
-                if getattr(mem, permission.value) is True or mem.status == "creator" or user_id in SUDO_USERS:
+                if getattr(mem, permission.value) is True or mem.status == "creator" or user_id in DRAGONS:
                     return func(update, context, *args, **kwargs)
                 else:
                     return message.reply_text(f"You lack the permission: `{permission.name}`", parse_mode=ParseMode.MARKDOWN)
