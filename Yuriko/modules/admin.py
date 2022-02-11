@@ -278,14 +278,15 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("Anda tidak memiliki hak yang diperlukan untuk melakukan itu !")
+        message.reply_text(
+            text=gs(chat.id, "p"))
         return
 
     user_id = extract_user(message, args)
 
     if not user_id:
         message.reply_text(
-            "Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan..",
+            text=gs(chat.id, "q"),
         )
         return
 
@@ -295,11 +296,13 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("Bagaimana saya mempromosikan seseorang yang sudah menjadi admin?")
+        message.reply_text(
+            text=gs(chat.id, "r"))
         return
 
     if user_id == bot.id:
-        message.reply_text("Saya tidak dapat mempromosikan diri saya sendiri! Panggil admin untuk melakukannya.")
+        message.reply_text(
+            text=gs(chat.id, "s"))
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -315,9 +318,11 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("Saya tidak dapat mempromosikan seseorang yang tidak ada di dalam grup")
+            message.reply_text(
+                text=gs(chat.id, "u"))
         else:
-            message.reply_text("Terjadi kesalahan saat mempromosikan.")
+            message.reply_text(
+                text=gs(chat.id, "v"))
         return
 
     bot.sendMessage(
@@ -354,14 +359,15 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("Anda tidak memiliki hak yang diperlukan untuk melakukan itu")
+        message.reply_text(
+            text=gs(chat.id, "p"))
         return
 
     user_id = extract_user(message, args)
 
     if not user_id:
         message.reply_text(
-            "Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan..",
+            text=gs(chat.id, "q"),
         )
         return
 
@@ -371,11 +377,13 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("Bagaimana saya mempromosikan seseorang yang sudah menjadi admin?")
+        message.reply_text(
+            text=gs(chat.id, "r"))
         return
 
     if user_id == bot.id:
-        message.reply_text("Sata tidak dapat mempromosikan diri saya sendiri! Panggil admin untuk melakukannya")
+        message.reply_text(
+            text=gs(chat.id, "s"))
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -397,14 +405,16 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("I can't promote someone who isn't in the group.")
+            message.reply_text(
+                text=gs(chat.id, "u"))
         else:
-            message.reply_text("An error occured while promoting.")
+            message.reply_text(
+                text=gs(chat.id, "v"))
         return
 
     keyboard = InlineKeyboardMarkup([[
         InlineKeyboardButton(
-            "Demote", callback_data="demote_({})".format(user_member.user.id))
+            text=gs(chat.id, "demote_button"), callback_data="demote_({})".format(user_member.user.id))
     ]])
 
     bot.sendMessage(
@@ -438,7 +448,7 @@ def demote(update: Update, context: CallbackContext) -> str:
     user_id = extract_user(message, args)
     if not user_id:
         message.reply_text(
-            "Anda sepertinya tidak merujuk pada pengguna atau ID yang ditentukan tidak benar..",
+            text=gs(chat.id, "q"),
         )
         return
 
@@ -448,15 +458,18 @@ def demote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status == "creator":
-        message.reply_text("Orang ini adalah OWNER!😏")
+        message.reply_text(
+            text=gs(chat.id, "t"))
         return
 
     if not user_member.status == "administrator":
-        message.reply_text("Can't demote what wasn't promoted!🎉")
+        message.reply_text(
+            text=gs(chat.id, "w"))
         return
 
     if user_id == bot.id:
-        message.reply_text("Saya tidak dapat men-setting title saya sendiri! Panggil seseorang yang menjadikan saya sebagai admin untuk melakukannya kepada saya")
+        message.reply_text(
+            text=gs(chat.id, "x"))
         return
 
     try:
@@ -491,8 +504,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
     except BadRequest:
         message.reply_text(
-            "Could not demote. I might not be admin, or the admin status was appointed by another"
-            " user, so I can't act upon them!",
+            text=gs(chat.id, "y"),
         )
         return
 
@@ -504,7 +516,8 @@ def refresh_admin(update, _):
     except KeyError:
         pass
 
-    update.effective_message.reply_text("✅ Admins cache refreshed!")
+    update.effective_message.reply_text(
+        text=gs(chat.id, "z"))
 
 
 @connection_status
