@@ -47,7 +47,8 @@ def user_admin(permission: AdminPerms):
                 if getattr(mem, permission.value) is True or mem.status == "creator" or user_id in DRAGONS:
                     return func(update, context, *args, **kwargs)
                 else:
-                    return message.reply_text(f"You lack the permission: `{permission.name}`", parse_mode=ParseMode.MARKDOWN)
+                    return message.reply_text(
+                        text=gs(chat.id, "z"), parse_mode=ParseMode.MARKDOWN)
 
         return awrapper
     return wrapper
