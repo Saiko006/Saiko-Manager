@@ -8,6 +8,7 @@ from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
 from Yuriko import DEV_USERS, DRAGONS, dispatcher
 from .decorators import emikocallback
+from Yuriko.modules.language import gs
 
 class AdminPerms(Enum):
     CAN_RESTRICT_MEMBERS = 'can_restrict_members'
