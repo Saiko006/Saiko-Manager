@@ -510,7 +510,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
 
 @user_admin
-def refresh_admin(update, _):
+def refresh_admin(update,chat):
     try:
         ADMIN_CACHE.pop(update.effective_chat.id)
     except KeyError:
