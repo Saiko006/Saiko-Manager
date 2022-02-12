@@ -1,4 +1,4 @@
-from NaoRobot import REDIS
+from Yuriko import REDIS
 
 # AFK
 def is_user_afk(userid):
