@@ -7,9 +7,6 @@ authors: "@rumahakhirat"
 curr_chat_lang: "Hai. Bahasa Anda saat ini adalah {}, pilih yang Anda inginkan dari tombol di bawah :)"
 set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!!"
 
-# Donate
-donate: "HEYA, Senang mendengar Anda ingin menyumbang! @rumahakhirat 💎"
-
 # PM Text
 pm_start_text: |
     ✪ 👋 *ʜᴀʟᴏ* {} !
@@ -23,7 +20,7 @@ pm_start_text: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 group_start: |
-    "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+    "Saya sudah bangun!\n<b>Belum tidur sejak itu:</b> <code>{}</code>"
 
 pm_about_text: |
     *KEKINIAN* - `BOT untuk mengelola grup Anda dengan fitur tambahan!`
@@ -33,7 +30,7 @@ pm_about_text: |
     `Laporkan kesalahan, klik tombol bug`
             
 pm_basic_help: |
-    *Here's basic Help regarding* *How to use Me?*"
+    *Ini bantuan dasar mengenai* *cara menggunakan saya?*"
             
     ✪ `Pertama tambahkan` `[ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)` `ke grup Anda dengan menekan` [disini](http://t.me/KekiniBot}?startgroup=true)
     ✪ `Setelah menambahkan promosikan saya secara manual dengan hak penuh untuk pengalaman yang lebih cepat.`
@@ -42,45 +39,45 @@ pm_basic_help: |
     *Semua dilakukan sekarang gunakan tombol yang diberikan di bawah ini untuk mengetahui tentang penggunaan!*
             
 pm_basic_admin_text: |
-    *Let's Make Your Group Bit Effective Now*
+    *Mari kita buat grup Anda sedikit efektif sekarang*
             
-    `Congragulations, Kekinian Robot now ready to manage your group.`
+    `Selamat, Kekinian Robot sekarang siap mengelola grup Anda.`
             
-         *Admin Tools*
-    ✪ `Basic Admin tools help you to protect and powerup your group.`
-    ✪ `You can ban members, Kick members, Promote someone as admin through commands of bot.`
+         *Alat Admin*
+    ✪ `Alat admin dasar membantu Anda melindungi dan memicu grup Anda.`
+    ✪ `Anda dapat melarang anggota, menendang anggota, mempromosikan seseorang sebagai admin melalui perintah bot.`
             
-         *Welcome*"
-    ✪ `Lets set a welcome message to welcome new users coming to your group.`
-    ✪ `send` `/setwelcome [message]` `to set a welcome message!`
+         *Selamat Datang*"
+    ✪ `Mari kita atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda.`
+    ✪ `Kirim` `/setwelcome [pesan]` `Untuk mengatur pesan selamat datang!`
             
 pm_basic_notes_text: |
-    *Setting Up Notes*
+    *Menyiapkan catatan*
             
-    ✪ `You can save message/media/audio or anything as notes`
-    ✪ `to get a note simply use` # `at the beginning of a word`
-    ✪ `You can also set buttons for notes and filters (refer help menu)`
+    ✪ `Anda dapat menyimpan pesan / media / audio atau apa pun sebagai catatan`
+    ✪ `untuk mendapatkan catatan hanya gunakan `#` di awal kata`
+    ✪ `Anda juga dapat mengatur tombol untuk catatan dan filter (merujuk menu Bantuan)`
             
 pm_basic_support_text: |
-    *KEKINIAN Support Chats*
+    *KEKINIAN mendukung obrolan*
             
-    ✪ `Join Support Group/Channel`
+    ✪ `Bergabunglah dengan Grup / Saluran Dukungan`
             
 pm_basic_credit_text: |
-    *CREDIT FOR KEKINIAN DEV'S*
+    *KREDIT UNTUK PENGEMBANG KEKINIAN*
             
-    `✪ Here Some Developers Helping in Making The Kekinian Robot`
+    `✪ Di sini beberapa pengembang membantu membuat Kekinian Robot`
             
 pm_music_text: |
-    *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「𝐌ᴜsɪᴄ」 Mᴏᴅᴜʟᴇ:*
+    *ɪɴɪ ᴀᴅᴀʟᴀʜ ᴍᴏᴅᴜʟ ʙᴀɴᴛᴜᴀɴ [ᴍᴜsɪᴋ]:*
             
         *SETUP ASSISTANT*
-    ✪ `first, add me to your group.`"
-    ✪ `then promote me as admin and give all permissions except anonymous admin.`
-    ✪ `add` @asistancekekinian `to your group:`
-    ✪ `turn on the video chat first before start to play music.`
+    ✪ `Pertama, tambahkan saya ke grup Anda.`"
+    ✪ `Kemudian mempromosikan saya sebagai admin dan berikan semua izin kecuali admin anonim.`
+    ✪ `Tambahkan` @asistancekekinian `ke grup anda:`
+    ✪ `Nyalakan obrolan video terlebih dahulu sebelum mulai memutar musik.`
             
-    ✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*
+    ✪ *Mari kita nikmati musik Kekinian Robot dan bergabung dengan Grup Pendukung @Kekiniangroup*
             
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
             
@@ -98,11 +95,11 @@ source_text: "Hi.. Aku *Kekinian Robot*"
 
 # Group Help Text
 group_help_text: "Hubungi saya di PM untuk mendapatkan daftar perintah yang mungkin."
-group_help_modules_text: "Contact me in PM to get help of *{}*"
+group_help_modules_text: "Hubungi saya di pm untuk mendapatkan bantuan *{}*"
 # Group Help Button
 group_help_button: "Bantuan"
 # PM Settings
-pm_settings_personal_text: "These are your current settings:"
+pm_settings_personal_text: "Ini adalah pengaturan Anda saat ini:"
 pm_settings_group_text: "Modul mana yang ingin Anda periksa {}'s Pengaturan untuk?"
 pm_settings_groups_text: "*{}* memiliki pengaturan berikut untuk *{}* modul:\n\n"
 pm_settings_groupss_text: |
@@ -127,6 +124,26 @@ support_button: "ᴅᴜᴋᴜɴɢᴀɴ"
 channel_button: "ᴘᴇᴍʙᴀʀᴜᴀɴ"
 credit_button: "ᴋʀᴇᴅɪᴛ"
 back_button: "ᴋᴇᴍʙᴀʟɪ"
+
+#bans
+not_user: "⚠️ Pengguna tidak di temukan"
+not_userr: "Sepertinya tidak dapat menemukan orang ini"
+if_user: "Oh yah, melarang saya sendiri, anak baru😏!"
+if_userr: "Aku tidak akan melarang diriku, apakah kamu gila?"
+if_user_ban: "Saya tidak merasa seperti itu"
+not_reason: "Anda belum menentukan waktu untuk melarang pengguna ini!!"
+user_owner: "Mencoba untuk membuat saya melawan raja ya??"
+user_dev: "Saya tidak bisa menentang pangeran kami"
+user_demons: "Bawa pesanan dari Kapten untuk melawan seorang pelayan Assasin"
+user_tigers: "Bawa pesanan dari prajurit untuk melawan pelayan Lancer !"
+user_wolves: "Akses pedagang membuatnya menjadi kebal"
+user_wolvess: "⚠️ Tidak dapat melarang admin!"
+error_unban: "Uhm ... Itu tidak berhasil ..."
+error_temp_ban: "Baiklah, aku tidak bisa melarang pengguna itu"
+unbanbb: "⚠️ Kamu tidak punya hak untuk unmute orang-orang"
+unbanbbb: "⚠️ Kamu tidak cukup Hak untuk menghapus pesan ini"
+banmee: "Ya, anda benar! GTFO.."
+banmeee: "Huh? Aku tidak bisa"
 
 # MODULES
 antich_help: |
