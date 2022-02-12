@@ -61,7 +61,7 @@ emoji-country-flag
 countryinfo
 html2text
 bs4
-redis
+redis==4.1.0
 pySmartDL
 bing_image_downloader
 search_engine_parser
