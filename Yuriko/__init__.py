@@ -6,6 +6,7 @@ import asyncio
 import time
 import spamwatch
 import telegram.ext as tg
+from redis import StrictRedis
 from inspect import getfullargspec
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
@@ -111,6 +112,7 @@ if ENV:
     BOT_ID = int(os.environ.get("BOT_ID", None))
     ARQ_API_URL = "https://thearq.tech"
     ARQ_API_KEY = "GAQJXQ-GNDXGB-FOHUCR-HMDQJL-ARQ"
+    REDIS_URL = os.environ.get("REDIS_URL")
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
@@ -162,6 +164,7 @@ else:
     API_HASH = Config.API_HASH
 
     DB_URL = Config.SQLALCHEMY_DATABASE_URI
+    REDIS_URL = Config.REDIS_URL
     MONGO_DB_URI = Config.MONGO_DB_URI
     ARQ_API = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
@@ -212,6 +215,16 @@ else:
     except:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
+        
+REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
+try:
+    REDIS.ping()
+    LOGGER.info("Your redis server is now alive!")
+except BaseException:
+    raise Exception("Your redis server is not alive, please check again.")
+finally:
+    REDIS.ping()
+    LOGGER.info("Your redis server is now alive!")
 
 from Yuriko.modules.sql import SESSION
 
