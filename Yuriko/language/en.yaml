@@ -185,8 +185,19 @@ t: "This person CREATED the chat, how would I demote them?"
 w: "Can't demote what wasn't promoted"
 x: "I can't demote myself! Get an admin to do it for me."
 y: "Could not demote. I might not be admin, or the admin status was appointed by another\nuser, so I can't act upon them!"
-z: |
-    *You don't have enough `permission` to do that.*
+z: "This person CREATED the chat, how can i set custom title for him?"
+aa: "Can't set title for non-admins!\nPromote them first to set custom title!"
+bb: "I can't set my own title myself! Get the one who made me admin to do it for me."
+cc: "Setting blank title doesn't do anything!"
+dd: "The title length is longer than 16 characters.\nTruncating it to 16 characters"
+ee: "Either they aren't promoted by me or you set a title text that is impossible to set"
+pinbutton: "👉 Go to message"
+ff: "I can't see pinned message, Maybe already unpined, or pin Message to old 🙂"
+gg: "Unpinned the last pinned message"
+hh: "I don't have access to the invite link, try changing my permissions!"
+ii: "I can only give you invite links for supergroups and channels, sorry!"
+jj: "This user is not promoted or has left the group!"
+
 
 #Bans button
 unban_button: "Uɴʙᴀɴ"
