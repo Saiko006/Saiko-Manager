@@ -535,42 +535,43 @@ def set_title(update: Update, context: CallbackContext):
 
     if not user_id:
         message.reply_text(
-            "Anda sepertinya tidak merujuk pada pengguna atau ID yang ditentukan tidak benar..",
+            text=gs(chat.id, "q"),
         )
         return
 
     if user_member.status == "creator":
         message.reply_text(
-            "Orang ini adalah OWNER!😏?",
+            text=gs(chat.id, "z"),
         )
         return
 
     if user_member.status != "administrator":
         message.reply_text(
-            "Tidak dapat menyetel title untuk non-admin!\nPromosikan mereka terlebih dahulu untuk menetapkan title khusus!!",
+            text=gs(chat.id, "aa"),
         )
         return
 
     if user_id == bot.id:
         message.reply_text(
-            "Saya tidak dapat men-setting title saya sendiri! Panggil seseorang yang menjadikan saya sebagai admin untuk melakukannya kepada saya.",
+            text=gs(chat.id, "cc"),
         )
         return
 
     if not title:
-        message.reply_text("Mengatur titel kosong tidak merubah apa-apa!")
+        message.reply_text(
+            text=gs(chat.id, "dd"))
         return
 
     if len(title) > 16:
         message.reply_text(
-            "Panjang title lebih dari 16 karakter.\nMemotongnya menjadi >16 karakter.",
+            "dd",
         )
 
     try:
         bot.setChatAdministratorCustomTitle(chat.id, user_id, title)
     except BadRequest:
         message.reply_text(
-            "Saya tidak dapat menetapkan titel untuk admin yang tidak saya promosikan."
+            text=gs(chat.id, "ee"),
         )
         return
 
@@ -628,7 +629,7 @@ def pin(update: Update, context: CallbackContext) -> str:
                     [
                         [
                             InlineKeyboardButton(
-                                "👉 Go to message", url=f"{message_link}")
+                                text=gs(chat.id, "pinbutton"), url=f"{message_link}")
                         ]
                     ]
                 ), 
@@ -696,12 +697,12 @@ def unpin(update: Update, context: CallbackContext):
         try:
             context.bot.unpinChatMessage(chat.id)
             msg.reply_text(
-                "Unpinned the last pinned message."
+                text=gs(chat.id, "gg"),
             )
         except BadRequest as excp:
             if excp.message == "Message to unpin not found":
                msg.reply_text(
-                   "I can't see pinned message, Maybe already unpined, or pin Message to old 🙂"
+                   tezt=gs(chat.id, "ff"),
                )
             else:
                 raise
@@ -741,7 +742,7 @@ def pinned(update: Update, context: CallbackContext) -> str:
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="👉 Go to message", url=f"https://t.me/{link_chat_id}/{pinned_id}")]]
+                [[InlineKeyboardButton(text=gs(chat.id, "pinbutton"), url=f"https://t.me/{link_chat_id}/{pinned_id}")]]
             ),
         )
 
@@ -768,11 +769,11 @@ def invite(update: Update, context: CallbackContext):
             update.effective_message.reply_text(invitelink)
         else:
             update.effective_message.reply_text(
-                "I don't have access to the invite link, try changing my permissions!",
+                text=gs(chat.id, "hh"),
             )
     else:
         update.effective_message.reply_text(
-            "I can only give you invite links for supergroups and channels, sorry!",
+            text=gs(chat.id, "ii"),
         )
 
 
@@ -942,7 +943,7 @@ def button(update: Update, context: CallbackContext) -> str:
                 )
     else:
         update.effective_message.edit_text(
-            "This user is not promoted or has left the group!"
+            text=gs(chat.id, "jj"),
         )
         return ""
 
