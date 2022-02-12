@@ -551,12 +551,38 @@ def getsticker(update: Update, context: CallbackContext):
     bot = context.bot
     msg = update.effective_message
     chat_id = update.effective_chat.id
+    
+    animated = msg.reply_to_message.sticker.is_animated == True
+    videos = msg.reply_to_message.sticker.is_video == True
+    
     if msg.reply_to_message and msg.reply_to_message.sticker:
-        file_id = msg.reply_to_message.sticker.file_id
-        new_file = bot.get_file(file_id)
-        new_file.download("sticker.png")
-        bot.send_document(chat_id, document=open("sticker.png", "rb"))
-        os.remove("sticker.png")
+        if not animated and not videos:
+            file_id = msg.reply_to_message.sticker.file_id
+            new_file = bot.get_file(file_id)
+            new_file.download("sticker.png")
+            bot.sendDocument(chat_id, document=open("sticker.png", "rb"))
+            bot.sendChatAction(chat_id, "upload_photo")
+            bot.sendPhoto(chat_id, photo=open("sticker.png", "rb"))
+            os.remove("sticker.png")
+        elif animated:
+            file_id = msg.reply_to_message.sticker.file_id
+            new_file = bot.get_file(file_id)
+            new_file.download("sticker.tgs")
+            new_files = bot.get_file(file_id)
+            new_files.download("sticker.tgs.rename_me")
+            bot.sendDocument(chat_id, document=open("sticker.tgs.rename_me", "rb"))
+            bot.sendChatAction(chat_id, "upload_photo")
+            bot.sendDocument(chat_id, document=open("sticker.tgs", "rb"))
+            os.remove("sticker.tgs")
+            os.remove("sticker.tgs.rename_me")
+        else:
+            file_id = msg.reply_to_message.sticker.file_id
+            new_file = bot.get_file(file_id)
+            new_file.download("sticker.webm")
+            bot.sendDocument(chat_id, document=open("sticker.webm", "rb"))
+            bot.sendChatAction(chat_id, "upload_video")
+            bot.sendVideo(chat_id, video=open("sticker.webm", "rb"))
+            os.remove("sticker.webm")
     else:
         update.effective_message.reply_text(
             "Please reply to a sticker for me to upload its PNG."
