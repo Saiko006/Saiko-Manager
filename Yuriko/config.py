@@ -30,7 +30,7 @@ class Config(object):
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
-    REDIS_URL = ""redis://something@nothing/anything:10002""  # needed for afk module, get from redislab
+    REDIS_URL = "redis://something@nothing/anything:10002"  # needed for afk module, get from redislab
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
