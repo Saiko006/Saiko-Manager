@@ -84,19 +84,19 @@ def gban(update: Update, context: CallbackContext):
     
     if not reason:
         message.reply_text(
-            "Give me a reason why i should to do this, i can't do this without reason because it is danger command."
+            text=gs(chat.id, "no_reasongban"),
         )
         return
 
     if not user_id:
         message.reply_text(
-            "You don't seem to be referring to a user or the ID specified is incorrect..",
+            text=gs(chat.id, "q"),
         )
         return
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Association\nI can't act against our own.",
+            text=gs(chat.id, "gban_dev"),
         )
         return
 
@@ -544,9 +544,6 @@ def __chat_settings__(chat_id, user_id):
     return f"This chat is enforcing *gbans*: `{sql.does_chat_gban(chat_id)}`."
 
 
-def helps(chat):
-    return gs(chat, "antispam_help")
-
 GBAN_HANDLER = CommandHandler("gban", gban, run_async=True)
 UNGBAN_HANDLER = CommandHandler("ungban", ungban, run_async=True)
 GBAN_LIST = CommandHandler("gbanlist", gbanlist, run_async=True)
@@ -562,7 +559,6 @@ dispatcher.add_handler(UNGBAN_HANDLER)
 dispatcher.add_handler(GBAN_LIST)
 dispatcher.add_handler(GBAN_STATUS)
 
-__mod_name__ = "Aɴᴛɪ-Sᴘᴀᴍ"
 __handlers__ = [GBAN_HANDLER, UNGBAN_HANDLER, GBAN_LIST, GBAN_STATUS]
 
 if STRICT_GBAN:  # enforce GBANS if this is set
