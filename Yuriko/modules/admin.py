@@ -553,18 +553,18 @@ def set_title(update: Update, context: CallbackContext):
 
     if user_id == bot.id:
         message.reply_text(
-            text=gs(chat.id, "cc"),
+            text=gs(chat.id, "bb"),
         )
         return
 
     if not title:
         message.reply_text(
-            text=gs(chat.id, "dd"))
+            text=gs(chat.id, "cc"))
         return
 
     if len(title) > 16:
         message.reply_text(
-            "dd",
+            text=gs(chat.id, "dd"),
         )
 
     try:
