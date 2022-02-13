@@ -203,72 +203,53 @@ antich_help: |
     *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 anime_help: |
-    ──「 Anime search 」──  
+    ──「 Pencarian Anime 」──  
                          
-    ✪ /anime - `<anime> returns information about the anime.`
-    ✪ /whatanime - `returns source of anime when replied to photo or gif.`                                                        
-    ✪ /character - `<character> returns information about the character.`
-    ✪ /manga - `<manga> returns information about the manga.`
-    ✪ /user - `<user> returns information about a MyAnimeList user.`
-    ✪ /upcoming - `returns a list of new anime in the upcoming seasons.`
-    ✪ /airing - `<anime> returns anime airing info.`
-    ✪ /whatanime - `<anime> reply to gif or photo.`
-    ✪ /kaizoku - `<anime> search an anime on animekaizoku.com`
-    ✪ /kayo - `<anime> search an anime on animekayo.com`
+    ✪ /anime - `<anime> Mengembalikan informasi tentang anime.`
+    ✪ /whatanime - `Mengembalikan sumber anime ketika dijawab ke foto atau gif.`                                                        
+    ✪ /character - `<character> Mengembalikan informasi tentang karakter.`
+    ✪ /manga - `<manga> Mengembalikan informasi tentang manga.`
+    ✪ /user - `<user> Mengembalikan informasi tentang pengguna MyAnimeList.`
+    ✪ /upcoming - `returns Mengembalikan daftar anime baru di musim yang akan datang.`
+    ✪ /airing - `<anime> Mengembalikan Info Airing Anime.`
+    ✪ /whatanime - `<anime> Balas ke gif atau foto.`
+    ✪ /kaizoku - `<anime> Cari anime di animekaizoku.com`
+    ✪ /kayo - `<anime> Cari anime di animekayo.com`
 
     「 Anime Quotes 」
-    ✪ /animequotes - `for anime quotes randomly as photos.`
-    ✪ /quote - `send quotes randomly as text`
-
-    *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
-
-antispam_help: |
-    ──「 Anti-Spam 」──
-    
-    *Admins only:*
-    ✪ /antispam - `<on/off/yes/no> Will toggle our antispam tech or return your current settings.`
-    `Anti-Spam used by bot devs to ban spammers across all groups. This helps protect`
-    `you and your groups by removing spam flooders as quickly as possible.`
-
-    *Note:* `Users can appeal gbans or report spammers at` @{SUPPORT_CHAT}
-    `This also integrates` @Spamwatch `API to remove Spammers as much as possible from your chatroom!`
-
-    *What is SpamWatch?*
-    `SpamWatch maintains a large constantly updated ban-list of spambots trolls bitcoin spammers and unsavoury characters`
-    `Constantly help banning spammers off from your group automatically So you wont have to worry about spammers storming your group.`
-
-    *Note:* `Users can appeal spamwatch bans at` @Spamwatch
+    ✪ /animequotes - `untuk kutipan anime secara acak sebagai foto.`
+    ✪ /quote - `Kirim Kutipan secara acak sebagai teks`
 
     *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
 admin_help: |
-    ──「 Admins 」──
+    ──「 Admin 」──
 
-    *User Commands:*
-    ✪ /staff - `list of admins in the chat`
-    ✪ /pinned - `to get the current pinned message.`
+    *Perintah Pengguna:*
+    ✪ /staff - `Daftar admin di obrolan`
+    ✪ /pinned - `Untuk mendapatkan pesan yang disematkan saat ini.`
 
-    *Admins Commands:* 
-    ✪ /pin - `silently pins the message replied to - add 'loud' or 'notify' to give notifs to users`
-    ✪ /unpin - `unpins the currently pinned message`
-    ✪ /invitelink - `gets invitelink`
-    ✪ /promote - `promotes the user replied to`
-    ✪ /fullpromote - `promotes the user replied to with full rights`
-    ✪ /demote - `demotes the user replied to`
-    ✪ /title - `<title here> sets a custom title for an admin that the bot promoted`
-    ✪ /admincache - `force refresh the admins list`
-    ✪ /del - `deletes the message you replied to`
-    ✪ /purge - `deletes all messages between this and the replied to message.`
-    ✪ /purge - `<integer X> deletes the replied message, and X messages following it if replied to a message.`
-    ✪ /setgtitle - `<text> set group title`
-    ✪ /setgpic - `reply to an image to set as group photo`
-    ✪ /setdesc - `Set group description`
-    ✪ /setsticker - `Set group sticker`
+    *Perintah Admin:* 
+    ✪ /pin - `Secara diam-diam menyematkan pesan yang dibalas - tambahkan `'loud'` atau `'notify'` untuk memberikan notifikasi kepada pengguna`
+    ✪ /unpin - `Melepas pin pada pesan yang saat ini disematkan`
+    ✪ /invitelink - `Mendapat invitelink`
+    ✪ /promote - `Mempromosikan pengguna yang membalas`
+    ✪ /fullpromote - `Mempromosikan pengguna membalas dengan hak penuh`
+    ✪ /demote - `Menurunkan pengguna yang dibalas`
+    ✪ /title - `<title here> Menetapkan judul khusus untuk admin yang dipromosikan bot`
+    ✪ /admincache atau /reload - `Refresh daftar admin`
+    ✪ /del - `Menghapus pesan yang anda balas.`
+    ✪ /purge - `Menghapus semua pesan antara ini dan membalas pesan..`
+    ✪ /purge - `<integer X> Menghapus pesan yang dibalas, dan X pesan yang mengikutinya jika membalas pesan.`
+    ✪ /setgtitle - `<text> Atur judul grup`
+    ✪ /setgpic - `Balas ke gambar untuk ditetapkan sebagai foto grup`
+    ✪ /setdesc - `Atur deskripsi grup`
+    ✪ /setsticker - `Atur stiker grup`
 
     *Rules:*
-    ✪ /rules - `get the rules for this chat.`
-    ✪ /setrules - `<your rules here>  set the rules for this chat.`
-    ✪ /clearrules - `clear the rules for this chat.`
+    ✪ /rules - `Dapatkan aturan untuk obrolan ini.`
+    ✪ /setrules - `<Aturanmu disini>  Tetapkan aturan untuk obrolan ini.`
+    ✪ /clearrules - `Bersihkan aturan untuk obrolan ini.`
 
     *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
