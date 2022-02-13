@@ -202,6 +202,10 @@ jj: "This user is not promoted or has left the group!"
 #Bans button
 unban_button: "Uɴʙᴀɴ"
 delunban_button: "Dᴇʟᴇᴛᴇ"
+#gban
+no_reasongban: "Give me a reason why i should to do this, i can't do this without reason because it is danger command"
+gban_dev: "That user is part of the Association\nI can't act against our own"
+
 
 # MODULES
 antich_help: |
