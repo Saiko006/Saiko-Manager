@@ -187,6 +187,11 @@ jj: "Tidak dipromosikan atau telah meninggalkan grup!"
 #Bans button
 unban_button: "Uɴʙᴀɴ"
 delunban_button: "ʜᴀᴘᴜs"
+#gban
+no_reasongban: "Beri saya alasan mengapa saya harus melakukan ini, saya tidak bisa melakukan ini tanpa alasan karena itu adalah perintah bahaya"
+gban_dev: "Pengguna itu adalah bagian dari asosiasi \ntidak dapat bertindak melawan pemilik kita sendiri"
+gban_
+
 
 
 # MODULES
