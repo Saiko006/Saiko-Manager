@@ -20,7 +20,7 @@ pm_start_text: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 group_start: |
-    "Saya sudah bangun!\n<b>Belum tidur sejak itu:</b> <code>{}</code>"
+    Saya sudah bangun!<b>Belum tidur sejak itu:</b> <code>{}</code>
 
 pm_about_text: |
     *KEKINIAN* - `BOT untuk mengelola grup Anda dengan fitur tambahan!`
@@ -144,17 +144,61 @@ unbanbb: "⚠️ Kamu tidak punya hak untuk unmute orang-orang"
 unbanbbb: "⚠️ Kamu tidak cukup Hak untuk menghapus pesan ini"
 banmee: "Ya, anda benar! GTFO.."
 banmeee: "Huh? Aku tidak bisa"
+#kick
+a: "yeahhh aku tidak akan melakukan itu" 
+b: "Aku benar-benar berharap aku bisa menendang pengguna ini ...." 
+c: "Baiklah, aku tidak bisa menendang pengguna itu"
+#admin
+d: "Anda kehilangan hak untuk mengubah info obrolan!"
+e: "Anda perlu membalas beberapa stiker untuk mengatur stiker obrolan"
+f: "Berhasil mengatur stiker grup baru di {}!" 
+g: "Maaf, karena Pembatasan Telegram Obrolan perlu memiliki minimal 100 anggota sebelum mereka dapat memiliki stiker grup!"
+h: "Anda hanya dapat mengatur beberapa foto sebagai foto obrolan!"
+i: "Berhasil mengatur Chatpic baru"
+j: "Membalas beberapa foto atau file untuk diatur Pic Obrol Baru"
+k: "Anda tidak memiliki cukup hak untuk menghapus foto grup"
+l: "Berhasil menghapus foto profil obrolan!"
+m: "Pengaturan deskripsi kosong tidak akan melakukan apa-apa!"
+n: "Anda tidak punya Hak yang cukup untuk mengubah info obrolan!"
+o: "Masukkan beberapa teks untuk mengatur judul baru di obrolan Anda!"
+p: "Anda tidak memiliki hak yang diperlukan untuk melakukan itu!"
+t: "Anda sepertinya tidak merujuk ke pengguna atau ID yang ditentukan tidak benar"
+r: "Bagaimana saya bermaksud untuk mempromosikan seseorang yang sudah menjadi admin?s
+s: "Saya tidak bisa mempromosikan diri! Dapatkan admin untuk melakukannya untuk saya."
+u: "Saya tidak dapat mempromosikan seseorang yang tidak dalam grup."
+v: "Terjadi kesalahan saat mempromosikan."
+demote_button: "ᴍᴇɴᴜʀᴜɴᴋᴀɴ"
+t: "Orang ini menciptakan obrolan, bagaimana saya akan menurunkan mereka?" 
+w: "Tidak dapat menurunkan apa yang tidak dipromosikan"
+x: "Aku tidak bisa menurunkan diriku! Dapatkan admin untuk melakukannya untuk saya."
+y: "Tidak bisa diturunkan. Saya mungkin tidak admin, atau status admin ditunjuk oleh pengguna lain, jadi saya tidak bisa bertindak atas mereka!"
+z: "Orang ini menciptakan obrolan, bagaimana saya bisa menetapkan judul khusus untuknya?"
+aa: "Atur judul untuk non-admin!\npromote mereka terlebih dahulu untuk mengatur judul khusus!"
+bb: "Saya tidak bisa mengatur judul saya sendiri! Dapatkan orang yang membuat saya admin untuk melakukannya untuk saya."
+cc: "Mengatur judul kosong tidak melakukan apa-apa!"
+dd: "Panjang judul lebih dari 16 karakter.\npotong ke 16 karakter"
+ee: "Mereka tidak dipromosikan oleh saya atau Anda menetapkan teks judul yang tidak mungkin untuk mengatur"
+pinbutton: "👉 Pergi ke pesan"
+ff: "Saya tidak bisa melihat pesan yang disematkan, mungkin sudah tidak dikeluarkan, atau pin pesan terlalu lama?"
+gg: "Pesan yang disematkan terakhir"
+hh: "Saya tidak memiliki akses ke tautan undangan, cobalah mengubah izin saya!"
+ii: "Saya hanya dapat memberi Anda mengundang tautan untuk supergroup dan saluran, maaf!"
+jj: "Tidak dipromosikan atau telah meninggalkan grup!"
+#Bans button
+unban_button: "Uɴʙᴀɴ"
+delunban_button: "ʜᴀᴘᴜs"
+
 
 # MODULES
 antich_help: |
     ──「 Anti-Channels 」──
    
-    ⚠️ WARNING ⚠️
-    *IF YOU USE THIS MODE, THE RESULT IS IN THE GROUP FOREVER YOU CAN'T CHAT USING THE CHANNEL*
-    Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
-    This command can only be used by *Admins*.
-    ❂ /antich <'on'/'yes'> *:* enables anti-channel-mode
-    ❂ /antich <'off'/'no'> *:* disabled anti-channel-mode
+    ⚠️ PERINGATAN ⚠️
+    *JIKA ANDA MENGGUNAKAN MODE INI, HASILNYA ADA DI GRUP SELAMANYA ANDA TIDAK DAPAT MENGOBROL MENGGUNAKAN SALURAN*
+    Mode Anti Channel adalah mode untuk secara otomatis melarang pengguna yang mengobrol menggunakan saluran. 
+    Perintah ini hanya dapat digunakan oleh *Admin*.
+    ❂ /antich <'on'/'yes'> *:* Mengaktifkan mode anti-saluran
+    ❂ /antich <'off'/'no'> *:* Dinonaktifkan mode anti-saluran
 
     *✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ 💎: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
 
@@ -923,10 +967,6 @@ list_admin_delete_acc: "☠ Deleted Account"
 demote_callback_success: "Admin {} Demoted {}!"
 demote_callback_answer: "Demoted!"
 demote_callback_error: "This user is not promoted or has left the group!" 
-# Admin.py Variabel Button
-demote_button: "Demote"
-pin_button: "👉 Go to message"
-
 # Afk.py Variabel
 reason_len: "\nYour afk reason was shortened to 100 characters."
 afk: "{} is now away! {}"
