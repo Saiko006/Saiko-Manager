@@ -71,12 +71,21 @@ pm_basic_credit_text: |
 pm_music_text: |
     *ɪɴɪ ᴀᴅᴀʟᴀʜ ᴍᴏᴅᴜʟ ʙᴀɴᴛᴜᴀɴ [ᴍᴜsɪᴋ]:*
             
-        *SETUP ASSISTANT*
+    *SETUP ASSISTANT*
     ✪ `Pertama, tambahkan saya ke grup Anda.`"
     ✪ `Kemudian mempromosikan saya sebagai admin dan berikan semua izin kecuali admin anonim.`
     ✪ `Tambahkan` @asistancekekinian `ke grup anda:`
     ✪ `Nyalakan obrolan video terlebih dahulu sebelum mulai memutar musik.`
-            
+    
+    *PERINTAH DASAR*
+    ✪ /play (judul) - `Memutar lagu dari youtube`
+    ✪ /vplay (judul) - `Memutar video dari youtube`
+    ✪ /playlist - `Melihat daftar putar pada antrian`
+    ✪ /lyrics (judul) - `Mencari lirik lagu`
+    ✪ /song (judul) - `Mengunduh musik/video dari youtube`
+    ✪ /bug (judul) - `Melaporkan masalah pada bot`
+       Contoh : /bug asisten ga naik
+    
     ✪ *Mari kita nikmati musik Kekinian Robot dan bergabung dengan Grup Pendukung @Kekiniangroup*
             
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
@@ -249,8 +258,8 @@ admin_help: |
     ✪ /del - `Menghapus pesan yang anda balas.`
     ✪ /purge - `Menghapus semua pesan antara ini dan membalas pesan..`
     ✪ /purge - `<integer X> Menghapus pesan yang dibalas, dan X pesan yang mengikutinya jika membalas pesan.`
-    ✪ /setgtitle - `<text> Atur judul grup`
-    ✪ /setgpic - `Balas ke gambar untuk ditetapkan sebagai foto grup`
+    ✪ /gtitle - `<text> Atur judul grup`
+    ✪ /gpic - `Balas ke gambar untuk ditetapkan sebagai foto grup`
     ✪ /setdesc - `Atur deskripsi grup`
     ✪ /setsticker - `Atur stiker grup`
 
