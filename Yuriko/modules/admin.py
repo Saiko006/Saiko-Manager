@@ -453,7 +453,8 @@ def demote(update: Update, context: CallbackContext) -> str:
     user = update.effective_user
     
     if user_can_promote(chat, user, bot.id) is False:
-        message.reply_text("You don't have enough rights to demote someone!")
+        message.reply_text(
+            text=gs(chat.id, "dia_admin"))
         return
 
     user_id = extract_user(message, args)
@@ -466,11 +467,6 @@ def demote(update: Update, context: CallbackContext) -> str:
     try:
         user_member = chat.get_member(user_id)
     except:
-        return
-    
-    if user_member.status == "administrator":
-        message.reply_text(
-            text=gs(chat.id, "dia_admin"))
         return
     
     if user_member.status == "creator":
@@ -543,6 +539,11 @@ def set_title(update: Update, context: CallbackContext):
 
     chat = update.effective_chat
     message = update.effective_message
+    
+    if user_can_promote_members(chat, user, bot.id) is False:
+        message.reply_text(
+            text=gs(chat.id, "dia_admin"))
+        return
 
     user_id, title = extract_user_and_text(message, args)
     try:
