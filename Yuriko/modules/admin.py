@@ -31,10 +31,6 @@ def set_sticker(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
-
-    if can_change_info(chat, user, context.bot.id) is False:
-        return msg.reply_text(
-            text=gs(chat.id, "d"))
         
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
@@ -58,16 +54,11 @@ def set_sticker(update: Update, context: CallbackContext):
        
     
 @bot_admin
-@user_admin
+@u_admin(AdminPerms.CAN_CHANGE_INFO)
 def setchatpic(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
     user = update.effective_user
-
-    if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text(
-            text=gs(chat.id, "d"))
-        return
 
     if msg.reply_to_message:
         if msg.reply_to_message.photo:
@@ -141,17 +132,12 @@ def set_desc(update: Update, context: CallbackContext):
         msg.reply_text(f"Error! {excp.message}.")        
         
 @bot_admin
-@user_admin
+@u_admin(AdminPerms.CAN_CHANGE_INFO)
 def setchat_title(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
     user = update.effective_user
     args = context.args
-
-    if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text(
-            text=gs(chat.id, "n"))
-        return
 
     title = " ".join(args)
     if not title:
