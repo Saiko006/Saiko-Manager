@@ -187,6 +187,7 @@ ii: "Saya hanya dapat memberi Anda mengundang tautan untuk supergroup dan salura
 jj: "Tidak dipromosikan atau telah meninggalkan grup!"
 norep_pin: "Balas pesan yang ingin Anda pin!"
 cmd_private: "Perintah ini dimaksudkan untuk digunakan dalam obrolan tidak di PM"
+kk: "Deskripsi harus di bawah 255 karakter!"
 #Bans button
 unban_button: "Uɴʙᴀɴ"
 delunban_button: "ʜᴀᴘᴜs"
