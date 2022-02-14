@@ -162,6 +162,7 @@ b: "I really wish I could kick this user...."
 c: "⚠️ Well damn, I can't kick that user"
 
 #admin
+dia_admin: "You don't have enough permission to do that."
 d: "You're missing rights to change chat info!"
 e: "You need to reply to some sticker to set chat sticker set"
 f: "Successfully set new group stickers in {}!"
