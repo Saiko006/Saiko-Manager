@@ -530,8 +530,7 @@ def set_sticker(update: Update, context: CallbackContext):
         stkr = msg.reply_to_message.sticker.set_name
         try:
             bot.setChatStickerSet(chat.id, stkr)
-            msg.reply_text(
-                text=gs(chat.id, "f").format(chat.title))
+            msg.reply_text(gs(chat.id, "f").format(chat.title))
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(gs(chat.id, "g"))
@@ -556,7 +555,7 @@ def set_desc(update: Update, context: CallbackContext):
     if len(tesc) >= 2:
         desc = tesc[1]
     else:
-        return msg.reply_text(gs(chat.id, "m")
+        return msg.reply_text(gs(chat.id, "m"))
     try:
         if len(desc) > 255:
             return msg.reply_text(gs(chat.id, "kk"))
