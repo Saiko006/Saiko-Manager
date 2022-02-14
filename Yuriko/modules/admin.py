@@ -179,7 +179,7 @@ def setchat_title(update: Update, context: CallbackContext):
 def promote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
     args = context.args
-
+    chat_id = update.effective_chat.id
     message = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
@@ -268,7 +268,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 def lowpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
     args = context.args
-
+    chat_id = update.effective_chat.id
     message = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
@@ -352,7 +352,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
 def fullpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
     args = context.args
-
+    chat_id = update.effective_chat.id
     message = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
@@ -446,7 +446,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
 def demote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
     args = context.args
-
+    chat_id = update.effective_chat.id
     chat = update.effective_chat
     message = update.effective_message
     user = update.effective_user
