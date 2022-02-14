@@ -558,7 +558,7 @@ def set_desc(update: Update, context: CallbackContext):
         return msg.reply_text(gs(chat.id, "m")
     try:
         if len(desc) > 255:
-            return msg.reply_text("Description must needs to be under 255 characters!")
+            return msg.reply_text(gs(chat.id, "kk"))
         bot.setChatDescription(chat.id, desc)
         msg.reply_text(f"Successfully updated chat description in {chat.title}!")
     except BadRequest as excp:
