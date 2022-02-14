@@ -149,6 +149,7 @@ a: "yeahhh aku tidak akan melakukan itu"
 b: "Aku benar-benar berharap aku bisa menendang pengguna ini ...." 
 c: "Baiklah, aku tidak bisa menendang pengguna itu"
 #admin
+dia_admin: "Anda tidak memiliki cukup izin untuk melakukan itu"
 d: "Anda kehilangan hak untuk mengubah info obrolan!"
 e: "Anda perlu membalas beberapa stiker untuk mengatur stiker obrolan"
 f: "Berhasil mengatur stiker grup baru di {}!" 
