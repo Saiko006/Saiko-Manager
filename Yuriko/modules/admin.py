@@ -36,7 +36,7 @@ def set_sticker(update: Update, context: CallbackContext):
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
         return msg.reply_text(
-            text=gs(chat, "d"))
+            text=gs(chat.id, "d"))
         
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
