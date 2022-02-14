@@ -17,6 +17,7 @@ class AdminPerms(Enum):
     CAN_DELETE_MESSAGES = 'can_delete_messages'
     CAN_CHANGE_INFO = 'can_change_info'
     CAN_PIN_MESSAGES = 'can_pin_messages'
+    CAN_MANAGE_VOICE_CHATS = 'can_manage_voice_chats'
 
 
 class ChatStatus(Enum):
