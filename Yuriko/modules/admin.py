@@ -248,15 +248,17 @@ def promote(update: Update, context: CallbackContext) -> str:
         f"Promoting a user in <b>{chat.title}</b>\n\nUser: {mention_html(user_member.user.id, user_member.user.first_name)}\nAdmin: {mention_html(user.id, user.first_name)}",
         parse_mode=ParseMode.HTML,
     ) 
-    
-    log_message = (
+    # refresh admin cache
+    try:
+        ADMIN_CACHE.pop(update.effective_chat.id)
+    except KeyError:
+        pass
+    return (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#PROMOTED\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
     )
-        
-    return log_message
 
     
 @connection_status
@@ -330,14 +332,17 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         f"Lowpromoting a user in <b>{chat.title}<b>\n\nUser: {mention_html(user_member.user.id, user_member.user.first_name)}\nAdmin: {mention_html(user.id, user.first_name)}",
         parse_mode=ParseMode.HTML,
     )
-    log_message = (
+    # refresh admin cache
+    try:
+        ADMIN_CACHE.pop(update.effective_chat.id)
+    except KeyError:
+        pass
+    return (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#LOWPROMOTED\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
     )
-    
-    return log_message
     
 
 @connection_status
@@ -422,14 +427,17 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         f"Fullpromoting a user in <b>{chat.title}</b>\n\n<b>User: {mention_html(user_member.user.id, user_member.user.first_name)}</b>\n<b>Promoter: {mention_html(user.id, user.first_name)}</b>",
         parse_mode=ParseMode.HTML,
     )
-    log_message = (
+    # refresh admin cache
+    try:
+        ADMIN_CACHE.pop(update.effective_chat.id)
+    except KeyError:
+        pass
+    return (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#FULLPROMOTED\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
     )
-    
-    return log_message
 
 
 @connection_status
@@ -443,6 +451,10 @@ def demote(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     message = update.effective_message
     user = update.effective_user
+    
+    if user_can_promote(chat, user, bot.id) is False:
+        message.reply_text("You don't have enough rights to demote someone!")
+        return
 
     user_id = extract_user(message, args)
     if not user_id:
@@ -495,16 +507,19 @@ def demote(update: Update, context: CallbackContext) -> str:
             chat.id,
             f"Sucessfully demoted a admins in <b>{chat.title}</b>\n\nAdmin: <b>{mention_html(user_member.user.id, user_member.user.first_name)}</b>\nDemoter: {mention_html(user.id, user.first_name)}",
             parse_mode=ParseMode.HTML,
-        )
-        
-        log_message = (
+        )        
+        # refresh admin cache
+        try:
+            ADMIN_CACHE.pop(update.effective_chat.id)
+        except KeyError:
+            pass
+        return (
             f"<b>{html.escape(chat.title)}:</b>\n"
             f"#DEMOTED\n"
             f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
             f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
         )
         
-        return log_message
 
     except BadRequest:
         message.reply_text(
