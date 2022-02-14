@@ -615,9 +615,6 @@ DEMOTE_HANDLER = CommandHandler(
 SET_TITLE_HANDLER = DisableAbleCommandHandler(
     "title", set_title, pass_args=True, run_async=True
 )
-ADMINLIST_HANDLER = DisableAbleCommandHandler(
-    "hdkdks", adminlist, filters=Filters.chat_type.groups, run_async=True
-)
 
 dispatcher.add_handler(PIN_HANDLER)
 dispatcher.add_handler(UNPIN_HANDLER)
@@ -626,7 +623,6 @@ dispatcher.add_handler(INVITE_HANDLER)
 dispatcher.add_handler(PROMOTE_HANDLER)
 dispatcher.add_handler(FULLPROMOTE_HANDLER)
 dispatcher.add_handler(DEMOTE_HANDLER)
-dispatcher.add_handler(ADMINLIST_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(CHAT_PIC_HANDLER)
 dispatcher.add_handler(DEL_CHAT_PIC_HANDLER)
