@@ -40,21 +40,21 @@ def promote(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_promote(chat, user, bot.id) is False:
-        message.reply_text("You don't have enough rights to promote someone!")
+        message.reply_text(gs(chat.id, "dia_admin"))
         return ""
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("mention one.... 🤷🏻‍♂.")
+        message.reply_text(gs(chat.id, "q"))
         return ""
 
     user_member = chat.get_member(user_id)
     if user_member.status in ["administrator", "creator"]:
-        message.reply_text("This person is already an admin...!")
+        message.reply_text(gs(chat.id, "r"))
         return ""
 
     if user_id == bot.id:
-        message.reply_text("I hope, if i could promote myself!")
+        message.reply_text(gs(chat.id, "s"))
         return ""
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -70,23 +70,20 @@ def promote(update: Update, context: CallbackContext):
         can_invite_users=bot_member.can_invite_users,
         can_restrict_members=bot_member.can_restrict_members,
         can_pin_messages=bot_member.can_pin_messages,
+        can_manage_voice_chats=bot_member.can_manage_voice_chats,
     )
 
     title = "admin"
     if " " in message.text:
         title = message.text.split(" ", 1)[1]
         if len(title) > 16:
-            message.reply_text(
-                "The title length is longer than 16 characters.\nTruncating it to 16 characters."
-            )
+            message.reply_text(gs(chat.id, "dd"))
 
         try:
             bot.setChatAdministratorCustomTitle(chat.id, user_id, title)
 
         except BadRequest:
-            message.reply_text(
-                "I can't set custom title for admins that I didn't promote!"
-            )
+            message.reply_text(gs(chat.id, "ee"))
 
     message.reply_text(
         f"Promoted <b>{user_member.user.first_name or user_id}</b>"
@@ -636,13 +633,13 @@ UNPIN_HANDLER = CommandHandler(
 ADMIN_REFRESH_HANDLER = CommandHandler("admincache", refresh_admin, run_async=True)
 INVITE_HANDLER = CommandHandler("invitelink", invite, run_async=True)
 CHAT_PIC_HANDLER = CommandHandler(
-    "setgpic", setchatpic, filters=Filters.chat_type.groups, run_async=True
+    "gpic", setchatpic, filters=Filters.chat_type.groups, run_async=True
 )
 DEL_CHAT_PIC_HANDLER = CommandHandler(
     "delgpic", rmchatpic, filters=Filters.chat_type.groups, run_async=True
 )
 SETCHAT_TITLE_HANDLER = CommandHandler(
-    "setgtitle", setchat_title, filters=Filters.chat_type.groups, run_async=True
+    "gtitle", setchat_title, filters=Filters.chat_type.groups, run_async=True
 )
 SETSTICKET_HANDLER = CommandHandler(
     "setsticker", set_sticker, filters=Filters.chat_type.groups, run_async=True
@@ -664,10 +661,10 @@ DEMOTE_HANDLER = CommandHandler(
     "demote", demote, pass_args=True, filters=Filters.chat_type.groups, run_async=True
 )
 SET_TITLE_HANDLER = DisableAbleCommandHandler(
-    "settitle", set_title, pass_args=True, run_async=True
+    "title", set_title, pass_args=True, run_async=True
 )
 ADMINLIST_HANDLER = DisableAbleCommandHandler(
-    "adminlist", adminlist, filters=Filters.chat_type.groups, run_async=True
+    "hdkdks", adminlist, filters=Filters.chat_type.groups, run_async=True
 )
 
 dispatcher.add_handler(PIN_HANDLER)
