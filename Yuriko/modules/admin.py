@@ -16,7 +16,6 @@ from Yuriko.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from Yuriko.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
 from Yuriko.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
@@ -24,16 +23,16 @@ from Yuriko.modules.helper_funcs.extraction import (
 from Yuriko.modules.log_channel import loggable
 from Yuriko.modules.helper_funcs.alternate import send_message
 from Yuriko.modules.language import gs
-
+from Yuriko.modules.helper_funcs.chanel_mode import AdminPersm, user_admin as u_admin
 
 @bot_admin
-@user_admin
+@u_admin(AdminPerms.CAN_CHANGE_INFO)
 def set_sticker(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
 
-    if user_can_changeinfo(chat, user, context.bot.id) is False:
+    if can_change_info(chat, user, context.bot.id) is False:
         return msg.reply_text(
             text=gs(chat.id, "d"))
         
@@ -174,7 +173,7 @@ def setchat_title(update: Update, context: CallbackContext):
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@u_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @loggable
 def promote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -261,7 +260,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@u_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @loggable
 def lowpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -341,7 +340,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
 
 @connection_status
 @bot_admin
-@user_admin
+@u_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @can_promote
 @loggable
 def fullpromote(update: Update, context: CallbackContext) -> str:
@@ -434,7 +433,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
 
 @connection_status
 @bot_admin
-@user_admin
+@u_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 @loggable
 def demote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -444,7 +443,7 @@ def demote(update: Update, context: CallbackContext) -> str:
     message = update.effective_message
     user = update.effective_user
     
-    if user_can_promote(chat, user, bot.id) is False:
+    if can_promote_members(chat, user, bot.id) is False:
         message.reply_text(
             text=gs(chat.id, "dia_admin"))
         return
@@ -520,7 +519,7 @@ def refresh_admin(update,_):
 
 @connection_status
 @bot_admin
-@user_admin
+@u_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
 def set_title(update: Update, context: CallbackContext):
     bot = context.bot
     args = context.args
@@ -528,7 +527,7 @@ def set_title(update: Update, context: CallbackContext):
     chat = update.effective_chat
     message = update.effective_message
     
-    if user_can_promote(chat, user, bot.id) is False:
+    if can_promote_members(chat, user, bot.id) is False:
         message.reply_text(
             text=gs(chat.id, "dia_admin"))
         return
@@ -591,7 +590,7 @@ def set_title(update: Update, context: CallbackContext):
 
 @bot_admin
 @can_pin
-@user_admin
+@u_admin(AdminPerms.CAN_PIN_MESSAGES)
 @loggable
 def pin(update: Update, context: CallbackContext) -> str:
     bot, args = context.bot, context.args
@@ -657,7 +656,7 @@ def pin(update: Update, context: CallbackContext) -> str:
 
 @bot_admin
 @can_pin
-@user_admin
+@u_admin(AdminPerms.CAN_PIN_MESSAGES)
 @loggable
 def unpin(update: Update, context: CallbackContext):
     chat = update.effective_chat
