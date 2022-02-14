@@ -12,7 +12,6 @@ from Yuriko.modules.helper_funcs.chat_status import (
     can_pin,
     can_promote,
     connection_status,
-    user_admin,
     ADMIN_CACHE,
 )
 
