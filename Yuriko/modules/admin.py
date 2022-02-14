@@ -12,7 +12,7 @@ from Yuriko.modules.helper_funcs.chat_status import (
     can_pin,
     can_promote,
     connection_status,
-    user_admin,
+    user_admin as u_admin,
     ADMIN_CACHE,
 )
 
@@ -28,7 +28,7 @@ from ..modules.helper_funcs.chanel_mode import user_admin, AdminPerms
 
 
 @bot_admin
-@user_admin(AdminPerms.CAN_CHANGE_INFO)
+@u_admin
 def set_sticker(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
@@ -60,7 +60,7 @@ def set_sticker(update: Update, context: CallbackContext):
        
     
 @bot_admin
-@user_admin(AdminPerms.CAN_CHANGE_INFO)
+@u_admin
 def setchatpic(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -99,7 +99,7 @@ def setchatpic(update: Update, context: CallbackContext):
             text=gs(chat.id, "j"))
         
 @bot_admin
-@user_admin(AdminPerms.CAN_CHANGE_INFO)
+@u_admin
 def rmchatpic(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -118,7 +118,7 @@ def rmchatpic(update: Update, context: CallbackContext):
         return
     
 @bot_admin
-@user_admin(AdminPerms.CAN_CHANGE_INFO)
+@u_admin
 def set_desc(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
@@ -143,7 +143,7 @@ def set_desc(update: Update, context: CallbackContext):
         msg.reply_text(f"Error! {excp.message}.")        
         
 @bot_admin
-@user_admin(AdminPerms.CAN_CHANGE_INFO)
+@u_admin
 def setchat_title(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -175,7 +175,7 @@ def setchat_title(update: Update, context: CallbackContext):
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@u_admin
 @loggable
 def promote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -263,7 +263,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 @connection_status
 @bot_admin
 @can_promote
-@user_admin
+@u_admin
 @loggable
 def lowpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -343,7 +343,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
 
 @connection_status
 @bot_admin
-@user_admin
+@u_admin
 @can_promote
 @loggable
 def fullpromote(update: Update, context: CallbackContext) -> str:
@@ -517,7 +517,7 @@ def refresh_admin(update,_):
 
 @connection_status
 @bot_admin
-@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
+@u_admin
 def set_title(update: Update, context: CallbackContext):
     bot = context.bot
     args = context.args
@@ -583,7 +583,7 @@ def set_title(update: Update, context: CallbackContext):
 
 @bot_admin
 @can_pin
-@user_admin
+@u_admin
 @loggable
 def pin(update: Update, context: CallbackContext) -> str:
     bot, args = context.bot, context.args
@@ -649,7 +649,7 @@ def pin(update: Update, context: CallbackContext) -> str:
 
 @bot_admin
 @can_pin
-@user_admin
+@u_admin
 @loggable
 def unpin(update: Update, context: CallbackContext):
     chat = update.effective_chat
@@ -753,7 +753,7 @@ def pinned(update: Update, context: CallbackContext) -> str:
 
 
 @bot_admin
-@user_admin
+@u_admin
 @connection_status
 def invite(update: Update, context: CallbackContext):
     bot = context.bot
@@ -890,7 +890,7 @@ def adminlist(update, context):
 
 @bot_admin
 @can_promote
-@user_admin
+@u_admin
 @loggable
 def button(update: Update, context: CallbackContext) -> str:
     query: Optional[CallbackQuery] = update.callback_query
