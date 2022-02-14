@@ -197,6 +197,8 @@ jj: "Tidak dipromosikan atau telah meninggalkan grup!"
 norep_pin: "Balas pesan yang ingin Anda pin!"
 cmd_private: "Perintah ini dimaksudkan untuk digunakan dalam obrolan tidak di PM"
 kk: "Deskripsi harus di bawah 255 karakter!"
+#funcs_chat_status
+non_admin: "Siapa non-admin yang memberitahuku apa yang harus aku lakukan? Kamu ingin di tendang?"
 #Bans button
 unban_button: "Uɴʙᴀɴ"
 delunban_button: "ʜᴀᴘᴜs"
