@@ -12,7 +12,7 @@ from Yuriko.modules.helper_funcs.chat_status import (
     can_pin,
     can_promote,
     connection_status,
-    user_admin as u_admin,
+    user_admin,
     ADMIN_CACHE,
 )
 
@@ -174,7 +174,8 @@ def setchat_title(update: Update, context: CallbackContext):
         
 @connection_status
 @bot_admin
-@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
+@can_promote
+@user_admin
 @loggable
 def promote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -261,7 +262,8 @@ def promote(update: Update, context: CallbackContext) -> str:
     
 @connection_status
 @bot_admin
-@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
+@can_promote
+@user_admin
 @loggable
 def lowpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -341,7 +343,8 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
 
 @connection_status
 @bot_admin
-@user_admin(AdminPerms.CAN_PROMOTE_MEMBERS)
+@user_admin
+@can_promote
 @loggable
 def fullpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
@@ -580,7 +583,7 @@ def set_title(update: Update, context: CallbackContext):
 
 @bot_admin
 @can_pin
-@user_admin(AdminPerms.CAN_PIN_MESSAGES)
+@user_admin
 @loggable
 def pin(update: Update, context: CallbackContext) -> str:
     bot, args = context.bot, context.args
@@ -646,7 +649,7 @@ def pin(update: Update, context: CallbackContext) -> str:
 
 @bot_admin
 @can_pin
-@user_admin(AdminPerms.CAN_PIN_MESSAGES)
+@user_admin
 @loggable
 def unpin(update: Update, context: CallbackContext):
     chat = update.effective_chat
@@ -750,7 +753,7 @@ def pinned(update: Update, context: CallbackContext) -> str:
 
 
 @bot_admin
-@user_admin(AdminPerms.CAN_INVITE_USERS)
+@user_admin
 @connection_status
 def invite(update: Update, context: CallbackContext):
     bot = context.bot
