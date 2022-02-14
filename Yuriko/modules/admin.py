@@ -597,7 +597,7 @@ SETSTICKET_HANDLER = CommandHandler(
     "setsticker", set_sticker, filters=Filters.chat_type.groups, run_async=True
 )
 SETDESC_HANDLER = CommandHandler(
-    "setdescription", set_desc, filters=Filters.chat_type.groups, run_async=True
+    "setdesc", set_desc, filters=Filters.chat_type.groups, run_async=True
 )
 PROMOTE_HANDLER = CommandHandler(
     "promote", promote, pass_args=True, filters=Filters.chat_type.groups, run_async=True
