@@ -185,6 +185,8 @@ gg: "Pesan yang disematkan terakhir"
 hh: "Saya tidak memiliki akses ke tautan undangan, cobalah mengubah izin saya!"
 ii: "Saya hanya dapat memberi Anda mengundang tautan untuk supergroup dan saluran, maaf!"
 jj: "Tidak dipromosikan atau telah meninggalkan grup!"
+norep_pin: "Balas pesan yang ingin Anda pin!"
+cmd_private: "Perintah ini dimaksudkan untuk digunakan dalam obrolan tidak di PM"
 #Bans button
 unban_button: "Uɴʙᴀɴ"
 delunban_button: "ʜᴀᴘᴜs"
