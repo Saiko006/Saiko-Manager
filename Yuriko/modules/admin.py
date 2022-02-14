@@ -23,7 +23,7 @@ from Yuriko.modules.helper_funcs.extraction import (
 from Yuriko.modules.log_channel import loggable
 from Yuriko.modules.helper_funcs.alternate import send_message
 from Yuriko.modules.language import gs
-from Yuriko.modules.helper_funcs.chanel_mode import AdminPersm, user_admin as u_admin
+from Yuriko.modules.helper_funcs.chanel_mode import AdminPerms, user_admin as u_admin
 
 @bot_admin
 @u_admin(AdminPerms.CAN_CHANGE_INFO)
