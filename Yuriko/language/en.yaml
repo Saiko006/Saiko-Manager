@@ -82,10 +82,10 @@ pm_music_text: |
   ✪ /vplay (query) - `play video from youtube`
   ✪ /setting - `settings volume dan authorized`
   ✪ /playlist - `Check playlist`
-  ✪ /video or /vsong (query) - `download video from youtube`
-  ✪ /music or /song (query)- `download song from yt servers. (API BASED)`
+  ✪ /song (query)- `download song/video from yt servers. (API BASED)`
   ✪ /lyrics (song name) - `This plugin searches for song lyrics with song name.`
-  ✪ /bug (query) - `Report on boat problems`
+  ✪ /bug (query) - `Report on bot problems`
+    Example: /bug can't play 
             
   ✪ *Lets Enjoy The Kekinian Music And Join Support Group @Kekiniangroup*
             
