@@ -201,6 +201,8 @@ jj: "This user is not promoted or has left the group!"
 norep_pin: "Reply to the message you want to pin!"
 cmd_private: "This command is meant to use in chat not in PM"
 kk: "Description must needs to be under 255 characters!"
+#funcs_chat_status
+non_admin: "Who dis non-admin telling me what to do? You want a kicked?"
 
 
 #Bans button
