@@ -12,6 +12,7 @@ from Yuriko.modules.helper_funcs.chat_status import (
     can_pin,
     can_promote,
     connection_status,
+    user_admin as u_admin,
     ADMIN_CACHE,
 )
 
@@ -27,7 +28,7 @@ from ..modules.helper_funcs.chanel_mode import user_admin, AdminPerms
 
 
 @bot_admin
-@user_admin
+@user_admin(Adminperms.CAN_CHANGE_INFO)
 def set_sticker(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
@@ -59,7 +60,7 @@ def set_sticker(update: Update, context: CallbackContext):
        
     
 @bot_admin
-@user_admin
+@user_admin(Adminperms.CAN_CHANGE_INFO)
 def setchatpic(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -98,7 +99,7 @@ def setchatpic(update: Update, context: CallbackContext):
             text=gs(chat.id, "j"))
         
 @bot_admin
-@user_admin
+@user_admin(Adminperms.CAN_CHANGE_INFO)
 def rmchatpic(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -117,7 +118,7 @@ def rmchatpic(update: Update, context: CallbackContext):
         return
     
 @bot_admin
-@user_admin
+@user_admin(Adminperms.CAN_CHANGE_INFO)
 def set_desc(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
@@ -142,7 +143,7 @@ def set_desc(update: Update, context: CallbackContext):
         msg.reply_text(f"Error! {excp.message}.")        
         
 @bot_admin
-@user_admin
+@user_admin(Adminperms.CAN_CHANGE_INFO)
 def setchat_title(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -509,7 +510,7 @@ def demote(update: Update, context: CallbackContext) -> str:
         return
 
 
-@user_admin
+@u_admin
 def refresh_admin(update,_):
     ADMIN_CACHE.pop(update.effective_chat.id)
     update.effective_message.reply_text("✅ Admins refreshed!")
