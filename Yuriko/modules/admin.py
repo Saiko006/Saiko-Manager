@@ -229,7 +229,6 @@ def promote(update: Update, context: CallbackContext) -> str:
             can_edit_messages=bot_member.can_edit_messages,
             can_delete_messages=bot_member.can_delete_messages,
             can_invite_users=bot_member.can_invite_users,
-            # can_promote_members=bot_member.can_promote_members,
             can_restrict_members=bot_member.can_restrict_members,
             can_pin_messages=bot_member.can_pin_messages,
             can_manage_voice_chats=bot_member.can_manage_voice_chats,
@@ -504,19 +503,17 @@ def demote(update: Update, context: CallbackContext) -> str:
             f"Sucessfully demoted a admins in <b>{chat.title}</b>\n\nAdmin: <b>{mention_html(user_member.user.id, user_member.user.first_name)}</b>\nDemoter: {mention_html(user.id, user.first_name)}",
             parse_mode=ParseMode.HTML,
         )        
-        # refresh admin cache
-        try:
-            ADMIN_CACHE.pop(update.effective_chat.id)
-        except KeyError:
-            pass
         return (
-            f"<b>{html.escape(chat.title)}:</b>\n"
-            f"#DEMOTED\n"
-            f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-            f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
+            "<b>{}:</b>"
+            "\n#DEMOTED"
+            "\n<b>Admin:</b> {}"
+            "\n<b>User:</b> {}".format(
+                html.escape(chat.title),
+                mention_html(user.id, user.first_name),
+                mention_html(user_member.user.id, user_member.user.first_name),
+            )
         )
         
-
     except BadRequest:
         message.reply_text(
             text=gs(chat.id, "y"),
