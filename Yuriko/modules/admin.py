@@ -28,7 +28,7 @@ from ..modules.helper_funcs.chanel_mode import user_admin, AdminPerms
 
 
 @bot_admin
-@user_admin(Adminperms.CAN_CHANGE_INFO)
+@user_admin(AdminPerms.CAN_CHANGE_INFO)
 def set_sticker(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
@@ -60,7 +60,7 @@ def set_sticker(update: Update, context: CallbackContext):
        
     
 @bot_admin
-@user_admin(Adminperms.CAN_CHANGE_INFO)
+@user_admin(AdminPerms.CAN_CHANGE_INFO)
 def setchatpic(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -99,7 +99,7 @@ def setchatpic(update: Update, context: CallbackContext):
             text=gs(chat.id, "j"))
         
 @bot_admin
-@user_admin(Adminperms.CAN_CHANGE_INFO)
+@user_admin(AdminPerms.CAN_CHANGE_INFO)
 def rmchatpic(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
@@ -118,7 +118,7 @@ def rmchatpic(update: Update, context: CallbackContext):
         return
     
 @bot_admin
-@user_admin(Adminperms.CAN_CHANGE_INFO)
+@user_admin(AdminPerms.CAN_CHANGE_INFO)
 def set_desc(update: Update, context: CallbackContext):
     msg = update.effective_message
     chat = update.effective_chat
@@ -143,7 +143,7 @@ def set_desc(update: Update, context: CallbackContext):
         msg.reply_text(f"Error! {excp.message}.")        
         
 @bot_admin
-@user_admin(Adminperms.CAN_CHANGE_INFO)
+@user_admin(AdminPerms.CAN_CHANGE_INFO)
 def setchat_title(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
