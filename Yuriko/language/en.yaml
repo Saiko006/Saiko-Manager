@@ -198,6 +198,7 @@ gg: "Unpinned the last pinned message"
 hh: "I don't have access to the invite link, try changing my permissions!"
 ii: "I can only give you invite links for supergroups and channels, sorry!"
 jj: "This user is not promoted or has left the group!"
+norep_pin: "Reply to the message you want to pin!"
 
 
 #Bans button
