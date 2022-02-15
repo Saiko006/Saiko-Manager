@@ -11,6 +11,7 @@ from Yuriko.modules.language import gs
 
 
 async def purge_messages(event):
+    chat_id = message.chat.id
     start = time.perf_counter()
     if event.from_id is None:
         return
