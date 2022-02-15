@@ -17,6 +17,7 @@ from Yuriko.modules.helper_funcs.extraction import (
 )
 from Yuriko.modules.helper_funcs.string_handling import extract_time
 from Yuriko.modules.log_channel import loggable
+from Yuriko.modules.language import gs
 from telegram import (
     Bot, 
     Chat, 
@@ -36,13 +37,13 @@ from telegram.utils.helpers import mention_html
 def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:
     
     if not user_id:
-        reply = "⚠️ User not found"
+        reply = gs(chat.id, "not_user")
         return reply
 
     try:
         member = chat.get_member(user_id)
     except BadRequest as excp:
-        if excp.message == "User not found":
+        if excp.message == gs(chat.id "not_user"):
             reply = "I can't seem to find this user"
             return reply
         raise
