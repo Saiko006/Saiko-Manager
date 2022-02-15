@@ -7,11 +7,9 @@ from Yuriko.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
-from Yuriko.modules.language import gs
 
 
 async def purge_messages(event):
-    chat_id = message.chat.id
     start = time.perf_counter()
     if event.from_id is None:
         return
@@ -32,7 +30,7 @@ async def purge_messages(event):
 
     reply_msg = await event.get_reply_message()
     if not reply_msg:
-        await event.reply(gs(chat.id, "ll"))
+        await event.reply("Reply to a message to select where to start purging from.")
         return
     messages = []
     message_id = reply_msg.id
@@ -64,7 +62,7 @@ async def delete_messages(event):
         )
         and event.from_id not in [1087968824]
     ):
-        await event.reply(gs(chat.id, "mm"))
+        await event.reply("Only Admins are allowed to use this command")
         return
 
     if not await can_delete_messages(message=event):
