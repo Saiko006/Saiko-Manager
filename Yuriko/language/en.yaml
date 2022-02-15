@@ -203,6 +203,9 @@ cmd_private: "This command is meant to use in chat not in PM"
 kk: "Description must needs to be under 255 characters!"
 #funcs_chat_status
 non_admin: "Who dis non-admin telling me what to do? You want a kicked?"
+#purge
+ll: "Reply to a message to select where to start purging from."
+mm: "Only Admins are allowed to use this command"
 
 
 #Bans button
