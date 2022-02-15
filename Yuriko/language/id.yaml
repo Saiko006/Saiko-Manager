@@ -199,6 +199,18 @@ cmd_private: "Perintah ini dimaksudkan untuk digunakan dalam obrolan tidak di PM
 kk: "Deskripsi harus di bawah 255 karakter!"
 #funcs_chat_status
 non_admin: "Siapa non-admin yang memberitahuku apa yang harus aku lakukan? Kamu ingin di tendang?"
+#muting
+mutebot: "Aku tidak akan MEMBISUKAN diriku sendiri, apakah kamu gila?"
+muteadmin: "Tidak bisa. Temukan orang lain untuk di bisukan tetapi bukan yang ini."
+unmutebutton: "🔄 ᴍᴇᴍʙᴜɴʏɪᴋᴀɴ"
+kemute:  "Pengguna ini sudah dibisukan!"
+ll: "Anda harus memberi saya nama pengguna untuk membuka diri, atau membalas seseorang untuk tidak dimutakhir."
+mm: "Pengguna ini bahkan tidak ada dalam obrolan, mereka tidak akan membuat mereka berbicara lebih dari yang sudah mereka lakukan !"
+nn: "Pengguna ini sudah memiliki hak untuk berbicara"
+oo: "Anda belum menentukan waktu untuk membisukan pengguna ini"
+noreply: "Pesan balasan tidak ditemukan"
+gagalmute: "Yah, aku tidak bisa membisukan pengguna itu"
+gadaorang: "Pengguna ini tidak dibisukan atau telah meninggalkan grup"
 #Bans button
 unban_button: "Uɴʙᴀɴ"
 delunban_button: "ʜᴀᴘᴜs"
