@@ -203,10 +203,18 @@ cmd_private: "This command is meant to use in chat not in PM"
 kk: "Description must needs to be under 255 characters!"
 #funcs_chat_status
 non_admin: "Who dis non-admin telling me what to do? You want a kicked?"
-#purge
-ll: "Reply to a message to select where to start purging from."
-mm: "Only Admins are allowed to use this command"
-
+#muting
+mutebot: "I'm not gonna MUTE myself, are you crazy?"
+muteadmin: "Can't. Find someone else to mute but not this one."
+unmutebutton: "🔄  ᴜɴᴍᴜᴛᴇ"
+kemute: "This user is already muted!"
+ll: "You'll need to either give me a username to unmute, or reply to someone to be unmuted."
+mm: "This user isn't even in the chat, unmuting them won't make them talk more than they already do!"
+nn: "This user already has the right to speak"
+oo: "You haven't specified a time to mute this user for"
+noreply: "Reply message not found"
+gagalmute: "Well damn, I can't mute that user"
+gadaorang: "⚠️ This user is not muted or has left the group"
 
 #Bans button
 unban_button: "Uɴʙᴀɴ"
