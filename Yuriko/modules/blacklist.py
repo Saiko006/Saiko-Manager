@@ -18,6 +18,7 @@ from Yuriko.modules.helper_funcs.string_handling import extract_time
 from Yuriko.modules.connection import connected
 from Yuriko.modules.sql.approve_sql import is_approved
 from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
+from Yuriko.modules.language import gs
 
 BLACKLIST_GROUP = 11
 
