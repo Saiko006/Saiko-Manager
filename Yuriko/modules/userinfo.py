@@ -17,6 +17,7 @@ from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
+from Yuriko.modules.language import gs
     
 from Yuriko import (
     DEV_USERS,
@@ -537,58 +538,8 @@ def __user_info__(user_id):
     return result
 
 
-__help__ = """
-*ID:*
-✪ /id - `get the current group id. If used by replying to a message, gets that user's id.`
-
-✪ /gifid - `reply to a gif to me to tell you its file ID.`
- 
-*Self addded information:* 
-
-✪ /setme - `<text> will set your info.`
-
-✪ /me - `will get your or another user's info.`
-
-Examples:
-
-✪ /setme - `I am a` *KEKINIAN* `Member.`
-
-✪ /me - `@username(defaults to yours if no user specified)`
- 
-*Information others add on you:* 
-
-✪ /bio - `will get your or another user's bio. This cannot be set by yourself.`
-
-✪ /setbio - `<text> while replying, will save another user's bio`
-
-*Examples:*
-
-✪ /bio - `@username(defaults to yours if not specified).`
-
-✪ /setbio - `This user is a` *KEKINIAN* `Member (reply to the user)`
- 
-*Overall Information about you:*
-
-✪ /info - `get information about a user.`
- 
-*json Detailed info:*
-
-✪ /json - `Get Detailed info about any message.`
- 
-*AFk:*
-
-`When marked as AFK, any mentions will be replied to with a message stating that you're not available!`
-
-✪ /afk - `<reason> Mark yourself as AFK.`
-
-  brb - `<reason> Same as the afk command, but not a command.` 
-
-*What is that health thingy?*
-
- `Come and see` [HP System explained](https://t.me/YurikoLogger/5)
-
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
-"""
+def helps(chat):
+    return gs(chat, "info_dan_afk_help")
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
 GET_BIO_HANDLER = DisableAbleCommandHandler("bio", about_bio, run_async=True)
