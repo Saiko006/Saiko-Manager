@@ -9,6 +9,7 @@ from Yuriko.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
+from Yuriko.modules.language import gs
 
 
 @loggable
@@ -192,25 +193,9 @@ def unapproveall_btn(update: Update, context: CallbackContext):
             query.answer("You need to be admin to do this.")
 
 
-__help__ = """
-*Sometimes, you might trust a user not to send unwanted content.*
-*Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.*
+def helps(chat):
+    return gs(chat, "approval_help")
 
-*That's what approvals are for - approve of trustworthy users to allow them to send*
-
-*Admin commands:*
-✪ /approval - `Check a user's approval status in this chat.`
-
-✪ /approve - `Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.`
-
-✪ /unapprove - `Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.`
-
-✪ /approved - `List all approved users.`
-
-✪ /unapproveall - `Unapprove `*ALL* `users in a chat. This cannot be undone.`
-
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
-"""
 
 APPROVE = DisableAbleCommandHandler("approve", approve, run_async=True)
 DISAPPROVE = DisableAbleCommandHandler("unapprove", disapprove, run_async=True)
