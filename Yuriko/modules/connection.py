@@ -9,7 +9,7 @@ import Yuriko.modules.sql.connection_sql as sql
 from Yuriko import dispatcher, DRAGONS, DEV_USERS
 from Yuriko.modules.helper_funcs import chat_status
 from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
-from Yuriko.modules.language import gs
+from Yuriki.modules.language import gs
 
 user_admin = chat_status.user_admin
 
