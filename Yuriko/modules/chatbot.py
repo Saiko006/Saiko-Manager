@@ -10,6 +10,7 @@ from Yuriko import BOT_USERNAME as bu
 from Yuriko import BOT_ID, pbot, arq
 from Yuriko.ex_plugins.chatbot import add_chat, get_session, remove_chat
 from Yuriko.utils.pluginhelper import admins_only, edit_or_reply
+from Yuriko.modules.language import gs
 
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
@@ -322,11 +323,7 @@ async def inuka(client, message):
         return
 
 
-__help__ = """
-*──「 Help for the Chatbot module 」──*
-• Kekinian Robot AI is the only ai system which can detect & reply upto 200 language's
-✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
-✪ /chatbot EN : Enables English only chatbot.
-"""
+def helps(chat):
+    return gs(chat, "chatbot_help")
 
 __mod_name__ = "Chatbot"
