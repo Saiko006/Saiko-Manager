@@ -4,6 +4,7 @@ from Yuriko import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
 from Yuriko.modules.helper_funcs.chat_status import user_admin, user_not_admin
 from Yuriko.modules.log_channel import loggable
 from Yuriko.modules.sql import reporting_sql as sql
+from Yuriko.modules.language import gs
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -264,18 +265,8 @@ def buttons(update: Update, context: CallbackContext):
             query.answer("🛑 Failed to delete message!")
 
 
-__help__ = """
-✪ /report - `<reason> reply to a message to report it to admins.`
-
-✪ @admin - `reply to a message to report it to admins.`
-
-*NOTE:* `Neither of these will get triggered if used by admins.`
-
-*Admins only:*
-✪ /reports - `<on/off> change report setting or view current status.`
-`If done in pm toggles your status.`
-`If in group toggles that groups status.`
-"""
+def helps(chat):
+    return gs(chat, "report_help")
 
 SETTING_HANDLER = CommandHandler("reports", report_setting, run_async=True)
 REPORT_HANDLER = CommandHandler(
@@ -293,7 +284,7 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "Rᴇᴘᴏʀᴛ"
+__mod_name__ = "Report"
 __handlers__ = [
     (REPORT_HANDLER, REPORT_GROUP),
     (ADMIN_REPORT_HANDLER, REPORT_GROUP),
