@@ -17,6 +17,7 @@ from Yuriko.modules.redis.afk_redis import (
     afk_reason,
 )
 from Yuriko.modules.users import get_user_id
+from Yuriko.modules.language import gs
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
@@ -153,6 +154,10 @@ def check_afk(update: Update, _, user_id: int, fst_name: int, userc_id: int):
 
 def __gdpr__(user_id):
     end_afk(user_id)
+
+
+def helps(chat):
+    return gs(chat, "connection_help")
 
 
 AFK_HANDLER = DisableAbleCommandHandler(
