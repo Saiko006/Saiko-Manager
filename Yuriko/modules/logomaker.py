@@ -5,6 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 from Yuriko.events import register
 from Yuriko import telethn as tbot, ubot2
+from Yuriko.modules.language import gs
 
 
 def mediainfo(media):
@@ -208,17 +209,7 @@ async def logo_(event):
             os.remove(font_)
 
 
-__mod_name__ = "LᴏɢᴏMᴀᴋᴇʀ"
+__mod_name__ = "Logo Marker"
 
-__help__ = """
-
-✗ /logo - `<text/name> Create a logo with random view.`
-
-✗ /wlogo - `<text/name> Create a logo with wide view only.`
-
- *Image Editor :*
-
-✗  /edit - `<reply photo> to edit image.`
-
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ 🤖!*
-"""
+def helps(chat):
+    return gs(chat, "logomarker_help")
