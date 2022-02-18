@@ -18,8 +18,8 @@ from Yuriko.modules.helper_funcs.misc import upload_text
 from Yuriko.utils.errors import capture_err
 from Yuriko.services.keyboard import ikb
 from Yuriko.utils.pastebin import hpaste
+from Yuriko.modules.language import gs
 
-__mod_name__ = "Paste"
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 
@@ -240,14 +240,5 @@ def paste(update: Update, context: CallbackContext):
 
 __mod_name__ = "Paste"
 
-__help__ = """
-❂ `/spaste`*:* Paste to spacebin
-❂ `/npaste`*:* Paste to nekobin
-❂ `/paste`*:* Paste to ezup
-❂ `/bpaste`*:* Paste to batbin
-❂ `/kpaste`*:* Paste to katbin
-❂ `/ppaste`*:* Paste to pastylus
-❂ `/cpaste`*:* Paste to catbin
-❂ `/dpaste`*:* Paste to dogbin
-❂ `/pvpaste`*:* Paste to privatebin
-"""
+def helps(chat):
+    return gs(chat, "paste_help")
