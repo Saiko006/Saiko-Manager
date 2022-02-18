@@ -155,10 +155,6 @@ def __gdpr__(user_id):
     end_afk(user_id)
 
 
-def helps(chat):
-    return gs(chat, "connection_help")
-
-
 AFK_HANDLER = DisableAbleCommandHandler(
     "afk",
     afk,
