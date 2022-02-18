@@ -2,6 +2,7 @@ from datetime import datetime
 from functools import wraps
 from telegram.ext import CallbackContext
 from Yuriko.modules.helper_funcs.misc import is_module_loaded
+from Yuriko.modules.language import gs
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -188,25 +189,10 @@ if is_module_loaded(FILENAME):
         return "No log channel is set for this group!"
 
 
-    __help__ = """
-──「 Log channel 」──
+def helps(chat):
+    return gs(chat, "logchannel_help")
 
-✪  /logchannel - `get log channel info`
-
-✪  /setlog - `set the log channel.`
-
-✪  /unsetlog - `unset the log channel.`
-
-*Setting the log channel is done by*:
-
-➩ `adding the bot to the desired channel (as an admin!)`
-➩ `sending /setlog in the channel`
-➩ `forwarding the /setlog to the group`
-
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
-"""
-
-    __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
+    __mod_name__ = "Log Channel​"
 
     LOG_HANDLER = CommandHandler("logchannel", logging, run_async=True)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog, run_async=True)
