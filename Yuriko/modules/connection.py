@@ -399,14 +399,12 @@ def connect_button(update, context):
         query.message.edit_text("Closed.\nTo open again, type /connect")
     else:
         connect_chat(update, context)
-        
-        
+
 def helps(chat):
     return gs(chat, "connection_help")
 
+__mod_name__ = "Connection"
 
-__mod_name__ = "Cᴏɴɴᴇᴄᴛɪᴏɴ"
- 
 CONNECT_CHAT_HANDLER = CommandHandler(
     "connect", connect_chat, pass_args=True, run_async=True
 )
