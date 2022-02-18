@@ -223,6 +223,10 @@ delunban_button: "•Dᴇʟᴇᴛᴇ•"
 no_reasongban: "Give me a reason why i should to do this, i can't do this without reason because it is danger command"
 gban_dev: "That user is part of the Association\nI can't act against our own"
 
+#markdown py
+kontakpm: "Contact me in pm"
+kontakbutton: "ᴍᴀʀᴋᴅᴏᴡɴ ʜᴇʟᴘ"
+moreinfo: "🔧 ᴍᴏʀᴇ ɪɴꜰᴏ..."
 
 # MODULES
 antich_help: |
