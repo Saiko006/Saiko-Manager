@@ -189,8 +189,8 @@ if is_module_loaded(FILENAME):
         return "No log channel is set for this group!"
 
 
-def helps(chat):
-    return gs(chat, "logchannel_help")
+    def helps(chat):
+        return gs(chat, "logchannel_help")
 
     __mod_name__ = "Log Channel​"
 
