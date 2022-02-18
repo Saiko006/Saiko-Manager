@@ -17,7 +17,6 @@ from Yuriko.modules.redis.afk_redis import (
     afk_reason,
 )
 from Yuriko.modules.users import get_user_id
-from Yuriko.modules.language import gs
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
@@ -187,7 +186,7 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "Connection"
+__mod_name__ = "Afk"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
