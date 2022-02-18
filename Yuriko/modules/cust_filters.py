@@ -30,6 +30,7 @@ from Yuriko.modules.helper_funcs.string_handling import (
 from Yuriko.modules.sql import cust_filters_sql as sql
 from Yuriko.modules.connection import connected
 from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
+feom Yuriko.modules.language import gs
 
 HANDLER_GROUP = 10
 
@@ -606,40 +607,10 @@ def __chat_settings__(chat_id, user_id):
     return "There are `{}` custom filters here.".format(len(cust_filters))
 
 
-__help__ = """
-✗ /filters - `List all active filters saved in the chat.`
+def helps(chat):
+    return gs(chat, "filters_help")
 
-*Admin Commands Only:*
-
-✗ /filter - `Add a filter to this chat. The bot will now reply that message whenever 'keyword'\`
-`is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.`
-
-*NOTE:* `all filter`
-`keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg:` /filter *hey there* `How you`
-`doin? Separate diff replies by `%%%` to get random replies`
- 
- *Example:* 
- `/filter "filtername"
- Reply 1
- %%%
- Reply 2
- %%%
- Reply 3`
-
-✗ /stop - `Stop that filter.`
-
-*Chat Creator Only:*
-
-✗ /removeallfilters - `Remove all chat filters at once.`
-
-*NOTE*: `Filters also support markdown formatters like: {first}, {last} etc.. and buttons.`
-
-`Check /markdownhelp to know more!`
-
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
-"""
-
-__mod_name__ = "Fɪʟᴛᴇʀꜱ"
+__mod_name__ = "Filters"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
