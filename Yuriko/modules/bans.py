@@ -575,7 +575,7 @@ def helps(chat):
     return gs(chat, "bansmutes_help")
 
 
-__mod_name__ = "Bᴀɴ/Mᴜᴛᴇ"
+__mod_name__ = "Ban/Mute"
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban, run_async=True)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban, run_async=True)
