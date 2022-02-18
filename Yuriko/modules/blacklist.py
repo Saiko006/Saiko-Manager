@@ -455,7 +455,7 @@ def helps(chat):
     return gs(chat, "blacklist_help")
 
 
-__mod_name__ = "Bʟᴀᴄᴋʟɪꜱᴛꜱ"
+__mod_name__ = "Blacklist"
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
     "blacklist",
