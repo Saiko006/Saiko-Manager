@@ -30,7 +30,7 @@ from Yuriko.modules.helper_funcs.string_handling import (
 from Yuriko.modules.sql import cust_filters_sql as sql
 from Yuriko.modules.connection import connected
 from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
-feom Yuriko.modules.language import gs
+from Yuriko.modules.language import gs
 
 HANDLER_GROUP = 10
 
