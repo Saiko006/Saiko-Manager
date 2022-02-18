@@ -279,4 +279,4 @@ async def apk(e):
 def helps(chat):
     return gs(chat, "search_help")
 
-__mod_name__ = "Sᴇᴀʀᴄʜ"
+__mod_name__ = "Search"
