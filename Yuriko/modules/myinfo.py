@@ -6,7 +6,8 @@ import asyncio
 from Yuriko import telethn as bot
 from Yuriko import telethn as tgbot
 from Yuriko import telethn as aasf
-from Yuriko.events import register 
+from Yuriko.events import register
+from Yuriko.modules.language import gs 
 
 edit_time = 5
 yuriko1 = "https://telegra.ph/file/5856563ade3824b4db8c2.jpg"
@@ -58,6 +59,5 @@ async def callback_query_handler(event):
 
 __mod_name__ = "Myinfo"
 
-__help__ = """
- ~ /myinfo *:* Get Your Details On Inline. 
-"""
+def helps(chat):
+    return gs(chat, "myinfo_help")
