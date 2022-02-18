@@ -787,15 +787,15 @@ notes_help: |
 paste_help: |
     ──「 Anti-Flood 」──
     
-    ❂ `/spaste` *:* Paste to spacebin
-    ❂ `/npaste` *:* Paste to nekobin
-    ❂ `/paste` *:* Paste to ezup
-    ❂ `/bpaste` *:* Paste to batbin
-    ❂ `/kpaste` *:* Paste to katbin
-    ❂ `/ppaste` *:* Paste to pastylus
-    ❂ `/cpaste` *:* Paste to catbin
-    ❂ `/dpaste` *:* Paste to dogbin
-    ❂ `/pvpaste` *:* Paste to privatebin
+    ❂ /spaste  *:* `Paste to spacebin`
+    ❂ /npaste  *:* `Paste to nekobin`
+    ❂ /paste   *:* `Paste to ezup`
+    ❂ /bpaste  *:* `Paste to batbin`
+    ❂ /kpaste  *:* `Paste to katbin`
+    ❂ /ppaste  *:* `Paste to pastylus`
+    ❂ /cpaste  *:* `Paste to catbin`
+    ❂ /dpaste  *:* `Paste to dogbin`
+    ❂ /pvpaste *:* `Paste to privatebin`
     
     ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
