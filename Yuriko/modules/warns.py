@@ -46,6 +46,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 from Yuriko.modules.sql.approve_sql import is_approved
+from Yuriko.modules.language import gs
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
@@ -489,30 +490,10 @@ def __chat_settings__(chat_id, user_id):
         f"It takes `{limit}` warns before the user gets *{'kicked' if soft_warn else 'banned'}*."
     )
 
-__help__ = """
+def helps(chat):
+    return gs(chat, "warning_help")
 
-✪ /warns - `<userhandle> get a user's number, and reason, of warns.`
-
-✪ /warnlist - `list of all current warning filters`
-
-✪ /warn - `<userhandle> warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.`
-
-✪ /dwarn - `<userhandle> warn a user and delete the message. After 3 warns, the user will be banned from the group. Can also be used as a reply.`
-
-✪ /resetwarn - `<userhandle> reset the warns for a user. Can also be used as a reply.`
-
-✪ /addwarn - `<keyword> <reply message> set a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user.`
-
-✪ /nowarn - `<keyword> stop a warning filter`
-
-✪ /warnlimit - `<num> set the warning limit`
-
-✪ /strongwarn - `<on/yes/off/no> If set to on, exceeding the warn limit will result in a ban. Else, will just punch.`
-
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
-"""
-
-__mod_name__ = "Wᴀʀɴɪɴɢ"
+__mod_name__ = "Warning"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
 RESET_WARN_HANDLER = CommandHandler(
