@@ -15,6 +15,7 @@ from telegram.utils.helpers import mention_html
 
 from Yuriko import dispatcher
 from Yuriko.modules.disable import DisableAbleCommandHandler
+from Yuriko.modules.language import gs
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
@@ -600,29 +601,10 @@ def delsticker(update, context):
             "Please reply to sticker message to del sticker"
         )
 
-__mod_name__ = "Sᴛɪᴄᴋᴇʀꜱ"
+__mod_name__ = "Stickers"
 
-__help__ = """
-*Help Menu For Stickers Tools*
-
-✪ /stickerid - `reply to a sticker to me to tell you its file ID.`
-
-✪ /getsticker - `reply to a sticker to me to upload its raw PNG file.`
-
-✪ /kang - `reply to a sticker to add it to your pack.`
-
-✪ /delsticker - `Reply to your anime exist sticker to your pack to delete it.`
-
-✪ /stickers - `Find stickers for given term on combot sticker catalogue`
-
-✪ /tiny - ` To make small sticker`
-
-✪ /kamuii - `To deepefying stiker`
-
-✪ /mmf - `To draw a text for sticker or pohots`
-
-*✪ Pᴏᴡᴇʀᴇᴅ 💎 Bʏ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*
-"""
+def helps(chat):
+    return gs(chat, "stickers_help")
 
 
 
