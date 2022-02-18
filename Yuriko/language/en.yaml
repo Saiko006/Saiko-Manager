@@ -414,6 +414,327 @@ extras_help: |
  
     ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
+fsub_feds_help: |
+    ──「 Fsub/feds 」──
+    
+    *Force Subscribe:*
+    ❂ Kekinian can mute members who are not subscribed your channel until they subscribe
+    ❂ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
+    ❂ Setup
+    
+    *Only creator*
+    ❂ Add me in your group as admin
+    ❂ Add me in your channel as admin 
+ 
+    *Commmands*
+    ❂ /fsub {channel username} - To turn on and setup the channel.
+      📚Do this first...
+    ❂ /fsub - To get the current settings.
+    ❂ /fsub disable - To turn of ForceSubscribe..
+      📚If you disable fsub, you need to set again for working.. /fsub {channel username} 
+    ❂ /fsub clear - To unmute all members who muted by me.
+    *Federation*
+    Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
+    But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?\n
+    *No longer!* With Federation, you can make a ban in one chat overlap with all other chats.\n
+    You can even designate federation admins, so your trusted admin can ban all the spammers from chats you want to protect.\n
+    *Commands:*\n
+    Feds are now divided into 3 sections for your ease.
+    ❂ `/fedownerhelp`*:* Provides help for fed creation and owner only commands
+    ❂ `/fedadminhelp`*:* Provides help for fed administration commands
+    ❂ `/feduserhelp`*:* Provides help for commands anyone can use
+
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+FED_OWNER_HELP: | 
+    ──「 Feds 」──
+    *👑 Fed Owner Only:*
+    ❂ `/newfed <fed_name>`*:* Creates a Federation, One allowed per user
+    ❂ `/renamefed <fed_id> <new_fed_name>`*:* Renames the fed id to a new name
+    ❂ `/delfed <fed_id>`*:* Delete a Federation, and any information related to it. Will not cancel blocked users
+    ❂ `/fpromote <user>`*:* Assigns the user as a federation admin. Enables all commands for the user under `Fed Admins`
+    ❂ `/fdemote <user>`*:* Drops the User from the admin Federation to a normal User
+    ❂ `/subfed <fed_id>`*:* Subscribes to a given fed ID, bans from that subscribed fed will also happen in your fed
+    ❂ `/unsubfed <fed_id>`*:* Unsubscribes to a given fed ID
+    ❂ `/setfedlog <fed_id>`*:* Sets the group as a fed log report base for the federation
+    ❂ `/unsetfedlog <fed_id>`*:* Removed the group as a fed log report base for the federation
+    ❂ `/fbroadcast <message>`*:* Broadcasts a messages to all groups that have joined your fed
+    ❂ `/fedsubs`*:* Shows the feds your group is subscribed to `(broken rn)`
+
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+FED_ADMIN_HELP: |
+    ──「 Feds 」──
+    *🔱 Fed Admins:*
+    ❂ `/fban <user> <reason>`*:* Fed bans a user
+    ❂ `/unfban <user> <reason>`*:* Removes a user from a fed ban
+    ❂ `/fedinfo <fed_id>`*:* Information about the specified Federation
+    ❂ `/joinfed <fed_id>`*:* Join the current chat to the Federation. Only chat owners can do this. Every chat can only be in one Federation
+    ❂ `/leavefed <fed_id>`*:* Leave the Federation given. Only chat owners can do this
+    ❂ `/setfrules <rules>`*:* Arrange Federation rules
+    ❂ `/fedadmins`*:* Show Federation admin
+    ❂ `/fbanlist`*:* Displays all users who are victimized at the Federation at this time
+    ❂ `/fedchats`*:* Get all the chats that are connected in the Federation
+    ❂ `/chatfed `*:* See the Federation in the current chat\n
+
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+FED_USER_HELP: | 
+    ──「 Feds 」──
+    *🎩 Any user:*
+    ❂ /fbanstat*:* Shows if you/or the user you are replying to or their username is fbanned somewhere or not
+    ❂ /fednotif <on/off>*:* Federation settings not in PM when there are users who are fbaned/unfbanned
+    ❂ /frules*:* See Federation regulations\n
+
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+filters_help: |
+    ──「 Filters 」──
+    
+    ❂ /filters - `List all active filters saved in the chat.`
+    *Admin Commands Only:*
+    ❂ /filter - `Add a filter to this chat. The bot will now reply that message whenever 'keyword'\`
+    `is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.`
+    *NOTE:* `all filter`
+    `keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg:` /filter *hey there* `How you`
+    `doin? Separate diff replies by `%%%` to get random replies`
+ 
+    *Example:* 
+     `/filter "filtername"
+     Reply 1
+     %%%
+     Reply 2
+     %%%
+     Reply 3`
+    ❂ /stop - `Stop that filter.`
+    *Chat Creator Only:*
+    ❂ /removeallfilters - `Remove all chat filters at once.`
+    *NOTE*: `Filters also support markdown formatters like: {first}, {last} etc.. and buttons.`
+    `Check /markdownhelp to know more!`
+
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+
+fun_help: |
+    ──「 Fun 」──
+    
+    ✪ /runs - `reply a random string from an array of replies`
+    ✪ /slap - `slap a user, or get slapped if not a reply`
+    ✪ /shrug - `get shrug XD`
+    ✪ /table - `get flip/unflip :v`
+    ✪ /decide - `Randomly answers yes/no/maybe`
+    ✪ /toss - `Tosses A coin`
+    ✪ /bluetext - `check urself :V`
+    ✪ /roll - `Roll a dice`
+    ✪ /rlg - `Join ears,nose,mouth and create an emo ;-;`
+    ✪ /shout - `<keyword> write anything you want to give loud shout`
+    ✪ /weebify - `<text> returns a weebified text`
+    ✪ /sanitize - `always use this before /pat or any contact`
+    ✪ /pat - `pats a user, or get patted`
+    ✪ /8ball - `predicts using 8ball method`
+    
+    *Animation*
+    ✪ /love 
+    ✪ /hack 
+    ✪ /bombs 
+    
+    *Shippering*
+    ✪ /couples - `get couples of today`
+    *Here Is The Help For The Styletext Module:*
+    ✪ /weebify - `<text>: weebify your text!`
+    ✪ /bubble - `<text>: bubble your text!`
+    ✪ /fbubble - `<text>: bubble-filled your text!`
+    ✪ /square - `<text>: square your text!`
+    ✪ /fsquare - `<text>: square-filled your text!`
+    ✪ /blue - `<text>: bluify your text!`
+    ✪ /latin - `<text>: latinify your text!`
+    ✪ /lined - `<text>: lined your text!`
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+greetings_help: |
+    ──「 Greetings 」──
+    
+    *Admins Command Only:*
+    ✪ /welcome <on/off> - `enable/disable welcome messages.`
+    ✪ /welcome - `shows current welcome settings.`
+    ✪ /welcome - `noformat shows current welcome settings, without the formatting - useful to recycle your welcome messages!`
+    ✪ /goodbye - `same usage and args as `/welcome`.`
+    ✪ /setwelcome - `<sometext> set a custom welcome message. If used replying to media, uses that media.`
+    ✪ /setgoodbye - `<sometext> set a custom goodbye message. If used replying to media, uses that media.`
+    ✪ /resetwelcome - `reset to the default welcome message.`
+    ✪ /resetgoodbye - `reset to the default goodbye message.`
+    ✪ /cleanwelcome - `<on/off> On new member, try to delete the previous welcome message to avoid spamming the chat.`
+    ✪ /welcomemutehelp - `gives information about welcome mutes.`
+    ✪ /cleanservice - `<on/off deletes telegrams welcome/left service messages.`
+    
+    *Example:*
+    `user joined chat, user left chat.`
+    
+    *Welcome markdown:*
+    ✪ /welcomehelp - `view more formatting information for custom welcome/goodbye messages.`
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+WELCOME_HELP_TEXT: |
+    ──「 Greetings Format Help 」──
+    "Your group's welcome/goodbye messages can be personalised in multiple ways. If you want the messages"
+    " to be individually generated, like the default welcome message is, you can use *these* variables:\n"
+    "  ❂ `{first}`*:* this represents the user's *first* name\n"
+    "  ❂ `{last}`*:* this represents the user's *last* name. Defaults to *first name* if user has no "
+    "last name.\n"
+    "  ❂ `{fullname}`*:* this represents the user's *full* name. Defaults to *first name* if user has no "
+    "last name.\n"
+    "  ❂ `{username}`*:* this represents the user's *username*. Defaults to a *mention* of the user's "
+    "first name if has no username.\n"
+    "  ❂ `{mention}`*:* this simply *mentions* a user - tagging them with their first name.\n"
+    "  ❂ `{id}`*:* this represents the user's *id*\n"
+    "  ❂ `{count}`*:* this represents the user's *member number*.\n"
+    "  ❂ `{chatname}`*:* this represents the *current chat name*.\n"
+    "\nEach variable MUST be surrounded by `{}` to be replaced.\n"
+    "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. "
+    "Buttons are also supported, so you can make your welcomes look awesome with some nice intro "
+    "buttons.\n"
+    f"To create a button linking to your rules, use this: `[Rules](buttonurl://t.me/{dispatcher.bot.username}?start=group_id)`. "
+    "Simply replace `group_id` with your group's id, which can be obtained via /id, and you're good to "
+    "go. Note that group ids are usually preceded by a `-` sign; this is required, so please don't "
+    "remove it.\n"
+    "You can even set images/gifs/videos/voice messages as the welcome message by "
+    "replying to the desired media, and calling `/setwelcome`."
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+WELCOME_MUTE_HELP_TEXT: |
+    ──「 Greetings Mute Format Help 」──
+    "You can get the bot to mute new people who join your group and hence prevent spambots from flooding your group. "
+    "The following options are possible:\n"
+    "  ❂ `/welcomemute soft`*:* restricts new members from sending media for 24 hours.\n"
+    "  ❂ `/welcomemute strong`*:* mutes new members till they tap on a button thereby verifying they're human.\n"
+    "  ❂ `/welcomemute captcha`*:*  mutes new members till they solve a button captcha thereby verifying they're human.\n"
+    "  ❂ `/welcomemute off`*:* turns off welcomemute.\n"
+    "*Note:* Strong mode kicks a user from the chat if they dont verify in 120seconds. They can always rejoin though"
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+info_dan_afk_help: |
+    ──「 Info & Afk 」──
+    
+    *ID:*
+    ✪ /id - `get the current group id. If used by replying to a message, gets that user's id.`
+    ✪ /gifid - `reply to a gif to me to tell you its file ID.`
+ 
+    *Self addded information:* 
+    ✪ /setme - `<text> will set your info.`
+    ✪ /me - `will get your or another user's info.`
+    
+    *Examples:*
+    ✪ /setme - `I am a` *KEKINIAN* `Member.`
+    ✪ /me - `@username(defaults to yours if no user specified)`
+ 
+    *Information others add on you:* 
+    ✪ /bio - `will get your or another user's bio. This cannot be set by yourself.`
+    ✪ /setbio - `<text> while replying, will save another user's bio`
+    
+    *Examples:*
+    ✪ /bio - `@username(defaults to yours if not specified).`
+    ✪ /setbio - `This user is a` *KEKINIAN* `Member (reply to the user)`
+ 
+    *Overall Information about you:*
+    ✪ /info - `get information about a user.`
+ 
+    *json Detailed info:*
+    ✪ /json - `Get Detailed info about any message.`
+ 
+    *AFk:*
+    `When marked as AFK, any mentions will be replied to with a message stating that you're not available!`
+    ✪ /afk - `<reason> Mark yourself as AFK.`
+      brb - `<reason> Same as the afk command, but not a command.` 
+      *What is that health thingy?*
+     `Come and see` [HP System explained](https://t.me/KekinianOfficial/4) 
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+
+logchannel_help: |
+    ──「 Log Channel 」──
+    
+    ❂ /logchannel*:* get log channel info
+    ❂ /setlog*:* set the log channel.
+    ❂ /unsetlog*:* unset the log channel.
+    *Setting the log channel is done by*:
+    ➩ adding the bot to the desired channel (as an admin!)
+    ➩ sending /setlog in the channel
+    ➩ forwarding the /setlog to the group
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+logomarker_help: |
+    ──「 Logo Marker 」──
+    
+    This is help menu for logomaker
+    ❂ /logo <text/name> - Create a logo with random view.
+    ❂ /wlogo <text/name> - Create a logo with wide view only.
+    *Image Editor : *
+    ❂  /edit <reply photo> - to edit image.
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+MARKDOWN_HELP: |
+    ──「 Markdown Help 」──
+    Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \
+    saved messages are correctly parsed, and to allow you to create buttons.
+    
+    ✪ <code>_italic_</code> - `wrapping text with '_' will produce italic text`
+    ✪ <code>*bold*</code> - `wrapping text with '*' will produce bold text`
+    ✪ <code>`code`</code> - `wrapping text with '`' will produce monospaced text, also known as code`
+    ✪ <code>[sometext](someURL)</code> - `this will create a link - the message will just show <code>sometext</code>, \
+    and tapping on it will open the page at <code>someURL</code>.
+    *Example:*<code>[test](example.com)</code>`
+    ✪ <code>[buttontext](buttonurl - `someURL)</code>: this is a special enhancement to allow users to have telegram \
+    buttons in their markdown. <code>buttontext</code> will be what is displayed on the button, and <code>someurl</code> \
+    will be the url which is opened.`
+    *Example:* <code>[This is a button](buttonurl - `example.com)</code>`
+    `If you want multiple buttons on the same line, use :same, as such:`
+    `<code>[one](buttonurl://example.com)`
+    `[two](buttonurl://google.com:same)</code>`
+    `This will create two buttons on a single line, instead of one button per line.`
+    `Keep in mind that your message <b>MUST</b> contain some text other than just a button!`
+        
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+MARKDOWN_HELP_TEXT_1: "Try forwarding the following message to me, and you'll see, and Use #test!"
+MARKDOWN_HELP_TEXT_2: |
+    /save test This is a markdown test. _italics_, *bold*, code, 
+    [URL](example.com) [button](buttonurl:github.com)
+    [button2](buttonurl://google.com:same)
+    
+locks_help: |
+    ──「 Locks 」──
+    
+    Do stickers annoy you? or want to avoid people sharing links? or pictures? \
+    You're in the right place!
+    The locks module allows you to lock away some common items in the \
+    telegram world; the bot will automatically delete them!
+    ❂ /locktypes*:* Lists all possible locktypes
+    
+    *Admins only:*
+    ❂ /lock <type>*:* Lock items of a certain type (not available in private)
+    ❂ /unlock <type>*:* Unlock items of a certain type (not available in private)
+    ❂ /locks*:* The current list of locks in this chat.
+    Locks can be used to restrict a group's users.
+    
+    *eg:*
+    Locking urls will auto-delete all messages with urls, locking stickers will restrict all \
+    non-admin users from sending stickers, etc.
+    Locking bots will stop non-admins from adding bots to the chat.
+    
+    *Note:*
+    ❂ Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
+    ❂ Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group.
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    
+myinfo_help: |
+    ──「 Myinfo 」──
+    
+    ~ /myinfo *:* Get Your Details On Inline.
+    
+    ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+
 notes_help: |
     ──「 Notes 」──
     
