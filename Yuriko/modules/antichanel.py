@@ -19,12 +19,12 @@ def set_antichannel(update: Update, context: CallbackContext):
         s = args[0].lower()
         if s in ["yes", "on"]:
             enable_antichannel(chat.id)
-            message.reply_html("Enabled antichannel in {}".format(html.escape(chat.title)))
+            message.reply_html(text=gs(chat.id, "active_antichannel").format(html.escape(chat.title)))
         elif s in ["off", "no"]:
             disable_antichannel(chat.id)
-            message.reply_html("Disabled antichannel in {}".format(html.escape(chat.title)))
+            message.reply_html(text=gs(chat.id, "disable_antichannel").format(html.escape(chat.title)))
         else:
-            message.reply_text("Unrecognized arguments {}".format(s))
+            message.reply_text(text=gs(chat.id, "invalid_antichannel").format(s))
         return
     message.reply_html(
         "Antichannel setting is currently {} in {}".format(antichannel_status(chat.id), html.escape(chat.title)))
