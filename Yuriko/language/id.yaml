@@ -222,8 +222,6 @@ kontakpm: "Hubungi saya di pm"
 kontakbutton: "ᴍᴀʀᴋᴅᴏᴡɴ ʙᴀɴᴛᴜᴀɴ"
 moreinfo: "🔧 ɪɴꜰᴏ ʟᴇʙɪʜ ʟᴀɴᴊᴜᴛ.."
 
-
-
 # MODULES
 antich_help: |
     ──「 Anti-Channels 」──
@@ -289,124 +287,118 @@ admin_help: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 blacklist_help: |
-    ──「 Blacklist 」──
-    
-    `Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!`
-    *NOTE*: `Blacklists do not affect group admins.`
-    ✪ /blacklist - `View the current blacklisted words.`
+    ──「 Daftar Hitam 」──
 
-    *Admin only:*
-    ✪ /addblacklist - `<triggers> Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.`
-    ✪ /unblacklist - `<triggers> Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.`
-    ✪ /blacklistmode - `<off/del/warn/ban/kick/mute/tban/tmute> Action to perform when someone sends blacklisted words.`
-    *Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.*
-    *NOTE:* `Blacklist stickers do not affect the group admin`
-    ✪ /blsticker - `See current blacklisted sticker`
-
-    *Only admin:*
-    ✪ /addblsticker - `<sticker link> Add the sticker trigger to the black list. Can be added via reply sticker`
-    ✪ /unblsticker - `<sticker link> Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once`
-    ✪ /rmblsticker - `<sticker link> Same as above`
-    ✪ /blstickermode - `<delete/ban/tban/mute/tmute> sets up a default action on what to do if users use blacklisted stickers`
-
-    Note:
-    ✪ *<sticker link> can be* `https://t.me/addstickers/<sticker>` *or just* `<sticker>` *or reply to the sticker message*
+    Daftar hitam digunakan untuk menghentikan pemicu tertentu agar tidak diucapkan dalam grup. Setiap kali pemicu disebutkan, pesan akan segera dihapus. Kombo yang bagus terkadang memasangkan ini dengan filter peringatan!
+    *CATATAN*: Daftar hitam tidak memengaruhi admin grup.
+    ❂ /blacklist*:* Melihat kata-kata yang masuk daftar hitam saat ini.
+    Hanya admin:
+    ❂ /addblacklist <triggers>*:* Tambahkan pemicu ke daftar hitam. Setiap baris dianggap sebagai satu pemicu, jadi menggunakan baris yang berbeda akan memungkinkan Anda untuk menambahkan beberapa pemicu.
+    ❂ /unblacklist <triggers>*:* Hapus pemicu dari daftar hitam. Logika baris baru yang sama berlaku di sini, sehingga Anda dapat menghapus beberapa pemicu sekaligus.
+    ❂ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* Tindakan yang dilakukan ketika seseorang mengirim kata-kata yang masuk daftar hitam.
+    Stiker blacklist digunakan untuk menghentikan stiker tertentu. Setiap kali stiker dikirim, pesan akan segera dihapus.
+    *CATATAN:* Stiker daftar hitam tidak memengaruhi admin grup
+    ❂ /blsticker*:* Lihat stiker yang masuk daftar hitam saat ini
+    *Hanya Admin :*
+    ❂ /addblsticker <sticker link>*:* Tambahkan pemicu stiker ke daftar hitam. Dapat ditambahkan melalui stiker balasan
+    ❂ /unblsticker <sticker link>*:* Hapus pemicu dari daftar hitam. Logika baris baru yang sama berlaku di sini, sehingga Anda dapat menghapus beberapa pemicu sekaligus
+    ❂ /rmblsticker <tautan stiker>*:* Sama seperti di atas
+    ❂ /blstickermode <delete/ban/tban/mute/tmute>*:* mengatur tindakan default tentang apa yang harus dilakukan jika pengguna menggunakan stiker yang masuk daftar hitam
+    Catatan:
+    ❂ <sticker link> bisa `https://t.me/addstickers/<sticker>` atau cukup `<sticker>` atau membalas pesan stiker
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 approval_help: |
-    ──「 Approval 」──
-    
-    *Sometimes, you might trust a user not to send unwanted content.*
-    *Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.*
-    *That's what approvals are for - approve of trustworthy users to allow them to send*
+    ──「 Disetujui 」──
 
-    *Admin commands:*
-    ✪ /approval - `Check a user's approval status in this chat.`
-    ✪ /approve - `Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.`
-    ✪ /unapprove - `Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.`
-    ✪ /approved - `List all approved users.`
-    ✪ /unapproveall - `Unapprove `*ALL* `users in a chat. This cannot be undone.`
+    Terkadang, Anda mungkin memercayai pengguna untuk tidak mengirim konten yang tidak diinginkan.
+    Mungkin tidak cukup untuk menjadikannya admin, tetapi Anda mungkin baik-baik saja dengan kunci, daftar hitam, dan antibanjir yang tidak berlaku untuk mereka.
+    Untuk itulah persetujuan - setujui pengguna yang dapat dipercaya untuk mengizinkan mereka mengirim
+    *Perintah Admin:*
+    ❂ /approval*:* Periksa status persetujuan pengguna dalam obrolan ini.
+    ❂ /approve*:* Menyetujui pengguna. Kunci, daftar hitam, dan antibanjir tidak akan berlaku lagi.
+    ❂ /unapprove*:* Tidak menyetujui pengguna. Mereka sekarang akan dikenakan kunci, daftar hitam, dan antibanjir lagi.
+    ❂ /approved*:* Daftar semua pengguna yang disetujui.
+    ❂ /unapproveall*:* Batalkan persetujuan *SEMUA* pengguna dalam obrolan. Ini tidak dapat dibatalkan.
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 bansmutes_help: |
-    ──「 Ban/Mute 」──
-    
-    *User Commands:*
-    ✪ /kickme - `kicks the user who issued the command`
+    ──「 Larangan / Bisukan 」──
 
-    *Admins Commands Only:*
-    ✪ /ban - `bans a user. (via handle, or reply)`
-    ✪ /sban - `Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)`
-    ✪ /tban - `bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
-    ✪ /unban - `unbans a user. (via handle, or reply)`
-    ✪ /kick - `kicks a user out of the group, (via handle, or reply)`
-    ✪ /mute - `silences a user. Can also be used as a reply, muting the replied to user.`
-    ✪ /tmute - `mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
-    ✪ /unmute - `unmutes a user. Can also be used as a reply, muting the replied to user.`
-    ✪ /zombies - `searches deleted accounts`
-    ✪ /zombies - `removes deleted accounts from the group.`
-    ✪ /snipe - `Make me send a message to a specific chat.`
+    *Perintah Pengguna:*
+    ❂ /kickme*:* menendang pengguna yang mengeluarkan perintah
+    
+    *Hanya Admin :*
+    ❂ /ban <userhandle>*:* mencekal pengguna. (melalui pegangan, atau balasan)
+    ❂ /sban <userhandle>*:* Diam-diam melarang pengguna. Menghapus perintah, Membalas pesan dan tidak membalas. (melalui pegangan, atau balasan)
+    ❂ /tban <userhandle> x(m/h/d)*:* mencekal pengguna selama x waktu. (melalui pegangan, atau balasan). m = menit, h = jam, d = hari.
+    ❂ /unban <userhandle>*:* membatalkan pemblokiran pengguna. (melalui pegangan, atau balasan)
+    ❂ /kick <userhandle>*:* mengeluarkan pengguna dari grup, (melalui handle, atau membalas)
+    ❂ /mute <userhandle>*:* membungkam pengguna. Dapat juga digunakan sebagai balasan, menonaktifkan pengguna yang dibalas.
+    ❂ /tmute <userhandle> x(m/h/d)*:* menonaktifkan pengguna selama x waktu. (melalui pegangan, atau balasan). m = menit, h = jam, d = hari.
+    ❂ /unmute <userhandle>*:* mengaktifkan suara pengguna. Dapat juga digunakan sebagai balasan, menonaktifkan pengguna yang dibalas.
+    ❂ /zombies*:* mencari akun yang dihapus
+    ❂ /zombies clean*:* menghapus akun yang dihapus dari grup.
+    ❂ /snipe <chatid> <string>*:* Buat saya mengirim pesan ke chat tertentu.
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 chatbot_help: |
-    ──「 Chatbot 」──
-    
-    *──「 Help for the Chatbot module 」──*
-    • Kekinian Robot AI is the only ai system which can detect & reply upto 200 language's
-    ✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
-    ✪ /chatbot EN : Enables English only chatbot.
+    ──「 Bot Obrolan AI 」──
+
+    `Kekinian` AI adalah satu-satunya sistem AI yang dapat mendeteksi & membalas hingga 200 bahasa
+    ❂ /chatbot [ON/OFF]: Mengaktifkan dan menonaktifkan mode AI Chat.
+    ❂ /chatbot EN : Mengaktifkan chatbot berbahasa Inggris saja.
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 cleaner_help: |
-    ──「 Cleaner 」──
-    
-    *Blue text cleaner removed any made up commands that people send in your chat.*
-    ✪ /cleanblue - `<on/off/yes/no> clean commands after sending`
-    ✪ /ignoreblue - `<word> prevent auto cleaning of the command`
-    ✪ /unignoreblue - `<word> remove prevent auto cleaning of the command`
-    ✪ /listblue - `list currently whitelisted commands`
-    *Following are Disasters only commands, admins cannot use these:*
-    ✪ /gignoreblue - `<word> globally ignorea bluetext cleaning of saved word across KEKINIAN.`
-    ✪ /ungignoreblue - `<word> remove said command from global cleaning list`
+    ──「 Pembersihan 」──
+
+    Pembersih teks biru menghapus semua perintah yang dibuat-buat yang dikirim orang dalam obrolan Anda.
+    ❂ /cleanblue <on/off/yes/no>*:* bersihkan perintah setelah mengirim
+    ❂ /ignoreblue <word>*:* mencegah pembersihan otomatis dari perintah
+    ❂ /unignoreblue <word>*:* hapus mencegah pembersihan otomatis dari perintah
+    ❂ /listblue*:* daftar perintah yang saat ini masuk daftar putih
+    *Berikut adalah perintah khusus Bencana, admin tidak dapat menggunakan ini:*
+    ❂ /gignoreblue <word>*:* secara global mengabaikan pembersihan teks biru dari kata yang disimpan di Saitama.
+    ❂ /ungignoreblue <word>*:* hapus perintah tersebut dari daftar pembersihan global
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 connection_help: |
-    ──「 Connection 」──
-    
-    *Sometimes, you just want to add some notes and filters to a group chat, but you don't want everyone to see; This is where connections come in...*
-    *This allows you to connect to a chat's database, and add things to it without the commands appearing in chat! For obvious reasons, you need to be an admin to add things; but any member in the group can view your data.*
-    ✪ /connect - `Connects to chat (Can be done in a group by /connect or /connect <chat id> in PM)`
-    ✪ /connection - `List connected chats`
-    ✪ /disconnect - `Disconnect from a chat`
-    ✪ /helpconnect - `List available commands that can be used remotely`
+    ──「 Koneksi 」──
 
-    *Admins only:*
-    ✪ /allowconnect - `<yes/no> allow a user to connect to a chat`
+    Terkadang, Anda hanya ingin menambahkan beberapa catatan dan filter ke obrolan grup, tetapi Anda tidak ingin semua orang melihatnya; Di sinilah koneksi masuk ...
+    Ini memungkinkan Anda untuk terhubung ke database obrolan, dan menambahkan sesuatu ke dalamnya tanpa perintah yang muncul di obrolan! Untuk alasan yang jelas, Anda harus menjadi admin untuk menambahkan sesuatu; tetapi setiap anggota dalam grup dapat melihat data Anda.
+    ❂ /connect: Menghubungkan ke chat (Dapat dilakukan dalam grup dengan /connect atau /connect <chat id> di PM)
+    ❂ /koneksi: Daftar obrolan yang terhubung
+    ❂ /disconnect: Putuskan sambungan dari obrolan
+    ❂ /helpconnect: Daftar perintah yang tersedia yang dapat digunakan dari jarak jauh
+    *Hanya Admin:*
+    ❂ /allowconnect <yes/no>: izinkan pengguna terhubung ke obrolan
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 extras_help: |
     ──「 Extras 」──
-    
-    *Available commands:*
-    ❂ /markdownhelp - `quick summary of how markdown works in telegram - can only be called in private chats`
-    ❂ /paste - `Saves replied content to `nekobin.com` and replies with a url`
-    ❂ /react - `Reacts with a random reaction` 
-    ❂ /ud <word> - `Type the word or expression you want to search use`
-    ❂ /reverse - `Does a reverse image search of the media which it was replied to.`
-    ❂ /wiki <query> - `wikipedia your query`
-    ❂ /wall <query> - `get a wallpaper from wall.alphacoders.com`
-    ❂ /cash - `currency converter`
-         Example:
-     `/cash 1 USD INR`  
-          _OR_
-     `/cash 1 usd inr`
-     Output: `1.0 USD = 75.505 INR`
+
+    ❂ /markdownhelp*:* ringkasan singkat tentang cara kerja markdown di telegram - hanya dapat dipanggil dalam obrolan pribadi
+    ❂ /paste*:* Menyimpan konten yang dibalas ke `nekobin.com` dan membalas dengan url
+    ❂ /spaste*:* Menyimpan konten yang dibalas ke `spaceb.in` dan membalas dengan url
+    ❂ /bereaksi*:* Bereaksi dengan reaksi acak
+    ❂ /ud <word>*:* Ketikkan kata atau ekspresi yang ingin dicari gunakan
+    ❂ /reverse*:* Melakukan pencarian gambar terbalik dari media yang dibalas.
+    ❂ /wiki <query>*:* wikipedia permintaan Anda
+    ❂ /wall <query>*:* dapatkan wallpaper dari wall.alphacoders.com
+    ❂ /cash*:* pengonversi mata uang
+      Contoh:
+      ➩ `/cash 1 USD INR`
+          _ATAU_
+      ➩ `/cash 1 usd inr`
+         Keluaran: `1,0 USD = 75,505 INR`
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
@@ -917,23 +909,9 @@ warning_help: |
     ❂ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
         
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
- 
-# Afk.py Variabel
-reason_len: "\nYour afk reason was shortened to 100 characters."
-afk: "{} is now away! {}"
-afk_array1: "{} is here!"
-afk_array2: "{} is back!"
-afk_array3: "{} is now in the chat!"
-afk_array4: "{} is awake!"
-afk_array5: "{} is back online!"
-afk_array6: "{} is finally here!"
-afk_array7: "Welcome back! {}"
-afk_array8: "Where is {}?\nIn the chat!"
-afk_check: "{} is afk"
-afk_check_reason: "{} is afk.\nReason: <code>{}</code>"
 
-# Antichannel.py Variabel
-active_antichannel: "Enabled antichannel in {}"
-disable_antuchannel: "Disabled antichannel in {}"
-invalid_antichannel: "Unrecognized arguments {}"
-status_antichannel: "Antichannel setting is currently {} in {}"
+#Antichanel
+active_antichannel: "Antichannel diaktifkan di {}"
+disable_antuchannel: "Antichannel dinonaktifkan di {}"
+invalid_antichannel: "Argumen tidak dikenal {}"
+status_antichannel: "Setelan antichannel saat ini {} di {}"
