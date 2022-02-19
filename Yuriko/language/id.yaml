@@ -600,169 +600,169 @@ WELCOME_HELP_TEXT: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 WELCOME_MUTE_HELP_TEXT: |
-    ──「 Greetings Mute Format Help 」──
-    "You can get the bot to mute new people who join your group and hence prevent spambots from flooding your group. "
-    "The following options are possible:\n"
-    "  ❂ `/welcomemute soft`*:* restricts new members from sending media for 24 hours.\n"
-    "  ❂ `/welcomemute strong`*:* mutes new members till they tap on a button thereby verifying they're human.\n"
-    "  ❂ `/welcomemute captcha`*:*  mutes new members till they solve a button captcha thereby verifying they're human.\n"
-    "  ❂ `/welcomemute off`*:* turns off welcomemute.\n"
-    "*Note:* Strong mode kicks a user from the chat if they dont verify in 120seconds. They can always rejoin though"
+    ──「 Bantuan Format Bisu Salam Pembuka 」──
+
+    "Anda bisa membuat bot untuk membisukan orang baru yang bergabung dengan grup Anda dan karenanya mencegah robot spam membanjiri grup Anda."
+    "Opsi berikut dimungkinkan:\n"
+    " ❂ `/welcomemute soft`*:* membatasi anggota baru mengirim media selama 24 jam.\n"
+    " ❂ `/welcomemute strong`*:* membisukan anggota baru hingga mereka mengetuk tombol untuk memverifikasi bahwa mereka adalah manusia.\n"
+    " ❂ `/welcomemute captcha`*:* membisukan anggota baru hingga mereka memecahkan tombol captcha sehingga memverifikasi bahwa mereka adalah manusia.\n"
+    " ❂ `/welcomemute off`*:* mematikan welcomemute.\n"
+    "*Catatan:* Mode kuat mengeluarkan pengguna dari obrolan jika mereka tidak memverifikasi dalam 120 detik. Mereka selalu dapat bergabung kembali"
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 info_dan_afk_help: |
-    ──「 Info & Afk 」──
-    
+    ──「 Info and AFK 」──
+
     *ID:*
-    ✪ /id - `get the current group id. If used by replying to a message, gets that user's id.`
-    ✪ /gifid - `reply to a gif to me to tell you its file ID.`
- 
-    *Self addded information:* 
-    ✪ /setme - `<text> will set your info.`
-    ✪ /me - `will get your or another user's info.`
+    ❂ /id*:* dapatkan id grup saat ini. Jika digunakan dengan membalas pesan, dapatkan id pengguna itu.
+    ❂ /gifid*:* balas gif ke saya untuk memberi tahu Anda ID filenya.
     
-    *Examples:*
-    ✪ /setme - `I am a` *KEKINIAN* `Member.`
-    ✪ /me - `@username(defaults to yours if no user specified)`
- 
-    *Information others add on you:* 
-    ✪ /bio - `will get your or another user's bio. This cannot be set by yourself.`
-    ✪ /setbio - `<text> while replying, will save another user's bio`
+    *Informasi tambahan diri:*
+    ❂ /setme <text>*:* akan mengatur info Anda
+    ❂ /me*:* akan mendapatkan info Anda atau pengguna lain.
+    Contoh:
+    ❂ /setme Saya serigala.
+    ❂ /me @namapengguna(default milik Anda jika tidak ada pengguna yang ditentukan)
     
-    *Examples:*
-    ✪ /bio - `@username(defaults to yours if not specified).`
-    ✪ /setbio - `This user is a` *KEKINIAN* `Member (reply to the user)`
- 
-    *Overall Information about you:*
-    ✪ /info - `get information about a user.`
- 
-    *json Detailed info:*
-    ✪ /json - `Get Detailed info about any message.`
- 
+    *Informasi yang ditambahkan orang lain pada Anda:*
+    ❂ /bio*:* akan mendapatkan bio Anda atau pengguna lain. Ini tidak dapat diatur sendiri.
+    ❂ /setbio <text>*:* saat membalas, akan menyimpan bio pengguna lain
+    Contoh:
+    ❂ /bio @namapengguna(default milik Anda jika tidak ditentukan).
+    ❂ /setbio Pengguna ini adalah serigala (balas ke pengguna)
+    
+    *Informasi Keseluruhan tentang Anda:*
+    ❂ /info*:* mendapatkan informasi tentang pengguna.
+    
+    *json Info lengkap:*
+    ❂ /json*:* Dapatkan info detail tentang pesan apa pun.
+    
     *AFk:*
-    `When marked as AFK, any mentions will be replied to with a message stating that you're not available!`
-    ✪ /afk - `<reason> Mark yourself as AFK.`
-      brb - `<reason> Same as the afk command, but not a command.` 
-      *What is that health thingy?*
-     `Come and see` [HP System explained](https://t.me/KekinianOfficial/4) 
+    Saat ditandai sebagai AFK, penyebutan apa pun akan dibalas dengan pesan yang menyatakan bahwa Anda tidak tersedia!
+    ❂ /afk <reason>*:* Tandai diri Anda sebagai AFK.
+      - brb <reason>: Sama seperti perintah afk, tapi bukan perintah.
+      
+    *Apa itu kesehatan?*
+    Datang dan lihat [Penjelasan Sistem HP](https://t.me/KekinianOfficial/4) 
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 logchannel_help: |
-    ──「 Log Channel 」──
-    
-    ❂ /logchannel*:* get log channel info
-    ❂ /setlog*:* set the log channel.
-    ❂ /unsetlog*:* unset the log channel.
-    *Setting the log channel is done by*:
-    ➩ adding the bot to the desired channel (as an admin!)
-    ➩ sending /setlog in the channel
-    ➩ forwarding the /setlog to the group
+    ── [ Masuk Saluran ] ──
+
+    ❂ /logchannel*:* dapatkan info saluran log
+    ❂ /setlog*:* mengatur saluran log.
+    ❂ /unsetlog*:* hapus saluran log.
+
+    *Pengaturan saluran log dilakukan oleh*:
+    ➩ menambahkan bot ke saluran yang diinginkan (sebagai admin!)
+    ➩ mengirim / setlog di saluran
+    ➩ meneruskan /setlog ke grup
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 logomarker_help: |
-    ──「 Logo Marker 」──
-    
-    This is help menu for logomaker
-    ❂ /logo <text/name> - Create a logo with random view.
-    ❂ /wlogo <text/name> - Create a logo with wide view only.
-    *Image Editor : *
-    ❂  /edit <reply photo> - to edit image.
+    ──「 Pembuat Logo 」──
+
+    Ini adalah menu bantuan untuk pembuat logo
+    ❂ /logo <text/name> - Membuat logo dengan tampilan acak.
+    ❂ /wlogo <text/name> - Buat logo dengan tampilan lebar saja.
+
+    *Editor Gambar :*
+    ❂ /edit <balas foto> - untuk mengedit gambar.
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 MARKDOWN_HELP: |
-    ──「 Markdown Help 」──
+    ──「 Bantuan Markdown 」──
 
-    Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \
-    saved messages are correctly parsed, and to allow you to create buttons.
-    
-    ✪ <code>_italic_</code> - `wrapping text with '_' will produce italic text`
-    ✪ <code>*bold*</code> - `wrapping text with '*' will produce bold text`
-    ✪ <code>`code`</code> - `wrapping text with '`' will produce monospaced text, also known as code`
-    ✪ <code>[sometext](someURL)</code> - `this will create a link - the message will just show <code>sometext</code>, \
-    and tapping on it will open the page at <code>someURL</code>.
-    *Example:*<code>[test](example.com)</code>`
-    ✪ <code>[buttontext](buttonurl - `someURL)</code>: this is a special enhancement to allow users to have telegram \
-    buttons in their markdown. <code>buttontext</code> will be what is displayed on the button, and <code>someurl</code> \
-    will be the url which is opened.`
-    *Example:* <code>[This is a button](buttonurl - `example.com)</code>`
-    `If you want multiple buttons on the same line, use :same, as such:`
-    `<code>[one](buttonurl://example.com)`
-    `[two](buttonurl://google.com:same)</code>`
-    `This will create two buttons on a single line, instead of one button per line.`
-    `Keep in mind that your message <b>MUST</b> contain some text other than just a button!`
+    Markdown adalah alat pemformatan yang sangat kuat yang didukung oleh telegram. {dispatcher.bot.first_name} memiliki beberapa penyempurnaan, untuk memastikan bahwa \
+    pesan yang disimpan diurai dengan benar, dan untuk memungkinkan Anda membuat tombol.
+    ❂ <code>_italic_</code>: membungkus teks dengan '_' akan menghasilkan teks miring
+    ❂ <code>*bold*</code>: membungkus teks dengan '*' akan menghasilkan teks tebal
+    ❂ <code>`code`</code>: membungkus teks dengan ''`' akan menghasilkan teks monospace, juga dikenal sebagai 'kode'
+    ❂ <code>[sometext](someURL)</code>: ini akan membuat tautan - pesan hanya akan menampilkan <code>sometext</code>, \
+    dan mengetuknya akan membuka halaman di <code>someURL</code>.
+    ❂ <b>Contoh:</b><code>[test](example.com)</code>
+
+    ❂ <code>[buttontext](buttonurl:someURL)</code>: ini adalah peningkatan khusus untuk memungkinkan pengguna memiliki telegram \
+    tombol di penurunan harga mereka. <code>buttontext</code> akan menjadi apa yang ditampilkan pada tombol, dan <code>someurl</code> \
+    akan menjadi url yang dibuka.
+    <b>Contoh:</b> <code>[Ini adalah tombol](buttonurl:example.com)</code>
+
+    Jika Anda ingin beberapa tombol pada baris yang sama, gunakan :sama, seperti:
+    <code>[satu](buttonurl://example.com)
+    [dua](buttonurl://google.com:sama)</code>
+    Ini akan membuat dua tombol pada satu baris, bukan satu tombol per baris.
+    Ingatlah bahwa pesan Anda <b>HARUS</b> berisi beberapa teks selain hanya sebuah tombol!
         
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
-MARKDOWN_HELP_TEXT_1: "Try forwarding the following message to me, and you'll see, and Use #test!"
+MARKDOWN_HELP_TEXT_1: "Coba teruskan pesan berikut kepada saya, dan Anda akan melihat, dan Gunakan #test!"
 MARKDOWN_HELP_TEXT_2: |
-    /save test This is a markdown test. _italics_, *bold*, code, 
+    /save test Ini adalah tes markdown. _italics_, *tebal*, kode,
     [URL](example.com) [button](buttonurl:github.com)
     [button2](buttonurl://google.com:same)
     
 locks_help: |
-    ──「 Locks 」──
-    
-    Do stickers annoy you? or want to avoid people sharing links? or pictures? \
-    You're in the right place!
-    The locks module allows you to lock away some common items in the \
-    telegram world; the bot will automatically delete them!
-    ❂ /locktypes*:* Lists all possible locktypes
-    
-    *Admins only:*
-    ❂ /lock <type>*:* Lock items of a certain type (not available in private)
-    ❂ /unlock <type>*:* Unlock items of a certain type (not available in private)
-    ❂ /locks*:* The current list of locks in this chat.
-    Locks can be used to restrict a group's users.
-    
-    *eg:*
-    Locking urls will auto-delete all messages with urls, locking stickers will restrict all \
-    non-admin users from sending stickers, etc.
-    Locking bots will stop non-admins from adding bots to the chat.
-    
-    *Note:*
-    ❂ Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
-    ❂ Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group.
+    ──「 Mengunci 」──
+
+    Apakah stiker mengganggu Anda? atau ingin menghindari orang berbagi tautan? atau gambar? \
+    Anda berada di tempat yang tepat!
+    Modul kunci memungkinkan Anda untuk mengunci beberapa item umum di \
+    dunia telegram; bot akan secara otomatis menghapusnya!
+    ❂ /locktypes*:* Mencantumkan semua kemungkinan locktypes
+
+    *Hanya Admin :*
+    ❂ /lock <type>*:* Mengunci item dengan tipe tertentu (tidak tersedia secara pribadi)
+    ❂ /unlock <type>*:* Buka kunci item dari jenis tertentu (tidak tersedia secara pribadi)
+    ❂ /locks*:* Daftar kunci saat ini dalam obrolan ini.
+    Kunci dapat digunakan untuk membatasi pengguna grup.
+    misalnya:
+    Mengunci url akan otomatis menghapus semua pesan dengan url, mengunci stiker akan membatasi semua \
+    pengguna non-admin dari mengirim stiker, dll.
+    Mengunci bot akan menghentikan non-admin menambahkan bot ke obrolan.
+
+    *Catatan:*
+    ❂ Membuka izin *info* akan memungkinkan anggota (non-admin) untuk mengubah informasi grup, seperti deskripsi atau nama grup
+    ❂ Izin membuka kunci * pin * akan memungkinkan anggota (non-admin) untuk menyematkan pesan dalam grup
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 myinfo_help: |
-    ──「 Myinfo 」──
+    ──「 Info saya 」──
     
-    ~ /myinfo *:* Get Your Details On Inline.
+    ✪ /myinfo *:* Dapatkan detail Anda tentang inline.
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 notes_help: |
-    ──「 Notes 」──
-    
-    ❂ /get <notename>*:* get the note with this notename
-    ❂ #<notename>*:* same as /get
-    ❂ /notes or /saved*:* list all saved notes in this chat
-    ❂ /number *:* Will pull the note of that number in the list
-    If you would like to retrieve the contents of a note without any formatting, use `/get <notename> noformat`. This can \
-    be useful when updating a current note
-    
-    *Admins only:*
-    ❂ /save <notename> <notedata>*:* saves notedata as a note with name notename
-    A button can be added to a note by using standard markdown link syntax - the link should just be prepended with a \
-    `buttonurl:` section, as such: `[somelink](buttonurl:example.com)`. Check `/markdownhelp` for more info
-    ❂ /save <notename>*:* save the replied message as a note with name notename
-    Separate diff replies by `%%%` to get random notes
-    
-    *Example:*
-      ➩ `/save notename
-         Reply 1
+    ──「 Catatan 」──
+
+    ❂ /get <notename>*:* dapatkan catatan dengan nama catatan ini
+    ❂ #<namacatatan>*:* sama dengan /get
+    ❂ /notes atau /saved*:* daftarkan semua catatan yang disimpan dalam obrolan ini
+    ❂ /nomor *:* Akan menarik catatan nomor itu dalam daftar
+    Jika Anda ingin mengambil isi catatan tanpa format apapun, gunakan `/get <notename> noformat`. Ini bisa \
+    berguna saat memperbarui catatan saat ini
+    *Hanya Admin :*
+    ❂ /save <notename> <notedata>*:* menyimpan notedata sebagai catatan dengan nama notename
+    Tombol dapat ditambahkan ke catatan dengan menggunakan sintaks tautan penurunan harga standar - tautan harus diawali dengan \
+    bagian `buttonurl:`, seperti: `[somelink](buttonurl:example.com)`. Periksa `/markdownhelp` untuk info lebih lanjut
+    ❂ /save <notename>*:* simpan pesan balasan sebagai catatan dengan nama notename
+    Pisahkan balasan yang berbeda dengan `%%%` untuk mendapatkan catatan acak
+    *Contoh:*
+      ➩ `/simpan nama catatan
+         Balas 1
          %%%
-         Reply 2
+         Balas 2
          %%%
-         Reply 3`
-    ❂ /clear <notename>*:* clear note with this name
-    ❂ /removeallnotes*:* removes all notes from the group
-    *Note:* Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.
+         Balas 3`
+    ❂ /clear <notename>*:* hapus note dengan nama ini
+    ❂ /removeallnotes*:* menghapus semua catatan dari grup
+    *Catatan:* Nama catatan tidak peka huruf besar/kecil, dan secara otomatis diubah menjadi huruf kecil sebelum disimpan.
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
@@ -782,70 +782,68 @@ paste_help: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 report_help: |
-    ──「 Report 」──
-       
-    ❂ /report <reason>*:* reply to a message to report it to admins.
-    ❂ @admin*:* reply to a message to report it to admins.
-    *NOTE:* Neither of these will get triggered if used by admins.
-    
-    *Admins only:*
-    ❂ /reports <on/off>*:* change report setting, or view current status.
-    ❂ If done in pm, toggles your status.
-    ❂ If in group, toggles that groups's status.
+    ──「 Laporan 」──
+
+    ❂ /report <reason>*:* membalas pesan untuk melaporkannya ke admin.
+    ❂ @admin*:* membalas pesan untuk melaporkannya ke admin.
+    *CATATAN:* Tak satu pun dari ini akan dipicu jika digunakan oleh admin.
+
+    *Hanya Admin :*
+    ❂ /reports <on/off>*:* mengubah pengaturan laporan, atau melihat status saat ini.
+    ❂ Jika dilakukan di malam hari, matikan status Anda.
+    ❂ Jika dalam grup, matikan status grup itu.
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 search_help: |
-    ──「 Search 」──
-    
-    ❂ /google <query>*:* Perform a google search
-    ❂ /image <query>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
-    ❂ /app <appname>*:* Searches for an app in Play Store and returns its details.
-    ❂ /reverse: Does a reverse image search of the media which it was replied to.
-    ❂ /gps <location>*:* Get gps location.
-    ❂ /github <username>*:* Get information about a GitHub user.
-    ❂ /country <country name>*:* Gathering info about given country
-    ❂ /imdb <Movie name>*:* Get full info about a movie with imdb.com
-    ❂ Kekinian <query>*:* Kekinian answers the query
-    💡 Ex : `Kekinian where is Japan?`
+    ──「 Pencarian 」──
+
+    ❂ /google <query>*:* Lakukan pencarian google
+    ❂ /image <query>*:* Cari gambar di Google dan kembalikan\nUntuk no yang lebih besar. dari hasil tentukan lim, Misalnya: `/img hello lim=10`
+    ❂ /app <appname>*:* Mencari aplikasi di Play Store dan mengembalikan detailnya.
+    ❂ /reverse: Melakukan pencarian gambar terbalik dari media yang dibalas.
+    ❂ /gps <lokasi>*:* Dapatkan lokasi gps.
+    ❂ /github <username>*:* Dapatkan informasi tentang pengguna GitHub.
+    ❂ /country <nama negara>*:* Mengumpulkan info tentang negara tertentu
+    ❂ /imdb <Nama film>*:* Dapatkan info lengkap tentang film dengan imdb.com
+    ❂ Kekinian <query>*:* Kekinian menjawab pertanyaan
+    💡 Contoh : `Kekinian di mana Jepang?`
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 stickers_help: |
-    ──「 Stickers 」──
-   
-    *Help menu for stickers tools*
-    
-    ❂ /stickerid*:* reply to a sticker to me to tell you its file ID.
-    ❂ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
-    ❂ /kang*:* reply to a sticker to add it to your pack.
-    ❂ /delsticker*:* Reply to your anime exist sticker to your pack to delete it.
-    ❂ /stickers*:* Find stickers for given term on combot sticker catalogue.
-    ❂ /tiny*:* To make small sticker.
-    ❂ /kamuii <1-8> *:* To deepefying stiker.
-    ❂ /mmf <reply with text>*:* To draw a text for sticker or pohots.
+    ──「 Stiker 」──
+
+    *Menu bantuan untuk alat stiker*
+    ❂ /stickerid*:* balas stiker ke saya untuk memberi tahu Anda ID file-nya.
+    ❂ /getsticker*:* balas stiker ke saya untuk mengunggah file PNG mentahnya.
+    ❂ /kang*:* membalas stiker untuk menambahkannya ke paket Anda.
+    ❂ /delsticker*:* Balas stiker anime yang ada ke paket Anda untuk menghapusnya.
+    ❂ /stickers*:* Temukan stiker untuk istilah tertentu di katalog stiker kombo
+    ❂ /tiny*:* Untuk membuat stiker kecil
+    ❂ /kamuii <1-8> *:* Untuk memperdalam stiker
+    ❂ /mmf <balas dengan teks>*:* Untuk menggambar teks untuk stiker atau pohots
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 translator_help: |
-    ──「 Translator 」──
+    ──「 Penerjemah 」──
+
+    Gunakan modul ini untuk menerjemahkan barang!
+    *Perintah:*
+    ❂ /tl (atau /tr): sebagai balasan pesan, menerjemahkannya ke bahasa Inggris.
+    ❂ /tl <lang>: diterjemahkan menjadi <lang>
+       misalnya: /tl ja: diterjemahkan ke bahasa Jepang.
+    ❂ /tl <source>//<dest>: menerjemahkan dari <source> ke <lang>.
+       misalnya: /tl ja//en: menerjemahkan dari bahasa Jepang ke bahasa Inggris.
+    ❂ /langs: dapatkan daftar bahasa yang didukung untuk terjemahan.
+    Saya dapat mengubah teks menjadi suara dan suara menjadi teks..
+    ❂ /tts <lang code>*:* Membalas pesan apa pun untuk mendapatkan keluaran teks ke ucapan
+    ❂ /stt*:* Ketikkan balasan ke pesan suara (hanya mendukung bahasa Inggris) untuk mengekstrak teks darinya.
     
-    Use this module to translate stuff!
-    
-    *Commands:*
-    ❂ /tl (or /tr): as a reply to a message, translates it to English.
-    ❂ /tl <lang>: translates to <lang>
-       eg: /tl ja: translates to Japanese.
-    ❂ /tl <source>//<dest>: translates from <source> to <lang>.
-       eg:  /tl ja//en: translates from Japanese to English.
-    ❂ /langs: get a list of supported languages for translation.
-    I can convert text to voice and voice to text..
-    ❂ /tts <lang code>*:* Reply to any message to get text to speech output
-    ❂ /stt*:* Type in reply to a voice message(support english only) to extract text from it.
-    
-    *Language Codes*
+    *Kode Bahasa*
       `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
-      et,eu,fa,fi,fr,fy,ga,gd,gl,gu,ha,haw,hi,hmn,hr,ht,hu,hy,
+      et,eu,fa,fi,fr,fy,ga,gd,gl,gu,ha,haw,hai,hmn,hr,ht,hu,hy,
       id,ig,is,it,iw,ja,jw,ka,kk,km,kn,ko,ku,ky,la,lb,lo,lt,lv,mg,mi,mk,
       ml,mn,mr,ms,mt,my,ne,nl,no,ny,pa,pl,ps,pt,ro,ru,sd,si,sk,sl,
       sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
@@ -854,59 +852,52 @@ translator_help: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 tools_help: |
-    ──「 Tools 」──
+    ──「 Alat 」──
+
+    *Bot Info Sangmata*
+    ❂ /sg <reply>*:* Untuk memeriksa nama riwayat
+    *Tanggal-waktu-Cuaca*
+    ❂ /time <kode negara>*:* Memberikan informasi tentang zona waktu.
+    ❂ /weather <city>*:* Dapatkan info cuaca di tempat tertentu.
+    ❂ /wttr <city>*:* Modul cuaca lanjutan, penggunaannya sama dengan /weather
+    ❂ /wttr moon*:* Dapatkan status bulan saat ini
+    *Mengkonversi*
+    ❂ /encrypt*:* Mengenkripsi Teks yang Diberikan
+    ❂ /decrypt*:* Mendekripsi Teks Terenkripsi Sebelumnya
+    ❂ /zip*:* membalas file telegram untuk mengompresnya dalam format .zip
+    ❂ /unzip*:* membalas file telegram untuk mendekompresnya dari format .zip
+    *API Acak*
+    ❂ /ptl: dapatkan video acak dari timeline Instagram
+    ❂ /chika: dapatkan video acak dari chikakiku
+    ❂ /wibu:dapatkan video atau foto anime pendek secara acak
+    ❂ /kebenaran: tantangan
+    ❂ /dare: tantangan
+    Tautan Ke Berkas:
+    ❂ /up: balas tautan unduhan langsung untuk mengunggahnya ke telegram sebagai file
     
-    *Sangmata Info bot*
-    ❂ /sg <reply>*:* To check history name
-    
-    *Date-time-Weather*
-    ❂ /time <country code>*:* Gives information about a timezone.
-    ❂ /weather <city>*:* Get weather info in a particular place.
-    ❂ /wttr <city>*:* Advanced weather module, usage same as /weather
-    ❂ /wttr moon*:* Get the current status of moon
-    
-    *Converts*
-    ❂ /encrypt*:* Encrypts The Given Text
-    ❂ /decrypt*:* Decrypts Previously Ecrypted Text
-    ❂ /zip*:* reply to a telegram file to compress it in .zip format
-    ❂ /unzip*:* reply to a telegram file to decompress it from the .zip format
-    
-    *Random API*
-    ❂ /ptl: get random video from Instagram timeline
-    ❂ /phub (query): get video from pornhub
-    ❂ /chika: get random video from chikakiku
-    ❂ /wibu:get random short anime video or photos
-    ❂ /truth: challenge 
-    ❂ /dare: challenge
-    
-    Link To File:
-    ❂ /up: reply to a direct download link to upload it to telegram as files
-    
-    File To Link:
-    ❂ /transfersh: reply to a telegram file to upload it on transfersh and get direct download link
-    ❂ /tmpninja: reply to a telegram file to upload it on tmpninja and get direct download link
-    
-    File Or Text To Telegraph:
-    ❂ /tgm : Get Telegraph Link Of Replied Media
-    ❂ /tgt: Get Telegraph Link of Replied Text
-    
-    Tagger
-    ❂ /tagall : for tag everyone at least 100 member first.
+    File Ke Tautan:
+    ❂ /transfersh: balas file telegram untuk mengunggahnya di transfersh dan dapatkan tautan unduhan langsung
+    ❂ /tmpninja: balas file telegram untuk diunggah ke tmpninja dan dapatkan tautan unduhan langsung
+    File Atau Teks Ke Telegraf:
+    ❂ /tgm : Dapatkan Tautan Telegraf Media Balasan
+    ❂ /tgt: Dapatkan Tautan Telegraf dari Teks Balasan
+    penanda
+    ❂ /tagall: Untuk tag semua orang minimal 100 member dulu.
       
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 warning_help: |
-    ──「 Warning 」──
-    
-    ❂ /warns <userhandle>: get a user's number, and reason, of warns.
-    ❂ /warnlist: list of all current warning filters
-    ❂ /warn <userhandle>: warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
-    ❂ /dwarn <userhandle>: warn a user and delete the message. After 3 warns, the user will be banned from the group. Can also be used as a reply.
-    ❂ /resetwarn <userhandle>: reset the warns for a user. Can also be used as a reply.
-    ❂ /addwarn <keyword> <reply message>: set a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user.
-    ❂ /nowarn <keyword>: stop a warning filter
-    ❂ /warnlimit <num>: set the warning limit
-    ❂ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
+    ──「 Peringatan 」──
+
+    ❂ /warns <userhandle>: mendapatkan nomor pengguna, dan alasan, dari peringatan.
+    ❂ /warnlist: daftar semua filter peringatan saat ini
+    ❂ /warn <userhandle>: memperingatkan pengguna. Setelah 3 kali peringatan, pengguna akan diblokir dari grup. Bisa juga digunakan sebagai balasan.
+    ❂ /dwarn <userhandle>: memperingatkan pengguna dan menghapus pesan. Setelah 3 kali peringatan, pengguna akan diblokir dari grup. Bisa juga digunakan sebagai balasan.
+    ❂ /resetwarn <userhandle>: mengatur ulang peringatan untuk pengguna. Bisa juga digunakan sebagai balasan.
+    ❂ /addwarn <keyword> <reply message>: mengatur filter peringatan pada kata kunci tertentu. Jika Anda ingin kata kunci Anda menjadi kalimat, lampirkan dengan tanda kutip, seperti: /addwarn "sangat marah" Ini adalah pengguna yang marah.
+    ❂ /nowwarn <keyword>: hentikan filter peringatan
+    ❂ /warnlimit <num>: mengatur batas peringatan
+    ❂ /strongwarn <on/yes/off/no>: Jika disetel ke aktif, melebihi batas peringatan akan mengakibatkan larangan. Lain, hanya akan pukulan.
         
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
