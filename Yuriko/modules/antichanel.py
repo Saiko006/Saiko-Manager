@@ -22,12 +22,12 @@ def set_antichannel(update: Update, context: CallbackContext):
             message.reply_html(text=gs(chat.id, "active_antichannel").format(html.escape(chat.title)))
         elif s in ["off", "no"]:
             disable_antichannel(chat.id)
-            message.reply_html(text=gs(chat.id, "disable_antichannel").format(html.escape(chat.title)))
+            message.reply_html(text=gs(chat.id, "disable_antuchannel").format(html.escape(chat.title)))
         else:
             message.reply_text(text=gs(chat.id, "invalid_antichannel").format(s))
         return
     message.reply_html(
-        "Antichannel setting is currently {} in {}".format(antichannel_status(chat.id), html.escape(chat.title)))
+        text=gs(chat.id, "status_antichannel").format(antichannel_status(chat.id), html.escape(chat.title)))
 
 
 @emikomsg(Filters.chat_type.groups, group=110)
