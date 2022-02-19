@@ -909,20 +909,6 @@ warning_help: |
         
     ✪ Pᴏᴡᴇʀᴇᴅ Bʏ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
-# Afk.py Variabel
-reason_len: "\nYour afk reason was shortened to 100 characters."
-afk: "{} is now away! {}"
-afk_array1: "{} is here!"
-afk_array2: "{} is back!"
-afk_array3: "{} is now in the chat!"
-afk_array4: "{} is awake!"
-afk_array5: "{} is back online!"
-afk_array6: "{} is finally here!"
-afk_array7: "Welcome back! {}"
-afk_array8: "Where is {}?\nIn the chat!"
-afk_check: "{} is afk"
-afk_check_reason: "{} is afk.\nReason: <code>{}</code>"
-
 # Antichannel.py Variabel
 active_antichannel: "Enabled antichannel in {}"
 disable_antuchannel: "Disabled antichannel in {}"
