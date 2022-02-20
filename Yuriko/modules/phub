@@ -1,29 +1,45 @@
+# Disclaimer:
+#   Telegram May ban your bot or your account since Porns aren't allowed in Telegram.
+#   We aren't reponsible for Your causes....Use with caution...
+#   We recommend you to use Alt account.
+#   For support https://t.me/PatheticProgrammers
+
 import os
-import asyncio
+from aiohttp import ClientSession
+from pyrogram import filters, Client
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto, InputMediaVideo
+from Python_ARQ import ARQ 
+from asyncio import get_running_loop
+from wget import download
 
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto, Message
+# Heroku Check-----------------------------------------------------------------
+is_config = os.path.exists("config.py")
 
-from Yuriko import arq, pbot
+if is_config:
+    from config import *
+else:
+    from sample_config import *
 
+# ARQ API and Bot Initialize---------------------------------------------------
+session = ClientSession()
+arq = ARQ("https://thearq.tech",ARQ_API_KEY,session)
 pornhub = arq.pornhub
+
+app = Client("phubbot", bot_token=Bot_token, api_id=6,
+             api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
+print("\nBot Started!...\n")
 
 db = {}
 
-def get_text(message) -> [None, str]:
-    text_to_return = message.text
-    if message.text is None:
-        return None
-    if " " not in text_to_return:
-        return None
-    try:
-        return message.text.split(None, 1)[1]
-    except IndexError:
-        return None
-    
+async def download_url(url: str):
+    loop = get_running_loop()
+    file = await loop.run_in_executor(None, download, url)
+    return file
+
+
 # Let's Go----------------------------------------------------------------------
-@pbot.on_message(filters.private & filters.incoming & filters.command("phub"))
-async def sarch(_, message):
+@app.on_message(filters.private & filters.incoming & filters.command("phub"))
+async def sarch(_,message):
     if len(message.command) < 2:
         await message.reply_text(
             "**😏 Woi panteq kasih judul**\n\n» Contoh : /phub mom and son"
@@ -38,184 +54,141 @@ async def sarch(_, message):
         await m.edit("Found Nothing")
         return
     resolt = f"""
-**➡️ TITLE:** {res[0].title}
-**⏰ DURATION:** {res[0].duration}
-**👁‍🗨 VIEWERS:** {res[0].views}
-**🌟 RATING:** {res[0].rating}
-
-**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
-"""
-    await message.delete()
+**🏷Title:** {res[0].title}
+**⏰DURATION:** {res[0].duration}
+**👀views:** {res[0].views}
+**⭐rating:** {res[0].rating}
+**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!"""
+    await m.delete()
     m = await message.reply_photo(
         photo=res[0].thumbnails[0].src,
         caption=resolt,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➡️", callback_data="next"),
-                    InlineKeyboardButton("🔗", callback_data="delete"),
+                    InlineKeyboardButton("↪️ Next",
+                                         callback_data="next"),
+                    InlineKeyboardButton("🚮 Delete",
+                                         callback_data="delete"),
                 ],
                 [
-                    InlineKeyboardButton("📸", callback_data="ss"),
-                    InlineKeyboardButton("📥", callback_data="downbad"),
-                ],
-                [
-                    InlineKeyboardButton("Close", callback_data="close"),
-                ],
+                    InlineKeyboardButton("📥 Download",
+                                         callback_data="downbad")
+                ]
             ]
         ),
         parse_mode="markdown",
-    )   
-    new_db = {"result": res, "curr_page": 0}
+    )
+    new_db={"result":res,"curr_page":0}
     db[message.chat.id] = new_db
-
-
-# Next Button--------------------------------------------------------------------------
-@pbot.on_callback_query(filters.regex("next"))
+    
+ # Next Button--------------------------------------------------------------------------
+@app.on_callback_query(filters.regex("next"))
 async def callback_query_next(_, query):
-    m = query.message
-    try:
-        data = db[query.message.chat.id]
-    except:
-        await m.edit("something went wrong.. **try again**")
+    if not db[query.message.chat.id]:
         return
-    res = data["result"]
-    curr_page = int(data["curr_page"])
-    cur_page = curr_page + 1
-    db[query.message.chat.id]["curr_page"] = cur_page
-    if len(res) <= (cur_page + 1):
-        cbb = [
-            [
-                InlineKeyboardButton("⬅️", callback_data="previous"),
-                InlineKeyboardButton("📸", callback_data="ss"),
-            ],
-            [
-                InlineKeyboardButton("🔗", callback_data="delete"),
-                InlineKeyboardButton("📥", callback_data="downbad"),
-            ],
-            [
-                InlineKeyboardButton("Close", callback_data="close"),
-            ],
-        ]
-    else:
-        cbb = [
-            [
-                InlineKeyboardButton("⬅️", callback_data="previous"),
-                InlineKeyboardButton("➡️", callback_data="next"),
-            ],
-            [
-                InlineKeyboardButton("🔗", callback_data="delete"),
-                InlineKeyboardButton("📸", callback_data="ss"),
-                InlineKeyboardButton("📥", callback_data="downbad"),
-            ],
-            [
-                InlineKeyboardButton("Close", callback_data="close"),
-            ],
-        ]
-    resolt = f"""
-**🏷 TITLE:** {res[cur_page].title}
-**⏰ DURATION:** {res[cur_page].duration}
-**👁‍🗨 VIEWERS:** {res[cur_page].views}
-**🌟 RATING:** {res[cur_page].rating}
-
-**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
-"""
-
-    await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
-    await m.edit(
-        resolt,
-        reply_markup=InlineKeyboardMarkup(cbb),
-        parse_mode="markdown",
-    )
-
-
-# Previous Button--------------------------------------------------------------------------
-@pbot.on_callback_query(filters.regex("previous"))
-async def callback_query_next(_, query):
-    m = query.message
-    try:
-        data = db[query.message.chat.id]
-    except:
-        await m.edit("something went wrong.. **try again**")
-        return
-    res = data["result"]
-    curr_page = int(data["curr_page"])
-    cur_page = curr_page - 1
-    db[query.message.chat.id]["curr_page"] = cur_page
-    if cur_page != 0:
-        cbb = [
-            [
-                InlineKeyboardButton("⬅️", callback_data="previous"),
-                InlineKeyboardButton("➡️", callback_data="next"),
-            ],
-            [
-                InlineKeyboardButton("🔗", callback_data="delete"),
-                InlineKeyboardButton("📸", callback_data="ss"),
-                InlineKeyboardButton("📥", callback_data="downbad"),
-            ],
-            [
-                InlineKeyboardButton("Close", callback_data="close"),
-            ],
-        ]
-    else:
-        cbb = [
-            [
-                InlineKeyboardButton("➡️", callback_data="next"),
-                InlineKeyboardButton("🔗", callback_data="Delete"),
-            ],
-            [
-                InlineKeyboardButton("📸", callback_data="ss"),
-                InlineKeyboardButton("📥", callback_data="downbad"),
-            ],
-            [
-                InlineKeyboardButton("Close", callback_data="close"),
-            ],
-        ]
-    resolt = f"""
-**🏷 TITLE:** {res[cur_page].title}
-**⏰ DURATION:** {res[cur_page].duration}
-**👁‍🗨 VIEWERS:** {res[cur_page].views}
-**🌟 RATING:** {res[cur_page].rating}
-
-**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!
-"""
-    await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
-    await m.edit(
-        resolt,
-        reply_markup=InlineKeyboardMarkup(cbb),
-        parse_mode="markdown",
-    )
-
-
-# Delete Button--------------------------------------------------------------------------
-# @pbot.on_callback_query(filters.regex("delete"))
-@pbot.on_callback_query(filters.regex("delete"))
-def callback_query_delete(bot, query):
-    # await query.message.delete()
     data = db[query.message.chat.id]
-    res = data["result"]
-    curr_page = int(data["curr_page"])
-    cur_page = curr_page - 1
-    db[query.message.chat.id]["curr_page"] = cur_page
-    umrl = res[curr_page].url
-    bot.send_message(
-        text=umrl, chat_id=query.message.chat.id, disable_web_page_preview=True
+    m = query.message
+    res = data['result']
+    curr_page = int(data['curr_page'])
+    cur_page = curr_page+1
+    db[query.message.chat.id]['curr_page'] = cur_page
+    if len(res) <= (cur_page+1):
+        cbb = [
+                [
+                    InlineKeyboardButton("↩️Previous",
+                                         callback_data="previous"),
+                    InlineKeyboardButton("Download",
+                                         callback_data="downbad"),
+                ],
+                [
+                    InlineKeyboardButton("🚮Delete",
+                                         callback_data="delete"),
+                ]
+              ]
+    else:
+        cbb = [
+                [
+                    InlineKeyboardButton("↩️ Previous",
+                                         callback_data="previous"),
+                    InlineKeyboardButton("↪️ Next",
+                                         callback_data="next"),
+                ],
+                [
+                    InlineKeyboardButton("🚮 Delete",
+                                         callback_data="delete"),
+                    InlineKeyboardButton("📥 Download",
+                                         callback_data="downbad")
+                ]
+              ]
+    resolt = f"""
+**🏷Title:** {res[cur_page].title}
+**⏰DURATION:** {res[cur_page].duration}
+**👀views:** {res[cur_page].views}
+**⭐rating:** {res[cur_page].rating}
+**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!"""
+
+    await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
+    await m.edit(
+        resolt,
+        reply_markup=InlineKeyboardMarkup(cbb),
+        parse_mode="markdown",
+    )
+ 
+# Previous Button-------------------------------------------------------------------------- 
+@app.on_callback_query(filters.regex("previous"))
+async def callback_query_next(_, query):
+    if not db[query.message.chat.id]:
+        return
+    data = db[query.message.chat.id]
+    m = query.message
+    res = data['result']
+    curr_page = int(data['curr_page'])
+    cur_page = curr_page-1
+    db[query.message.chat.id]['curr_page'] = cur_page
+    if cur_page != 0:
+        cbb=[
+                [
+                    InlineKeyboardButton("↩️ Previous",
+                                         callback_data="previous"),
+                    InlineKeyboardButton("↪️ Next",
+                                         callback_data="next"),
+                ],
+                [
+                    InlineKeyboardButton("🚮 Delete",
+                                         callback_data="delete"),
+                    InlineKeyboardButton("📥 Download",
+                                         callback_data="downbad")
+                ]
+            ]
+    else:
+        cbb=[
+                [
+                    InlineKeyboardButton("↪️ Next",
+                                         callback_data="next"),
+                    InlineKeyboardButton("🚮 Delete",
+                                         callback_data="Delete"),
+                ],
+                [
+                    InlineKeyboardButton("📥 Download",
+                                         callback_data="downbad")
+                ]
+            ]
+    resolt = f"""
+**🏷Title:** {res[cur_page].title}
+**⏰DURATION:** {res[cur_page].duration}
+**👀views:** {res[cur_page].views}
+**⭐rating:** {res[cur_page].rating}
+**Powered By 🔰:** ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!"""
+
+    await m.edit_media(media=InputMediaPhoto(res[cur_page].thumbnails[0].src))
+    await m.edit(
+        resolt,
+        reply_markup=InlineKeyboardMarkup(cbb),
+        parse_mode="markdown",
     )
 
-
-# SCREENSHOT BUTTON ---------------------------------------
-
-
-@pbot.on_callback_query(filters.regex("ss"))
-async def callback_query_delete(bot, query):
-    data = query.message.chat.id
-    res = data["result"]
-    curr_page = int(data["curr_page"])
-    ss = res[curr_page].thumbnails
-    for src in ss:
-        await bot.send_photo(photo=src.src, chat_id=query.message.chat.id)
-
-
+# Download Button--------------------------------------------------------------------------    
 # DOWNLOAD BUTTON ------------------------------------------
 
 import os
@@ -247,7 +220,8 @@ def downloada(url, quality):
         return f"{title}"
 
 
-@pbot.on_callback_query(filters.regex("downbad"))
+
+@app.on_callback_query(filters.regex("downbad"))
 def webpage(c, m):  # c Mean Client | m Mean Message
     print(m.message.chat.id)
     data = db[m.message.chat.id]
@@ -308,17 +282,11 @@ def webpage(c, m):  # c Mean Client | m Mean Message
             progress=progress,
         )
         upmsg.delete()
-
-
-#no cb
-@pbot.on_callback_query(filters.regex("no_cb"))
-async def cb_cls(client, query):
-    await query.message.delete()
-    tm = await client.send_message(
-        query.message.chat.id,
-        "**Selamat Sange {}**".format(query.from_user.mention),
-    )
-    await asyncio.sleep(5)
-    await tm.delete()
-
-pbot.run()
+    
+# Delete Button-------------------------------------------------------------------------- 
+@app.on_callback_query(filters.regex("delete"))
+async def callback_query_delete(_, query):
+    m = query.message
+    await m.delete()
+    
+app.run()
