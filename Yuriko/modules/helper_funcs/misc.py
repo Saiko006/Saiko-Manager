@@ -9,7 +9,6 @@ from typing import Dict, List
 from uuid import uuid4
 
 from Yuriko import NO_LOAD
-from Yuriko.modules.language import gs
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
 from telegram.error import TelegramError
 from Crypto import Hash, Protocol, Random
@@ -84,9 +83,9 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     else:
         pairs += [
                   [
-                    EqInlineKeyboardButton(gs(chat.id, "channel_button"), url="t.me/musickekiniaan"), 
-                    EqInlineKeyboardButton(gs(chat.id, "back_button"), callback_data="yurikorobot_back"), 
-                    EqInlineKeyboardButton(gs(chat.id, "support_button"), url="t.me/Kekiniangroup")
+                    EqInlineKeyboardButton("╰✰ Cʜᴀɴɴᴇʟ", url="t.me/musickekiniaan"), 
+                    EqInlineKeyboardButton("•Bᴀᴄᴋ•", callback_data="yurikorobot_back"), 
+                    EqInlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ✰╮", url="t.me/Kekiniangroup")
                   ]
                  ]
 
