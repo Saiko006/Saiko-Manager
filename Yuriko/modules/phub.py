@@ -12,14 +12,6 @@ from Python_ARQ import ARQ
 from asyncio import get_running_loop
 from wget import download
 
-# Heroku Check-----------------------------------------------------------------
-is_config = os.path.exists("config.py")
-
-if is_config:
-    from config import *
-else:
-    from sample_config import *
-
 # ARQ API and Bot Initialize---------------------------------------------------
 session = ClientSession()
 arq = ARQ("https://thearq.tech",ARQ_API_KEY,session)
