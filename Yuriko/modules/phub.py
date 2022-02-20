@@ -12,15 +12,6 @@ from Python_ARQ import ARQ
 from asyncio import get_running_loop
 from wget import download
 
-# ARQ API and Bot Initialize---------------------------------------------------
-session = ClientSession()
-arq = ARQ("https://thearq.tech",ARQ_API_KEY,session)
-pornhub = arq.pornhub
-
-app = Client("phubbot", bot_token=Bot_token, api_id=6,
-             api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
-print("\nBot Started!...\n")
-
 db = {}
 
 async def download_url(url: str):
