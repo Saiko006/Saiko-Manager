@@ -850,7 +850,7 @@ def main():
                 f"""*ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ 💎*
                 
 *Python:* {memek()}
-*Telegram Library:* v{peler}""",
+*Telegram Library:* {peler}""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
