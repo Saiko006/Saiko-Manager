@@ -11,6 +11,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMedi
 from Python_ARQ import ARQ 
 from asyncio import get_running_loop
 from wget import download
+from Yuriko import pbot as app
 
 db = {}
 
