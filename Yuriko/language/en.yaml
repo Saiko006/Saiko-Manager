@@ -531,7 +531,9 @@ fun_help: |
     *Animation*
     ✪ /love 
     ✪ /hack 
-    ✪ /bombs 
+    ✪ /bombs
+    ✪ /moon
+    ✪ /kill
     
     *Shippering*
     ✪ /couples - `get couples of today`
