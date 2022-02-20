@@ -403,147 +403,145 @@ extras_help: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 fsub_feds_help: |
-    ──「 Fsub/feds 」──
-    
-    *Force Subscribe:*
-    ❂ Kekinian can mute members who are not subscribed your channel until they subscribe
-    ❂ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
-    ❂*Setup*
-    
-    *Only creator*
-    ❂ Add me in your group as admin
-    ❂ Add me in your channel as admin 
- 
-    *Commmands*
-    ❂ /fsub {channel username} - To turn on and setup the channel.
-      📚Do this first...
-    ❂ /fsub - To get the current settings.
-    ❂ /fsub disable - To turn of ForceSubscribe..
-      📚If you disable fsub, you need to set again for working.. /fsub {channel username} 
-    ❂ /fsub clear - To unmute all members who muted by me.
+    ──「 F-Subs / Feds 」──
 
-    *Federation*
-    Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
-    But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?\n
-    *No longer!* With Federation, you can make a ban in one chat overlap with all other chats.\n
-    You can even designate federation admins, so your trusted admin can ban all the spammers from chats you want to protect.\n
+    *Paksa Berlangganan:*
+    Siesta dapat membisukan anggota yang tidak berlangganan saluran Anda sampai mereka berlangganan saat diaktifkan, saya akan membisukan anggota yang tidak berlangganan dan menunjukkan kepada mereka tombol suarakan. Ketika mereka menekan tombol, saya akan membunyikan mereka
+    *Pengaturan* *:* *Hanya pencipta*
+    ❂ Tambahkan saya di grup Anda sebagai admin
+    ❂ Tambahkan saya di saluran Anda sebagai admin
+    
+    *Perintah*
+    ❂ /fsub {channel username} - Untuk mengaktifkan dan mengatur saluran.
+      💡 Lakukan ini dulu...
+    ❂ /fsub - Untuk mendapatkan pengaturan saat ini.
+    ❂ /fsub disable - Untuk mematikan ForceSubscribe..
+      💡 Jika Anda menonaktifkan fsub, Anda perlu menyetel lagi agar berfungsi.. /fsub {channel username}
+    ❂ /fsub clear - Untuk mengaktifkan suara semua anggota yang dibisukan oleh saya.
 
-    *Commands:*\n
-    Feds are now divided into 3 sections for your ease.
-    ❂ `/fedownerhelp`*:* Provides help for fed creation and owner only commands
-    ❂ `/fedadminhelp`*:* Provides help for fed administration commands
-    ❂ `/feduserhelp`*:* Provides help for commands anyone can use
+    *Federasi*
+    Semuanya menyenangkan, sampai spammer mulai memasuki grup Anda, dan Anda harus memblokirnya. Maka Anda harus mulai melarang lebih banyak, dan lebih banyak lagi, dan itu menyakitkan.
+    Tapi kemudian Anda memiliki banyak grup, dan Anda tidak ingin spammer ini berada di salah satu grup Anda - bagaimana Anda bisa menanganinya? Apakah Anda harus memblokirnya secara manual, di semua grup Anda?\n
+    *Tidak lagi!* Dengan Federasi, Anda dapat membuat larangan dalam satu obrolan tumpang tindih dengan semua obrolan lainnya.\n
+    Anda bahkan dapat menunjuk admin federasi, sehingga admin tepercaya Anda dapat mencekal semua spammer dari chat yang ingin Anda lindungi.\n
+    *Perintah:*\n
+    Feds sekarang dibagi menjadi 3 bagian untuk kemudahan Anda.
+    ❂ `/fedownerhelp`*:* Menyediakan bantuan untuk pembuatan feed dan perintah pemilik saja
+    ❂ `/fedadminhelp`*:* Menyediakan bantuan untuk perintah administrasi makan
+    ❂ `/feduserhelp`*:* Memberikan bantuan untuk perintah yang dapat digunakan siapa saja
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_OWNER_HELP: | 
     ──「 Feds 」──
 
-    *👑 Fed Owner Only:*
-    ❂ `/newfed <fed_name>`*:* Creates a Federation, One allowed per user
-    ❂ `/renamefed <fed_id> <new_fed_name>`*:* Renames the fed id to a new name
-    ❂ `/delfed <fed_id>`*:* Delete a Federation, and any information related to it. Will not cancel blocked users
-    ❂ `/fpromote <user>`*:* Assigns the user as a federation admin. Enables all commands for the user under `Fed Admins`
-    ❂ `/fdemote <user>`*:* Drops the User from the admin Federation to a normal User
-    ❂ `/subfed <fed_id>`*:* Subscribes to a given fed ID, bans from that subscribed fed will also happen in your fed
-    ❂ `/unsubfed <fed_id>`*:* Unsubscribes to a given fed ID
-    ❂ `/setfedlog <fed_id>`*:* Sets the group as a fed log report base for the federation
-    ❂ `/unsetfedlog <fed_id>`*:* Removed the group as a fed log report base for the federation
-    ❂ `/fbroadcast <message>`*:* Broadcasts a messages to all groups that have joined your fed
-    ❂ `/fedsubs`*:* Shows the feds your group is subscribed to `(broken rn)`
+    *👑 Hanya Pemilik Fed:*
+    ❂ `/newfed <fed_name>`*:* Membuat Federasi, Satu diizinkan per pengguna
+    ❂ `/renamefed <fed_id> <new_fed_name>`*:* Mengganti nama feed id menjadi nama baru
+    ❂ `/delfed <fed_id>`*:* Menghapus Federasi, dan informasi apa pun yang terkait dengannya. Tidak akan membatalkan pengguna yang diblokir
+    ❂ `/fpromote <user>`*:* Menetapkan pengguna sebagai admin federasi. Mengaktifkan semua perintah untuk pengguna di bawah `Fed Admins`
+    ❂ `/fdemote <user>`*:* Menghapus Pengguna dari Federasi admin menjadi Pengguna biasa
+    ❂ `/subfed <fed_id>`*:* Berlangganan ke ID feed tertentu, larangan dari feed yang berlangganan itu juga akan terjadi di feed Anda
+    ❂ `/unsubfed <fed_id>`*:* Berhenti berlangganan ID feed yang diberikan
+    ❂ `/setfedlog <fed_id>`*:* Menetapkan grup sebagai basis laporan log umpan untuk federasi
+    ❂ `/unsetfedlog <fed_id>`*:* Menghapus grup sebagai basis laporan log fed untuk federasi
+    ❂ `/fbroadcast <message>`*:* Menyiarkan pesan ke semua grup yang telah bergabung dengan feed Anda
+    ❂ `/fedsubs`*:* Menunjukkan FBI langganan grup Anda `(broken rn)`
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_ADMIN_HELP: |
     ──「 Feds 」──
 
-    *🔱 Fed Admins:*
-    ❂ `/fban <user> <reason>`*:* Fed bans a user
-    ❂ `/unfban <user> <reason>`*:* Removes a user from a fed ban
-    ❂ `/fedinfo <fed_id>`*:* Information about the specified Federation
-    ❂ `/joinfed <fed_id>`*:* Join the current chat to the Federation. Only chat owners can do this. Every chat can only be in one Federation
-    ❂ `/leavefed <fed_id>`*:* Leave the Federation given. Only chat owners can do this
-    ❂ `/setfrules <rules>`*:* Arrange Federation rules
-    ❂ `/fedadmins`*:* Show Federation admin
-    ❂ `/fbanlist`*:* Displays all users who are victimized at the Federation at this time
-    ❂ `/fedchats`*:* Get all the chats that are connected in the Federation
-    ❂ `/chatfed `*:* See the Federation in the current chat\n
+    *🔱 Admin Fed:*
+    ❂ `/fban <user> <reason>`*:* Fed melarang pengguna
+    ❂ `/unfban <user> <reason>`*:* Menghapus pengguna dari larangan makan
+    ❂ `/fedinfo <fed_id>`*:* Informasi tentang Federasi yang ditentukan
+    ❂ `/joinfed <fed_id>`*:* Bergabung dengan obrolan saat ini ke Federasi. Hanya pemilik obrolan yang dapat melakukan ini. Setiap obrolan hanya bisa dalam satu Federasi
+    ❂ `/leavefed <fed_id>`*:* Meninggalkan Federasi yang diberikan. Hanya pemilik obrolan yang dapat melakukan ini
+    ❂ `/setfrules <rules>`*:* Menyusun aturan Federasi
+    ❂ `/ fedadmins`*:* Tampilkan admin Federasi
+    ❂ `/fbanlist`*:* Menampilkan semua pengguna yang menjadi korban di Federasi saat ini
+    ❂ `/ fedchats`*:* Dapatkan semua obrolan yang terhubung di Federasi
+    ❂ `/chatfed `*:* Lihat Federasi di obrolan saat ini
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_USER_HELP: | 
     ──「 Feds 」──
 
-    *🎩 Any user:*
-    ❂ /fbanstat*:* Shows if you/or the user you are replying to or their username is fbanned somewhere or not
-    ❂ /fednotif <on/off>*:* Federation settings not in PM when there are users who are fbaned/unfbanned
-    ❂ /frules*:* See Federation regulations\n
+    *🎩 Setiap pengguna:*
+    ❂ /fbanstat*:* Menunjukkan apakah Anda/atau pengguna yang Anda balas atau nama pengguna mereka diblokir di suatu tempat atau tidak
+    ❂ /fednotif <on/off>*:* Setting federasi tidak di PM saat ada user yang di fbaned/unfbanned
+    ❂ /frules*:* Lihat peraturan Federasi
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 filters_help: |
     ──「 Filters 」──
-    
-    ❂ /filters - `List all active filters saved in the chat.`
 
-    *Admin Commands Only:*
-    ❂ /filter - `Add a filter to this chat. The bot will now reply that message whenever 'keyword'\`
-    `is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker.`
+    ❂ /filters*:* Daftar semua filter aktif yang disimpan dalam obrolan.
 
-    *NOTE:* `all filter`
-    `keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg:` /filter *hey there* `How you`
-    `doin? Separate diff replies by `%%%` to get random replies`
- 
-    *Example:* 
-     `/filter "filtername"
-     Reply 1
-     %%%
-     Reply 2
-     %%%
-     Reply 3`
-    ❂ /stop - `Stop that filter.`
+    *Hanya Admin:*
+    ❂ /filter <kata kunci> <balas pesan>*:* Tambahkan filter ke obrolan ini. Bot sekarang akan membalas pesan itu setiap kali 'kata kunci'\
+    disebutkan. Jika Anda membalas stiker dengan kata kunci, bot akan membalas dengan stiker itu. CATATAN: semua filter \
+    kata kunci dalam huruf kecil. Jika Anda ingin kata kunci Anda menjadi kalimat, gunakan tanda kutip. misalnya: /filter "hey there" Bagaimana Anda \
+    lakukan?
+      Pisahkan balasan yang berbeda dengan `%%%` untuk mendapatkan balasan acak
+      *Contoh:*
+      ➩ `/filter "nama filter"
+         Balas 1
+         %%%
+         Balas 2
+         %%%
+         Balas 3`
+    ❂ /stop <filter kata kunci>*:* Hentikan filter itu.
 
-    *Chat Creator Only:*
-    ❂ /removeallfilters - `Remove all chat filters at once.`
-    *NOTE*: `Filters also support markdown formatters like: {first}, {last} etc.. and buttons.`
-    `Check /markdownhelp to know more!`
+    *Khusus pembuat obrolan:*
+    ❂ /removeallfilters*:* Hapus semua filter obrolan sekaligus.
+    *Catatan*: Filter juga mendukung pemformat penurunan harga seperti: {first}, {last} dll. dan tombol.
+    Periksa /markdownhelp untuk tahu lebih banyak!
 
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 fun_help: |
-    ──「 Fun 」──
-    
-    ✪ /runs - `reply a random string from an array of replies`
-    ✪ /slap - `slap a user, or get slapped if not a reply`
-    ✪ /shrug - `get shrug XD`
-    ✪ /table - `get flip/unflip :v`
-    ✪ /decide - `Randomly answers yes/no/maybe`
-    ✪ /toss - `Tosses A coin`
-    ✪ /bluetext - `check urself :V`
-    ✪ /roll - `Roll a dice`
-    ✪ /rlg - `Join ears,nose,mouth and create an emo ;-;`
-    ✪ /shout - `<keyword> write anything you want to give loud shout`
-    ✪ /weebify - `<text> returns a weebified text`
-    ✪ /sanitize - `always use this before /pat or any contact`
-    ✪ /pat - `pats a user, or get patted`
-    ✪ /8ball - `predicts using 8ball method`
-    
-    *Animation*
-    ✪ /love 
-    ✪ /hack 
-    ✪ /bombs 
-    
-    *Shippering*
-    ✪ /couples - `get couples of today`
-    *Here Is The Help For The Styletext Module:*
-    ✪ /weebify - `<text>: weebify your text!`
-    ✪ /bubble - `<text>: bubble your text!`
-    ✪ /fbubble - `<text>: bubble-filled your text!`
-    ✪ /square - `<text>: square your text!`
-    ✪ /fsquare - `<text>: square-filled your text!`
-    ✪ /blue - `<text>: bluify your text!`
-    ✪ /latin - `<text>: latinify your text!`
-    ✪ /lined - `<text>: lined your text!`
+    ──「 Seru 」──
+
+    ❂ /runs*:* membalas string acak dari array balasan
+    ❂ /slap*:* tampar pengguna, atau tampar jika tidak dibalas
+    ❂ /angkat bahu*:* angkat bahu XD
+    ❂ /table*:* dapatkan flip/unflip :v
+    ❂ /putuskan*:* Secara acak menjawab ya/tidak/mungkin
+    ❂ /toss*:* Melempar koin
+    ❂ /bluetext*:* cek sendiri :V
+    ❂ /roll*:* Melempar dadu
+    ❂ /rlg*:* Bergabunglah dengan telinga, hidung, mulut dan buat emo ;-;
+    ❂ /shout <keyword>*:* tulis apa saja yang ingin diteriakkan
+    ❂ /weebify <text>*:* mengembalikan teks yang di-weebify
+    ❂ /sanitize*:* selalu gunakan ini sebelum /pat atau kontak apa pun
+    ❂ /pat*:* menepuk pengguna, atau ditepuk
+    ❂ /8ball*:* memprediksi menggunakan metode 8ball
+
+    'Animasi'
+    ❂ /love *:* Animasi Untuk Cinta
+    ❂ /hack *:* Animasi Untuk Meretas
+    ❂ /block *:* Animasi Untuk Blok
+    ❂ /bombs *:* Animasi Untuk Bom
+    ❂ /kill *:* Animasi Untuk Membunuh
+    ❂ /moon *:* Animasi Untuk Bulan
+
+    `Pengiriman`
+    ❂ /pasangan - dapatkan pasangan hari ini
+
+    `Berikut adalah bantuan untuk modul Styletext:`
+    ❂ /weebify <text>: weebify teks Anda!
+    ❂ /bubble <text>: gelembung teks Anda!
+    ❂ /fbubble <text>: teks Anda penuh gelembung!
+    ❂ /persegi <teks>: kuadratkan teks Anda!
+    ❂ /fsquare <text>: kotak-isi teks Anda!
+    ❂ /blue <text>: bluify teks Anda!
+    ❂ /latin <text>: latinkan teks Anda!
+    ❂ /lined <text>: melapisi teks Anda!
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
@@ -572,30 +570,31 @@ greetings_help: |
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 WELCOME_HELP_TEXT: |
-    ──「 Greetings Format Help 」──
-    "Your group's welcome/goodbye messages can be personalised in multiple ways. If you want the messages"
-    " to be individually generated, like the default welcome message is, you can use *these* variables:\n"
-    "  ❂ `{first}`*:* this represents the user's *first* name\n"
-    "  ❂ `{last}`*:* this represents the user's *last* name. Defaults to *first name* if user has no "
-    "last name.\n"
-    "  ❂ `{fullname}`*:* this represents the user's *full* name. Defaults to *first name* if user has no "
-    "last name.\n"
-    "  ❂ `{username}`*:* this represents the user's *username*. Defaults to a *mention* of the user's "
-    "first name if has no username.\n"
-    "  ❂ `{mention}`*:* this simply *mentions* a user - tagging them with their first name.\n"
-    "  ❂ `{id}`*:* this represents the user's *id*\n"
-    "  ❂ `{count}`*:* this represents the user's *member number*.\n"
-    "  ❂ `{chatname}`*:* this represents the *current chat name*.\n"
-    "\nEach variable MUST be surrounded by `{}` to be replaced.\n"
-    "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. "
-    "Buttons are also supported, so you can make your welcomes look awesome with some nice intro "
-    "buttons.\n"
-    f"To create a button linking to your rules, use this: `[Rules](buttonurl://t.me/{dispatcher.bot.username}?start=group_id)`. "
-    "Simply replace `group_id` with your group's id, which can be obtained via /id, and you're good to "
-    "go. Note that group ids are usually preceded by a `-` sign; this is required, so please don't "
-    "remove it.\n"
-    "You can even set images/gifs/videos/voice messages as the welcome message by "
-    "replying to the desired media, and calling `/setwelcome`."
+    ──「 Bantuan Format Salam Pembuka 」──
+
+    "Pesan selamat datang/perpisahan grup Anda dapat dipersonalisasi dalam berbagai cara. Jika Anda menginginkan pesannya"
+    " untuk dibuat satu per satu, seperti pesan selamat datang default, Anda dapat menggunakan variabel *ini*:\n"
+    " ❂ `{first}`*:* ini mewakili *nama depan* pengguna\n"
+    " ❂ `{last}`*:* ini mewakili *nama belakang* pengguna. Defaultnya adalah *nama depan* jika pengguna tidak memiliki "
+    "nama belakang.\n"
+    " ❂ `{nama lengkap}`*:* ini mewakili *nama lengkap* pengguna. Defaultnya adalah *nama depan* jika pengguna tidak memiliki "
+    "nama belakang.\n"
+    " ❂ `{namapengguna}`*:* ini mewakili *namapengguna* pengguna. Defaultnya adalah *menyebutkan* "pengguna"
+    "nama depan jika tidak memiliki nama pengguna.\n"
+    " ❂ `{mention}`*:* ini hanya *menyebut* pengguna - menandai mereka dengan nama depan mereka.\n"
+    " ❂ `{id}`*:* ini mewakili *id*\n" pengguna
+    " ❂ `{count}`*:* ini mewakili *nomor anggota* pengguna.\n"
+    " ❂ `{chatname}`*:* ini mewakili *nama chat saat ini*.\n"
+    "\nSetiap variabel HARUS diapit oleh `{}` untuk diganti.\n"
+    "Pesan sambutan juga mendukung penurunan harga, sehingga Anda dapat membuat elemen apa pun menjadi tebal/miring/kode/tautan."
+    "Tombol juga didukung, sehingga Anda dapat membuat sambutan Anda terlihat luar biasa dengan beberapa intro yang bagus"
+    "tombol.\n"
+    f"Untuk membuat tombol yang menautkan ke aturan Anda, gunakan ini: `[Aturan](buttonurl://t.me/{dispatcher.bot.username}?start=group_id)`. "
+    "Cukup ganti `group_id` dengan id grup Anda, yang dapat diperoleh melalui /id, dan Anda siap untuk "
+    "go. Perhatikan bahwa id grup biasanya didahului dengan tanda `-`; ini wajib, jadi tolong jangan "
+    "hapus.\n"
+    "Anda bahkan dapat mengatur gambar/gif/video/pesan suara sebagai pesan selamat datang dengan "
+    "membalas ke media yang diinginkan, dan memanggil `/setwelcome`."
     
     ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
