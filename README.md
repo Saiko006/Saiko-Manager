@@ -2,11 +2,11 @@
 
 <p align="center"><a href="https://t.me/KekiniBot"><img src="(https://telegra.ph/file/e641d3dd2ccdce6a3d934.jpg)" width="400"></a></p>
 
-## Available on Telegram as [@Kekinian](https://t.me/KekiniBot)
+## Available on Telegram as [@Unrealsaiko06](https://t.me/KekiniBot)
 
 # ❤️ Support
-<a href="https://t.me/Kekiniangroup"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="t.me/Kekiniangroup"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/zixenprojects"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="t.me/zixsupports"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 
 ## ✨ Heroku Deploy ✨
