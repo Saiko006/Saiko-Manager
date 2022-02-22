@@ -23,7 +23,7 @@ group_start: |
   I'm awake already!<b>Haven't slept since:</b> <code>{}</code>
 
 pm_about_text: |
-  *KEKINIAN* - A bot to manage your groups with additional features!.
+  *ZIXEN* - A bot to manage your groups with additional features!.
   ✪ Here the basic help regarding use of Kekinian Robot.
             
   ✪ Almost all modules usage defined in the help menu, checkout by sending /help.
@@ -41,7 +41,7 @@ pm_basic_help: |
 pm_basic_admin_text: |
   *Let's Make Your Group Bit Effective Now*
             
-  `Congragulations, Kekinian Robot now ready to manage your group`
+  `Congragulations, Zixen Robot now ready to manage your group`
             
   *Admin Tools*
   ✪ `Basic Admin tools help you to protect and powerup your group`
@@ -74,7 +74,7 @@ pm_music_text: |
   *SETUP ASSISTANT*
   ✪ `first, add me to your group.`"
   ✪ `then promote me as admin and give all permissions except anonymous admin.`
-  ✪ `add` @asistancekekinian `to your group:`
+  ✪ `add` @asistancezixen `to your group:`
   ✪ `turn on the video chat first before start to play music.`
     
   *Command Basic*
