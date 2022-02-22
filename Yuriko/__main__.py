@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-yurikorobot_IMG = "https://telegra.ph/file/6604ab9775908c3dfa379.jpg"
+yurikorobot_IMG = "https://telegra.ph/file/af45822eaffb72176bd02.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate! @rumahakhirat 💎"""
 
