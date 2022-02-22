@@ -847,7 +847,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""*ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ*
+                f"""*ᴢɪxᴇɴ ᴀᴄᴛɪᴠᴇ*
                 
 *Python:* {memek()}
 *Telegram Library:* {peler}""",
