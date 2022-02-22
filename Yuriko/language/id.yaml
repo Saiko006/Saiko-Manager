@@ -1,7 +1,7 @@
 # Language name in their native
 language: "Indonesia 🇮🇩"
 # name of people(s) who worked on this translation
-authors: "@rumahakhirat"
+authors: "@Unrealsaiko06"
 
 # languages
 curr_chat_lang: "Hai. Bahasa Anda saat ini adalah {}, pilih yang Anda inginkan dari tombol di bawah :)"
@@ -10,8 +10,8 @@ set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!!"
 # PM Text
 pm_start_text: |
     ✪ 👋 *ʜᴀʟᴏ* {} !
-    ✪ ɴᴀᴍᴀᴋᴜ ᴀᴅᴀʟᴀʜ ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/af45822eaffb72176bd02.jpg)
-    ✪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ʙᴇʀᴛᴇᴍᴀ ᴋᴇᴋɪɴɪᴀɴ ᴜɴᴛᴜᴋ ᴍᴀɴᴀᴊᴇᴍᴇɴ ɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ᴍᴜᴅᴀʜ!
+    ✪ ɴᴀᴍᴀᴋᴜ ᴀᴅᴀʟᴀʜ ᴢɪxᴇɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/af45822eaffb72176bd02.jpg)
+    ✪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ʙᴇʀᴛᴇᴍᴀ ᴢɪxᴇɴ ᴜɴᴛᴜᴋ ᴍᴀɴᴀᴊᴇᴍᴇɴ ɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ᴍᴜᴅᴀʜ!
     ᴅɪ ᴋᴇʟᴏʟᴀ ᴏʟᴇʜ [ꜱᴀɪᴋᴏ • 🇮🇩](https://t.me/Unrealsaiko06)
     ────────────────────────
     ✪ Uᴘᴛɪᴍᴇ: `{}`
@@ -32,7 +32,7 @@ pm_about_text: |
 pm_basic_help: |
     *Ini bantuan dasar mengenai* *cara menggunakan saya?*"
             
-    ✪ `Pertama tambahkan` `[ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)` `ke grup Anda dengan menekan` [disini](http://t.me/KekiniBot}?startgroup=true)
+    ✪ `Pertama tambahkan` `[ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)` `ke grup Anda dengan menekan` [disini](http://t.me/KekiniBot}?startgroup=true)
     ✪ `Setelah menambahkan promosikan saya secara manual dengan hak penuh untuk pengalaman yang lebih cepat.`
     ✪ `Ketik` /reload@KekiniBot `di obrolan itu untuk menyegarkan daftar admin di database saya.`
             
@@ -41,7 +41,7 @@ pm_basic_help: |
 pm_basic_admin_text: |
     *Mari kita buat grup Anda sedikit efektif sekarang*
             
-    `Selamat, Kekinian Robot sekarang siap mengelola grup Anda.`
+    `Selamat, Zixen Robot sekarang siap mengelola grup Anda.`
             
          *Alat Admin*
     ✪ `Alat admin dasar membantu Anda melindungi dan memicu grup Anda.`
@@ -59,14 +59,14 @@ pm_basic_notes_text: |
     ✪ `Anda juga dapat mengatur tombol untuk catatan dan filter (merujuk menu Bantuan)`
             
 pm_basic_support_text: |
-    *KEKINIAN mendukung obrolan*
+    *ZIXEN mendukung obrolan*
             
     ✪ `Bergabunglah dengan Grup / Saluran Dukungan`
             
 pm_basic_credit_text: |
-    *KREDIT UNTUK PENGEMBANG KEKINIAN*
+    *KREDIT UNTUK PENGEMBANG ZIXEN*
             
-    `✪ Di sini beberapa pengembang membantu membuat Kekinian Robot`
+    `✪ Di sini beberapa pengembang membantu membuat Zixen Robot`
             
 pm_music_text: |
     *ɪɴɪ ᴀᴅᴀʟᴀʜ ᴍᴏᴅᴜʟ ʙᴀɴᴛᴜᴀɴ [ᴍᴜsɪᴋ]:*
@@ -86,9 +86,9 @@ pm_music_text: |
     ✪ /bug (judul) - `Melaporkan masalah pada bot`
        Contoh : /bug asisten ga naik
     
-    ✪ *Mari kita nikmati musik Kekinian Robot dan bergabung dengan Grup Pendukung @Kekiniangroup*
+    ✪ *Mari kita nikmati musik Zixen Robot dan bergabung dengan Grup Pendukung @zixsupports*
             
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ!*    
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: ᴢɪxᴇɴ ʀᴏʙᴏᴛ!*    
             
 pm_help_text: |
     *PERINTAH UTAMA*
@@ -100,7 +100,7 @@ pm_help_text: |
   
 pm_help_module_text: "Ini bantuan untuk *{}* modul :\n"
 
-source_text: "Hi.. Aku *Kekinian Robot*"
+source_text: "Hi.. Aku *Zixen Robot*"
 
 # Group Help Text
 group_help_text: "Hubungi saya di PM untuk mendapatkan daftar perintah yang mungkin."
@@ -233,7 +233,7 @@ antich_help: |
     ❂ /antich <'on'/'yes'> *:* Mengaktifkan mode anti-saluran
     ❂ /antich <'off'/'no'> *:* Dinonaktifkan mode anti-saluran
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 anime_help: |
     ──「 Pencarian Anime 」──  
@@ -253,7 +253,7 @@ anime_help: |
     ✪ /animequotes - `untuk kutipan anime secara acak sebagai foto.`
     ✪ /quote - `Kirim Kutipan secara acak sebagai teks`
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 admin_help: |
     ──「 Admin 」──
@@ -284,7 +284,7 @@ admin_help: |
     ✪ /setrules - `<Aturanmu disini>  Tetapkan aturan untuk obrolan ini.`
     ✪ /clearrules - `Bersihkan aturan untuk obrolan ini.`
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 blacklist_help: |
     ──「 Daftar Hitam 」──
@@ -307,7 +307,7 @@ blacklist_help: |
     Catatan:
     ❂ <sticker link> bisa `https://t.me/addstickers/<sticker>` atau cukup `<sticker>` atau membalas pesan stiker
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 approval_help: |
     ──「 Disetujui 」──
@@ -322,7 +322,7 @@ approval_help: |
     ❂ /approved*:* Daftar semua pengguna yang disetujui.
     ❂ /unapproveall*:* Batalkan persetujuan *SEMUA* pengguna dalam obrolan. Ini tidak dapat dibatalkan.
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 bansmutes_help: |
     ──「 Larangan / Bisukan 」──
@@ -343,7 +343,7 @@ bansmutes_help: |
     ❂ /zombies clean*:* menghapus akun yang dihapus dari grup.
     ❂ /snipe <chatid> <string>*:* Buat saya mengirim pesan ke chat tertentu.
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 chatbot_help: |
     ──「 Bot Obrolan AI 」──
@@ -352,7 +352,7 @@ chatbot_help: |
     ❂ /chatbot [ON/OFF]: Mengaktifkan dan menonaktifkan mode AI Chat.
     ❂ /chatbot EN : Mengaktifkan chatbot berbahasa Inggris saja.
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 cleaner_help: |
     ──「 Pembersihan 」──
@@ -366,7 +366,7 @@ cleaner_help: |
     ❂ /gignoreblue <word>*:* secara global mengabaikan pembersihan teks biru dari kata yang disimpan di Saitama.
     ❂ /ungignoreblue <word>*:* hapus perintah tersebut dari daftar pembersihan global
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 connection_help: |
     ──「 Koneksi 」──
@@ -380,7 +380,7 @@ connection_help: |
     *Hanya Admin:*
     ❂ /allowconnect <yes/no>: izinkan pengguna terhubung ke obrolan
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 extras_help: |
     ──「 Extras 」──
@@ -400,7 +400,7 @@ extras_help: |
       ➩ `/cash 1 usd inr`
          Keluaran: `1,0 USD = 75,505 INR`
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 fsub_feds_help: |
     ──「 F-Subs / Feds 」──
@@ -430,7 +430,7 @@ fsub_feds_help: |
     ❂ `/fedadminhelp`*:* Menyediakan bantuan untuk perintah administrasi makan
     ❂ `/feduserhelp`*:* Memberikan bantuan untuk perintah yang dapat digunakan siapa saja
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_OWNER_HELP: | 
     ──「 Feds 」──
@@ -448,7 +448,7 @@ FED_OWNER_HELP: |
     ❂ `/fbroadcast <message>`*:* Menyiarkan pesan ke semua grup yang telah bergabung dengan feed Anda
     ❂ `/fedsubs`*:* Menunjukkan FBI langganan grup Anda `(broken rn)`
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_ADMIN_HELP: |
     ──「 Feds 」──
@@ -465,7 +465,7 @@ FED_ADMIN_HELP: |
     ❂ `/ fedchats`*:* Dapatkan semua obrolan yang terhubung di Federasi
     ❂ `/chatfed `*:* Lihat Federasi di obrolan saat ini
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 FED_USER_HELP: | 
     ──「 Feds 」──
@@ -475,7 +475,7 @@ FED_USER_HELP: |
     ❂ /fednotif <on/off>*:* Setting federasi tidak di PM saat ada user yang di fbaned/unfbanned
     ❂ /frules*:* Lihat peraturan Federasi
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 filters_help: |
     ──「 Filters 」──
@@ -502,7 +502,7 @@ filters_help: |
     *Catatan*: Filter juga mendukung pemformat penurunan harga seperti: {first}, {last} dll. dan tombol.
     Periksa /markdownhelp untuk tahu lebih banyak!
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 fun_help: |
     ──「 Seru 」──
@@ -543,7 +543,7 @@ fun_help: |
     ❂ /latin <text>: latinkan teks Anda!
     ❂ /lined <text>: melapisi teks Anda!
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 greetings_help: |
     ──「 Greetings 」──
@@ -567,7 +567,7 @@ greetings_help: |
     *Welcome markdown:*
     ✪ /welcomehelp - `view more formatting information for custom welcome/goodbye messages.`
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 WELCOME_HELP_TEXT: |
     ──「 Bantuan Format Salam Pembuka 」──
@@ -596,7 +596,7 @@ WELCOME_HELP_TEXT: |
     "Anda bahkan dapat mengatur gambar/gif/video/pesan suara sebagai pesan selamat datang dengan "
     "membalas ke media yang diinginkan, dan memanggil `/setwelcome`."
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 WELCOME_MUTE_HELP_TEXT: |
     ──「 Bantuan Format Bisu Salam Pembuka 」──
@@ -609,7 +609,7 @@ WELCOME_MUTE_HELP_TEXT: |
     " ❂ `/welcomemute off`*:* mematikan welcomemute.\n"
     "*Catatan:* Mode kuat mengeluarkan pengguna dari obrolan jika mereka tidak memverifikasi dalam 120 detik. Mereka selalu dapat bergabung kembali"
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 info_dan_afk_help: |
     ──「 Info and AFK 」──
@@ -646,7 +646,7 @@ info_dan_afk_help: |
     *Apa itu kesehatan?*
     Datang dan lihat [Penjelasan Sistem HP](https://t.me/KekinianOfficial/4) 
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 logchannel_help: |
     ── [ Masuk Saluran ] ──
@@ -660,7 +660,7 @@ logchannel_help: |
     ➩ mengirim / setlog di saluran
     ➩ meneruskan /setlog ke grup
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 logomarker_help: |
     ──「 Pembuat Logo 」──
@@ -672,7 +672,7 @@ logomarker_help: |
     *Editor Gambar :*
     ❂ /edit <balas foto> - untuk mengedit gambar.
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 MARKDOWN_HELP: |
     ──「 Bantuan Markdown 」──
@@ -697,7 +697,7 @@ MARKDOWN_HELP: |
     Ini akan membuat dua tombol pada satu baris, bukan satu tombol per baris.
     Ingatlah bahwa pesan Anda <b>HARUS</b> berisi beberapa teks selain hanya sebuah tombol!
         
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 MARKDOWN_HELP_TEXT_1: "Coba teruskan pesan berikut kepada saya, dan Anda akan melihat, dan Gunakan #test!"
 MARKDOWN_HELP_TEXT_2: |
@@ -728,14 +728,14 @@ locks_help: |
     ❂ Membuka izin *info* akan memungkinkan anggota (non-admin) untuk mengubah informasi grup, seperti deskripsi atau nama grup
     ❂ Izin membuka kunci * pin * akan memungkinkan anggota (non-admin) untuk menyematkan pesan dalam grup
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 myinfo_help: |
     ──「 Info saya 」──
     
     ✪ /myinfo *:* Dapatkan detail Anda tentang inline.
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 notes_help: |
     ──「 Catatan 」──
@@ -763,7 +763,7 @@ notes_help: |
     ❂ /removeallnotes*:* menghapus semua catatan dari grup
     *Catatan:* Nama catatan tidak peka huruf besar/kecil, dan secara otomatis diubah menjadi huruf kecil sebelum disimpan.
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 paste_help: |
     ──「 Anti-Flood 」──
@@ -778,7 +778,7 @@ paste_help: |
     ❂ /dpaste  *:* `Paste to dogbin`
     ❂ /pvpaste *:* `Paste to privatebin`
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 report_help: |
     ──「 Laporan 」──
@@ -792,7 +792,7 @@ report_help: |
     ❂ Jika dilakukan di malam hari, matikan status Anda.
     ❂ Jika dalam grup, matikan status grup itu.
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 search_help: |
     ──「 Pencarian 」──
@@ -808,7 +808,7 @@ search_help: |
     ❂ Kekinian <query>*:* Kekinian menjawab pertanyaan
     💡 Contoh : `Kekinian di mana Jepang?`
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 stickers_help: |
     ──「 Stiker 」──
@@ -823,7 +823,7 @@ stickers_help: |
     ❂ /kamuii <1-8> *:* Untuk memperdalam stiker
     ❂ /mmf <balas dengan teks>*:* Untuk menggambar teks untuk stiker atau pohots
     
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 translator_help: |
     ──「 Penerjemah 」──
@@ -848,7 +848,7 @@ translator_help: |
       sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
       vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
       
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 tools_help: |
     ──「 Alat 」──
@@ -883,7 +883,7 @@ tools_help: |
     penanda
     ❂ /tagall: Untuk tag semua orang minimal 100 member dulu.
       
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
     
 warning_help: |
     ──「 Peringatan 」──
@@ -898,7 +898,7 @@ warning_help: |
     ❂ /warnlimit <num>: mengatur batas peringatan
     ❂ /strongwarn <on/yes/off/no>: Jika disetel ke aktif, melebihi batas peringatan akan mengakibatkan larangan. Lain, hanya akan pukulan.
         
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴋᴇᴋɪɴɪᴀɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
 
 #Antichanel
 active_antichannel: "Antichannel diaktifkan di {}"
