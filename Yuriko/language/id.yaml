@@ -23,8 +23,8 @@ group_start: |
     Saya sudah bangun!<b>Belum tidur sejak itu:</b> <code>{}</code>
 
 pm_about_text: |
-    *KEKINIAN* - `BOT untuk mengelola grup Anda dengan fitur tambahan!`
-    `Di sini bantuan dasar mengenai penggunaan Kekinian Robot.`
+    *ZIXEN* - `BOT untuk mengelola grup Anda dengan fitur tambahan!`
+    `Di sini bantuan dasar mengenai penggunaan Zixen Robot.`
             
     `Hampir semua modul penggunaan didefinisikan dalam menu Bantuan, checkout dengan mengirim` `/help`
     `Laporkan kesalahan, klik tombol bug`
@@ -74,7 +74,7 @@ pm_music_text: |
     *SETUP ASSISTANT*
     ✪ `Pertama, tambahkan saya ke grup Anda.`"
     ✪ `Kemudian mempromosikan saya sebagai admin dan berikan semua izin kecuali admin anonim.`
-    ✪ `Tambahkan` @asistancekekinian `ke grup anda:`
+    ✪ `Tambahkan` @asistancezixen `ke grup anda:`
     ✪ `Nyalakan obrolan video terlebih dahulu sebelum mulai memutar musik.`
     
     *PERINTAH DASAR*
