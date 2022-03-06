@@ -1,5 +1,5 @@
 {
-      "name": "Kekinian Robot",
+      "name": "Zixen Robot",
       "description": "A Powerful  Telegram group management bot with anime theme.",
       "keywords": [
          "telegram",
@@ -9,8 +9,8 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/1495fab0586fe05160204.jpg",  
-   "repository": "https://github.com/izalmusic/yuriko",
+   "logo":    "https://telegra.ph/file/3159ae72221741d6f0d91.jpg",  
+   "repository": "https://github.com/Deyko-userbot/KekinianRobot",
    "addons": [
           {
          "options": {
@@ -56,7 +56,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2075788563"
+         "value": "5142360807"
       },
       "STRING_SESSION": {
          "description": "Fill with telethon string session.",
@@ -82,12 +82,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "rumahakhirat"
+         "value": "saikobukanbot"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "Kekiniangroup"
+         "value": "zixsupports"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
