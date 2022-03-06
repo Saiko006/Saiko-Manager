@@ -22,10 +22,10 @@ class Config(object):
     OWNER_USERNAME = "saikobukanbot"
     SUPPORT_CHAT = "zixsupports"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001716893407
+        -1001592517415
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001716893407
+        -1001592517415
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
