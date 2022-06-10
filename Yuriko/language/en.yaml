@@ -10,20 +10,20 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 # PM Text
 pm_start_text: |
   ✪ 👋 *Hello* `{}` !
-  ✪ ᴍʏ ɴᴀᴍᴇ ɪs ᴢɪxᴇɴ [🤖](https://telegra.ph/file/af45822eaffb72176bd02.jpg)
+  ✪ ᴍʏ ɴᴀᴍᴇ ɪs • 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈 𝙈𝙐𝙎𝙄𝘾 • [🤖](https://telegra.ph/file/af45822eaffb72176bd02.jpg)
   ✪ ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ​ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
   ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ꜱᴀɪᴋᴏ • 🇮🇩](https://t.me/saikobukanbot)
   ────────────────────────
   ✪ ᴜᴘᴛɪᴍᴇ: `{}`
   ✪ `{}` ᴜꜱᴇʀ, ᴀᴄʀᴏꜱꜱ `{}` ᴄʜᴀᴛꜱ.
   ────────────────────────
-  ✪ ᴘᴏᴡᴇʀᴇᴅ Bʏ: [ᴢɪxᴇɴ](https://t.me/KekiniBot)!
+  ✪ ᴘᴏᴡᴇʀᴇᴅ Bʏ: [• 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈 𝙈𝙐𝙎𝙄𝘾 •](https://t.me/telmus_bot)!
     
 group_start: |
   I'm awake already!<b>Haven't slept since:</b> <code>{}</code>
 
 pm_about_text: |
-  *ZIXEN* - A bot to manage your groups with additional features!.
+  *TELEGRAM MUSIC* - A bot to manage your groups with additional features!.
   ✪ Here the basic help regarding use of Kekinian Robot.
             
   ✪ Almost all modules usage defined in the help menu, checkout by sending /help.
