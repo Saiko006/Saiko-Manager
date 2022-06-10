@@ -1,4 +1,4 @@
-<h1 align="center"><b> ⚡ SAIKO ROBOT 🤖 ⚡ </b></h1>
+<h1 align="center"><b> ⚡ REPO MANAGER 🤖 ⚡ </b></h1>
 
 <p align="center"><a href="https://t.me/telmus_bot"><img src="(https://telegra.ph/file/e641d3dd2ccdce6a3d934.jpg)" width="400"></a></p>
 
