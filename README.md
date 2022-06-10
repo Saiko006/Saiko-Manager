@@ -2,7 +2,7 @@
 
 <p align="center"><a href="https://t.me/telmus_bot"><img src="(https://telegra.ph/file/e641d3dd2ccdce6a3d934.jpg)" width="400"></a></p>
 
-## Available on Telegram as [@Unrealsaiko06](https://t.me/KekiniBot)
+## Available on Telegram as [@saikobukanbot](https://t.me/telmus_bot)
 
 # ❤️ Support
 <a href="https://t.me/zixenprojects"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
