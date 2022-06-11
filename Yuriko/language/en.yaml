@@ -10,21 +10,21 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 # PM Text
 pm_start_text: |
   ✪ 👋 *Hello* `{}` !
-  ✪ ᴍʏ ɴᴀᴍᴇ ɪs • 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈 𝙈𝙐𝙎𝙄𝘾 • [🤖](https://telegra.ph/file/af45822eaffb72176bd02.jpg)
+  ✪ ᴍʏ ɴᴀᴍᴇ ɪs ꜱᴀɪᴋᴏ[🤖](https://telegra.ph/file/d2fe571fc05ba329766be.jpg)
   ✪ ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ​ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
   ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ꜱᴀɪᴋᴏ • 🇮🇩](https://t.me/saikobukanbot)
   ────────────────────────
   ✪ ᴜᴘᴛɪᴍᴇ: `{}`
   ✪ `{}` ᴜꜱᴇʀ, ᴀᴄʀᴏꜱꜱ `{}` ᴄʜᴀᴛꜱ.
   ────────────────────────
-  ✪ ᴘᴏᴡᴇʀᴇᴅ Bʏ: [• 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈 𝙈𝙐𝙎𝙄𝘾 •](https://t.me/telmus_bot)!
+  ✪ ᴘᴏᴡᴇʀᴇᴅ Bʏ: [ꜱᴀɪᴋᴏ](https://t.me/managerikobot)!
     
 group_start: |
   I'm awake already!<b>Haven't slept since:</b> <code>{}</code>
 
 pm_about_text: |
   *TELEGRAM MUSIC* - A bot to manage your groups with additional features!.
-  ✪ Here the basic help regarding use of Kekinian Robot.
+  ✪ Here the basic help regarding use of Saiko Robot.
             
   ✪ Almost all modules usage defined in the help menu, checkout by sending /help.
   ✪ Report error/bugs click the Button.
@@ -32,9 +32,9 @@ pm_about_text: |
 pm_basic_help: |
   *Here's basic Help regarding, How to use Me?*
             
-  ✪ `Firstly Add` [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot) `to your group by pressing` [here](http://t.me/KekiniBot}?startgroup=true)
+  ✪ `Firstly Add` [ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot) `to your group by pressing` [here](http://t.me/managerikobot}?startgroup=true)
   ✪ `After adding promote me manually with full rights for faster experience`
-  ✪ `Than send` /reload@KekiniBot `in that chat to refresh admin list in My database`
+  ✪ `Than send` /reload@managerikobot `in that chat to refresh admin list in My database`
             
   *All done now use below given button's to know about use!*
             
