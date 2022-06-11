@@ -10,21 +10,21 @@ set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!!"
 # PM Text
 pm_start_text: |
     ✪ 👋 *ʜᴀʟᴏ* {} !
-    ✪ ɴᴀᴍᴀᴋᴜ ᴀᴅᴀʟᴀʜ ᴢɪxᴇɴ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/af45822eaffb72176bd02.jpg)
-    ✪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ʙᴇʀᴛᴇᴍᴀ ᴢɪxᴇɴ ᴜɴᴛᴜᴋ ᴍᴀɴᴀᴊᴇᴍᴇɴ ɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ᴍᴜᴅᴀʜ!
-    ᴅɪ ᴋᴇʟᴏʟᴀ ᴏʟᴇʜ [ꜱᴀɪᴋᴏ • 🇮🇩](https://t.me/saikobukanbot)
+    ✪ ɴᴀᴍᴀᴋᴜ ᴀᴅᴀʟᴀʜ ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ [🤖](https://telegra.ph/file/af45822eaffb72176bd02.jpg)
+    ✪ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ʙᴇʀᴛᴇᴍᴀ ꜱᴀɪᴋᴏ ᴜɴᴛᴜᴋ ᴍᴀɴᴀᴊᴇᴍᴇɴ ɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ᴍᴜᴅᴀʜ!
+    ᴅɪ ᴋᴇʟᴏʟᴀ ᴏʟᴇʜ [夢 | ꜱᴀɪᴋᴏ](https://t.me/saikobukanbot)
     ────────────────────────
     ✪ Uᴘᴛɪᴍᴇ: `{}`
     ✪ `{}` ᴘᴇɴɢɢᴜɴᴀ, ᴍᴇʟɪɴᴛᴀsɪ `{}` ᴏʙʀᴏʟᴀɴ.
     ────────────────────────
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ꜱᴀɪᴋᴏ](https://t.me/managerikobot)!
     
 group_start: |
     Saya sudah bangun!<b>Belum tidur sejak itu:</b> <code>{}</code>
 
 pm_about_text: |
     *ZIXEN* - `BOT untuk mengelola grup Anda dengan fitur tambahan!`
-    `Di sini bantuan dasar mengenai penggunaan Zixen Robot.`
+    `Di sini bantuan dasar mengenai penggunaan Saiko Robot.`
             
     `Hampir semua modul penggunaan didefinisikan dalam menu Bantuan, checkout dengan mengirim` `/help`
     `Laporkan kesalahan, klik tombol bug`
@@ -32,16 +32,16 @@ pm_about_text: |
 pm_basic_help: |
     *Ini bantuan dasar mengenai* *cara menggunakan saya?*"
             
-    ✪ `Pertama tambahkan` `[ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)` `ke grup Anda dengan menekan` [disini](http://t.me/KekiniBot}?startgroup=true)
+    ✪ `Pertama tambahkan` `[ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot)` `ke grup Anda dengan menekan` [disini](http://t.me/managerikobot}?startgroup=true)
     ✪ `Setelah menambahkan promosikan saya secara manual dengan hak penuh untuk pengalaman yang lebih cepat.`
-    ✪ `Ketik` /reload@KekiniBot `di obrolan itu untuk menyegarkan daftar admin di database saya.`
+    ✪ `Ketik` /reload@managerikobot `di obrolan itu untuk menyegarkan daftar admin di database saya.`
             
     *Semua dilakukan sekarang gunakan tombol yang diberikan di bawah ini untuk mengetahui tentang penggunaan!*
             
 pm_basic_admin_text: |
     *Mari kita buat grup Anda sedikit efektif sekarang*
             
-    `Selamat, Zixen Robot sekarang siap mengelola grup Anda.`
+    `Selamat, Saiko Robot sekarang siap mengelola grup Anda.`
             
          *Alat Admin*
     ✪ `Alat admin dasar membantu Anda melindungi dan memicu grup Anda.`
@@ -59,14 +59,14 @@ pm_basic_notes_text: |
     ✪ `Anda juga dapat mengatur tombol untuk catatan dan filter (merujuk menu Bantuan)`
             
 pm_basic_support_text: |
-    *ZIXEN mendukung obrolan*
+    *SAIKO mendukung obrolan*
             
     ✪ `Bergabunglah dengan Grup / Saluran Dukungan`
             
 pm_basic_credit_text: |
-    *KREDIT UNTUK PENGEMBANG ZIXEN*
+    *KREDIT UNTUK PENGEMBANG SAIKO*
             
-    `✪ Di sini beberapa pengembang membantu membuat Zixen Robot`
+    `✪ Di sini beberapa pengembang membantu membuat Saiko Robot`
             
 pm_music_text: |
     *ɪɴɪ ᴀᴅᴀʟᴀʜ ᴍᴏᴅᴜʟ ʙᴀɴᴛᴜᴀɴ [ᴍᴜsɪᴋ]:*
@@ -74,7 +74,7 @@ pm_music_text: |
     *SETUP ASSISTANT*
     ✪ `Pertama, tambahkan saya ke grup Anda.`"
     ✪ `Kemudian mempromosikan saya sebagai admin dan berikan semua izin kecuali admin anonim.`
-    ✪ `Tambahkan` @asistancezixen `ke grup anda:`
+    ✪ `Tambahkan` @asistanceiko `ke grup anda:`
     ✪ `Nyalakan obrolan video terlebih dahulu sebelum mulai memutar musik.`
     
     *PERINTAH DASAR*
@@ -86,9 +86,9 @@ pm_music_text: |
     ✪ /bug (judul) - `Melaporkan masalah pada bot`
        Contoh : /bug asisten ga naik
     
-    ✪ *Mari kita nikmati musik Zixen Robot dan bergabung dengan Grup Pendukung @zixsupports*
+    ✪ *Mari kita nikmati musik Saiko Robot dan bergabung dengan Grup Pendukung @kosupports*
             
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: ᴢɪxᴇɴ ʀᴏʙᴏᴛ!*    
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ!*    
             
 pm_help_text: |
     *PERINTAH UTAMA*
@@ -100,7 +100,7 @@ pm_help_text: |
   
 pm_help_module_text: "Ini bantuan untuk *{}* modul :\n"
 
-source_text: "Hi.. Aku *Zixen Robot*"
+source_text: "Hi.. Aku *Saiko Robot*"
 
 # Group Help Text
 group_help_text: "Hubungi saya di PM untuk mendapatkan daftar perintah yang mungkin."
@@ -253,7 +253,7 @@ anime_help: |
     ✪ /animequotes - `untuk kutipan anime secara acak sebagai foto.`
     ✪ /quote - `Kirim Kutipan secara acak sebagai teks`
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot)!
 
 admin_help: |
     ──「 Admin 」──
@@ -284,7 +284,7 @@ admin_help: |
     ✪ /setrules - `<Aturanmu disini>  Tetapkan aturan untuk obrolan ini.`
     ✪ /clearrules - `Bersihkan aturan untuk obrolan ini.`
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot)!
 
 blacklist_help: |
     ──「 Daftar Hitam 」──
@@ -307,7 +307,7 @@ blacklist_help: |
     Catatan:
     ❂ <sticker link> bisa `https://t.me/addstickers/<sticker>` atau cukup `<sticker>` atau membalas pesan stiker
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot)!
 
 approval_help: |
     ──「 Disetujui 」──
@@ -322,7 +322,7 @@ approval_help: |
     ❂ /approved*:* Daftar semua pengguna yang disetujui.
     ❂ /unapproveall*:* Batalkan persetujuan *SEMUA* pengguna dalam obrolan. Ini tidak dapat dibatalkan.
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot)!
 
 bansmutes_help: |
     ──「 Larangan / Bisukan 」──
@@ -343,7 +343,7 @@ bansmutes_help: |
     ❂ /zombies clean*:* menghapus akun yang dihapus dari grup.
     ❂ /snipe <chatid> <string>*:* Buat saya mengirim pesan ke chat tertentu.
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot)!
 
 chatbot_help: |
     ──「 Bot Obrolan AI 」──
@@ -352,7 +352,7 @@ chatbot_help: |
     ❂ /chatbot [ON/OFF]: Mengaktifkan dan menonaktifkan mode AI Chat.
     ❂ /chatbot EN : Mengaktifkan chatbot berbahasa Inggris saja.
 
-    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ᴢɪxᴇɴ ʀᴏʙᴏᴛ](https://t.me/KekiniBot)!
+    ✪ ᴅɪ ᴘᴇʀsᴇᴍʙᴀʜᴋᴀɴ ᴏʟᴇʜ: [ꜱᴀɪᴋᴏ ʀᴏʙᴏᴛ](https://t.me/managerikobot)!
 
 cleaner_help: |
     ──「 Pembersihan 」──
